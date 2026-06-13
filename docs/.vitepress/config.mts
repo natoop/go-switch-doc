@@ -153,9 +153,7 @@ export default defineConfig({
       { text: '快速开始', link: '/docs/register/' },
       { text: 'CLI', link: '/docs/cli/' },
       { text: 'FAQ', link: '/docs/faq/' },
-      { text: '条款', link: '/docs/tos/' },
-      { text: 'PackyAPI 官网', link: 'https://www.packyapi.com' },
-      { text: 'Packy服务监控', link: 'https://check.linux.do/group/Packy' }
+      { text: '条款', link: '/docs/tos/' }
     ],
     sidebar: buildSidebar(),
     search: {
