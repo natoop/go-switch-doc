@@ -1,21 +1,21 @@
 # 使用政策（AUP）
 
-Source: https://docs.packyapi.com/docs/tos/aup.html
+Source: https://docs.goswitch.online/docs/tos/aup.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本文档根据 PackyAPI「使用政策」页面内容整理（生效日期：2026 年 5 月 13 日）。
+本文档根据 GoSwitch「使用政策」页面内容整理（生效日期：2026 年 5 月 13 日）。
 如本文档与官网存在差异或版本更新，请以官网页面为准：
-[https://www.packyapi.com/usage-policy](https://www.packyapi.com/usage-policy)
+[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
 :::
 | 项目 | 内容 |
 | --- | --- |
 | 文档名称 | 使用政策（可接受使用政策 / AUP） |
 | 生效日期 | 2026 年 5 月 13 日 |
-| 来源链接 | [https://www.packyapi.com/usage-policy](https://www.packyapi.com/usage-policy) |
+| 来源链接 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
 | 整理时间 | 2026 年 6 月 10 日 |
-| 适用对象 | 任何可以向 PackyMe 的产品和/或服务提交输入的人（含授权经销商或直通访问） |
+| 适用对象 | 任何可以向 GoSwitch 的产品和/或服务提交输入的人（含授权经销商或直通访问） |
 | 目标 | 帮助用户保持安全并促进负责任地使用产品与服务 |
 
 -   [概述](./aup.md#%E6%A6%82%E8%BF%B0)
@@ -40,9 +40,9 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ## 概述
 
-我们的使用政策（也称为“可接受使用政策”或 “AUP”）适用于任何可以向 PackyMe 的产品和/或服务提交输入的人，包括通过任何授权经销商或直通访问，我们将所有这些人称为“用户”。使用政策旨在帮助我们的用户保持安全并促进负责任地使用我们的产品和服务。
+我们的使用政策（也称为“可接受使用政策”或 “AUP”）适用于任何可以向 GoSwitch 的产品和/或服务提交输入的人，包括通过任何授权经销商或直通访问，我们将所有这些人称为“用户”。使用政策旨在帮助我们的用户保持安全并促进负责任地使用我们的产品和服务。
 
-使用政策根据谁可以使用我们的产品以及出于什么目的进行分类。随着我们的技术和相关风险的发展或我们了解意外风险，我们将更新我们的政策。为执行本政策，PackyMe 可以使用检测、审查和监控机制；如果用户违反本政策，PackyMe 可以限制、暂停或终止访问，也可以阻止、过滤或修改违反本政策的输入或输出。
+使用政策根据谁可以使用我们的产品以及出于什么目的进行分类。随着我们的技术和相关风险的发展或我们了解意外风险，我们将更新我们的政策。为执行本政策，GoSwitch 可以使用检测、审查和监控机制；如果用户违反本政策，GoSwitch 可以限制、暂停或终止访问，也可以阻止、过滤或修改违反本政策的输入或输出。
 
 ::: tip 阅读建议
 
@@ -103,7 +103,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ### 不得滥用我们的平台
 
-不得违反我们的平台政策使用我们的服务，包括但不限于尝试破坏我们的保护措施，逃避模型的内置限制，以任何未经授权的方式提取模型权重、系统提示、隐藏规则、训练数据或响应模式，进行越狱、提示注入、未经授权的模型抓取、复制、训练、微调或蒸馏，或违反我们在 PackyAPI 上实施的服务使用限制，包括费率限制。
+不得违反我们的平台政策使用我们的服务，包括但不限于尝试破坏我们的保护措施，逃避模型的内置限制，以任何未经授权的方式提取模型权重、系统提示、隐藏规则、训练数据或响应模式，进行越狱、提示注入、未经授权的模型抓取、复制、训练、微调或蒸馏，或违反我们在 GoSwitch 上实施的服务使用限制，包括费率限制。
 
 ### 不得生成性露骨内容
 
@@ -143,7 +143,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ## 相关链接
 
--   使用政策（本页来源）：[https://www.packyapi.com/usage-policy](https://www.packyapi.com/usage-policy)
--   服务条款：[https://www.packyapi.com/terms](https://www.packyapi.com/terms)
--   服务特定条款：[https://www.packyapi.com/service-specific-terms](https://www.packyapi.com/service-specific-terms)
--   支持的国家和地区：[https://www.packyapi.com/supported-regions](https://www.packyapi.com/supported-regions)
+-   使用政策（本页来源）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+-   服务条款：[https://goswitch.online/terms](https://goswitch.online/terms)
+-   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
+-   支持的国家和地区：[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)

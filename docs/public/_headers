@@ -1,0 +1,18 @@
+# 静态资源（带 hash 的文件）长期缓存
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML 文件不缓存，确保更新即时生效
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/docs/**/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# SVG 图标缓存
+/icons/*
+  Cache-Control: public, max-age=86400
+
+# 字体文件长期缓存
+/assets/*.woff2
+  Cache-Control: public, max-age=31536000, immutable

@@ -4,3 +4,4 @@ docs/.vitepress/dist/
 dist/
 .DS_Store
 *.local
+bun.lock

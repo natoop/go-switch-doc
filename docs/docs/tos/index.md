@@ -1,19 +1,19 @@
 # 条款与政策
 
-Source: https://docs.packyapi.com/docs/tos/
+Source: https://docs.goswitch.online/docs/tos/
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本目录下文档根据 PackyAPI 官网条款/政策页面内容整理。
+本目录下文档根据 GoSwitch 官网条款/政策页面内容整理。
 如本文档与官网存在差异或版本更新，请以官网页面为准。
 :::
 | 文档 | 本地页面 | 生效日期 | 官网来源 |
 | --- | --- | --- | --- |
-| 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://www.packyapi.com/usage-policy](https://www.packyapi.com/usage-policy) |
-| 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://www.packyapi.com/terms](https://www.packyapi.com/terms) |
-| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-10-30 | [https://www.packyapi.com/service-specific-terms](https://www.packyapi.com/service-specific-terms) |
-| 支持的国家和地区 | [USE](./use.md) | 2025-10-30 | [https://www.packyapi.com/supported-regions](https://www.packyapi.com/supported-regions) |
+| 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
+| 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://goswitch.online/terms](https://goswitch.online/terms) |
+| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-10-30 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
+| 支持的国家和地区 | [USE](./use.md) | 2025-10-30 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
 ::: tip 阅读建议
 

@@ -1,8 +1,8 @@
 # 分组介绍
 
-Source: https://docs.packyapi.com/docs/token/
+Source: https://docs.goswitch.online/docs/token/
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 如何查看最新分组
 
 1.  在控制台面板，点击右上角“模型广场”，进入分组与模型的查看
@@ -133,7 +133,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 -   **分组介绍：**
 
-    -   使用Claude Code需要选择此分组！主要分组之一，专门用于Claude Code使用，不能接入任何第三方，如果触发PackyApi的环境审查，会封停你的PackyApi账号，并进入退款流程。这样做是因为有些人向Claude询问一些NSFW问题，会触发道德审查，导致账号被封且无法退款，为了号池稳定，请勿接入任何第三方
+    -   使用Claude Code需要选择此分组！主要分组之一，专门用于Claude Code使用，不能接入任何第三方，如果触发GoSwitch的环境审查，会封停你的GoSwitch账号，并进入退款流程。这样做是因为有些人向Claude询问一些NSFW问题，会触发道德审查，导致账号被封且无法退款，为了号池稳定，请勿接入任何第三方
 -   **支持的CLI：**
 
     -   Claude Code

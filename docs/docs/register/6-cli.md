@@ -1,9 +1,9 @@
 # 配置 CLI 工具
 
-Source: https://docs.packyapi.com/docs/register/6-cli.html
+Source: https://docs.goswitch.online/docs/register/6-cli.html
 
-Updated: 2026-06-10T10:02:01.000Z
-PackyAPI 支持在命令行中使用 Claude Code、Codex、Gemini CLI
+Updated: 2026-06-13T10:02:01.000Z
+GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ## 基础条件
 
@@ -18,16 +18,16 @@ PackyAPI 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ![](../../assets/image/QuickStart/009.webp)
 
--   主站 Endpoint：`https://www.packyapi.com`，稳定可靠，适合生产环境。
--   优化线路 Endpoint：`https://api-slb.packyapi.com`，优化线路，适合对延迟敏感的场景。
+-   主站 Endpoint：`https://goswitch.online`，稳定可靠，适合生产环境。
+-   优化线路 Endpoint：`https://api-slb.goswitch.online`，优化线路，适合对延迟敏感的场景。
 
 ::: warning OpenAI 兼容端点需要添加 /v1
 
 如果你使用的是 OpenAI 兼容格式的客户端或工具，例如 Codex、OpenAI SDK、Cherry Studio 的 OpenAI 兼容配置，请在 API 地址后添加 `/v1`：
 
 ```bash
-https://www.packyapi.com/v1
-https://api-slb.packyapi.com/v1
+https://goswitch.online/v1
+https://api-slb.goswitch.online/v1
 ```
 
 如果使用的是 Claude Code、Gemini CLI 等专用配置，请以对应教程中的示例为准。

@@ -1,8 +1,8 @@
 # Gemini配置
 
-Source: https://docs.packyapi.com/docs/cli/4-gemini.html
+Source: https://docs.goswitch.online/docs/cli/4-gemini.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 Windows
 
 1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
@@ -20,14 +20,14 @@ Windows
 ![](../../assets/image/Cli/020.webp)
 
 ```bash
-GOOGLE_GEMINI_BASE_URL=https://www.packyapi.com
+GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
 ![](../../assets/image/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
 
 ![](../../assets/image/Cli/026.webp)
 
@@ -52,12 +52,12 @@ MacOS
 ![](../../assets/image/Cli/024.webp)
 
 ```bash
-GOOGLE_GEMINI_BASE_URL=https://www.packyapi.com
+GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
 
 ![](../../assets/image/Cli/026.webp)
 

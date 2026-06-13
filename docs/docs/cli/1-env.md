@@ -1,8 +1,8 @@
 # 环境检查(通用步骤)
 
-Source: https://docs.packyapi.com/docs/cli/1-env.html
+Source: https://docs.goswitch.online/docs/cli/1-env.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ### （1）确认Nodejs环境已安装
 
 1.  在windows或MacOS终端输入以下命令

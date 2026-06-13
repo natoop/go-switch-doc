@@ -95,8 +95,7 @@ function buildSidebar(): SidebarItem[] {
     {
       text: '总览',
       items: [
-        { text: '首页', link: '/' },
-        { text: '导出索引', link: '/export-index' }
+        { text: '首页', link: '/' }
       ]
     }
   ]

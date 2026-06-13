@@ -1,8 +1,8 @@
 # 购买额度
 
-Source: https://docs.packyapi.com/docs/register/3-quota.html
+Source: https://docs.goswitch.online/docs/register/3-quota.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 登录控制台后，进入左侧“钱包管理”页面购买额度。
 
 ## 充值步骤
@@ -16,7 +16,7 @@ Updated: 2026-06-10T10:02:01.000Z
 :::
 ::: warning 临时公告：开票服务调整
 
-为配合近期结算与服务流程调整，PackyAPI 的开票服务将按支付主体与订单时间做阶段性调整：
+为配合近期结算与服务流程调整，GoSwitch 的开票服务将按支付主体与订单时间做阶段性调整：
 
 -   个人支付订单当前仅支持开具海外 Invoice。
 -   5 月已完成支付的订单，所有用户仍可在 6 月申请补开大陆发票；其中海外 Invoice 订单需完成补税后申请，申请截止至 6 月 15 日。

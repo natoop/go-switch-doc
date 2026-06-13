@@ -1,8 +1,8 @@
 # 创建 API 令牌
 
-Source: https://docs.packyapi.com/docs/register/4-token.html
+Source: https://docs.goswitch.online/docs/register/4-token.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 登录后进入控制台面板，左侧选择“令牌管理”。
 
 ![](../../assets/image/QuickStart/004.webp)
@@ -29,7 +29,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 令牌分组会直接影响可用模型。比如 Claude Code、Codex、Gemini CLI 需要选择对应分组；如果分组选错，后续配置 CLI 时很容易出现“模型不存在”或无法调用的问题。
 
-如果你不确定每个分组适合什么场景，请先阅读 [PackyAPI 各分组介绍](../token/)。
+如果你不确定每个分组适合什么场景，请先阅读 [GoSwitch 各分组介绍](../token/)。
 
 填写完成后，点击右下角“提交”完成创建。
 :::

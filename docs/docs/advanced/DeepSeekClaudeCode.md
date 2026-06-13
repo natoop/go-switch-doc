@@ -1,15 +1,15 @@
 # DS接入CC
 
-Source: https://docs.packyapi.com/docs/advanced/DeepSeekClaudeCode.html
+Source: https://docs.goswitch.online/docs/advanced/DeepSeekClaudeCode.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 前置准备
 
 本教程用于将 **DeepSeek** 分组接入 **Claude Code** 使用。开始前请先确认本地已经完成 Claude Code 安装；如果还没有安装，可以先参考 [Claude Code配置](../cli/2-claude.md) 中的安装与基础配置步骤。
 
 ## 创建 DeepSeek 令牌
 
-1.  回顾 [创建 API 令牌](../register/4-token.md)，在 PackyApi 中创建新的 API 令牌。
+1.  回顾 [创建 API 令牌](../register/4-token.md)，在 GoSwitch 中创建新的 API 令牌。
 
 2.  名称可以填写 `deepseek-officially`，令牌分组请选择 `deepseek-officially`。创建完成后，复制生成的 API Key，后续配置会用到。
 
@@ -25,10 +25,10 @@ Updated: 2026-06-10T10:02:01.000Z
 
 2.  按照下方内容填写供应商信息：
 
-    -   **供应商名称**：`PackyCode`
-    -   **官网链接**：`https://www.packyapi.com`
+    -   **供应商名称**：`GoSwitch`
+    -   **官网链接**：`https://goswitch.online`
     -   **API Key**：填写刚才创建的 `deepseek-officially` 分组 API Key
-    -   **请求地址**：`https://www.packyapi.com`
+    -   **请求地址**：`https://goswitch.online`
     -   **API 格式**：`Anthropic Messages（原生）`
     -   **主模型**：默认填写 `deepseek-v4-pro`；需要开启 1m 上下文时才填写 `deepseek-v4-pro[1m]`
     -   **推理模型（Thinking）**：默认填写 `deepseek-v4-pro`；需要开启 1m 上下文时才填写 `deepseek-v4-pro[1m]`
@@ -69,7 +69,7 @@ MacOS
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://www.packyapi.com",
+    "ANTHROPIC_BASE_URL": "https://goswitch.online",
     "ANTHROPIC_AUTH_TOKEN": "{{新建的令牌}}",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
     "ANTHROPIC_MODEL": "deepseek-v4-pro",

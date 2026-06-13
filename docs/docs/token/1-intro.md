@@ -1,8 +1,8 @@
 # 令牌分组查看
 
-Source: https://docs.packyapi.com/docs/token/1-intro.html
+Source: https://docs.goswitch.online/docs/token/1-intro.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 如何查看最新分组
 
 1.  在控制台面板，点击右上角“模型广场”，进入分组与模型的查看

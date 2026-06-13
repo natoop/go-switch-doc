@@ -1,9 +1,9 @@
 # 注册账号
 
-Source: https://docs.packyapi.com/docs/register/1-register.html
+Source: https://docs.goswitch.online/docs/register/1-register.html
 
-Updated: 2026-06-10T10:02:01.000Z
-注册入口：[https://www.packyapi.com/register](https://www.packyapi.com/register)
+Updated: 2026-06-13T10:02:01.000Z
+注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
 
 ![](../../assets/image/QuickStart/001.webp)
 
@@ -12,15 +12,16 @@ Updated: 2026-06-10T10:02:01.000Z
 1.  打开注册入口后，点击页面右上角的“注册”。
 2.  如果你在登录页，也可以点击底部“没有账户？注册”进入注册流程。
 
-## 方式一（推荐）：使用 Google 账号注册
+<!-- ## 方式一（推荐）：使用 Google 账号注册
 
 1.  点击“使用 Google 继续”。
 2.  在弹窗中选择要绑定的 Google 账号并完成授权。
 3.  授权成功后，系统会自动创建账号并登录。
 
-使用 Google 注册无需额外设置密码，后续登录时继续选择同一个 Google 账号即可。
+使用 Google 注册无需额外设置密码，后续登录时继续选择同一个 Google 账号即可。 -->
 
-## 方式二：使用邮箱注册
+<!-- ## 方式二：使用邮箱注册 -->
+## 使用邮箱注册
 
 1.  点击“使用用户名注册”。
 2.  填写邮箱、用户名和密码。

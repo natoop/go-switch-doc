@@ -1,8 +1,8 @@
 # CC-Switch使用教程
 
-Source: https://docs.packyapi.com/docs/ccswitch/
+Source: https://docs.goswitch.online/docs/ccswitch/
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 通用步骤
 
 ### CC-Switch介绍
@@ -27,13 +27,13 @@ Updated: 2026-06-10T10:02:01.000Z
 
 -   ✅ 一键切换 API 配置 - 在多个 API 提供商之间快速切换
 -   ✅ 可视化配置管理 - 通过图形界面轻松管理所有配置
--   ✅ 内置 PackyAPI 模板 - 预设了 PackyAPI 的配置模板
+-   ✅ 内置 GoSwitch 模板 - 预设了 GoSwitch 的配置模板
 -   ✅ MCP 服务器管理 - 管理 Model Context Protocol 服务器
 -   ✅ 系统托盘快捷操作 - 通过托盘菜单快速切换
 
 ::: tip 温馨提示
 
-CC-Switch 已经内置了 PackyAPI 的快捷配置模板，无需手动编辑配置文件！
+CC-Switch 已经内置了 GoSwitch 的快捷配置模板，无需手动编辑配置文件！
 :::
 ### 软件下载
 
@@ -107,7 +107,7 @@ sudo dpkg -i cc-switch_x.x.x_amd64.deb
 
 ![](../../assets/image/CC-Switch/005.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **CC** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
 
 ![](../../assets/image/Cli/025.webp)
 
@@ -141,7 +141,7 @@ sudo dpkg -i cc-switch_x.x.x_amd64.deb
 
 ![](../../assets/image/CC-Switch/009.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Codex** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Codex** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
 
 ![](../../assets/image/Cli/008.webp)
 
@@ -171,7 +171,7 @@ sudo dpkg -i cc-switch_x.x.x_amd64.deb
 
 ![](../../assets/image/CC-Switch/013.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
 
 ![](../../assets/image/Cli/026.webp)
 

@@ -1,8 +1,8 @@
 # Claude Desktop
 
-Source: https://docs.packyapi.com/docs/advanced/ClaudeDesktop.html
+Source: https://docs.goswitch.online/docs/advanced/ClaudeDesktop.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 软件下载
 
 1.  点击 [Claude Desktop下载链接](https://claude.com/download) ，进入下载页面
@@ -81,7 +81,7 @@ MacOS
 
 ![](../../assets/image/Advanced/ClaudeDesktop/11.webp)
 
-2.  在Gateway base URL填入 `https://www.packyapi.com`
+2.  在Gateway base URL填入 `https://goswitch.online`
 
 3.  将Gateway auth scheme更改为 `x-api-key`
 

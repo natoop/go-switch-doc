@@ -1,8 +1,8 @@
 # OpenClaw
 
-Source: https://docs.packyapi.com/docs/advanced/OpenClaw.html
+Source: https://docs.goswitch.online/docs/advanced/OpenClaw.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ::: tip 提示
 
 **此教程适合Linux云服务器、MacOS系统用户**
@@ -59,7 +59,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ::: tip 提示
 
-Packy专门为OpenClaw配置写了一个配置脚本，Github地址为：[openclaw-configurator](https://github.com/packyme/openclaw-configurator)，通过此脚本，可以快速帮助我们配置Packy的API。
+GoSwitch 专门为OpenClaw配置写了一个配置脚本，Github地址为：[openclaw-configurator](https://github.com/packyme/openclaw-configurator)，通过此脚本，可以快速帮助我们配置 GoSwitch 的API。
 
 目前脚本还不支持配置Gemini渠道，正在施工中~~~
 
@@ -69,7 +69,7 @@ Packy专门为OpenClaw配置写了一个配置脚本，Github地址为：[opencl
 curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/download/index.js -o /tmp/openclaw-config.js && node /tmp/openclaw-config.js
 ```
 
-2.  选择 `添加供应商`，然后选择 `PackyCode`
+2.  选择 `添加供应商`，然后选择 `GoSwitch`
 
 ![](../../assets/image/Advanced/OpenClaw/11.webp)
 

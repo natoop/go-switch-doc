@@ -1,19 +1,19 @@
 # 支持的国家和地区
 
-Source: https://docs.packyapi.com/docs/tos/use.html
+Source: https://docs.goswitch.online/docs/tos/use.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本文档根据 PackyAPI「支持的国家和地区」页面内容整理（生效日期：2025 年 10 月 30 日）。
+本文档根据 GoSwitch「支持的国家和地区」页面内容整理（生效日期：2025 年 10 月 30 日）。
 如本文档与官网存在差异或版本更新，请以官网页面为准：
-[https://www.packyapi.com/supported-regions](https://www.packyapi.com/supported-regions)
+[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
 :::
 | 项目 | 内容 |
 | --- | --- |
 | 文档名称 | 支持的国家和地区（支持区域政策） |
 | 生效日期 | 2025-10-30 |
-| 来源链接 | [https://www.packyapi.com/supported-regions](https://www.packyapi.com/supported-regions) |
+| 来源链接 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
 -   [概述](./use.md#%E6%A6%82%E8%BF%B0)
 -   [API](./use.md#api)
@@ -22,9 +22,9 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ## 概述
 
-商业 API 访问和 PackyAPI 服务。
+商业 API 访问和 GoSwitch 服务。
 
-在法律允许的范围内，PackyMe 保留不向除我们支持区域政策中列出的国家以外的其大部分直接或间接所有权归属于国家的实体提供其产品或服务的权利。
+在法律允许的范围内，GoSwitch 保留不向除我们支持区域政策中列出的国家以外的其大部分直接或间接所有权归属于国家的实体提供其产品或服务的权利。
 
 ## API
 
@@ -88,6 +88,6 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ## 相关链接
 
--   服务条款：[https://www.packyapi.com/terms](https://www.packyapi.com/terms)
--   服务特定条款：[https://www.packyapi.com/service-specific-terms](https://www.packyapi.com/service-specific-terms)
--   使用政策（AUP）：[https://www.packyapi.com/usage-policy](https://www.packyapi.com/usage-policy)
+-   服务条款：[https://goswitch.online/terms](https://goswitch.online/terms)
+-   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
+-   使用政策（AUP）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)

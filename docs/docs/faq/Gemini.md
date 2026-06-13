@@ -1,8 +1,8 @@
 # Gemini相关问题
 
-Source: https://docs.packyapi.com/docs/faq/Gemini.html
+Source: https://docs.goswitch.online/docs/faq/Gemini.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 -   [Gemini CLI 使用难题与建议](./Gemini.md#gemini-cli-%E4%BD%BF%E7%94%A8%E9%9A%BE%E9%A2%98%E4%B8%8E%E5%BB%BA%E8%AE%AE)
 -   [如何在 Cline 使用 Gemini-3](./Gemini.md#%E5%A6%82%E4%BD%95%E5%9C%A8-cline-%E4%BD%BF%E7%94%A8-gemini-3)
 
@@ -80,7 +80,7 @@ Gemini CLI 目前存在多种使用问题，例如可能无法正常调用模型
 
 ```yaml
 API Provider: OpenAI-compatible
-Base URL: https://www.packyapi.com/v1
+Base URL: https://goswitch.online/v1
 API Key: sk-*****
 Model ID: gemini-3-pro-preview
 ```
@@ -103,8 +103,8 @@ Cline 配置界面示意图
 | 配置项 | 推荐值 | 说明 |
 | --- | --- | --- |
 | **API Provider** | `OpenAI-compatible` | 推荐选择此项，支持更多模型 |
-| **Base URL** | `https://www.packyapi.com/v1` | PackyAPI 的兼容端点 |
-| **API Key** | `sk-******` | 您的 Packy API Key |
+| **Base URL** | `https://goswitch.online/v1` | GoSwitch 的兼容端点 |
+| **API Key** | `sk-******` | 您的 GoSwitch API Key |
 | **Model ID** | `gemini-3-pro-preview` | 推荐使用代码专精模型 |
 
 #### 5\. 完成配置

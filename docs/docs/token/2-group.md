@@ -1,8 +1,8 @@
 # 令牌分组介绍
 
-Source: https://docs.packyapi.com/docs/token/2-group.html
+Source: https://docs.goswitch.online/docs/token/2-group.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ### Default分组
 
 ### Aws分组

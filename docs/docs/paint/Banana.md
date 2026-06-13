@@ -1,8 +1,8 @@
 # Nano Banana2 Pro绘图教程
 
-Source: https://docs.packyapi.com/docs/paint/Banana.html
+Source: https://docs.goswitch.online/docs/paint/Banana.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 使用Cherry Studio绘图
 
 1.  参照 [创建令牌分组](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) 一章的教程，你需要创建**令牌分组**为 `gemini` 的令牌。在创建好令牌后，点击图中复制按钮，将令牌复制到剪切板
@@ -23,11 +23,11 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ![](../../assets/image/Paint/banana/04.webp)
 
-6.  在左侧列表中找到刚添加的 `Packyapi` 分组，API密钥部分填入第一步创建后复制的 `gemini` 分组的API密钥，API地址填写 `https://www.packyapi.com`
+6.  在左侧列表中找到刚添加的 `GoSwitch` 分组，API密钥部分填入第一步创建后复制的 `gemini` 分组的API密钥，API地址填写 `https://goswitch.online`
 
 ![](../../assets/image/Paint/banana/05.webp)
 
-7.  点击下方的 `管理` 按钮，在弹出的模型列表中选择我们的绘图模型，Packy已经对一些常用比例与分辨率模型做了优化适配，我们可以如下图直接选择
+7.  点击下方的 `管理` 按钮，在弹出的模型列表中选择我们的绘图模型，GoSwitch 已经对一些常用比例与分辨率模型做了优化适配，我们可以如下图直接选择
 
 ![](../../assets/image/Paint/banana/06.webp)
 

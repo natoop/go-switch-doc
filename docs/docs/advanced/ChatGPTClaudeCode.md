@@ -1,13 +1,13 @@
 # GPT接入CC
 
-Source: https://docs.packyapi.com/docs/advanced/ChatGPTClaudeCode.html
+Source: https://docs.goswitch.online/docs/advanced/ChatGPTClaudeCode.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ::: danger 重要告警
 
 我们不推荐将 GPT 模型接入 Claude Code。更稳妥的使用方式是：GPT 模型在 Codex 中使用，Claude 模型在 Claude Code 中使用。
 
-本教程仅用于回应部分用户的测试需求。该方案依赖 `codex` 分组与 CC Switch 本地路由，可能出现缓存异常、模型映射异常、MCP 或 Skills 兼容性问题。由此产生的任何使用问题、额度消耗、配置异常或其他后果，PackyApi 不推荐、不承诺可用性，也不承担责任。
+本教程仅用于回应部分用户的测试需求。该方案依赖 `codex` 分组与 CC Switch 本地路由，可能出现缓存异常、模型映射异常、MCP 或 Skills 兼容性问题。由此产生的任何使用问题、额度消耗、配置异常或其他后果，GoSwitch 不推荐、不承诺可用性，也不承担责任。
 
 请仅在你清楚风险，并具备自行排查问题能力时尝试；新手用户不建议操作。
 :::
@@ -19,7 +19,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ## 创建 codex 令牌
 
-1.  回顾 [创建 API 令牌](../register/4-token.md)，在 PackyApi 中创建新的 API 令牌。
+1.  回顾 [创建 API 令牌](../register/4-token.md)，在 GoSwitch 中创建新的 API 令牌。
 
 2.  名称可以填写 `codex`，令牌分组请选择 `codex`。创建完成后，复制生成的 API Key，后续配置会用到。
 
@@ -29,17 +29,17 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ::: warning 使用前确认
 
-此配置不是 Claude Code 的常规推荐配置。配置完成后，请以 Claude Code 实际对话结果、CC Switch 请求日志和 PackyApi 消费日志共同判断是否生效。
+此配置不是 Claude Code 的常规推荐配置。配置完成后，请以 Claude Code 实际对话结果、CC Switch 请求日志和 GoSwitch 消费日志共同判断是否生效。
 :::
 ### 添加供应商
 
 1.  打开 CC Switch，在 Claude Code 配置中点击 `添加供应商`。
 
-2.  预设供应商选择 `PackyCode`，并按照下方内容填写：
+2.  预设供应商选择 `GoSwitch`，并按照下方内容填写：
 
-    -   **官网链接**：`https://www.packyapi.com`
+    -   **官网链接**：`https://goswitch.online`
     -   **API Key**：填写刚才创建的 `codex` 分组 API Key
-    -   **请求地址**：`https://www.packyapi.com`
+    -   **请求地址**：`https://goswitch.online`
     -   **API 格式**：`OpenAI Responses API（需开启路由）`
     -   **主模型**：填写你希望映射到 Claude Code 主模型的 GPT 模型，例如 `gpt-5.5`
     -   **Haiku 默认模型**：填写较轻量的 GPT 模型，例如 `gpt-5.4-mini`
@@ -66,7 +66,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ![](../../assets/image/Advanced/ChatGPTClaudeCode/05.webp)
 
-4.  回到 CC Switch 主界面，顶部应出现本地路由开关；确认开关处于开启状态，并选中刚才添加的 `PackyCode-codex` 供应商。
+4.  回到 CC Switch 主界面，顶部应出现本地路由开关；确认开关处于开启状态，并选中刚才添加的 `GoSwitch-codex` 供应商。
 
 ![](../../assets/image/Advanced/ChatGPTClaudeCode/06.webp)
 
@@ -86,7 +86,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ![](../../assets/image/Advanced/ChatGPTClaudeCode/09.webp)
 
-4.  最后到 PackyApi 的消费日志中确认实际调用情况。如果配置正确，消费日志中应显示 `codex` 分组，并记录实际扣费的 GPT 模型，例如 `gpt-5.5`。
+4.  最后到 GoSwitch 的消费日志中确认实际调用情况。如果配置正确，消费日志中应显示 `codex` 分组，并记录实际扣费的 GPT 模型，例如 `gpt-5.5`。
 
 ![](../../assets/image/Advanced/ChatGPTClaudeCode/10.webp)
 
@@ -96,6 +96,6 @@ Updated: 2026-06-10T10:02:01.000Z
 
 该方案属于非推荐玩法，可能因为 Claude Code、CC Switch、模型接口、缓存策略、MCP 或 Skills 行为变化而失效。
 
-PackyApi 不推荐用户将 GPT 模型接入 Claude Code，也不对该方案的稳定性、兼容性、输出效果、额度消耗或任何衍生问题承担责任。你可以用于测试、研究和理解路由逻辑，但不建议把它作为日常稳定工作流使用。
+GoSwitch 不推荐用户将 GPT 模型接入 Claude Code，也不对该方案的稳定性、兼容性、输出效果、额度消耗或任何衍生问题承担责任。你可以用于测试、研究和理解路由逻辑，但不建议把它作为日常稳定工作流使用。
 
 :::

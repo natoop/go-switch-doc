@@ -1,9 +1,9 @@
 # Claude Code相关问题
 
-Source: https://docs.packyapi.com/docs/faq/CC.html
+Source: https://docs.goswitch.online/docs/faq/CC.html
 
-Updated: 2026-06-10T10:02:01.000Z
-### 如何在Vscode CC插件中使用PackyApi
+Updated: 2026-06-13T10:02:01.000Z
+### 如何在Vscode CC插件中使用GoSwitch
 
 Windows
 
@@ -27,7 +27,7 @@ Windows
 
 ```json
 {
-  "primaryApiKey": "PackyApi"
+  "primaryApiKey": "GoSwitch"
 }
 ```
 
@@ -55,7 +55,7 @@ MacOS
 
 ```json
 {
-  "primaryApiKey": "PackyApi"
+  "primaryApiKey": "GoSwitch"
 }
 ```
 

@@ -1,8 +1,8 @@
 # OpenCode
 
-Source: https://docs.packyapi.com/docs/advanced/OpenCode.html
+Source: https://docs.goswitch.online/docs/advanced/OpenCode.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 项目介绍
 
 ![](../../assets/image/Advanced/OpenCode/01.webp)
@@ -36,8 +36,8 @@ npm install -g opencode-ai
 
 5.  进行多项配置：
 
-    -   在 `预设供应商` 中选择 `PackyCode`
-    -   在 `供应商标识` 中填写分组名称，比如 PackyApi-Codex
+    -   在 `预设供应商` 中选择 `GoSwitch`
+    -   在 `供应商标识` 中填写分组名称，比如 GoSwitch-Codex
     -   在 `接口格式` 中选择合适的分组
         -   Claude系列模型：`Anthropic`
         -   Codex系列模型：`OpenAI`
@@ -65,7 +65,7 @@ npm install -g opencode-ai
 
 ![](../../assets/image/Advanced/OpenCode/04.webp)
 
-6.  在界面中选择刚配置好的 PackyApi 渠道，点击添加按钮
+6.  在界面中选择刚配置好的 GoSwitch 渠道，点击添加按钮
 
 ![](../../assets/image/Advanced/OpenCode/05.webp)
 :::
@@ -73,7 +73,7 @@ npm install -g opencode-ai
 
 1.  重新打开终端，输入 `opencode` 运行
 
-2.  输入 `/models` 命令，观察刚才配置的 PackyApi的渠道是否存在，如果存在则配置成功
+2.  输入 `/models` 命令，观察刚才配置的 GoSwitch的渠道是否存在，如果存在则配置成功
 
 ![](../../assets/image/Advanced/OpenCode/06.webp)
 

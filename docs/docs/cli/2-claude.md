@@ -1,8 +1,8 @@
 # Claude Code配置
 
-Source: https://docs.packyapi.com/docs/cli/2-claude.html
+Source: https://docs.goswitch.online/docs/cli/2-claude.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
@@ -24,7 +24,7 @@ Windows
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://www.packyapi.com",
+    "ANTHROPIC_BASE_URL": "https://goswitch.online",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -35,7 +35,7 @@ Windows
 
 ![](../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
 
 ![](../../assets/image/Cli/025.webp)
 
@@ -64,7 +64,7 @@ MacOS
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://www.packyapi.com",
+    "ANTHROPIC_BASE_URL": "https://goswitch.online",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -75,7 +75,7 @@ MacOS
 
 ![](../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
 
 ![](../../assets/image/Cli/025.webp)
 

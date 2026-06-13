@@ -1,0 +1,7 @@
+# Cloudflare Pages 重定向规则
+# 格式: <源路径> <目标路径> <状态码>
+# 注意: VitePress cleanUrls 模式下每个路由都有真实 HTML，不需要 SPA fallback
+# 以下仅用于兼容可能的外部旧链接
+
+# 如果从其他平台迁移，在此添加重定向规则
+# 示例: /old-page /docs/register/ 301

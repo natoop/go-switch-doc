@@ -1,8 +1,8 @@
 # CLI配置教程
 
-Source: https://docs.packyapi.com/docs/cli/
+Source: https://docs.goswitch.online/docs/cli/
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 ## 环境检查(通用步骤)
 
 ### （1）确认Nodejs环境已安装
@@ -96,7 +96,7 @@ Windows
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://www.packyapi.com",
+    "ANTHROPIC_BASE_URL": "https://goswitch.online",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -105,7 +105,7 @@ Windows
 
 ![](../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
 
 ![](../../assets/image/Cli/025.webp)
 
@@ -134,7 +134,7 @@ MacOS
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://www.packyapi.com",
+    "ANTHROPIC_BASE_URL": "https://goswitch.online",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -143,7 +143,7 @@ MacOS
 
 ![](../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
 
 ![](../../assets/image/Cli/025.webp)
 
@@ -189,16 +189,16 @@ Windows
 ```toml
 disable_response_storage = true
 model = "gpt-5.2"
-model_provider = "packycode"
+model_provider = "goswitch"
 model_reasoning_effort = "xhigh"
 model_verbosity = "high"
 
 [features]
 web_search_request = true
 
-[model_providers.packycode]
-base_url = "https://www.packyapi.com/v1"
-name = "packycode"
+[model_providers.goswitch]
+base_url = "https://goswitch.online/v1"
+name = "goswitch"
 requires_openai_auth = true
 wire_api = "responses"
 ```
@@ -215,7 +215,7 @@ wire_api = "responses"
 
 ![](../../assets/image/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在PackyApi中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
 
 ![](../../assets/image/Cli/009.webp)
 
@@ -258,7 +258,7 @@ MacOS
 将以下内容保存到 `config.toml`
 
 ```toml
-model_provider = "packycode"
+model_provider = "goswitch"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -266,9 +266,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.packycode]
-name = "packycode"
-base_url = "https://www.packyapi.com/v1"
+[model_providers.goswitch]
+name = "goswitch"
+base_url = "https://goswitch.online/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```
@@ -285,7 +285,7 @@ requires_openai_auth = true
 
 ![](../../assets/image/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在PackyApi中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
 
 ![](../../assets/image/Cli/009.webp)
 
@@ -318,14 +318,14 @@ Windows
 ![](../../assets/image/Cli/020.webp)
 
 ```bash
-GOOGLE_GEMINI_BASE_URL=https://www.packyapi.com
+GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
 ![](../../assets/image/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
 
 ![](../../assets/image/Cli/026.webp)
 
@@ -350,12 +350,12 @@ MacOS
 ![](../../assets/image/Cli/024.webp)
 
 ```bash
-GOOGLE_GEMINI_BASE_URL=https://www.packyapi.com
+GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
 
 ![](../../assets/image/Cli/026.webp)
 

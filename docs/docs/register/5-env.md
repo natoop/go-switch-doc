@@ -1,8 +1,8 @@
 # 环境检查
 
-Source: https://docs.packyapi.com/docs/register/5-env.html
+Source: https://docs.goswitch.online/docs/register/5-env.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 在配置 Claude Code、Codex 或 Gemini CLI 之前，请先确认本机已经正确安装 Node.js。
 
 ## 检查 Node.js 环境

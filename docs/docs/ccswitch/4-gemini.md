@@ -1,8 +1,8 @@
 # Gemini配置
 
-Source: https://docs.packyapi.com/docs/ccswitch/4-gemini.html
+Source: https://docs.goswitch.online/docs/ccswitch/4-gemini.html
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
 
 ![](../../assets/image/CC-Switch/003.webp)
@@ -15,7 +15,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ![](../../assets/image/CC-Switch/013.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 PackyApi 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
 
 ![](../../assets/image/Cli/026.webp)
 

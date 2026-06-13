@@ -1,8 +1,8 @@
 # 快速开始
 
-Source: https://docs.packyapi.com/docs/register/
+Source: https://docs.goswitch.online/docs/register/
 
-Updated: 2026-06-10T10:02:01.000Z
+Updated: 2026-06-13T10:02:01.000Z
 <div class="important-notice">
   <div class="notice-glow"></div>
   <div class="notice-header">
@@ -49,13 +49,13 @@ Updated: 2026-06-10T10:02:01.000Z
 
 ::: info 让我们从这里开始吧！
 
-从 0 开始的 PackyApi 使用之旅~
+从 0 开始的 GoSwitch 使用之旅~
 
 一步步来，准没问题！
 :::
 ## 第一步：注册账号
 
--   注册入口：[https://www.packyapi.com/register](https://www.packyapi.com/register)
+-   注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
 
 ![](../../assets/image/QuickStart/001.webp)
 
@@ -82,7 +82,7 @@ Updated: 2026-06-10T10:02:01.000Z
 :::
 ## 第二步：登录账号
 
--   登录入口：[https://www.packyapi.com/login](https://www.packyapi.com/login)
+-   登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
 
 ![](../../assets/image/QuickStart/001.webp)
 
@@ -111,11 +111,11 @@ Updated: 2026-06-10T10:02:01.000Z
 -   Windows / Linux Chrome：按 `Ctrl + Shift + Delete` 打开清除浏览数据页面。
 -   macOS Chrome：按 `Command + Shift + Delete` 打开清除浏览数据页面。
 
-如果清理缓存后仍然无效，请手动删除 `packyapi.com` 相关 Cookie：
+如果清理缓存后仍然无效，请手动删除 `goswitch.online` 相关 Cookie：
 
 1.  在登录页按 `F12` 打开开发者工具。
 2.  进入“应用”面板。
-3.  在左侧依次选择“存储” → “Cookie” → `https://www.packyapi.com`。
+3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
 4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
 
 ![](../../assets/image/QuickStart/006.webp)
@@ -133,7 +133,7 @@ Updated: 2026-06-10T10:02:01.000Z
 :::
 ::: warning 临时公告：开票服务调整
 
-为配合近期结算与服务流程调整，PackyAPI 的开票服务将按支付主体与订单时间做阶段性调整：
+为配合近期结算与服务流程调整，GoSwitch 的开票服务将按支付主体与订单时间做阶段性调整：
 
 -   个人支付订单当前仅支持开具海外 Invoice。
 -   5 月已完成支付的订单，所有用户仍可在 6 月申请补开大陆发票；其中海外 Invoice 订单需完成补税后申请，申请截止至 6 月 15 日。
@@ -167,7 +167,7 @@ Updated: 2026-06-10T10:02:01.000Z
 
 令牌分组会直接影响可用模型。比如 Claude Code、Codex、Gemini CLI 需要选择对应分组；如果分组选错，后续配置 CLI 时很容易出现“模型不存在”或无法调用的问题。
 
-如果你不确定每个分组适合什么场景，请先阅读 [PackyAPI 各分组介绍](../token/)。
+如果你不确定每个分组适合什么场景，请先阅读 [GoSwitch 各分组介绍](../token/)。
 
 填写完成后，点击右下角“提交”完成创建。
 :::
@@ -205,7 +205,7 @@ CLI 工具依赖 Node.js 和 npm。环境没有准备好时，后续安装 Claud
 :::
 ## 第六步：配置 CLI 工具
 
-PackyAPI 支持在命令行中使用 Claude Code、Codex、Gemini CLI
+GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ### 基础条件
 
@@ -220,16 +220,16 @@ PackyAPI 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ![](../../assets/image/QuickStart/009.webp)
 
--   主站 Endpoint：`https://www.packyapi.com`，稳定可靠，适合生产环境。
--   优化线路 Endpoint：`https://api-slb.packyapi.com`，优化线路，适合对延迟敏感的场景。
+-   主站 Endpoint：`https://goswitch.online`，稳定可靠，适合生产环境。
+-   优化线路 Endpoint：`https://api-slb.goswitch.online`，优化线路，适合对延迟敏感的场景。
 
 ::: warning OpenAI 兼容端点需要添加 /v1
 
 如果你使用的是 OpenAI 兼容格式的客户端或工具，例如 Codex、OpenAI SDK、Cherry Studio 的 OpenAI 兼容配置，请在 API 地址后添加 `/v1`：
 
 ```bash
-https://www.packyapi.com/v1
-https://api-slb.packyapi.com/v1
+https://goswitch.online/v1
+https://api-slb.goswitch.online/v1
 ```
 
 如果使用的是 Claude Code、Gemini CLI 等专用配置，请以对应教程中的示例为准。
