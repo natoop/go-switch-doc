@@ -6,7 +6,7 @@
     "docs:dev": "vitepress dev docs --host 127.0.0.1",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --host 127.0.0.1",
-    "deploy": "vitepress build docs && wrangler pages deploy docs/.vitepress/dist --project-name goswitch-doc"
+    "deploy": "vitepress build docs"
   },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.17"
