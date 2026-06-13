@@ -2,4 +2,4 @@
 
 Source: https://docs.goswitch.online/docs/Monitor.html
 
-Updated: 2026-06-13T10:02:01.000Z
+Updated: 2026-06-13T11:02:01.000Z
