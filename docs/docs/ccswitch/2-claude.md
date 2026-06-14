@@ -1,44 +1,47 @@
-# Claude Code配置
+# Claude Code Configuration
 
-Source: https://docs.goswitch.online/docs/ccswitch/2-claude.html
+<!-- Source: https://docs.goswitch.online/docs/ccswitch/2-claude.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
+1.  Open the CC-Switch software you downloaded, and you will see the initial interface as shown below
 
-![](../../assets/image/CC-Switch/003.webp)
+![](../../assets/image-en/CC-Switch/003.webp)
 
-2.  在分组条中，将分组选择至“Claude”
+2.  In the group bar, select the "Claude / Claude Desktop" group
 
-![](../../assets/image/CC-Switch/004.webp)
+![](../../assets/image-en/CC-Switch/004.png)
 
-3.  在供应商分组中，选择如图的“PakcyCode”
+3.  Switch to the console's API key section, click "More", and select "CC Switch"
 
-![](../../assets/image/CC-Switch/005.webp)
+![](../../assets/image-en/CC-Switch/005.png)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  Set your configuration name and the corresponding model, then click "Open CCSwitch"
 
-![](../../assets/image/Cli/025.webp)
+![](../../assets/image-en/CC-Switch/006.png)
+![](../../assets/image-en/CC-Switch/024.png)
 
-5.  下拉模态框，找到“API Key”配置项，填入你刚才复制的ApiKey，再点击右下角“添加”按钮
+5.  CC-Switch will automatically pop up a confirmation window. After verifying the information, click "Import". The window will automatically close once the import is complete
 
-![](../../assets/image/CC-Switch/006.webp)
+![](../../assets/image-en/CC-Switch/025.png)
 
-6.  添加成功后，在主界面会看到我们配置的分组，在右侧点击“启用”按钮，显示“使用中”，则配置完成
+6.  After successfully adding the configuration, you will see the configured group on the main interface. Click the "Enable" button on the right — when it shows "In Use", the configuration is complete
 
-![](../../assets/image/CC-Switch/007.webp)
+![](../../assets/image-en/CC-Switch/007.png)
 
-7.  点击左上角“设置”按钮，在通用页面下拉找到 `跳过 Claude Code初次安装确认` ，务必勾选
+7.  Click the "Settings" button in the upper left corner. On the General page, scroll down to find `Skip Claude Code initial installation confirmation` and make sure to check it
 
-![](../../assets/image/CC-Switch/017.webp)
+![](../../assets/image-en/CC-Switch/017.webp)
 
-8.  在终端运行 `claude`，看到对话界面并能正常回复即表示配置完成
+8.  Run `claude` in the terminal. If you see the conversation interface and can get normal responses, the configuration is complete
 
-![](../../assets/image/Cli/016.webp)
+![](../../assets/image-en/Cli/016.webp)
 
-::: warning 使用提醒
+::: warning Usage Note
 
-如果你使用的是 [CC分组](../token/2-group.md#cc%E5%88%86%E7%BB%84)，请注意该分组**不支持第三方接入**，因此无法在 CC Switch 中完成完整的调用测试。
+If you are using the [CC Group](../token/#cc-group), please note that this group **does not support third-party integration**, so you cannot complete a full call test within CC-Switch.
 
-这类配置是否生效，请直接以 Claude Code 内的实际对话结果为准，并在 Claude Code 中完成最终测试。
+To verify whether the configuration is working, please rely on the actual conversation results in Claude Code, and complete your final testing there.
 
 :::

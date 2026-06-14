@@ -1,149 +1,147 @@
-# 使用政策（AUP）
+# Usage Policy (AUP)
 
-Source: https://docs.goswitch.online/docs/tos/aup.html
+<!-- Source: https://docs.goswitch.online/docs/tos/aup.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: warning 重要提示
-
-本文档根据 GoSwitch「使用政策」页面内容整理（生效日期：2026 年 01 月 01 日）。
-如本文档与官网存在差异或版本更新，请以官网页面为准：
-[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+::: warning Important Notice
+This document is compiled from the GoSwitch Usage Policy page (effective date: January 1, 2026).
+If there are differences or version update between this document and the official website, please refer to the official website as the authoritative source: [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
 :::
-| 项目 | 内容 |
+| Item | Content |
 | --- | --- |
-| 文档名称 | 使用政策（可接受使用政策 / AUP） |
-| 生效日期 | 2026 年 01 月 01 日 |
-| 来源链接 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
-| 整理时间 | 2026 年 6 月 10 日 |
-| 适用对象 | 任何可以向 GoSwitch 的产品和/或服务提交输入的人（含授权经销商或直通访问） |
-| 目标 | 帮助用户保持安全并促进负责任地使用产品与服务 |
+| Document Name | Usage Policy (Acceptable Use Policy / AUP) |
+| Effective Date | January 1, 2026 |
+| Source Link | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
+| Compilation Date | June 10, 2026 |
+| Applicable To | Anyone who can submit input to GoSwitch's products and/or services (including authorized distributors or direct access) |
+| Purpose | Help users stay safe and promote responsible use of products and services |
 
--   [概述](./aup.md#%E6%A6%82%E8%BF%B0)
--   [通用使用标准](./aup.md#%E9%80%9A%E7%94%A8%E4%BD%BF%E7%94%A8%E6%A0%87%E5%87%86)
-    -   [不得违反适用法律或从事非法活动](./aup.md#%E4%B8%8D%E5%BE%97%E8%BF%9D%E5%8F%8D%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E6%88%96%E4%BB%8E%E4%BA%8B%E9%9D%9E%E6%B3%95%E6%B4%BB%E5%8A%A8)
-    -   [不得危害关键基础设施](./aup.md#%E4%B8%8D%E5%BE%97%E5%8D%B1%E5%AE%B3%E5%85%B3%E9%94%AE%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD)
-    -   [不得危害计算机或网络系统](./aup.md#%E4%B8%8D%E5%BE%97%E5%8D%B1%E5%AE%B3%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%88%96%E7%BD%91%E7%BB%9C%E7%B3%BB%E7%BB%9F)
-    -   [不得开发或设计武器](./aup.md#%E4%B8%8D%E5%BE%97%E5%BC%80%E5%8F%91%E6%88%96%E8%AE%BE%E8%AE%A1%E6%AD%A6%E5%99%A8)
-    -   [不得煽动暴力或仇恨行为](./aup.md#%E4%B8%8D%E5%BE%97%E7%85%BD%E5%8A%A8%E6%9A%B4%E5%8A%9B%E6%88%96%E4%BB%87%E6%81%A8%E8%A1%8C%E4%B8%BA)
-    -   [不得侵犯隐私或身份权利](./aup.md#%E4%B8%8D%E5%BE%97%E4%BE%B5%E7%8A%AF%E9%9A%90%E7%A7%81%E6%88%96%E8%BA%AB%E4%BB%BD%E6%9D%83%E5%88%A9)
-    -   [不得危害儿童安全](./aup.md#%E4%B8%8D%E5%BE%97%E5%8D%B1%E5%AE%B3%E5%84%BF%E7%AB%A5%E5%AE%89%E5%85%A8)
-    -   [不得创建心理或情感上有害的内容](./aup.md#%E4%B8%8D%E5%BE%97%E5%88%9B%E5%BB%BA%E5%BF%83%E7%90%86%E6%88%96%E6%83%85%E6%84%9F%E4%B8%8A%E6%9C%89%E5%AE%B3%E7%9A%84%E5%86%85%E5%AE%B9)
-    -   [不得创建或传播错误信息](./aup.md#%E4%B8%8D%E5%BE%97%E5%88%9B%E5%BB%BA%E6%88%96%E4%BC%A0%E6%92%AD%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF)
-    -   [不得破坏民主进程或参与有针对性的竞选活动](./aup.md#%E4%B8%8D%E5%BE%97%E7%A0%B4%E5%9D%8F%E6%B0%91%E4%B8%BB%E8%BF%9B%E7%A8%8B%E6%88%96%E5%8F%82%E4%B8%8E%E6%9C%89%E9%92%88%E5%AF%B9%E6%80%A7%E7%9A%84%E7%AB%9E%E9%80%89%E6%B4%BB%E5%8A%A8)
-    -   [不得用于刑事司法、审查、监视或被禁止的执法目的](./aup.md#%E4%B8%8D%E5%BE%97%E7%94%A8%E4%BA%8E%E5%88%91%E4%BA%8B%E5%8F%B8%E6%B3%95%E3%80%81%E5%AE%A1%E6%9F%A5%E3%80%81%E7%9B%91%E8%A7%86%E6%88%96%E8%A2%AB%E7%A6%81%E6%AD%A2%E7%9A%84%E6%89%A7%E6%B3%95%E7%9B%AE%E7%9A%84)
-    -   [不得从事欺诈、滥用或掠夺性做法](./aup.md#%E4%B8%8D%E5%BE%97%E4%BB%8E%E4%BA%8B%E6%AC%BA%E8%AF%88%E3%80%81%E6%BB%A5%E7%94%A8%E6%88%96%E6%8E%A0%E5%A4%BA%E6%80%A7%E5%81%9A%E6%B3%95)
-    -   [不得滥用我们的平台](./aup.md#%E4%B8%8D%E5%BE%97%E6%BB%A5%E7%94%A8%E6%88%91%E4%BB%AC%E7%9A%84%E5%B9%B3%E5%8F%B0)
-    -   [不得生成性露骨内容](./aup.md#%E4%B8%8D%E5%BE%97%E7%94%9F%E6%88%90%E6%80%A7%E9%9C%B2%E9%AA%A8%E5%86%85%E5%AE%B9)
--   [高风险用例要求](./aup.md#%E9%AB%98%E9%A3%8E%E9%99%A9%E7%94%A8%E4%BE%8B%E8%A6%81%E6%B1%82)
--   [其他用例指南](./aup.md#%E5%85%B6%E4%BB%96%E7%94%A8%E4%BE%8B%E6%8C%87%E5%8D%97)
--   [相关链接](./aup.md#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5)
+-   [Overview](./aup.md#overview)
+-   [General Usage Standards](./aup.md#general-usage-standards)
+    -   [Do Not Violate Applicable Laws or Engage in Illegal Activities](./aup.md#do-not-violate-applicable-laws-or-engage-in-illegal-activities)
+    -   [Do Not Harm Critical Infrastructure](./aup.md#do-not-harm-critical-infrastructure)
+    -   [Do Not Harm Computer or Network Systems](./aup.md#do-not-harm-computer-or-network-systems)
+    -   [Do Not Develop or Design Weapons](./aup.md#do-not-develop-or-design-weapons)
+    -   [Do Not Incite Violence or Hate Behavior](./aup.md#do-not-incite-violence-or-hate-behavior)
+    -   [Do Not Violate Privacy or Identity Rights](./aup.md#do-not-violate-privacy-or-identity-rights)
+    -   [Do Not Harm Child Safety](./aup.md#do-not-harm-child-safety)
+    -   [Do Not Create Psychologically or Emotionally Harmful Content](./aup.md#do-not-create-psychologically-or-emotionally-harmful-content)
+    -   [Do Not Create or Disseminate Misinformation](./aup.md#do-not-create-or-disseminate-misinformation)
+    -   [Do Not Undermine Democratic Process or Participate in Targeted Campaigns](./aup.md#do-not-undermine-democratic-process-or-participate-in-targeted-campaigns)
+    -   [Do Not Use for Criminal Justice, Censorship, Surveillance, or Prohibited Law Enforcement Purposes](./aup.md#do-not-use-for-criminal-justice-censorship-surveillance-or-prohibited-law-enforcement-purposes)
+    -   [Do Not Engage in Fraud, Abuse, or Predatory Practices](./aup.md#do-not-engage-in-fraud-abuse-or-predatory-practices)
+    -   [Do Not Abuse Our Platform](./aup.md#do-not-abuse-our-platform)
+    -   [Do Not Generate Sexually Explicit Content](./aup.md#do-not-generate-sexually-explicit-content)
+-   [High-Risk Use Case Requirements](./aup.md#high-risk-use-case-requirements)
+-   [Other Use Case Guidelines](./aup.md#other-use-case-guidelines)
+-   [Related Links](./aup.md#related-links)
 
-## 概述
+## Overview
 
-我们的使用政策（也称为“可接受使用政策”或 “AUP”）适用于任何可以向 GoSwitch 的产品和/或服务提交输入的人，包括通过任何授权经销商或直通访问，我们将所有这些人称为“用户”。使用政策旨在帮助我们的用户保持安全并促进负责任地使用我们的产品和服务。
+Our Usage Policy (also known as the "Acceptable Use Policy" or "AUP") applies to anyone who can submit input to GoSwitch's products and/or services, including through any authorized distributor or direct access, and we refer to all such persons as "Users". The Usage Policy is designed to help our users stay safe and promote responsible use of our products and services.
 
-使用政策根据谁可以使用我们的产品以及出于什么目的进行分类。随着我们的技术和相关风险的发展或我们了解意外风险，我们将更新我们的政策。为执行本政策，GoSwitch 可以使用检测、审查和监控机制；如果用户违反本政策，GoSwitch 可以限制、暂停或终止访问，也可以阻止、过滤或修改违反本政策的输入或输出。
+The Usage Policy categorizes who can use our products and for what purposes. As our technology and related risks evolve or as we learn about unforeseen risks, we will update our policies. To enforce this policy, GoSwitch may use detection, review,  monitoring mechanisms; if users violate this policy, GoSwitch may restrict, suspend, terminate access,  block, filter, or modify input or output that violates this policy.
 
-::: tip 阅读建议
+::: tip Reading Recommendations
 
--   如果你在产品中面向终端用户提供输出，请优先阅读「高风险用例要求」与「其他用例指南」。
--   如果你不确定某个用途是否合规，建议先按「通用使用标准」逐条自检。
+-   If you provide output to end users in your products, please prioritize reading the "High-Risk Use Case Requirements" and "Other Use Case Guidelines."
+.
+-   If you're unsure whether a use case is compliant, it's recommended to self-check according to "General Usage Standards" item by item.
 :::
-## 通用使用标准
+## General Usage Standards
 
-我们的通用使用标准适用于所有用户和所有用例。
+Our general usage standards apply to all users and all use cases.
 
-### 不得违反适用法律或从事非法活动
+### Do Not Violate Applicable Laws or Engage in Illegal Activities
 
-不得使用我们的服务从事、促进或鼓励非法活动，包括受控物质交易、人口贩运、卖淫、侵犯知识产权、虐待、剥削、伤害或试图伤害儿童，以及其他违反适用法律法规的行为。
+Do not use our services to engage in, promote, or encourage illegal activities, including controlled substance trafficking, human trafficking, prostitution, intellectual property infringement, abuse, exploitation, harm, or attempted harm to children, and other violations of applicable laws and regulations.
 
-### 不得危害关键基础设施
+### Do Not Harm Critical Infrastructure
 
-不得使用我们的服务来伤害、破坏或扰乱关键基础设施，包括但不限于电信、医疗保健、能源、运输、供水、金融服务、选举基础设施、医疗设备、金融市场和军事基地。
+Do not use our services to harm, damage, or disrupt critical infrastructure, including but but not limited to telecommunications, healthcare, energy, transportation, water supply, financial services, election infrastructure, medical devices, financial markets,  military bases.
 
-### 不得危害计算机或网络系统
+### Do Not Harm Computer or Network Systems
 
-不得使用我们的服务开发、部署、协助或自动化未经授权利用漏洞、社会工程、恶意软件、勒索软件、拒绝服务攻击、僵尸网络工具、未经授权拦截通信或监控设备、建立持久化访问、执行大规模损害计算机系统或网络的自动化操作，或帮助绕过安全控制。
+Do not use our services to develop, deploy, assist, or automate unauthorized exploitation of vulnerabilities, social engineering, malware, ransomware, denial of service attacks, botnet tools, unauthorized interception of communications or surveillance equipment, establish persistent access, execute large-scale automated operations that damage computer systems or networks,  assist bypassing security controls.
 
-### 不得开发或设计武器
+### Do Not Develop  Design Weapons
 
-不得使用我们的服务开发、设计、生产、测试、营销或非法获取武器、爆炸物或危险材料，也不得提供武器化、递送机制、规避安全控制、采购前体或改进武器能力的指导。不得使用我们的服务开发军事应用、监控技术或以其他方式伤害人类的其他技术，包括设计、开发、生产或测试核、生物、化学或辐射武器、军用级网络能力、导弹、无人机或自主武器系统。
+Do not use our services to develop, design, produce, test, market,  illegally acquire weapons, explosives,  hazardous materials,  provide guidance for weaponization, delivery mechanisms, circumventing security controls, procurement of precursors,  improving weapons capabilities. Do not use our services to develop military applications, surveillance technology,  other technologies that otherwise harm humans, including designing, developing, producing, or testing nuclear, biological, chemical,  radiation weapons, military-grade cyber capabilities, missiles, drones,  autonomous weapons systems.
 
-### 不得煽动暴力或仇恨行为
+### Do Not Incite Violence  Hate Behavior
 
-不得使用我们的服务煽动、促进、宣传或美化针对个人或群体的极端暴力或基于身份的暴力，也不得宣传、美化、促进或提倡针对受保护群体的仇恨，或从事基于受保护属性的歧视、恐吓、去人性化或暴力行为。
+Do not use our services to incite, promote, glorify,  beautify extreme violence or identity-based violence against individuals or groups,  promote, glorify, promote,  advocate hatred against protected groups,  engage in discrimination, intimidation, de dehumanization,  violent behavior based on protected attributes.
 
-### 不得侵犯隐私或身份权利
+### Do Not Violate Privacy  Identity Rights
 
-不得使用我们的服务从事、促进、煽动或促使跟踪、骚扰、欺凌或其他形式的骚扰，或通过其他非法或未经授权的方式危害或侵犯人们的隐私权、公开权或其他法律权利，包括创建用于识别私人或受限区域中的人的面部识别系统，或在未经同意的情况下收集、共享、获取或使用私人信息、联系信息、健康信息、生物识别信息、神经数据、机密信息或其他个人数据。
+Do not use our services to engage in, promote, incite,  facilitate stalking, harassment, bullying,  other forms of harassment,  otherwise illegally or without authorization harm or violate people's privacy rights, publicity rights,  other legal rights, including creating facial recognition systems for identifying persons in private or restricted areas,  collecting, sharing, obtaining, or using private information, contact information, health information, biometric information, neural data, confidential information,  other personal data without consent.
 
-### 不得危害儿童安全
+### Do Not Harm Child Safety
 
-不得使用我们的服务创建、获取或传播虐待、剥削或性化未成年人的内容，包括但不限于性虐待儿童材料（CSAM）、诱导性交流、性勒索、帮助隐藏儿童虐待的建议、将未成年人置于性语境中的角色扮演或描述，或任何赞美、美化或鼓励对儿童进行性虐待的内容。
+Do not use our services to create, acquire,  disseminate content that abuses, exploits,  sexualizes minors, including but not limited to child sexual abuse material (CSAM), grooming communications, sexual extortion, advice for hiding child abuse, role-playing or depictions placing minors in sexual contexts,  any content that praises, glorifies,  encourages sexual abuse of children.
 
-### 不得创建心理或情感上有害的内容
+### Do Not Create Psychologically  Emotionally Harmful Content
 
-不得使用我们的服务自动生成或传播旨在对人们造成心理或情感伤害的内容，包括促进自残或自杀、饮食失调、不健康运动或无法达到的身体形象，或通过欺凌、骚扰、虐待、羞辱、恐吓或有针对性的骚扰造成伤害。
+Do not use our services to automatically generate or disseminate content designed to cause psychological or emotional harm to people, including promoting self-harm or suicide, eating disorders, unhealthy exercise,  unattainable body images,  causing harm through bullying, harassment, abuse, humiliation, intimidation,  targeted harassment.
 
-### 不得创建或传播错误信息
+### Do Not Create  Disseminate Misinformation
 
-不得使用我们的服务大规模创建或传播经济、政治、社会或公共卫生伤害的虚假、不准确、误导或欺骗性内容，包括关于群体、实体或个人的欺骗性信息，或关于公共卫生紧急情况、公民程序、法律、法规、程序、标准或政治或公民领导人的此类内容。
+Do not use our services to large-scale create or disseminate false, inaccurate, misleading,  deceptive content that causes economic, political, social, or public health harm, including deceptive information about groups, entities,  individuals,  such content about public health emergencies, civic processes, laws, regulations, procedures, standards,  political or civic leaders.
 
-### 不得破坏民主进程或参与有针对性的竞选活动
+### Do Not Undermine Democratic Process or Participate in Targeted Campaigns
+Do not use our services to undermine, impair,  disrupt fair and open democratic or civic processes, including through distribution of false information, targeted voter suppression, creating fake public movements, mass contacting voters or public officials while concealing the automated source,  interfering with voting, counting,  certification processes. Do not use our services for political campaigning or lobbying, or generate campaign materials intended to large-scale influence political, judicial, social,  economic outcomes, including campaign output, personalized or targeted messages with political opinions, interactive campaign chatbots, misleading political synthetic media,  voter suppression materials.
 
-不得使用我们的服务破坏、损害或破坏公平和开放的民主或公民进程，包括通过虚假信息的分发、针对性地压制投票、制造虚假公众运动、批量联系选民或公职人员并隐瞒自动化来源，或干扰投票、计票或认证流程。不得使用我们的服务进行政治竞选或游说，或生成旨在大规模影响政治、司法、社会或经济结果的竞选材料，包括宣传活动的输出、带有政治意见的个性化或有针对性的信息、交互式竞选活动聊天机器人、误导性的政治合成媒体或选民压制材料。
+### Do Not Use for Criminal Justice, Censorship, Surveillance, Prohibited Law Enforcement Purposes
+Do not use our services for any predictive policing, prosecution, sentencing, parole,  detention decisions, polygraph or similar applications, facial recognition, emotion recognition, social scoring, government censorship, battlefield management, un unauthorized communication or location tracking, biometric classification for inferring protected attributes,  mass surveillance  any other prohibited law enforcement purpose.
 
-### 不得用于刑事司法、审查、监视或被禁止的执法目的
+### Do Not Engage in Fraud, Abuse,  Predatory Practices
+Do not use our services to create or disseminate fraudulent, false,  misleading content designed to deceive, fraud,  exploit people, including but not limited to schemes, scams, phishing, forged documents, fake products, fake reviews, fake engagement, spam,  other fraudulent behavior. Do not use our services to impersonate individuals, organizations, entities,  real public figures to deceive, mislead,  fraud others. Do not use our services to conduct or promote gambling, payday loans, high-cost credit products, exploitative debt collection,  other exploitative economic activities. Do not use our services for other illegal, fraudulent,  deceptive activities, or generate or disseminate spam.
 
-不得使用我们的服务进行任何预测性警务、起诉、量刑、假释或拘留决定、测谎或类似应用、面部识别、情绪识别、社会评分、政府审查、战场管理、未经同意的通信或位置跟踪、用于推断受保护属性的生物识别分类、或大规模监视或任何其他被禁止的执法目的。
+### Do Not Abuse Our Platform
 
-### 不得从事欺诈、滥用或掠夺性做法
+Do not use our services in violation of our platform policies, including but not limited to attempting to undermine our safeguards, evade the model's built-in limitations, extract model weights, system prompts, hidden rules, training data,  response patterns in any unauthorized manner, perform jailbreaking, prompt injection, unauthorized model scraping, copying, training, fine-tuning,  distillation,  violate service usage limits we implement on GoSwitch, including rate limiting.
 
-不得使用我们的服务创建或传播欺诈性、虚假或误导性内容，旨在欺骗、欺诈或剥削人们，包括但不限于计划、诈骗、钓鱼、伪造文件、虚假产品、虚假评论、虚假互动、垃圾邮件和其他欺诈行为。不得使用我们的服务冒充个人、组织、实体或真实公共人物以欺骗、误导或欺诈他人。不得使用我们的服务进行或促进赌博、发薪日贷款、高成本信贷产品、剥削性债务催收或其他剥削性经济活动。不得使用我们的服务进行其他非法、欺诈或欺骗性活动，或生成或传播垃圾邮件。
+### Do Not Generate Sexually Explicit Content
 
-### 不得滥用我们的平台
+Do not use our services to generate sexually explicit content, including content with explicit purpose or sexual gratification. This includes using our services to generate pornographic content (whether text or images), explicit sexual behavior, sexual fetishes, sexual fantasies, pornographic chat,  incest sexual content. This restriction does not apply to content using our services for legitimate sexual and reproductive health purposes, science, education,  artistic purposes.
 
-不得违反我们的平台政策使用我们的服务，包括但不限于尝试破坏我们的保护措施，逃避模型的内置限制，以任何未经授权的方式提取模型权重、系统提示、隐藏规则、训练数据或响应模式，进行越狱、提示注入、未经授权的模型抓取、复制、训练、微调或蒸馏，或违反我们在 GoSwitch 上实施的服务使用限制，包括费率限制。
+## High-Risk Use Case Requirements
 
-### 不得生成性露骨内容
+Some use case types pose higher risk of harm because they affect areas critical to public welfare and social equity. For these use cases, given the potential risks to individuals and consumers, we believe relevant human expertise should be integrated, and end users should be aware of when AI is involved in generating output.
 
-不得使用我们的服务生成性露骨内容，包括有露骨目的或性满足的内容。这包括使用我们的服务生成色情内容（无论是文本还是图像）、露骨性行为、性癖、性幻想、色情聊天或近亲性内容。此限制不适用于使用我们的服务进行合法的性和生殖健康用途、科学、教育或艺术用途的内容。
+Therefore, for the "High-Risk Use Cases" described below, we require you to implement these additional safety measures:
 
-## 高风险用例要求
+::: warning Additional Safety Measures (Required)
 
-某些用例由于影响对公共福利和社会公平至关重要的领域而构成更高的伤害风险。对于这些用例，鉴于对个人和消费者的潜在风险，我们认为应整合相关的人类专业知识，并且最终用户应该意识到 AI 何时参与产生输出。
+-   **Human-in-the-Loop:** When using our products or services to provide advice, recommendations,  subjective decisions that directly affect individuals or consumers, qualified professionals in the relevant field must review the content or decisions before dissemination or finalization. You or your organization are responsible for the accuracy and appropriness of that information.
+-   **Disclosure:** If model output is directly presented to individuals or consumers, you must disclose to them that you are using AI to help generate your advice, decisions, or recommendations. This disclosure must be provided at at least at the beginning of each session.
 
-因此，对于下面描述的“高风险用例”，我们要求您实施这些额外的安全措施：
-
-::: warning 额外安全措施（必须）
-
--   **人在回路中：** 在使用我们的产品或服务提供直接影响个人或消费者的建议、推荐或主观决策时，该领域的合格专业人员必须在传播或最终确定之前审查内容或决策。您或您的组织对该信息的准确性和适当性负责。
--   **披露：** 如果模型输出直接呈现给个人或消费者，您必须向他们披露您正在使用 AI 来帮助生成您的建议、决策或推荐。此披露必须至少在每个会话开始时提供。
-
-“高风险用例”包括：
+"High-Risk Use Cases" include:
 :::
-| 类别 | 说明 |
+| Category | Description |
 | --- | --- |
-| 法律 | 与法律解释、法律指导或具有法律影响的决策有关的用例 |
-| 医疗保健 | 与医疗保健决策、医疗诊断、患者护理、治疗、心理健康或其他医疗指导有关的用例。健康建议（例如，关于睡眠、压力、营养、锻炼等的建议）不属于此类别 |
-| 保险 | 与健康、人寿、财产、残疾或其他类型的保险承保、索赔处理或承保决策有关的用例 |
-| 金融 | 与财务决策有关的用例，包括投资建议、贷款批准和确定财务资格或信用worthiness |
-| 就业和住房 | 与有关个人就业能力的决策、简历筛选、招聘工具或其他就业决定或关于住房资格的决策（包括租赁和住房贷款）有关的用例 |
-| 学术测试、认证和录取 | 与管理学校录取（包括评估、评分或排名潜在学生）、语言能力或专业认证考试的标准化测试公司有关的用例；评估和认证教育机构的机构 |
-| 媒体或专业新闻内容 | 与使用我们的产品或服务自动生成内容并将其发布以供外部消费有关的用例 |
+| Law | Use cases related to legal interpretation, legal guidance, or decisions with legal impact |
+| Healthcare | Use use cases related to healthcare decisions, medical diagnosis, patient care, treatment, mental health,  other medical guidance. Health advice (e.g., advice on sleep, stress, nutrition, exercise, etc ) is not in this category |
+| Insurance | Use cases related to health, life, property, disability,  other types of insurance underwriting, claims processing,  underwriting decisions |
+| Finance |  use cases related to financial decisions, including investment advice, loan approval,  determining financial qualification or creditworthiness |
+| Employment  Housing | Use cases related to decisions about individual employability, resume screening, hiring tools,  other employment decisions  decisions about housing eligibility (including rental and housing loans) |
+| Academic Testing, Certification,  Admissions |  use cases related to administering school admissions (including assessment, grading, or ranking potential students), language proficiency or professional certification exams for standardized testing companies; institutions evaluating  certifying educational institutions |
+| Media  Professional Journalism Content |  use cases related to automatically generating content using our products or services and publishing it for external consumption |
 
-## 其他用例指南
+## Other Use Case Guidelines
 
-以下用例（无论它们是否是高风险用例）必须遵守提供的其他指南。
+The following use cases (whether they are high-risk or not) must comply with the additional guidelines provided.
 
--   所有面向消费者的聊天机器人，包括任何面向外部或交互式 AI 代理，必须向用户披露他们正在与 AI 而不是人类交互。此披露必须至少在每次聊天会话开始时提供。
--   服务未成年人的产品，包括为未成年人提供直接与包含我们 API 的产品交互能力的组织，必须遵守我们帮助中心文章中概述的附加指南。
--   代理用例仍必须遵守使用政策。我们在此帮助中心文章中提供了在代理用例背景下使用政策禁止的示例。
--   我们连接器目录中列出的模型上下文协议（MCP）服务器必须遵守我们的目录政策。
+-   All consumer-facing chatbots, including any externally-facing or interactive AI agent, must disclose to users that they are interacting with AI rather than a human. This disclosure must be provided at at least at the beginning of each chat session.
+-   Products serving minors, including organizations providing minors with the ability to directly interact with products containing our API, must comply with the additional guidelines outlined in our help center articles.
+-   Agent use cases still must comply with the Usage Policy. We provide examples of what the Usage Policy prohibits in the context of agent use cases in this help center article.
+-   Model Context Protocol (MCP) servers listed in our connector directory must comply with our directory policy.
 
-## 相关链接
+## Related Links
 
--   使用政策（本页来源）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
--   服务条款：[https://goswitch.online/terms](https://goswitch.online/terms)
--   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
--   支持的国家和地区：[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
+-   Usage Policy (source of this page): [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+-   Terms of Service: [https://goswitch.online/terms](https://goswitch.online/terms)
+-   Service-Specific Terms: [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
+-   Supported Countries  Regions: [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)

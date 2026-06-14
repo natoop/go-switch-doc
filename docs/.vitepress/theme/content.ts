@@ -17,8 +17,60 @@ const projectRoutes = new Set([
   '/docs/ccswitch',
   '/docs/ccswitch/1-common',
   '/docs/ccswitch/5-ccs_cli',
-  '/docs/cli/5-cache-fix'
+  '/docs/cli/5-cache-fix',
+  '/zh/docs/advanced/AionUI',
+  '/zh/docs/advanced/Hermes',
+  '/zh/docs/advanced/OpenCode',
+  '/zh/docs/ccswitch',
+  '/zh/docs/ccswitch/1-common',
+  '/zh/docs/ccswitch/5-ccs_cli',
+  '/zh/docs/cli/5-cache-fix'
 ])
+
+// --- Simple image modal (lightbox) helpers ---
+function ensureImageModal() {
+  if (document.getElementById('doc-image-modal'))
+    return
+
+  const modal = document.createElement('div')
+  modal.id = 'doc-image-modal'
+  modal.innerHTML = `
+    <div class="doc-image-modal-inner">
+      <img id="doc-image-modal-img" src="" alt="" />
+      <button id="doc-image-modal-close" aria-label="Close">×</button>
+    </div>
+  `
+  document.body.appendChild(modal)
+
+  modal.addEventListener('click', (ev) => {
+    if (ev.target === modal)
+      hideImageModal()
+  })
+
+  const close = document.getElementById('doc-image-modal-close')
+  close?.addEventListener('click', hideImageModal)
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape')
+      hideImageModal()
+  })
+}
+
+function showImageModal(src: string, alt?: string) {
+  ensureImageModal()
+  const img = document.getElementById('doc-image-modal-img') as HTMLImageElement | null
+  if (!img) return
+  img.src = src
+  img.alt = alt ?? ''
+  const modal = document.getElementById('doc-image-modal')
+  modal?.classList.add('open')
+}
+
+function hideImageModal() {
+  const modal = document.getElementById('doc-image-modal')
+  modal?.classList.remove('open')
+}
+
 
 function currentPath() {
   const path = decodeURI(window.location.pathname)
@@ -28,20 +80,26 @@ function currentPath() {
   return path === '' ? '/' : path
 }
 
+function currentLocale(): 'en' | 'zh' {
+  const path = currentPath()
+  return path.startsWith('/zh') ? 'zh' : 'en'
+}
+
 function classifyDocument(doc: HTMLElement) {
   const path = currentPath()
-  const imageCount = doc.querySelectorAll('img').length
-  const orderedItems = doc.querySelectorAll('ol > li').length
-  const headingCount = doc.querySelectorAll('h2, h3').length
 
-  if (path.startsWith('/docs/tos'))
+  if (path.startsWith('/zh/docs/tos') || path.startsWith('/docs/tos'))
     return 'legal'
 
-  if (path.startsWith('/docs/faq'))
+  if (path.startsWith('/zh/docs/faq') || path.startsWith('/docs/faq'))
     return 'faq'
 
   if (projectRoutes.has(path))
     return 'project'
+
+  const imageCount = doc.querySelectorAll('img').length
+  const orderedItems = doc.querySelectorAll('ol > li').length
+  const headingCount = doc.querySelectorAll('h2, h3').length
 
   if (imageCount >= 3 || orderedItems >= 4)
     return 'tutorial'
@@ -62,8 +120,10 @@ function applyLayoutClass(doc: HTMLElement, shell: HTMLElement, layout: string) 
 }
 
 function normalizeScrapedMeta(doc: HTMLElement) {
+  const locale = currentLocale()
   const paragraphs = Array.from(doc.querySelectorAll<HTMLParagraphElement>(':scope > p'))
   const source = paragraphs.find((paragraph) => /^Source:\s*/.test(paragraph.textContent?.trim() ?? ''))
+  const author = paragraphs.find((paragraph) => /^Author:\s*/.test(paragraph.textContent?.trim() ?? ''))
   const updated = paragraphs.find((paragraph) => /^Updated:\s*/.test(paragraph.textContent?.trim() ?? ''))
 
   if (!source && !updated)
@@ -80,15 +140,26 @@ function normalizeScrapedMeta(doc: HTMLElement) {
 
   meta.innerHTML = ''
 
+  const sourceLabel = locale === 'zh' ? '来源：' : 'Source: '
+  const authorLabel = locale === 'zh' ? '作者：' : 'Author: '
+  const updatedLabel = locale === 'zh' ? '更新：' : 'Updated: '
+
+  if (author) {
+    const text = author.textContent?.trim().replace(/^Author:\s*/, '') ?? ''
+    const item = document.createElement('span')
+    item.className = 'doc-meta-item doc-meta-author'
+    item.textContent = `${authorLabel}${text}`
+    meta.appendChild(item)
+    author.remove()
+  }
   if (source) {
     const text = source.textContent?.trim().replace(/^Source:\s*/, '') ?? ''
     const item = document.createElement('span')
     item.className = 'doc-meta-item doc-meta-source'
-    item.textContent = `来源：${text}`
+    item.textContent = `${sourceLabel}${text}`
     meta.appendChild(item)
     source.remove()
   }
-
   if (updated) {
     const text = updated.textContent?.trim().replace(/^Updated:\s*/, '') ?? ''
     const dateMatch = text.match(/^(\d{4}-\d{2}-\d{2}T[^\s]+Z?)(.*)$/)
@@ -96,7 +167,7 @@ function normalizeScrapedMeta(doc: HTMLElement) {
     const restoredText = dateMatch?.[2]?.trim()
     const item = document.createElement('span')
     item.className = 'doc-meta-item doc-meta-updated'
-    item.textContent = `更新：${formatDate(dateText)}`
+    item.textContent = `${updatedLabel}${formatDate(dateText, locale)}`
     meta.appendChild(item)
 
     if (restoredText) {
@@ -110,13 +181,13 @@ function normalizeScrapedMeta(doc: HTMLElement) {
   }
 }
 
-function formatDate(raw: string) {
+function formatDate(raw: string, locale: 'en' | 'zh') {
   const date = new Date(raw)
 
   if (Number.isNaN(date.getTime()))
     return raw
 
-  return new Intl.DateTimeFormat('zh-CN', {
+  return new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : 'en-US', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit'
@@ -141,13 +212,35 @@ function enhanceMediaBlocks(doc: HTMLElement) {
       paragraph.classList.add('doc-badges')
 
       const links = Array.from(paragraph.querySelectorAll('a'))
-      if (paragraph.textContent?.includes('下载') || (links.length === 1 && /releases\/latest/.test(links[0].href)))
+      const downloadKeywords = currentLocale() === 'zh' ? '下载' : 'Download'
+      if (paragraph.textContent?.includes(downloadKeywords) || (links.length === 1 && /releases\/latest/.test(links[0].href)))
         paragraph.classList.add('doc-actions')
     }
 
     images.forEach((image) => {
       image.loading = 'lazy'
       image.decoding = 'async'
+
+      // make images clickable to open modal/zoom
+      image.style.cursor = 'zoom-in'
+
+      const attachHandler = (el: Element | null) => {
+        if (!el || (el as any).__zoomHandlerAttached) return
+        el.addEventListener('click', (e: Event) => {
+          try { e.preventDefault(); e.stopPropagation(); } catch (err) {}
+          const src = (image.getAttribute('data-original') || image.src)
+          showImageModal(src, image.alt)
+        })
+        ;(el as any).__zoomHandlerAttached = true
+      }
+
+      // If image is wrapped in a link, attach to the link to prevent navigation
+      const anchor = image.closest('a')
+      if (anchor) {
+        attachHandler(anchor)
+      } else {
+        attachHandler(image)
+      }
     })
 
     const text = paragraph.textContent?.trim() ?? ''
@@ -169,7 +262,12 @@ function isProjectStopHeading(element: Element, movedCount: number) {
   if (movedCount === 0)
     return false
 
-  return /^(软件下载|安装|安装与初始化|环境配置|配置|配置 PackyApi 渠道|配置 PackyAPI|验证配置|浏览器访问|常见问题|Claude Code配置|Codex配置|Gemini配置|CC-Switch CLI 是什么|为什么需要它)/.test(text)
+  // Chinese stop headings
+  const zhPatterns = /^(软件下载|安装|安装与初始化|环境配置|配置|配置 PackyApi 渠道|配置 PackyAPI|验证配置|浏览器访问|常见问题|Claude Code配置|Codex配置|Gemini配置|CC-Switch CLI 是什么|为什么需要它)/
+  // English stop headings
+  const enPatterns = /^(Software Download|Installation|Installation & Initialization|Environment Configuration|Configuration|Configure PackyApi Channel|Verify Configuration|Browser Access|FAQ|Claude Code Configuration|Codex Configuration|Gemini Configuration|What is CC-Switch CLI|Why do you need it)/
+
+  return zhPatterns.test(text) || enPatterns.test(text)
 }
 
 function enhanceProjectIntro(doc: HTMLElement) {
@@ -195,7 +293,9 @@ function enhanceProjectIntro(doc: HTMLElement) {
 
     if (node.matches('h1, h2, h3')) {
       const text = headingText(node)
-      if (!/^(通用步骤|项目介绍|AionUi 介绍|CC-Switch介绍)$/.test(text))
+      const zhSkip = /^(通用步骤|项目介绍|AionUi 介绍|CC-Switch介绍)$/
+      const enSkip = /^(Common Steps|Project Introduction|AionUi Introduction|CC-Switch Introduction)$/
+      if (!zhSkip.test(text) && !enSkip.test(text))
         node.classList.add('doc-project-center')
     }
 
@@ -204,13 +304,14 @@ function enhanceProjectIntro(doc: HTMLElement) {
       const shouldCenter = node.classList.contains('doc-badges')
         || node.classList.contains('doc-actions')
         || /^更新日志\s*\|/.test(text)
-        || /^(🚀|从供应商|统一管理|Claude Code、Codex、Gemini|任何用户友好)/.test(text)
+        || /^Changelog\s*\|/.test(text)
+        || /^(🚀|从供应商|统一管理|任何用户友好|From provider|Unified management|Any user-friendly)/.test(text)
 
       if (shouldCenter)
         node.classList.add('doc-project-center')
     }
 
-    if (node.matches('ul') && (node.textContent?.includes('✅') || node.textContent?.includes('项目定位') || node.textContent?.includes('核心特色')))
+    if (node.matches('ul') && (node.textContent?.includes('✅') || node.textContent?.includes('项目定位') || node.textContent?.includes('核心特色') || node.textContent?.includes('Project positioning') || node.textContent?.includes('Core features')))
       node.classList.add('doc-project-feature-list')
 
     movedCount += 1
@@ -229,18 +330,21 @@ function enhanceProjectIntro(doc: HTMLElement) {
 }
 
 function actionIcon(text: string) {
-  if (/下载|版本/.test(text))
+  if (/下载|Download/i.test(text))
     return '⬇'
 
-  if (/日志|更新/.test(text))
+  if (/日志|更新|Changelog|Update/i.test(text))
     return '↻'
 
   return '↗'
 }
 
 function actionLabel(text: string) {
-  if (/下载/.test(text))
+  if (/下载/i.test(text))
     return '立即下载'
+
+  if (/Download/i.test(text))
+    return 'Download Now'
 
   return text
 }
@@ -249,10 +353,10 @@ function decorateActionLink(link: HTMLAnchorElement) {
   if (link.classList.contains('doc-project-action-button'))
     return
 
-  const text = link.textContent?.trim() || '打开链接'
+  const text = link.textContent?.trim() || 'Open link'
   const isGithub = /github\.com/.test(link.href)
-  const isDownload = /下载|releases\/latest/.test(text) || /releases\/latest/.test(link.href)
-  const isChangelog = /日志|更新|CHANGELOG/i.test(text) || /CHANGELOG/i.test(link.href)
+  const isDownload = /下载|Download|releases\/latest/i.test(text) || /releases\/latest/.test(link.href)
+  const isChangelog = /日志|更新|CHANGELOG|Changelog|Update/i.test(text) || /CHANGELOG/i.test(link.href)
 
   link.className = 'doc-project-action-button'
   link.classList.toggle('doc-action-github', isGithub)
@@ -292,7 +396,7 @@ function enhanceProjectActionButtons(doc: HTMLElement) {
     if (links.length === 0)
       return
 
-    if (/^更新日志\s*\|/.test(text) || links.some((link) => /下载|日志|更新/.test(link.textContent?.trim() ?? ''))) {
+    if (/^更新日志\s*\|/.test(text) || /^Changelog\s*\|/.test(text) || links.some((link) => /下载|日志|更新|Download|Changelog|Update/.test(link.textContent?.trim() ?? ''))) {
       paragraph.classList.add('doc-project-action-row')
       links.forEach(decorateActionLink)
 

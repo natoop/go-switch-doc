@@ -1,34 +1,34 @@
-# 注册账号
+# Register Account
 
-Source: https://docs.goswitch.online/docs/register/1-register.html
+<!-- Source: https://docs.goswitch.online/docs/register/1-register.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
+Registration link: [https://www.goswitch.online/sign-up](https://www.goswitch.online/sign-up)
 
-![](../../assets/image/QuickStart/001.png)
+![](../../assets/image-en/QuickStart/001.png)
 
-## 进入注册页
+## Enter Registration Page
 
-1.  打开注册入口后，点击页面右上角的“注册”。
-2.  如果你在登录页，也可以点击底部“没有账户？注册”进入注册流程。
 
-<!-- ## 方式一（推荐）：使用 Google 账号注册
+## Method 1 (Recommended): Register with GitHub Account
 
-1.  点击“使用 Google 继续”。
-2.  在弹窗中选择要绑定的 Google 账号并完成授权。
-3.  授权成功后，系统会自动创建账号并登录。
+1.  Click "Continue with GitHub".
+2.  Select the GitHub account you want to bind in the popup and complete authorization.
+3.  After successful authorization, the system will automatically create your account and log you in.
 
-使用 Google 注册无需额外设置密码，后续登录时继续选择同一个 Google 账号即可。 -->
+Registering with GitHub doesn't require a separate password. For future logins, just select the same GitHub account.
 
-<!-- ## 方式二：使用邮箱注册 -->
-## 使用邮箱注册
+<!-- ## Method 2: Register with Email -->
+## Register with Email
 
-1.  点击“使用用户名注册”。
-2.  填写邮箱、用户名和密码。
-3.  按页面提示提交，完成注册。
+1.  Click "Register with Username".
+2.  Fill in your email, username, and password.
+3.  Follow the page prompts to submit and complete registration.
 
-::: warning 温馨提示
+::: warning Note
 
-邮箱会用于接收验证与通知；密码建议使用字母、数字和特殊字符组合。请妥善保管登录凭证，避免账号被盗用。
+Your email will be used for verification and notifications. We recommend using a combination of letters, numbers, and special characters for your password. Keep your login credentials safe to prevent account theft.
 
 :::

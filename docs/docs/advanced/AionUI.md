@@ -1,11 +1,13 @@
 # AionUI
 
-Source: https://docs.goswitch.online/docs/advanced/AionUI.html
+<!-- Source: https://docs.goswitch.online/docs/advanced/AionUI.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## AionUi 介绍
+## AionUI Introduction
 
-![AionUi - Cowork with Your CLI AI Agent](<../../assets/image/Advanced/AionUI/aionui-banner-1 copy.webp>)
+![AionUI - Cowork with Your CLI AI Agent](<../../assets/image-en/Advanced/AionUI/aionui-banner-1 copy.webp>)
 
 ### Cowork with Your CLI AI Agent
 
@@ -15,35 +17,35 @@ Updated: 2026-06-13T10:02:01.000Z
 
 [![iOfficeAI%2FAionUi | Trendshift](../../assets/external/trendshift.io/15423-d685049e32.svg)](https://trendshift.io/repositories/15423)
 
-**🚀 Cowork 与你的AI, Gemini CLI, Claude Code, Codex, Qwen Code, Goose Cli, Auggie, 等Ai Agent**
+**🚀 Cowork with your AI, Gemini CLI, Claude Code, Codex, Qwen Code, Goose Cli, Auggie, and other AI Agents**
 
-**任何用户友好 | 可视的图形化界面 | 多模型支持 | 本地数据安全**
+**User-friendly | Visual graphical interface | Multi-model support | Local data security**
 
-[![下载最新版本](../../assets/external/img.shields.io/%E2%AC%87%EF%B8%8F%20%E7%AB%8B%E5%8D%B3%E4%B8%8B%E8%BD%BD-%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC-32CD32-10a72f7c0d.svg)](https://github.com/iOfficeAI/AionUi/releases)
+[![Download Latest Version](../../assets/external/img.shields.io/%E2%AC%87%EF%B8%8F%20%E7%AB%8B%E5%8D%B3%E4%B8%8B%E8%BD%BD-%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC-32CD32-10a72f7c0d.svg)](https://github.com/iOfficeAI/AionUi/releases)
 
-**使用 AionUi，您可以拥有：**
+**With AionUI, you can have:**
 
--   ✅ **统一图形界面** - 自动识别本地 CLI 工具，提供统一的图形界面，告别命令行 → [多代理模式设置](https://github.com/iOfficeAI/AionUi/wiki/ACP-Setup-Chinese)
--   ✅ **多会话并行** - 同时开启多个对话，每个会话独立上下文，互不干扰
--   ✅ **本地数据安全** - 所有对话和文件保存在本地 SQLite 数据库，数据不离开您的设备
--   ✅ **9+ 种格式预览** - PDF、Word、Excel、PPT、代码、Markdown、图片、HTML、Diff 等即时预览
--   ✅ **智能文件管理** - AI 驱动的文件整理、批量重命名、自动分类 → [文件管理详细教程](https://github.com/iOfficeAI/AionUi/wiki/file-management)
--   ✅ **AI 图像生成** - 支持多种图像生成模型，智能图像编辑和识别 → [图像生成模型配置指南](https://github.com/iOfficeAI/AionUi/wiki/AionUi-Image-Generation-Tool-Model-Configuration-Guide-Chinese)
--   ✅ **WebUI 远程访问** - 从任何设备通过浏览器访问，支持移动端 → [WebUI 配置教程](https://github.com/iOfficeAI/AionUi/wiki/WebUI-Configuration-Guide-Chinese)
--   ✅ **多模型切换** - 灵活切换 Gemini、Claude、OpenAI、Qwen、Ollama 等主流模型
--   ✅ **完全免费开源** - Apache-2.0 许可证，完全免费使用
+-   ✅ **Unified Graphical Interface** - Automatically detects local CLI tools, provides a unified graphical interface, farewell to command line → [Multi-Agent Mode Setup](https://github.com/iOfficeAI/AionUi/wiki/ACP-Setup)
+-   ✅ **Multi-session Parallel** - Open multiple conversations simultaneously, each session with independent context, no interference
+-   ✅ **Local Data Security** - All conversations and files are saved in a local SQLite database, data never leaves your device
+-   ✅ **9+ Format Preview** - PDF, Word, Excel, PPT, code, Markdown, images, HTML, Diff, and more instant preview
+-   ✅ **Smart File Management** - AI-driven file organization, batch renaming, auto-categorization → [File Management Tutorial](https://github.com/iOfficeAI/AionUi/wiki/file-management)
+-   ✅ **AI Image Generation** - Supports multiple image generation models, smart image editing and recognition → [Image Generation Model Configuration Guide](https://github.com/iOfficeAI/AionUi/wiki/AionUi-Image-Generation-Tool-Model-Configuration-Guide)
+-   ✅ **WebUI Remote Access** - Access from any device via browser, mobile support → [WebUI Configuration Tutorial](https://github.com/iOfficeAI/AionUi/wiki/WebUI-Configuration-Guide)
+-   ✅ **Multi-model Switching** - Flexibly switch between Gemini, Claude, OpenAI, Qwen, Ollama, and other mainstream models
+-   ✅ **Fully Free and Open Source** - Apache-2.0 license, completely free to use
 
-![AionUi支持多端同步](<../../assets/image/Advanced/AionUI/webui banner.webp>)*AionUi WebUI 的案例*
+![AionUI supports multi-device sync](<../../assets/image-en/Advanced/AionUI/webui banner.webp>)*AionUI WebUI example*
 
 * * *
 
-## 软件下载
+## Software Download
 
 Windows
 
-1.  访问 [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) 页面
-2.  下载适合 Windows 的安装包（`.exe` 文件）
-3.  运行安装程序，按照提示完成安装
+1.  Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page
+2.  Download the Windows installer (`.exe` file)
+3.  Run the installer and follow the prompts to complete installation
 
 MacOS
 
@@ -51,85 +53,85 @@ MacOS
 brew install aionui
 ```
 
-1.  访问 [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) 页面
-2.  下载适合 macOS 的安装包（`.dmg` 或 `.zip` 文件，支持 Intel 和 Apple Silicon）
-3.  运行安装程序，按照提示完成安装
+1.  Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page
+2.  Download the macOS installer (`.dmg` or `.zip` file, supports Intel and Apple Silicon)
+3.  Run the installer and follow the prompts to complete installation
 
 Linux
 
 ```bash
-# 下载 .deb 包（请访问 GitHub Releases 查看最新版本号）
+# Download the .deb package (visit GitHub Releases for the latest version number)
 wget https://github.com/iOfficeAI/AionUi/releases/latest/download/AionUi-x.x.x-linux-amd64.deb
 
-# 安装
+# Install
 sudo dpkg -i AionUi-x.x.x-linux-amd64.deb
 ```
 
-请访问 [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) 页面查看最新版本号，将命令中的 `x.x.x` 替换为实际版本号（例如 `1.7.3`）。
+Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page for the latest version number, replacing `x.x.x` in the command with the actual version number (e.g. `1.7.3`).
 
-访问 [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) 页面下载适合您系统的安装包（`.AppImage` 或 `.deb` 文件）。
-
-* * *
-
-## 配置
-
-### 获取 API
-
-回顾 [创建 API 令牌](https://goswitch.online/)，在 GoSwitch 中创建对应分组的令牌，点击复制按钮，复制 API Key 到剪切板：
-
--   **Gemini** → 创建 **Gemini** 分组的令牌
--   **Claude** → 创建 **CC** 分组的令牌
--   **Codex** → 创建 **Codex** 分组的令牌
-
-### 配置 LLM 模型
-
-1.  打开 AionUi，点击设置 → LLM 配置 → 添加模型
-
-![AionUi LLM 配置界面](../../assets/image/Advanced/AionUI/Setting_LLM.webp)
-
-2.  选择平台 "自定义"
-
-![AionUi 选择自定义平台](../../assets/image/Advanced/AionUI/customizellm1.webp)
-
-3.  根据下方各模型配置，填入对应的 API Key 和配置信息、选择模型
-
-![AionUi 填入配置信息](../../assets/image/Advanced/AionUI/inputinfo2.webp)
-
-4.  保存后返回主界面，选择配置的模型开始使用
-
-![AionUi 选择模型开始使用](../../assets/image/Advanced/AionUI/newchat.webp)
+Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page to download the appropriate installer for your system (`.AppImage` or `.deb` file).
 
 * * *
 
-## 模型配置
+## Configuration
+
+### Get API Key
+
+Review [Create API Token](https://goswitch.online/), create a token for the corresponding group in GoSwitch, click the copy button, and copy the API Key to your clipboard:
+
+-   **Gemini** → Create a token in the **Gemini** group
+-   **Claude** → Create a token in the **CC** group
+-   **Codex** → Create a token in the **Codex** group
+
+### Configure LLM Model
+
+1.  Open AionUI, click Settings → LLM Configuration → Add Model
+
+![AionUI LLM Configuration Interface](../../assets/image-en/Advanced/AionUI/Setting_LLM.webp)
+
+2.  Select the platform "Custom"
+
+![AionUI Select Custom Platform](../../assets/image-en/Advanced/AionUI/customizellm1.webp)
+
+3.  Fill in the corresponding API Key and configuration information for each model below, then select the model
+
+![AionUI Fill in Configuration](../../assets/image-en/Advanced/AionUI/inputinfo2.webp)
+
+4.  After saving, return to the main interface, select the configured model to start using
+
+![AionUI Select Model and Start](../../assets/image-en/Advanced/AionUI/newchat.webp)
+
+* * *
+
+## Model Configuration
 
 Gemini
 
-使用 **Gemini** 分组的 API Key，填入以下配置：
+Use the **Gemini** group API Key and fill in the following configuration:
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online`
--   **模型**：选择 GoSwitch 支持的 Gemini 模型
+-   **API Key**: Paste the API Key copied from GoSwitch
+-   **API Request URL**: `https://goswitch.online`
+-   **Model**: Select a Gemini model supported by GoSwitch
 
 Claude
 
-使用 **CC** 分组的 API Key，填入以下配置：
+Use the **CC** group API Key and fill in the following configuration:
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online`
--   **模型**：选择 GoSwitch 支持的 Claude 模型
+-   **API Key**: Paste the API Key copied from GoSwitch
+-   **API Request URL**: `https://goswitch.online`
+-   **Model**: Select a Claude model supported by GoSwitch
 
 Codex
 
-使用 **Codex** 分组的 API Key，填入以下配置：
+Use the **Codex** group API Key and fill in the following configuration:
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online/v1`
--   **模型**：选择 GoSwitch 支持的 Codex 模型
+-   **API Key**: Paste the API Key copied from GoSwitch
+-   **API Request URL**: `https://goswitch.online/v1`
+-   **Model**: Select a Codex model supported by GoSwitch
 
 * * *
 
-## 常见问题
+## FAQ
 
--   [❓ FAQ 常见问题](https://github.com/iOfficeAI/AionUi/wiki/FAQ-Chinese) - 问题解答和故障排除
--   [🔧 配置与使用教程](https://github.com/iOfficeAI/AionUi/wiki/Configuration-Guides-Chinese) - 完整配置文档
+-   [❓ FAQ](https://github.com/iOfficeAI/AionUi/wiki/FAQ) - Question answers and troubleshooting
+-   [🔧 Configuration & Usage Tutorial](https://github.com/iOfficeAI/AionUi/wiki/Configuration-Guides) - Complete configuration documentation

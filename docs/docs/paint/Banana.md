@@ -1,50 +1,52 @@
-# Nano Banana2 Pro绘图教程
+# Nano Banana2 Pro Drawing Tutorial
 
-Source: https://docs.goswitch.online/docs/paint/Banana.html
+<!-- Source: https://docs.goswitch.online/docs/paint/Banana.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 使用Cherry Studio绘图
+## Drawing with Cherry Studio
 
-1.  参照 [创建令牌分组](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) 一章的教程，你需要创建**令牌分组**为 `gemini` 的令牌。在创建好令牌后，点击图中复制按钮，将令牌复制到剪切板
+1.  Following the [Create Token Group](../register/4-token.md#create-api-token) tutorial, you need to create a token with the **token group** set to `gemini`. After creating the token, click the copy button to copy the token to your clipboard
 
-![](../../assets/image/Paint/banana/01.webp)
+![](../../assets/image-en/Paint/banana/01.webp)
 
-2.  访问 [Cherry Studio](https://www.cherry-ai.com/) 官网进行下载
+2.  Visit the [Cherry Studio](https://www.cherry-ai.com/) website to download
 
-3.  打开 Cherry Studio软件，点击右上角设置按钮
+3.  Open Cherry Studio and click the settings button in the upper right corner
 
-![](../../assets/image/Paint/banana/02.webp)
+![](../../assets/image-en/Paint/banana/02.webp)
 
-4.  选择左侧 `模型服务` ，点击最下面的 `添加` 按钮
+4.  Select `Model Service` on the left, then click the `Add` button at the bottom
 
-![](../../assets/image/Paint/banana/03.webp)
+![](../../assets/image-en/Paint/banana/03.webp)
 
-5.  在添加提供商窗口按照如下图，写入提供商名称与提供商类型
+5.  In the Add Provider window, enter the provider name and type as shown in the image
 
-![](../../assets/image/Paint/banana/04.webp)
+![](../../assets/image-en/Paint/banana/04.webp)
 
-6.  在左侧列表中找到刚添加的 `GoSwitch` 分组，API密钥部分填入第一步创建后复制的 `gemini` 分组的API密钥，API地址填写 `https://goswitch.online`
+6.  Find the newly added `GoSwitch` group in the left list. Fill in the API key with the `gemini` group API key you copied in step 1, and enter `https://goswitch.online` for the API address
 
-![](../../assets/image/Paint/banana/05.webp)
+![](../../assets/image-en/Paint/banana/05.webp)
 
-7.  点击下方的 `管理` 按钮，在弹出的模型列表中选择我们的绘图模型，GoSwitch 已经对一些常用比例与分辨率模型做了优化适配，我们可以如下图直接选择
+7.  Click the `Manage` button below, and in the model list popup, select our drawing model. GoSwitch has optimized some commonly used aspect ratio and resolution models, which you can select directly as shown below
 
-![](../../assets/image/Paint/banana/06.webp)
+![](../../assets/image-en/Paint/banana/06.webp)
 
-8.  添加好后如下图所示
+8.  After adding, it should look like the image below
 
-![](../../assets/image/Paint/banana/07.webp)
+![](../../assets/image-en/Paint/banana/07.webp)
 
-9.  点击左上角的 `首页` 按钮回到主页，点击目前你所使用助手的右侧设置按钮。在 `模型设置` 一栏找到 `流式输出` 一项，请务必关闭，然后点击右上角关闭窗口
+9.  Click the `Home` button in the upper left to return to the main page. Click the settings button on the right side of the assistant you're currently using. In the `Model Settings` section, find `Streaming Output` and make sure to disable it, then close the window
 
-![](../../assets/image/Paint/banana/08.webp)
+![](../../assets/image-en/Paint/banana/08.webp)
 
-![](../../assets/image/Paint/banana/09.webp)
+![](../../assets/image-en/Paint/banana/09.webp)
 
-10.  点击上方模型设置处，选择我们刚才创建分组的绘图模型
+10.  Click on the model settings above and select the drawing model from the group we just created
 
-![](../../assets/image/Paint/banana/10.webp)
+![](../../assets/image-en/Paint/banana/10.webp)
 
-11.  尽情发挥你的想象吧~
+11.  Let your imagination run wild~
 
-![](../../assets/image/Paint/banana/11.webp)
+![](../../assets/image-en/Paint/banana/11.webp)

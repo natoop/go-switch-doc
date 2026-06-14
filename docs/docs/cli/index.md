@@ -1,27 +1,29 @@
-# CLI配置教程
+# CLI Configuration Tutorial
 
-Source: https://docs.goswitch.online/docs/cli/
+<!-- Source: https://docs.goswitch.online/docs/cli/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 环境检查(通用步骤)
+## Environment Check (Common Steps)
 
-### （1）确认Nodejs环境已安装
+### (1) Confirm Node.js is Installed
 
-1.  在windows或MacOS终端输入以下命令
+1.  Enter the following command in a Windows or macOS terminal
 
 ```bash
 npm list -g --depth-0
 ```
 
-正常情况应该是如下图所示（没有任何内容也没关系），如果提示“命令未找到”，则说明你没有安装Nodejs，你需要按 [此教程](https://www.runoob.com/nodejs/nodejs-install-setup.html) 来安装运行Claude Code、Codex、Gemini所需的环境
+Normally it should look like the image below (no content is also fine). If you see "command not found", it means you haven't installed Node.js. You need to follow [this tutorial](https://www.runoob.com/nodejs/nodejs-install-setup.html) to install the environment required for Claude Code, Codex, and Gemini
 
-![](../../assets/image/Cli/001.webp)
+![](../../assets/image-en/Cli/001.webp)
 
-2.  如果你发现自己没有安装Nodejs，并且跟着教程目前已经安装完毕，请你重新执行上述提到的命令，如果不再提示“命令未找到”，则说明安装成功
+2.  If you discover Node.js isn't installed and have now completed the installation, please re-run the command above. If it no longer says "command not found", the installation was successful
 
-### （2）安装CLI
+### (2) Install CLI
 
-1.  在windows或MacOS终端输入以下命令，一次性安装好我们目前所需的所有终端
+1.  Enter the following commands in a Windows or macOS terminal to install all the CLI tools we need at once
 
 ```bash
 npm i -g @anthropic-ai/claude-code@latest
@@ -29,69 +31,65 @@ npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
 ```
 
-![](../../assets/image/Cli/002.webp)
+![](../../assets/image-en/Cli/002.webp)
 
-### （3）测试安装成功
+### (3) Test Installation
 
-::: warning 重要
+::: warning Important
 
-**这一步很重要，请你务必运行命令进行测试，因为这一步运行命令后，你的用户目录下才会生成各CLI的配置目录，方便后续操作！**
+**This step is very important. You must run the commands to test, because running these commands will generate the configuration directories for each CLI in your user directory, which is necessary for subsequent operations!**
 
 Claude Code
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
+Enter the following command in a Windows or macOS terminal. If you see the content shown, or a selection prompt appears, Claude Code is installed successfully
 
 ```bash
 claude
 ```
 
-![](../../assets/image/Cli/003.webp)
+![](../../assets/image-en/Cli/003.webp)
 :::
-::: warning 重要
+::: warning Important
 
-**第二步十分重要，请你务必跳转链接后运行命令进行配置**
+**The second step is very important. You must follow the link and run the command to configure**
 
-2.  点击 [claude code 无法连接到 Anthropic 服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1) 跳转，务必根据教程运行命令，然后再继续阅读之后单独CLI的配置教程
+2.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
 
 Codex
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
+Enter the following command. If it works, Codex is installed successfully
 
 ```bash
 codex
 ```
 
-![](../../assets/image/Cli/004.webp)
+![](../../assets/image-en/Cli/004.webp)
 
 Gemini
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
+Enter the following command. If it works, Gemini is installed successfully
 
 ```bash
 gemini
 ```
 
-![](../../assets/image/Cli/005.webp)
+![](../../assets/image-en/Cli/005.webp)
 :::
-## Claude Code配置
+## Claude Code Configuration
 
 Windows
 
-1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
+1.  Press "Win+R", enter `%userprofile%\.claude` and press Enter
 
-```bash
-%userprofile%\.claude
-```
+![](../../assets/image-en/Cli/013.webp)
 
-![](../../assets/image/Cli/013.webp)
+2.  If `settings.json` doesn't exist, create it manually
 
-2.  目录内容如图所示，如果目录中没有 `settings.json`，你需要手动创建后打开
+-   **settings.json**: Claude's main configuration file for relay address, ApiKey, hooks, plugins, etc.
 
--   **settings.json**：Claude主要的配置文件，主要用来配置中转站地址以及ApiKey，以及一些hooks，plugins等
+![](../../assets/image-en/Cli/014.webp)
 
-![](../../assets/image/Cli/014.webp)
-
-3.  将以下内容写入 `settings.json`
+3.  Write the following content to `settings.json`
 
 ```json
 {
@@ -103,33 +101,29 @@ Windows
 }
 ```
 
-![](../../assets/image/Cli/015.webp)
+![](../../assets/image-en/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitch, and replace `xxx`
 
-![](../../assets/image/Cli/025.webp)
+![](../../assets/image-en/Cli/025.webp)
 
-5.  在windows终端运行 `claude`，出现对话界面后进行对话测试，能收到回复即表示配置成功
+5.  Run `claude` in the terminal. If you receive a reply, configuration is successful
 
-![](../../assets/image/Cli/016.webp)
+![](../../assets/image-en/Cli/016.webp)
 
 MacOS
 
-1.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
+1.  Press "Command+Shift+G" in Finder, enter `~/.claude` and press Enter
 
-```bash
-~/.claude
-```
+![](../../assets/image-en/Cli/017.webp)
 
-![](../../assets/image/Cli/017.webp)
+2.  If `settings.json` doesn't exist, create it manually
 
-2.  若目录不存在 `settings.json`，需要你手动进行创建
+-   **settings.json**: Claude's main configuration file
 
--   **settings.json**：Claude主要的配置文件，主要用来配置中转站地址以及ApiKey，以及一些hooks，plugins等
+![](../../assets/image-en/Cli/018.webp)
 
-![](../../assets/image/Cli/018.webp)
-
-3.  将以下内容写入 `settings.json`
+3.  Write the following content to `settings.json`
 
 ```json
 {
@@ -141,50 +135,42 @@ MacOS
 }
 ```
 
-![](../../assets/image/Cli/015.webp)
+![](../../assets/image-en/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitch, replace `xxx`
 
-![](../../assets/image/Cli/025.webp)
+![](../../assets/image-en/Cli/025.webp)
 
-5.  在终端运行 `claude`，看到对话界面并能正常回复即表示配置完成
+5.  Run `claude` in the terminal. If it responds normally, configuration is complete
 
-![](../../assets/image/Cli/016.webp)
+![](../../assets/image-en/Cli/016.webp)
 
-::: warning 重要
+::: warning Important
 
-**注意，如果配置完仍然有报错问题，提示你需要登录，请看如下链接解决**
-[claude-code-无法连接到-anthropic-服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1)
+**If you still encounter errors after configuration, such as a prompt requiring login, please refer to the following link**
+[claude-code-cannot-connect-to-anthropic-service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service)
 :::
-## Codex配置
+## Codex Configuration
 
 Windows
 
-1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
+1.  Press "Win+R", enter `%userprofile%\.codex` and press Enter
 
-```bash
-%userprofile%\.codex
-```
+![](../../assets/image-en/Cli/006.webp)
 
-![](../../assets/image/Cli/006.webp)
+2.  We use three files, only two need configuration
 
-2.  你的目录中可能会存在以下文件，不过我们用到的文件只有三个，需要配置的只有两个
+![](../../assets/image-en/Cli/007.webp)
 
-![](../../assets/image/Cli/007.webp)
+-   **config.toml**: Codex's core configuration file
+-   **auth.json**: ApiKey configuration
+-   **[AGENTS.md](http://AGENTS.md)**: Global prompts
 
--   **config.toml**：Codex的**核心配置**文件，中转服务与MCP等都在此文件配置
+::: warning Important
 
--   **auth.json**：用来配置你在中转站获取的ApiKey秘钥
+**Many people may not have these three files after installation. Create them manually**
 
--   **[AGENTS.md](http://AGENTS.md)**：用来设置codex全局工作的提示词
-
-::: warning 重要
-
-**很多人刚安装可能没有这三个文件，你需要手动去创建这三个文件，然后写入内容**
-
-3.  配置 Config.toml
-
-将以下配置文本复制到你的 config.toml文件中保存
+3.  Configure Config.toml
 
 ```toml
 disable_response_storage = true
@@ -203,9 +189,7 @@ requires_openai_auth = true
 wire_api = "responses"
 ```
 
-4.  配置ApiKey
-
-将以下配置文本复制到你的 auth.json文件中
+4.  Configure ApiKey
 
 ```json
 {
@@ -213,49 +197,35 @@ wire_api = "responses"
 }
 ```
 
-![](../../assets/image/Cli/008.webp)
+![](../../assets/image-en/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+Review [Create API Token](../register/4-token.md), create a **Codex** group token, copy the key and fill into `xxx`
 
-![](../../assets/image/Cli/009.webp)
+![](../../assets/image-en/Cli/009.webp)
 
-5.  测试对话
+5.  Test Dialogue - run `codex` in terminal
 
-在windows终端输入以下命令，出现图示内容，进行对话测试，如果有回复，则配置成功，开始你的Codex使用之旅~
-
-```bash
-codex
-```
-
-![](../../assets/image/Cli/010.webp)
+![](../../assets/image-en/Cli/010.webp)
 
 MacOS
 
-1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
+1.  Press "Command+Shift+G", enter `~/.codex` and press Enter
 
-```bash
-~/.codex
-```
+![](../../assets/image-en/Cli/011.webp)
 
-![](../../assets/image/Cli/011.webp)
+2.  We use three files, only two need configuration
 
-2.  你的目录中可能会存在以下文件，不过我们用到的文件只有三个，需要配置的只有两个，其它文件可忽略
+![](../../assets/image-en/Cli/012.webp)
 
-![](../../assets/image/Cli/012.webp)
-
--   **config.toml**：Codex 的核心配置文件，中转服务与 MCP 等都在此文件配置
-
--   **auth.json**：存放中转站获取的 ApiKey 秘钥
-
--   **[AGENTS.md](http://AGENTS.md)**：Codex 全局工作的提示词
+-   **config.toml**: Codex's core configuration file
+-   **auth.json**: ApiKey storage
+-   **[AGENTS.md](http://AGENTS.md)**: Global prompts
 :::
-::: warning 重要
+::: warning Important
 
-初次安装若未自动生成，需要手动创建上述三个文件并写入内容
+Create the above three files manually if they don't exist
 
-3.  配置 Config.toml
-
-将以下内容保存到 `config.toml`
+3.  Configure Config.toml
 
 ```toml
 model_provider = "goswitch"
@@ -273,9 +243,7 @@ wire_api = "responses"
 requires_openai_auth = true
 ```
 
-4.  配置 ApiKey
-
-将以下配置文本复制到你的 auth.json文件中
+4.  Configure ApiKey
 
 ```json
 {
@@ -283,39 +251,29 @@ requires_openai_auth = true
 }
 ```
 
-![](../../assets/image/Cli/008.webp)
+![](../../assets/image-en/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+Review [Create API Token](../register/4-token.md), create a **Codex** group token, copy the key and fill into `xxx`
 
-![](../../assets/image/Cli/009.webp)
+![](../../assets/image-en/Cli/009.webp)
 
-5.  测试对话
+5.  Test - run `codex` in terminal
 
-在 MacOS 终端执行以下命令，出现对话界面并能收到回复即表示配置成功
-
-```bash
-codex
-```
-
-![](../../assets/image/Cli/010.webp)
+![](../../assets/image-en/Cli/010.webp)
 :::
-## Gemini配置
+## Gemini Configuration
 
 Windows
 
-1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
+1.  Press "Win+R", enter `%userprofile%\.gemini` and press Enter
 
-```bash
-%userprofile%\.gemini
-```
+![](../../assets/image-en/Cli/019.webp)
 
-![](../../assets/image/Cli/019.webp)
+2.  Create `.env` file if it doesn't exist, write:
 
-2.  如果目录下没有 `.env` 文件，请新建一个 `.env`，写入以下内容
+-   **.env**: Gemini CLI configuration file
 
--   **.env**：Gemini CLI的配置文件，主要设置自定义端点、ApiKey跟所用模型
-
-![](../../assets/image/Cli/020.webp)
+![](../../assets/image-en/Cli/020.webp)
 
 ```bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
@@ -323,31 +281,27 @@ GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-![](../../assets/image/Cli/021.webp)
+![](../../assets/image-en/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token, fill `xxx`
 
-![](../../assets/image/Cli/026.webp)
+![](../../assets/image-en/Cli/026.webp)
 
-4.  打开终端执行 `gemini`，看到交互界面并能正常回复即表示配置成功
+4.  Run `gemini` in terminal. If it responds normally, configuration is successful
 
-![](../../assets/image/Cli/022.webp)
+![](../../assets/image-en/Cli/022.webp)
 
 MacOS
 
-1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
+1.  Press "Command+Shift+G", enter `~/.gemini` and press Enter
 
-```bash
-~/.gemini
-```
+![](../../assets/image-en/Cli/023.webp)
 
-![](../../assets/image/Cli/023.webp)
+2.  Create `.env` file if it doesn't exist, write:
 
-2.  若目录中没有 `.env` 文件，创建并写入以下内容
+-   **.env**: Gemini CLI configuration file
 
--   **.env**：Gemini CLI的配置文件，主要设置自定义端点、ApiKey跟所用模型
-
-![](../../assets/image/Cli/024.webp)
+![](../../assets/image-en/Cli/024.webp)
 
 ```bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
@@ -355,10 +309,10 @@ GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token, fill `xxx`
 
-![](../../assets/image/Cli/026.webp)
+![](../../assets/image-en/Cli/026.webp)
 
-4.  在终端运行 `gemini`，可正常进入对话并收到回复即表示配置完成
+4.  Run `gemini` in terminal. If it works normally, configuration is complete
 
-![](../../assets/image/Cli/022.webp)
+![](../../assets/image-en/Cli/022.webp)

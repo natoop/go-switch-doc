@@ -1,101 +1,102 @@
-# GPT接入CC
+# GPT with Claude Code
 
-Source: https://docs.goswitch.online/docs/advanced/ChatGPTClaudeCode.html
+<!-- Source: https://docs.goswitch.online/docs/advanced/ChatGPTClaudeCode.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: danger 重要告警
+::: danger Important Warning
 
-我们不推荐将 GPT 模型接入 Claude Code。更稳妥的使用方式是：GPT 模型在 Codex 中使用，Claude 模型在 Claude Code 中使用。
+We do not recommend connecting GPT models to Claude Code. The more reliable approach is: use GPT models in Codex, and use Claude models in Claude Code.
 
-本教程仅用于回应部分用户的测试需求。该方案依赖 `codex` 分组与 CC Switch 本地路由，可能出现缓存异常、模型映射异常、MCP 或 Skills 兼容性问题。由此产生的任何使用问题、额度消耗、配置异常或其他后果，GoSwitch 不推荐、不承诺可用性，也不承担责任。
+This tutorial is provided only to address some users' testing needs. This solution relies on the `codex` group and CC Switch local routing, and may encounter cache errors, model mapping errors, MCP or Skills compatibility issues. GoSwitch does not recommend, guarantee availability, or assume responsibility for any usage issues, quota consumption, configuration errors, or other consequences arising from this approach.
 
-请仅在你清楚风险，并具备自行排查问题能力时尝试；新手用户不建议操作。
+Only try this if you understand the risks and have the ability to troubleshoot issues yourself; beginners are advised not to proceed.
 :::
-## 前置准备
+## Prerequisites
 
-本教程用于将 **codex** 分组中的 GPT 模型接入 **Claude Code** 使用。开始前请先确认本地已经完成 Claude Code 安装；如果还没有安装，可以先参考 [Claude Code配置](../cli/2-claude.md) 中的安装与基础配置步骤。
+This tutorial is for connecting GPT models from the **codex** group to **Claude Code**. Before starting, please confirm that Claude Code is already installed locally; if not, you can refer to the [Claude Code Configuration](../cli/2-claude.md) for installation and basic setup steps.
 
-同时，请确认本地已经安装并打开 CC Switch。该方案必须依赖 CC Switch 的本地路由能力，不能只通过普通供应商配置完成。
+Also, please confirm that CC Switch is installed and running locally. This solution must rely on CC Switch's local routing capability — it cannot be accomplished through regular provider configuration alone.
 
-## 创建 codex 令牌
+## Create codex Token
 
-1.  回顾 [创建 API 令牌](../register/4-token.md)，在 GoSwitch 中创建新的 API 令牌。
+1.  Review [Create API Token](../register/4-token.md), and create a new API token in GoSwitch.
 
-2.  名称可以填写 `codex`，令牌分组请选择 `codex`。创建完成后，复制生成的 API Key，后续配置会用到。
+2.  You can name it `codex`, and select `codex` as the token group. After creation, copy the generated API Key for later configuration.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/01.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/01.webp)
 
-## 使用 CC Switch 配置
+## Configure with CC Switch
 
-::: warning 使用前确认
+::: warning Before Proceeding
 
-此配置不是 Claude Code 的常规推荐配置。配置完成后，请以 Claude Code 实际对话结果、CC Switch 请求日志和 GoSwitch 消费日志共同判断是否生效。
+This is not the recommended configuration for Claude Code. After configuration, please verify whether it works by checking Claude Code's actual conversation results, CC Switch request logs, and GoSwitch consumption logs together.
 :::
-### 添加供应商
+### Add Provider
 
-1.  打开 CC Switch，在 Claude Code 配置中点击 `添加供应商`。
+1.  Open CC Switch, and click `Add Provider` in the Claude Code configuration.
 
-2.  预设供应商选择 `GoSwitch`，并按照下方内容填写：
+2.  Select `GoSwitch` as the preset provider, and fill in the following:
 
-    -   **官网链接**：`https://goswitch.online`
-    -   **API Key**：填写刚才创建的 `codex` 分组 API Key
-    -   **请求地址**：`https://goswitch.online`
-    -   **API 格式**：`OpenAI Responses API（需开启路由）`
-    -   **主模型**：填写你希望映射到 Claude Code 主模型的 GPT 模型，例如 `gpt-5.5`
-    -   **Haiku 默认模型**：填写较轻量的 GPT 模型，例如 `gpt-5.4-mini`
-    -   **Sonnet 默认模型**：填写你希望映射到 Sonnet 的 GPT 模型，例如 `gpt-5.5`
-    -   **Opus 默认模型**：填写你希望映射到 Opus 的 GPT 模型，例如 `gpt-5.5`
+    -   **Website URL**: `https://goswitch.online`
+    -   **API Key**: Enter the `codex` group API Key you just created
+    -   **Request URL**: `https://goswitch.online`
+    -   **API Format**: `OpenAI Responses API (requires routing)`
+    -   **Main Model**: Enter the GPT model you want to map to Claude Code's main model, e.g. `gpt-5.5`
+    -   **Haiku Default Model**: Enter a lighter GPT model, e.g. `gpt-5.4-mini`
+    -   **Sonnet Default Model**: Enter the GPT model you want to map to Sonnet, e.g. `gpt-5.5`
+    -   **Opus Default Model**: Enter the GPT model you want to map to Opus, e.g. `gpt-5.5`
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/02.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/02.webp)
 
-::: warning 模型填写说明
+::: warning Model Name Note
 
-上方模型名称仅用于示例，请以你创建令牌时 `codex` 分组实际可用的模型名称为准。如果模型名称填写错误，Claude Code 中可能会出现模型不存在、请求失败或日志映射异常。
+The model names above are only examples. Please use the actual available model names in your `codex` group when creating the token. If the model names are incorrect, Claude Code may show model not found, request failure, or log mapping errors.
 :::
-### 开启本地路由
+### Enable Local Routing
 
-1.  回到 CC Switch 主界面，点击左上角的设置按钮。
+1.  Return to the CC Switch main interface, and click the settings button in the top left corner.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/03.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/03.webp)
 
-2.  在设置页切换到 `路由`，展开 `本地路由`。
+2.  On the settings page, switch to `Routing`, and expand `Local Routing`.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/04.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/04.webp)
 
-3.  打开 `路由总开关`，并在 `路由启用` 中只开启 `Claude`。不需要为 Codex 或 Gemini 开启该路由。
+3.  Turn on the `Routing Master Switch`, and enable only `Claude` in `Routing Enabled`. You do not need to enable routing for Codex or Gemini.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/05.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/05.webp)
 
-4.  回到 CC Switch 主界面，顶部应出现本地路由开关；确认开关处于开启状态，并选中刚才添加的 `GoSwitch-codex` 供应商。
+4.  Return to the CC Switch main interface; the local routing toggle should appear at the top. Confirm the toggle is on, and select the `GoSwitch-codex` provider you just added.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/06.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/06.webp)
 
-如果后续需要停止该方案，可以关闭主界面顶部的本地路由开关，或回到设置页关闭 `路由总开关`。
+If you need to stop this solution later, you can turn off the local routing toggle on the main interface, or go back to the settings page and turn off the `Routing Master Switch`.
 
-## 验证配置
+## Verify Configuration
 
-1.  检查 Claude Code 的 `settings.json`。开启本地路由后，`ANTHROPIC_BASE_URL` 应该变为本地代理地址，`ANTHROPIC_AUTH_TOKEN` 通常会由 CC Switch 接管。
+1.  Check Claude Code's `settings.json`. After enabling local routing, `ANTHROPIC_BASE_URL` should change to the local proxy address, and `ANTHROPIC_AUTH_TOKEN` is typically managed by CC Switch.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/07.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/07.webp)
 
-2.  重新打开终端，运行 `claude` 启动 Claude Code，并发送一条测试消息。能够正常回复，说明 Claude Code 已经可以通过本地路由发起请求。
+2.  Open a new terminal, run `claude` to start Claude Code, and send a test message. If it responds normally, Claude Code is successfully making requests through local routing.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/08.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/08.webp)
 
-3.  回到 CC Switch 的 `使用统计`，查看 `请求日志`。日志中可能仍显示 Claude Code 侧的映射模型，例如 `claude-opus-4-7`，这是本地路由映射后的请求表现。
+3.  Go back to CC Switch's `Usage Statistics` and check the `Request Logs`. The logs may still show the mapped models from the Claude Code side, such as `claude-opus-4-7`, which is the expected behavior after local routing mapping.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/09.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/09.webp)
 
-4.  最后到 GoSwitch 的消费日志中确认实际调用情况。如果配置正确，消费日志中应显示 `codex` 分组，并记录实际扣费的 GPT 模型，例如 `gpt-5.5`。
+4.  Finally, check GoSwitch's consumption logs to confirm the actual calls. If configured correctly, the consumption logs should show the `codex` group, with the actual billed GPT model, such as `gpt-5.5`.
 
-![](../../assets/image/Advanced/ChatGPTClaudeCode/10.webp)
+![](../../assets/image-en/Advanced/ChatGPTClaudeCode/10.webp)
 
-## 使用风险
+## Usage Risks
 
-::: danger 最后提醒
+::: danger Final Reminder
 
-该方案属于非推荐玩法，可能因为 Claude Code、CC Switch、模型接口、缓存策略、MCP 或 Skills 行为变化而失效。
+This is a non-recommended approach that may fail due to changes in Claude Code, CC Switch, model interfaces, cache policies, MCP, or Skills behavior.
 
-GoSwitch 不推荐用户将 GPT 模型接入 Claude Code，也不对该方案的稳定性、兼容性、输出效果、额度消耗或任何衍生问题承担责任。你可以用于测试、研究和理解路由逻辑，但不建议把它作为日常稳定工作流使用。
-
+GoSwitch does not recommend connecting GPT models to Claude Code, and does not assume responsibility for the stability, compatibility, output quality, quota consumption, or any derivative issues of this solution. You can use it for testing, research, and understanding routing logic, but it is not recommended as a daily stable workflow.
 :::

@@ -1,129 +1,131 @@
 # OpenClaw
 
-Source: https://docs.goswitch.online/docs/advanced/OpenClaw.html
+<!-- Source: https://docs.goswitch.online/docs/advanced/OpenClaw.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: tip 提示
+::: tip Note
 
-**此教程适合Linux云服务器、MacOS系统用户**
+**This tutorial is intended for Linux cloud server and MacOS users**
 :::
-## 安装与初始化
+## Installation and Initialization
 
-1.  登录服务器SSH，或在MacOS打开你的终端程序，输入以下命令开始安装，耐心等待安装流程结束。等出现以下界面提示后，选择 `yes` 选项回车确认
+1.  Log into your server via SSH, or open your terminal program on MacOS, and enter the following command to start the installation. Wait patiently for the installation process to complete. When the following interface appears, select `yes` and press Enter to confirm
 
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-![](../../assets/image/Advanced/OpenClaw/01.webp)
+![](../../assets/image-en/Advanced/OpenClaw/01.webp)
 
-2.  之后我们选择 `QuickStart` 回车确认
+2.  Next, select `QuickStart` and press Enter to confirm
 
-![](../../assets/image/Advanced/OpenClaw/02.webp)
+![](../../assets/image-en/Advanced/OpenClaw/02.webp)
 
-3.  在选择供应商部分我们先选择 `Skip for now` 回车确认，跳过设置
+3.  In the provider selection section, select `Skip for now` and press Enter to skip the setup
 
-![](../../assets/image/Advanced/OpenClaw/03.webp)
+![](../../assets/image-en/Advanced/OpenClaw/03.webp)
 
-4.  在适配器选择部分，选择 `anthropic`
+4.  In the adapter selection section, select `anthropic`
 
-![](../../assets/image/Advanced/OpenClaw/04.webp)
+![](../../assets/image-en/Advanced/OpenClaw/04.webp)
 
-5.  在模型选择部分，我们选择 `opus-4.5`
+5.  In the model selection section, select `opus-4.5`
 
-![](../../assets/image/Advanced/OpenClaw/05.webp)
+![](../../assets/image-en/Advanced/OpenClaw/05.webp)
 
-6.  这里选择社交软件适配器，看个人需要，我们测试选择 `Telegram`
+6.  Here, select a social software adapter based on your needs. For testing, we select `Telegram`
 
-![](../../assets/image/Advanced/OpenClaw/06.webp)
+![](../../assets/image-en/Advanced/OpenClaw/06.webp)
 
-7.  输入Bot Token，然后回车
+7.  Enter the Bot Token, then press Enter
 
-8.  这里选择安装Skill，这个先跳过，后续可以通过网页进行安装
+8.  Here, select Skills installation — skip this for now, you can install them later via the web interface
 
-![](../../assets/image/Advanced/OpenClaw/07.webp)
+![](../../assets/image-en/Advanced/OpenClaw/07.webp)
 
-9.  这里选择Hook，使用空格键全选，然后回车确认，之后过程会有GateWay安装，请耐心等待
+9.  Select Hooks using the spacebar to select all, then press Enter to confirm. The Gateway installation process will follow — please wait patiently
 
-![](../../assets/image/Advanced/OpenClaw/08.webp)
+![](../../assets/image-en/Advanced/OpenClaw/08.webp)
 
-10.  打开方式这里，这里我们先选择跳过
+10.  For the open method, select skip for now
 
-![](../../assets/image/Advanced/OpenClaw/09.webp)
+![](../../assets/image-en/Advanced/OpenClaw/09.webp)
 
-11.  安装Shell补全脚本，这里选择 `yes` 回车确认，至此我们完成安装
+11.  For installing the Shell completion script, select `yes` and press Enter to confirm. This completes the installation
 
-![](../../assets/image/Advanced/OpenClaw/10.webp)
+![](../../assets/image-en/Advanced/OpenClaw/10.webp)
 
-## 渠道与模型配置
+## Channel and Model Configuration
 
-::: tip 提示
+::: tip Note
 
-GoSwitch 专门为OpenClaw配置写了一个配置脚本，Github地址为：[openclaw-configurator](https://github.com/packyme/openclaw-configurator)，通过此脚本，可以快速帮助我们配置 GoSwitch 的API。
+GoSwitch has written a dedicated configuration script for OpenClaw. The GitHub repository is: [openclaw-configurator](https://github.com/packyme/openclaw-configurator). This script can quickly help us configure GoSwitch's API.
 
-目前脚本还不支持配置Gemini渠道，正在施工中~~~
+The script currently does not support Gemini channel configuration — still under construction!
 
-1.  在你的SSH控制台，或者MacOS终端输入以下命令安装配置器
+1.  In your SSH console or MacOS terminal, enter the following command to install the configurator
 
 ```bash
 curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/download/index.js -o /tmp/openclaw-config.js && node /tmp/openclaw-config.js
 ```
 
-2.  选择 `添加供应商`，然后选择 `GoSwitch`
+2.  Select `Add Provider`, then select `GoSwitch`
 
-![](../../assets/image/Advanced/OpenClaw/11.webp)
+![](../../assets/image-en/Advanced/OpenClaw/11.webp)
 
-3.  这里以Opus为例，在获取的模型中选择 `Claude Opus 4.5`
+3.  Using Opus as an example, select `Claude Opus 4.5` from the available models
 
-![](../../assets/image/Advanced/OpenClaw/12.webp)
+![](../../assets/image-en/Advanced/OpenClaw/12.webp)
 
-4.  输入 [创建API令牌](../register/4-token.md) 一节中你创建的相关分组的令牌，复制后填入
+4.  Enter the token you created in the [Create API Token](../register/4-token.md) section for the relevant group, copy and paste it
 :::
-::: tip 提示
+::: tip Note
 
-**目前推荐在OpenClaw使用的分组：**
+**Currently recommended groups for OpenClaw:**
 
--   **GPT：[codex分组](../token/2-group.md#codex%E5%88%86%E7%BB%84)、[gpt-officially分组](../token/2-group.md#gpt-officially%E5%88%86%E7%BB%84)**
+-   **GPT**: [codex group](../token/2-group.md#codex%E5%88%86%E7%BB%84), [gpt-officially group](../token/2-group.md#gpt-officially%E5%88%86%E7%BB%84)
 
--   **Claude：[aws-q分组](../token/2-group.md#aws-q%E5%88%86%E7%BB%84)、[aws分组](../token/2-group.md#aws%E5%88%86%E7%BB%84)、[claude-officially分组](../token/2-group.md#claude-officially%E5%88%86%E7%BB%84)**
+-   **Claude**: [aws-q group](../token/2-group.md#aws-q%E5%88%86%E7%BB%84), [aws group](../token/2-group.md#aws%E5%88%86%E7%BB%84), [claude-officially group](../token/2-group.md#claude-officially%E5%88%86%E7%BB%84)
 
--   **Gemini**：[gemini-slb分组](../token/2-group.md#gemini-slb%E5%88%86%E7%BB%84)
+-   **Gemini**: [gemini-slb group](../token/2-group.md#gemini-slb%E5%88%86%E7%BB%84)
 
-**请您创建正确分组的APIKEY后填入**
+**Please create an API Key for the correct group before entering**
 
-![](../../assets/image/Advanced/OpenClaw/13.webp)
+![](../../assets/image-en/Advanced/OpenClaw/13.webp)
 
-5.  选择 `选择模型`，然后选中我们刚才配置的模型，回车确认
+5.  Select `Select Model`, then select the model we just configured, and press Enter to confirm
 
-![](../../assets/image/Advanced/OpenClaw/14.webp)
+![](../../assets/image-en/Advanced/OpenClaw/14.webp)
 
-6.  选择 `退出`，回到我们的控制台
+6.  Select `Exit` to return to our console
 
-7.  在控制台输入以下命令，重启GateWay
+7.  In the console, enter the following command to restart the Gateway
 
 ```bash
 openclaw gateway restart
 ```
 
-![](../../assets/image/Advanced/OpenClaw/15.webp)
+![](../../assets/image-en/Advanced/OpenClaw/15.webp)
 
-8.  重启成功后，控制台输入以下命令，进入TUI界面，测试模型是否能正常输出。测试正常则输入 `/quit` 退出TUI界面
+8.  After successful restart, enter the following command in the console to enter the TUI interface and test whether the model can output normally. If testing is normal, type `/quit` to exit the TUI interface
 
 ```bash
 openclaw tui
 ```
 
-![](../../assets/image/Advanced/OpenClaw/16.webp)
+![](../../assets/image-en/Advanced/OpenClaw/16.webp)
 :::
-## 浏览器访问
+## Browser Access
 
-1.  在控制台输入以下命令，获取 `Dashboard URL`，在浏览器进行访问
+1.  Enter the following command in the console to get the `Dashboard URL`, then access it in your browser
 
-::: tip 提示
+::: tip Note
 
-**如何你是在服务器运行，请使用nginx或其他反向代理工具来反代服务，并设置SSL证书**
+**If you are running on a server, please use nginx or another reverse proxy tool to proxy the service, and set up SSL certificates**
 
-另外需要修改 `~/.openclaw` 下的 `openclaw.json`文件，在 `gateway` 字段下添加以下内容
+You also need to modify the `openclaw.json` file under `~/.openclaw`, adding the following content under the `gateway` field:
 
 ```json
 "controlUi":{
@@ -131,30 +133,30 @@ openclaw tui
 }
 ```
 
-![](../../assets/image/Advanced/OpenClaw/17.webp)
+![](../../assets/image-en/Advanced/OpenClaw/17.webp)
 
-修改完毕后回到控制台输入以下命令重启网关
+After modifying, return to the console and enter the following command to restart the gateway
 
 ```bash
 openclaw gateway restart
 ```
 
-2.  访问带有Token的 `Dashboard URL` 链接，进入后台界面
+2.  Visit the `Dashboard URL` with the Token to enter the dashboard interface
 
-![](../../assets/image/Advanced/OpenClaw/18.webp)
+![](../../assets/image-en/Advanced/OpenClaw/18.webp)
 :::
-## 配置Telegram Bot访问权限
+## Configure Telegram Bot Access
 
-1.  回到之前创建机器人的 @BotFather 的对话中，点击我们的机器人链接，进行对话
+1.  Return to the conversation with @BotFather where you previously created the bot, click our bot link, and start a conversation
 
-2.  首次对话拿到我们所需的 `Pairing code`
+2.  On first conversation, obtain the required `Pairing code`
 
-![](../../assets/image/Advanced/OpenClaw/19.webp)
+![](../../assets/image-en/Advanced/OpenClaw/19.webp)
 
-3.  在控制台输入以下命令允许您跟Bot进行互动
+3.  Enter the following command in the console to allow interaction with the Bot
 
 ```bash
-openclaw pairing approve telegram 你的Pairing code
+openclaw pairing approve telegram YourPairingCode
 ```
 
-![](../../assets/image/Advanced/OpenClaw/20.webp)
+![](../../assets/image-en/Advanced/OpenClaw/20.webp)

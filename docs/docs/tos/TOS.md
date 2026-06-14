@@ -1,189 +1,187 @@
-# 服务条款
+# Terms of Service
 
-Source: https://docs.goswitch.online/docs/tos/TOS.html
+<!-- Source: https://docs.goswitch.online/docs/tos/TOS.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: warning 重要提示
-
-本文档根据 GoSwitch「服务条款」页面内容整理（生效日期：2026 年 01 月 01 日）。
-如本文档与官网存在差异或版本更新，请以官网页面为准：
-[https://goswitch.online/terms](https://goswitch.online/terms)
+::: warning Important Notice
+This document is compiled from the GoSwitch Terms of Service page (effective date: January 1, 2026).
+If there are differences or version updates between this document and the official website, please refer to the official website as the authoritative source:
+ [https://goswitch.online/terms](https://goswitch.online/terms)
 :::
-| 项目 | 内容 |
+| Item | Content |
 | --- | --- |
-| 文档名称 | 商业服务条款 |
-| 生效日期 | 2026-05-13 |
-| 来源链接 | [https://goswitch.online/terms](https://goswitch.online/terms) |
+| Document Name | Commercial Terms of Service |
+| Effective Date | 2026-05-13 |
+| Source Link | [https://goswitch.online/terms](https://goswitch.online/terms) |
 
--   [概述](./TOS.md#%E6%A6%82%E8%BF%B0)
--   [A. 服务](./TOS.md#a-%E6%9C%8D%E5%8A%A1)
--   [B. 客户内容](./TOS.md#b-%E5%AE%A2%E6%88%B7%E5%86%85%E5%AE%B9)
--   [C. 数据隐私](./TOS.md#c-%E6%95%B0%E6%8D%AE%E9%9A%90%E7%A7%81)
--   [D. 信任与安全；限制](./TOS.md#d-%E4%BF%A1%E4%BB%BB%E4%B8%8E%E5%AE%89%E5%85%A8-%E9%99%90%E5%88%B6)
--   [E. 保密](./TOS.md#e-%E4%BF%9D%E5%AF%86)
--   [F. 知识产权](./TOS.md#f-%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83)
--   [G. 宣传](./TOS.md#g-%E5%AE%A3%E4%BC%A0)
--   [H. 费用](./TOS.md#h-%E8%B4%B9%E7%94%A8)
--   [I. 终止和暂停](./TOS.md#i-%E7%BB%88%E6%AD%A2%E5%92%8C%E6%9A%82%E5%81%9C)
--   [J. 争议](./TOS.md#j-%E4%BA%89%E8%AE%AE)
--   [K. 赔偿](./TOS.md#k-%E8%B5%94%E5%81%BF)
--   [L. 担保和责任限制](./TOS.md#l-%E6%8B%85%E4%BF%9D%E5%92%8C%E8%B4%A3%E4%BB%BB%E9%99%90%E5%88%B6)
--   [M. 杂项](./TOS.md#m-%E6%9D%82%E9%A1%B9)
--   [相关链接](./TOS.md#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5)
+-   [Overview](./TOS.md#overview)
+-   [A. Services](./TOS.md#a-services)
+-   [B. Customer Content](./TOS.md#b-customer-content)
+-   [C. Data Privacy](./TOS.md#c-data-privacy)
+-   [D. Trust & Safety; Restrictions](./TOS.md#d-trust--safety--restrictions)
+-   [E. Confidentiality](./TOS.md#e-confidentiality)
+-   [F. Intellectual Property](./TOS.md#f-intellectual-property)
+-   [G. Marketing](./TOS.md#g-marketing)
+-   [H. Fees](./TOS.md#h-fees)
+-   [I. Termination and Suspension](./TOS.md#i-termination-and-suspension)
+-   [J. Disputes](./TOS.md#j-disputes)
+-   [K. Indemnification](./TOS.md#k-indemnification)
+-   [L. Warranties and Limitations of Liability](./TOS.md#l-warranties-and-limitations-of-liability)
+-   [M. Miscellaneous](./TOS.md#m-miscellaneous)
+-   [Related Links](./TOS.md#related-links)
 
-## 概述
+## Overview
 
-欢迎使用 GoSwitch！在访问我们的服务之前，请阅读这些商业服务条款。
+Welcome to GoSwitch! Before accessing our services, please read these Commercial Terms of Service.
 
-这些商业服务条款（“条款”）是 GoSwitch 与您或您所代表的组织、公司或其他实体（“客户”）之间的协议。这些条款规定了客户对 GoSwitch API 密钥以及引用这些条款的任何其他 GoSwitch 产品的使用，以及所有相关的 GoSwitch 工具、文档和服务（“服务”）。这些条款自客户首次以电子方式同意这些条款的日期和客户首次访问服务的日期中较早的日期起生效（“生效日期”）。
+These Commercial Terms of Service ("Terms") are an agreement between GoSwitch and you or the organization, company, or other entity you represent ("Customer"). These Terms govern Customer's use of GoSwitch API keys and and any other GoSwitch products that reference these Terms, as well as all related GoSwitch tools, documentation, and services ("Services"). These Terms take effect from the earlier of the date Customer first electronically agrees to these Terms or the date Customer first accesses the Services ("Effective Date").
 
-::: info 请注意
+::: info Please Note
 
--   除非您有法律授权约束该实体，否则您不得代表组织、公司或其他实体接受这些条款。
--   这些条款下的服务不适用于消费者使用。
+-   Unless you have legal authority to bind that entity, you may not accept these Terms on behalf of an organization, company, or other entity.
+-   Services under these Terms are not intended for consumer use.
 :::
-## A. 服务
+## A. Services
 
-**概述。**根据这些条款，GoSwitch 授予客户使用服务的权限，包括为客户向其自己的客户和最终用户（“用户”）提供的产品和服务提供支持。
+**Overview.** Under these Terms, GoSwitch grants Customer permission to use the Services, including for supporting products and services that Customer provides to its own customers and end users ("Users").
 
-**第三方功能。**客户可以自行选择使用第三方通过服务向客户提供的功能、服务或其他内容（“第三方功能”）。客户承认并同意，第三方功能不是服务，因此 GoSwitch 不对其负责。第三方模型、云平台、模型市场、API、兼容接口、支付渠道、身份验证服务或其他第三方产品可能受其自身条款、政策、地区限制、价格、文档和可用性约束；该等第三方产品的变更、暂停、终止、模型下线、输出拦截、价格调整或服务不可用可能影响客户使用服务。
+**Third-Party Features.** Customer may, at its own discretion, use features, services, or other content provided to Customer through the Services by third parties ("Third-Party Features"). Customer acknowledges and agrees that Third-Party Features are not part of the Services, and therefore GoSwitch is not responsible for them. Third-party models, cloud platforms, model marketplace, APIs, compatible interfaces, payment channels, identity authentication services, or other third-party products may be subject to their own terms, policies, regional restrictions, pricing, documentation, and availability constraints; changes, suspension, termination, model deization, output interception, price adjustments, or service un unavailable of such third-party products may affect Customer's use of the Services.
 
-**反馈。**如果客户（自行决定）向 GoSwitch 提供有关服务的反馈，GoSwitch 可以自行承担风险使用该反馈，而无需对客户承担任何义务。
+**Feedback.** If Customer (at its own discretion) provides GoSwitch with feedback regarding the Services, GoSwitch may use such feedback at its own risk without any obligation to Customer.
 
-## B. 客户内容
+## B. Customer Content
 
-在各方之间以及在适用法律允许的范围内，GoSwitch 同意客户 (a) 保留其输入的所有权利，(b) 拥有其输出。GoSwitch 放弃其根据这些条款收到的客户内容的任何权利。在客户遵守这些条款的前提下，GoSwitch 特此将其在输出中的权利、所有权和利益（如果有）转让给客户。GoSwitch 不会使用来自服务的客户内容训练模型。“输入”是指客户或其用户向服务提交的内容，“输出”是指服务针对输入生成的响应（输入和输出统称为“客户内容”）。
+Between the parties and to the extent permitted by applicable law, GoSwitch agrees that Customer (a) retains all rights to its input, (b) owns its output. GoSwitch waives any rights to Customer Content received under these Terms. Subject to Customer's compliance with these Terms, GoSwitch hereby assigns to Customer its rights, title, and interest (if any) in the output. GoSwitch does not use Customer Content from the Services to train models. "Input" means content that Customer or its Users submit to the Services, "Output" means responses generated by the Services to Input (Input and Output collectively referred to as "Customer Content").
 
-## C. 数据隐私
+## C. Data Privacy
 
-通过服务提交的数据将根据 GoSwitch 数据处理附录（“DPA”）进行处理，该附录通过引用纳入这些条款。
+Data submitted through the Services will be processed in accordance with the GoSwitch Data Processing Addendum ("DPA"), which is incorporated into these Terms by reference.
 
-## D. 信任与安全；限制
+## D. Trust & Safety; Restrictions
 
-**合规性。**各方将遵守适用于提供（GoSwitch）和使用（客户）服务的所有法律，包括任何适用的数据隐私法律。
+**Compliance.** Each party will comply with all laws applicable to the provision (GoSwitch) and use (Customer) of the Services, including any applicable data privacy laws.
 
-**政策和服务条款。**客户及其用户只能在遵守这些条款的情况下使用服务，包括 (a) 使用政策（“使用政策”），(b) 我们关于 GoSwitch 当前支持的国家和地区的政策（“支持区域政策”）和 (c) 我们的服务特定条款，这些条款均通过引用纳入这些条款。客户还必须遵守适用于客户所选择第三方功能或上游服务的服务条款、使用政策、支持地区政策、服务特定条款、数据处理条款、模型定价、API 文档和其他被该等第三方纳入的政策。客户必须配合 GoSwitch 的合理信息请求，以支持遵守其使用政策，包括验证客户的身份、服务使用、最终用户、使用场景和合规状态。
+**Policies and Terms of Service.** Customer and its Users may only use the Services in compliance with these Terms, including (a) the Usage Policy ("Usage Policy"), (b) our policy regarding GoSwitch currently supported countries and regions ("Supported Region Policy") and (c) our Service-Specific Terms, all of which are incorporated into these Terms by reference. Customer must also comply with the terms of service, usage policy, supported region policy, service-specific terms, data processing terms, model pricing, API documentation, and other policies incorporated by reference by such third parties, applicable to the third-party features or upstream services selected by Customer. Customer must cooperate with GoSwitch's reasonable information requests to support compliance with its usage policy, including verifying Customer's identity, service usage, end users, use cases, and compliance status.
 
-**输出的局限性；对用户的通知。**客户有责任在使用或共享输出之前评估输出是否适合客户的用例，包括在适当的情况下进行人工审查。客户承认并必须通知其用户，不应在未独立检查其准确性的情况下依赖输出中的事实断言，因为它们可能是虚假的、不完整的、误导性的或不反映最近的事件或信息。客户还承认，输出可能包含与 GoSwitch 观点不一致的内容。如果客户将服务嵌入其自身产品、代理、机器人、客户端、插件、平台或其他面向用户的服务中，客户负责向其用户提供适当披露，并负责其用户、下游客户、代理、员工、承包商和集成方对服务的使用。
+**Limitations of Output; Notice to Users.** Customer is responsible for evaluating the suitability of output for Customer's use case before using or sharing output, including conducting manual review where appropriate. Customer acknowledges and must notify its Users that they should not rely on factual assertions in output without independently checking their accuracy, as they may be false, incomplete, misleading, or not reflect recent events or information. Customer also acknowledges that output may contain content that does not align with GoSwitch's viewpoint. If Customer embeds the Services into its own products, agents, bots, clients, plugins, platforms, or other user-facing services, Customer is responsible for providing appropriate disclosure to its Users and is responsible for its Users, downstream customers, agents, employees, contractors, and integrators' use of the Services.
 
-**使用限制。**客户不得且不得试图 (a) 访问或使用服务、输入、输出、响应模式或模型行为来构建竞争产品或服务，包括训练、微调、蒸馏、评估、对标或改进竞争 AI 模型，或转售服务，除非 GoSwitch 明确批准；(b) 对服务进行逆向工程、复制、抓取、批量提取、绕过速率限制或规避服务保护措施；或 (c) 支持任何第三方尝试本句中限制的任何行为。
+**Use Restrictions.** Customer shall not and shall not attempt to (a) access or use the Services, Input, Output, response patterns, or model behavior to build competitive products or services, including training, fine-tuning, distillation, evaluation, benchmarking, or improving competitive AI models, or res resell the Services unless explicitly approved by GoSwitch; (b) reverse engineer, copy, scrape, bulk extract, bypass rate limits, or circumvent Service protection measures; or (c) support any third-party attempt to engage in any of the actions restricted in this sentence.
 
-**服务帐户。**客户对其帐户下的所有活动负责，包括使用客户账户、API 密钥、组织、项目、令牌或其他凭据进行的活动。客户必须采取合理措施保护其凭据，并确保其用户和下游集成方遵守这些条款。如果客户认为其用于访问服务的帐户或凭据已被泄露，或受到拒绝服务或类似恶意攻击，可能对服务产生负面影响，客户将立即通知 GoSwitch。
+**Service Accounts.** Customer is responsible for all activities under its account, including activities using Customer's account, API keys, organization, projects, tokens, or other credentials. Customer must take reasonable steps to protect its credentials and ensure that its Users and downstream integrators comply with these Terms. If Customer believes that its account or credentials used to access the Services have been compromised, or is subject to denial of service or similar malicious attacks that may negatively affect the Services, Customer will notify GoSwitch immediately.
 
-## E. 保密
+## E. Confidentiality
 
-**保密信息。**各方可能会共享被识别为机密、专有或类似的信息，或各方合理理解为机密或专有的信息（“保密信息”）。客户内容是客户的保密信息。
+**Confidential Information.** Each party may share information identified as confidential, proprietary, or similar, or information that each party reasonably understands to be confidential or proprietary ("Confidential Information"). Customer Content is Customer's Confidential Information.
 
-**各方的义务。**接收方（“接收方”）只能使用披露方（“披露方”）的保密信息来行使其权利并履行其在这些条款下的义务。接收方只能与需要知道此类保密信息并受至少与这些条款中提供的保密义务一样严格的保密义务约束的接收方的员工、代理和顾问（“代表”）共享披露方的保密信息。接收方将以保护其自己的保密信息的相同方式保护披露方的保密信息免遭未经授权的使用、访问或披露，并且不低于合理的注意。接收方对其代表的所有作为和不作为负责。
+**Each Party's Obligation.** The receiving party ("Receiving Party") may only use the disclosing party's ("Disclosing Party") Confidential Information to exercise its rights and fulfill its obligations under these Terms. The Receiving Party may only share the Disclosing Party's Confidential Information with the Receiving Party's employees, agents, and consultants ("Representatives") who need to know such Confidential Information and are bound by confidentiality obligations at least as strict as those provided in these Terms. The Receiving Party will protect the Disclosing Party's Confidential Information from unauthorized use, access, or disclosure in the same way it protects its own Confidential Information, and no less than with reasonable care. The Receiving Party is responsible for all acts and omissions of its Representatives.
 
-**排除。**保密信息不包括以下信息：(a) 非因接收方的过错而公开；(b) 接收方从第三方获得而不违反第三方的保密义务；或 (c) 接收方独立开发而不使用保密信息。接收方可以在法律或法院或行政命令要求的范围内披露披露方的保密信息，并且除非明确禁止，否则将立即通知披露方所需的披露，并充分配合披露方防止或缩小披露范围的努力。
+**Exclusion.** Confidential Information does not include information that: (a) becomes public without the fault of the Receiving Party; (b) the Receiving Party obtains from a third party without bre violating the third party's confidentiality obligation; or (c) the Receiving Party independently develops without using Confidential Information. The Receiving Party may disclose the Disclosing Party's Confidential Information to the extent required by law or court or administrative order, and unless expressly prohibited, will immediately notify the Disclosing Party of the required disclosure and fully cooperate with the Disclosing Party's efforts to prevent or minimize the scope of disclosure.
 
-**销毁请求。**接收方将根据请求立即销毁披露方的保密信息，除非需要保留以遵守法律或接收方自动备份系统中的副本，这些副本在维护期间将继续受这些保密义务的约束。
+**Destruction Request.** The Receiving Party will immediately destroy the Disclosing Party's Confidential Information upon request, unless required to retain for legal compliance or copies in the Receiving Party's automatic backup system, which will continue to be subject to these confidentiality obligations during the retention period.
 
-## F. 知识产权
+## F. Intellectual Property
 
-除这些条款中明确规定外，这些条款不授予任何一方对另一方内容或知识产权的任何权利，无论是暗示的还是其他方式。
+Except as expressly provided in these Terms, these Terms do not grant either party any rights to the other party's content or intellectual property, whether implied or otherwise.
 
-## G. 宣传
+## G. Marketing
 
-GoSwitch 可以使用客户的名称和徽标公开识别客户为服务的客户；前提是客户可以通过此请求表单选择退出。客户将善意考虑 GoSwitch 的任何请求，以 (1) 提供客户高管关于客户使用服务动机的引述，GoSwitch 可以公开使用，以及 (2) 参与公开联合营销活动。
+GoSwitch may use Customer's name and logo to publicly identify Customer as a customer of the Services; provided Customer may opt out through this request form. Customer will consider in good faith any GoSwitch request to (1) provide quotes from Customer's executives regarding Customer's motivation for using the Services, which GoSwitch may use publicly, and (2) participate in public joint marketing campaigns.
 
-## H. 费用
+## H. Fees
 
-**费用支付。**客户负责其帐户产生的费用，费率在模型定价页面上指定，除非各方另有约定。GoSwitch 可能会要求以积分形式预付服务费用或提供其他类型的积分，所有这些都受 GoSwitch 补充积分条款的约束。GoSwitch 可能会更新已发布的费率，在 GoSwitch 发布更新后 30 天或客户以其他方式收到通知后的较早日期生效。
+**Fee Payment.** Customer is responsible for fees incurred under its account, at rates specified on the model pricing page, unless otherwise agreed by the parties. GoSwitch may require prepayment of service fees in the form of credits or provide other types of credits, all subject to GoSwitch's supplementary credits terms. GoSwitch may update published rates, effective 30 days after GoSwitch publishes the update or Customer otherwise receives notification, whichever is earlier.
 
-**税费。**费用不包括客户因使用服务可能欠的任何税费、关税或评估（“税费”），除非在适用发票中另有说明。客户负责及时向相关机构汇出任何必要的预扣税，并应要求向 GoSwitch 提供证据。如果法律规定减少或免除预扣税，包括通过税收协定，各方将善意合作实现这一目标。为清楚起见，客户必须向 GoSwitch 支付将确保 GoSwitch 收到与如果客户不需要进行此类预扣或减少时将收到的相同总金额的金额（“补足付款”）（考虑到所有适用的税费（包括对补足付款征收的任何税费））。
+**Taxes.** Fees do do include any taxes, duties, or assessments ("Taxes") that Customer may owe for connection with using the Services, unless otherwise stated in the applicable invoice. Customer is responsible for timely remittance of any necessary withholding taxes to the relevant authorities and should provide evidence to GoSwitch upon request. If the law provides for reduction or exemption of withholding taxes, including through tax treaties, the parties will cooperate in good faith to achieve this. For clarity, Customer must pay GoSwitch an amount that will ensure GoSwitch receives the same total amount as it would have received if Customer did not need to make such withholding or reduction (taking into account all applicable taxes, including any taxes imposed on the gross-up payment) ("Gross-Up Payment").
 
-**计费。**未能在到期时向 GoSwitch 支付所有欠款可能会导致客户访问服务被暂停或终止。GoSwitch 保留其可能拥有的任何其他收款权利。
+**Billing.** Failure to pay all amounts owed to GoSwitch when due may result in Customer's access to the Services being suspended or terminated. GoSwitch retains all other collection rights it may have.
 
-**退款政策。**
+**Refund Policy.**
 
--   **退款范围：**基于客户自身意愿变更（包括但不限于不再需要服务、使用计划调整等）的退款申请，GoSwitch 有权予以拒绝。客户或其用户因违反这些条款、使用政策、服务特定条款或使用限制而被限制、暂停、终止或产生费用的，相关退款申请也可能被拒绝；该等违规包括但不限于未经授权使用服务、输入、输出、响应模式或模型行为进行模型抓取、复制、训练、微调、蒸馏、评估、对标或改进竞争模型。已产生、已消耗或因违规行为造成的费用和积分不予退还。
--   **退款方式：**订单付款后 90 天内的退款申请，退款将通过原支付渠道退回。订单付款超过 90 天的退款申请，退款无法原路退回，客户需提供替代收款方式。
--   **审核与材料：**所有退款申请均须经过 GoSwitch 审核。客户须提交以下材料：(a) 原始付款凭证（如支付截图、交易流水号等）；(b) 与付款账户一致的身份信息；(c) 对于无法原路退回的订单，须提供与付款人身份一致的收款账户信息。GoSwitch 有权要求客户提供额外的身份证明或交易证明材料。
--   **反欺诈：**为防止欺诈和洗钱行为，GoSwitch 保留对退款申请进行额外审查的权利，包括但不限于验证付款人与收款人的身份一致性。如发现退款申请存在欺诈嫌疑，GoSwitch 有权拒绝退款并暂停相关账户。
--   **最终解释权：**GoSwitch 保留对退款政策的最终解释权，并有权拒绝不符合退款条件的申请。
+-   **Refund Scope:** GoSwitch may refuse refund applications based on Customer's own voluntary changes (including but but not limited to no longer needing the service, usage plan adjustments, etc). Refund applications related to Customer or its Users being restricted, suspended, terminated, or generating fees for violation of these Terms, Usage Policy, Service-Specific Terms, or Use Restrictions may also be refused; such violations include but but are not limited to unauthorized use of Services, Input, Output, response patterns, or model behavior for model scraping, copying, training, fine-tuning, distillation, evaluation, benchmarking, or or improving competitive models. Fees and credits already incurred, consumed, or caused by violations will not be refunded.
+-   **Refund Method:** For refund applications within 90 days after order payment, refunds will be returned through the original payment channel. For refund applications beyond 90 days after order payment, refunds cannot be returned through the original channel, and Customer must provide an alternative collection method.
+-   **Review & Materials:** All refund applications must be reviewed by GoSwitch. Customer must submit: (a) original payment proof (such as payment screenshots, transaction serial numbers, etc.); (b) identity information consistent with the payment account; (c) for orders that cannot be returned through the original channel, collection account information consistent with the payer's identity. GoSwitch may require Customer to provide additional identity proof or transaction proof materials.
+-   **Anti-Fraud:** To prevent fraud and money laundering, GoSwitch retains the right to conduct additional review of refund applications, including but not limited to verifying the identity consistency between the payer and the payee. If a refund application is suspected of fraud, GoSwitch may refuse the refund and suspend the relevant account.
+-   **Final Interpretation:** GoSwitch retains the final interpretation rights of the refund policy and and may refuse applications that do not meet the refund conditions.
 
-## I. 终止和暂停
+## I. Termination and Suspension
 
-**期限。**这些条款从生效日期开始，并持续到终止（“期限”）。
+**Term.** These Terms commence from the Effective Date and continue until terminated ("Term").
 
-**终止。**
+**Termination.**
 
-1.  任何一方均可随时出于便利原因通过通知终止这些条款，但 GoSwitch 必须提前 30 天通知。
-2.  任何一方均可通过提前 30 天通知详细说明违约性质来终止另一方的重大违约行为，除非在该时间内得到纠正。
-3.  如果 GoSwitch 合理认为或确定 GoSwitch 向客户提供服务被适用法律禁止，GoSwitch 可以立即通过通知终止这些条款。
+1.  Either party may terminate these Terms for convenience at any time by notification, but GoSwitch must provide 30 days' notice.
+2.  Either party may terminate the other party's material breach by providing 30 days' notice detailing the nature of the breach, unless cured within that time.
+3.  If GoSwitch reasonably believes or determines that providing the Services to Customer is prohibited by applicable law, GoSwitch may immediately terminate these Terms by notification.
 
-**暂停。**
+**Suspension.**
+GoSwitch may suspend Customer's access to any part or all of the Services if: (a) GoSwitch reasonably believes or determines (i) there is a risk or attack on any Service; (ii) Customer or any User is using the Services in violation of Section D.1 (Compliance), Section D.2 (Policies and Terms of Service), or Section D.4 (Use Restrictions); or (iii) GoSwitch providing the Services to Customer is prohibited by applicable law or would substantially increase the cost of providing the Services; or (b) any provider suspends or terminates GoSwitch's use of any third-party services or products necessary to enable Customer to access the Services (each a "Service Suspension").
 
-GoSwitch 可以暂停客户对任何部分或全部服务的访问，如果：(a) GoSwitch 合理认为或确定 (i) 对任何服务存在风险或攻击；(ii) 客户或任何用户正在违反第 D.1 节（合规性）、第 D.2 节（政策和服务条款）或第 D.4 节（使用限制）的情况下使用服务；或 (iii) GoSwitch 向客户提供服务被适用法律禁止或会导致提供服务的成本大幅增加；或 (b) 任何供应商暂停或终止 GoSwitch 使用使客户能够访问服务所需的任何第三方服务或产品（每种情况称为“服务暂停”）。
+To comply with laws, policies, third-party terms of service, or security requirements, GoSwitch may also restrict, refuse, block, filter, modify, or interrupt Input, Output, account, API keys, channels, or related requests that violate these Terms or Usage Policy.
 
-为遵守法律、政策、第三方服务条款或安全要求，GoSwitch 也可以限制、拒绝、阻断、过滤、修改或中断违反这些条款或使用政策的输入、输出、账户、API 密钥、通道或相关请求。
+GoSwitch will make reasonable efforts to provide Customer with written notice of any Service Suspension and restore access to the Services as soon as possible after the event causing the Service Suspension is resolved (if it can be resolved). GoSwitch is not liable for any damages, liabilities, losses (including any data or profit loss), or any other consequences that Customer may suffer due to Service Suspension.
 
-GoSwitch 将尽合理努力向客户提供任何服务暂停的书面通知，并在引起服务暂停的事件得到纠正（如果可以纠正）后尽快恢复对服务的访问。GoSwitch 对客户因服务暂停而可能遭受的任何损害、责任、损失（包括任何数据或利润损失）或任何其他后果不承担任何责任。
+**Effect of Termination.** After termination, Customer may no longer access the Services. The following sections will survive termination or expiration: (a) Section E (Confidentiality), Section G (Marketing), Section H (Fees), Section I (Termination and Suspension), Section J (Disputes), Section K (Indemnification), Section L.2 (Disclaimer), Section L.3 (Limitations of Liability), and Section M (Miscellaneous); (b) any terms or conditions that must continue to be effective to fulfill their essential purpose.
 
-**终止的效力。**终止后，客户可能无法再访问服务。以下条款将在终止或到期后继续有效：(a) 第 E 节（保密）、第 G 节（宣传）、第 H 节（费用）、第 I 节（终止和暂停）、第 J 节（争议）、第 K 节（赔偿）、第 L.2 节（免责声明）、第 L.3 节（责任限制）和第 M 节（杂项）；(b) 任何必须继续有效以实现其基本目的的条款或条件。
+## J. Disputes
 
-## J. 争议
+**Disputes.** If a dispute, claim, or controversy arises regarding these Terms ("Dispute"), the parties will first attempt to resolve the issue in good faith informally. The party initiating the dispute must notify the other party ("Dispute Notice"). The other party will promptly respond to the Dispute Notice. If the parties fail to resolve the dispute within 45 days after the Dispute Notice is sent, either party may resolve the dispute through arbitration as specified in Section J.2 (Arbitration).
 
-**争议。**如果发生与这些条款有关的争议、索赔或争议（“争议”），各方将首先尝试善意地以非正式方式解决该问题。提出争议的一方必须通知另一方（“争议通知”）。另一方将及时回复争议通知。如果各方在发出争议通知后 45 天内未能解决争议，任何一方均可通过第 J.2 节（仲裁）中规定的仲裁来解决争议。
+**Arbitration.** Any dispute will be resolved through final binding arbitration in English via the following specific regional process. Any judgment on an award rendered through the arbitration procedure of this Section J.2 (Arbitration) may be entered in any court with jurisdiction. The parties agree that, to the maximum extent permitted by law related to these Terms, they waive the right to a jury trial and the right to participate in class actions.
 
-**仲裁。**任何争议将通过以下特定地区流程以英语进行最终约束性仲裁。对本第 J.2 节（仲裁）通过仲裁程序发出的任何裁决的判决可以在具有管辖权的任何法院作出。各方同意，他们在与这些条款相关的法律允许的最大范围内放弃陪审团审判的权利以及加入和参与集体诉讼的权利。
+**Equitable Relief.** This Section J (Disputes) does not limit either party's right to seek equitable relief.
 
-**衡平法救济。**本第 J 节（争议）不限制任何一方寻求衡平法救济。
+## K. Indemnification
 
-## K. 赔偿
+**Claims Against Customer.** GoSwitch will defend Customer and its personnel, successors, and assigns against any Customer Claims (defined below) and indemnify any judgment awarded to a third party by a court regarding such Customer Claims, or any award rendered by an arbitrator pursuant to any GoSwitch-approved settlement regarding such Customer Claims. "Customer Claims" means third-party claims, lawsuits, or proceedings alleging that Customer's paid use of the Services under these Terms (including data GoSwitch used to train models as part of the Services) or output generated through such authorized use infringes any third-party intellectual property rights.
 
-**针对客户的索赔。**GoSwitch 将为客户及其人员、继承人和受让人辩护，使其免受任何客户索赔（如下定义），并对法院对此类客户索赔授予第三方的任何判决或仲裁员根据任何 GoSwitch 批准的和解对此类客户索赔授予第三方的任何裁决进行赔偿。“客户索赔”是指第三方索赔、诉讼或程序，声称客户根据这些条款付费使用服务（包括 GoSwitch 用于训练作为服务一部分的模型的数据）或通过此类授权使用生成的输出侵犯了任何第三方知识产权。
+**Claims Against GoSwitch.** Customer will defend GoSwitch and its personnel, successors, and assigns against any GoSwitch Claims (defined below) and indemnify any judgment awarded to a third party by a court regarding such GoSwitch Claims, or any award rendered by an arbitrator pursuant to any Customer-approved settlement regarding such GoSwitch Claims. "GoSwitch Claims" means any third-party claims, lawsuits, or proceedings related to (a) Customer or its Users' Input or other data provided by Customer, or (b) use of the Services in violation of the Usage Policy, Service-Specific Terms, or Section D.4 (Use Restrictions). GoSwitch Claims and Customer Claims are each referred to as "Claims" where applicable.
 
-**针对 GoSwitch 的索赔。**客户将为 GoSwitch 及其人员、继承人和受让人辩护，使其免受任何 GoSwitch 索赔（如下定义），并对法院对此类 GoSwitch 索赔授予第三方的任何判决或仲裁员根据任何客户批准的和解对此类 GoSwitch 索赔授予第三方的任何裁决进行赔偿。“GoSwitch 索赔”是指与客户或其用户的 (a) 输入或客户提供的其他数据，或 (b) 违反使用政策、服务特定条款或第 D.4 节（使用限制）使用服务有关的任何第三方索赔、诉讼或程序。GoSwitch 索赔和客户索赔各自适用时称为“索赔”。
+**Exclusion.** Neither party's defense or indemnification obligation applies if the underlying allegation arises from the indemnified party's fraud, willful misconduct, violation of law, or breach of agreement. Additionally, GoSwitch's defense and indemnification obligations will not apply if the Customer Claim arises from: (a) Customer's modification of the Services or output; (b) combination of the Services or output with technology or content not provided by GoSwitch; (c) Input or other data provided by Customer; (d) use of the Services or output that Customer knew or should reasonably know infringes or violates others' rights; (e) practice of patent inventions contained in the output; or (f) trademark infringement allegations based on use of output in trade or commerce.
 
-**排除。**如果基础指控源于受赔偿方的欺诈、故意不当行为、违反法律或违反协议，则任何一方的辩护或赔偿义务均不适用。此外，如果客户索赔源于以下情况，GoSwitch 的辩护和赔偿义务将不适用：(a) 客户对服务或输出的修改；(b) 服务或输出与 GoSwitch 未提供的技术或内容的结合；(c) 客户提供的输入或其他数据；(d) 客户知道或应该合理知道侵犯或侵犯他人权利的服务或输出的使用；(e) 对输出中包含的专利发明的实践；或 (f) 基于在贸易或商业中使用输出的商标侵权指控。
+**Process.** The indemnified party must promptly notify the indemnifying party of the relevant Claim and reasonably cooperate in the defense. The indemnifying party will retain control of the defense of any such Claim, including choice of counsel, strategy and process of any litigation or appeal, and any negotiation, settlement, or compromise, unless the indemnified party has the right (not to be un exercised unreasonably) to reject any settlement or compromise that requires it to acknowledge misconduct or liability or subject it to ongoing positive obligations. The indemnifying party's obligation will be relieved if any of the following materially prejudices the defense: (a) the indemnified party's failure to promptly notify the Claim; or (b) failure to reasonably cooperate in the defense.
 
-**流程。**受赔偿方必须立即通知赔偿方相关索赔，并将合理配合辩护。赔偿方将保留对任何此类索赔的辩护的控制权，包括律师的选择、任何诉讼或上诉的策略和过程以及任何谈判或和解或妥协，除非受赔偿方有权（不得无理行使）拒绝任何要求其承认不当行为或责任或使其承受持续积极义务的和解或妥协。如果以下任何一项对辩护造成重大损害，赔偿方的义务将被免除：(a) 受赔偿方未能及时通知索赔；或 (b) 未能合理配合辩护。
+**Exclusive Remedy.** Within the scope covered by this Section K (Indemnification), indemnification is the sole and exclusive remedy of each party for any third-party Claims under these Terms.
 
-**唯一救济。**在本第 K 节（赔偿）涵盖的范围内，赔偿是各方根据这些条款对任何第三方索赔的唯一和排他性救济。
+## L. Warranties and Limitations of Liability
 
-## L. 担保和责任限制
+**Warranties.** Each party represents and warrants that (a) it has the right to enter into these Terms; and (b) entering into and performing these Terms will not violate its corporate rules (if applicable). Customer further represents and warrants that it has all rights and licenses needed to submit Input to the Services.
 
-**担保。**各方表示并保证 (a) 它有权订立这些条款；并且 (b) 订立和履行这些条款不会违反其任何公司规则（如适用）。客户进一步表示并保证其拥有向服务提交输入所需的所有权利和许可。
+**Disclaimer.** Except as expressly provided in these Terms, to the maximum extent permitted by law (A) the Services and output are provided "as is" and "as available" without any warranty of any kind; and (B) GoSwitch makes no warranty regarding third-party products or services (including third-party interfaces), whether express or implied. GoSwitch expressly dis claims all implied warranties, including warranties of merchantability, non-infringement, and fitness for a particular purpose, and any implied warranties arising from statutes, course of dealing, performance, or trade usage. GoSwitch does not warrant or represent that the Services or output are accurate, complete, or error-free, or that their use will be uninterrupted. References to third parties in output may not mean their endorsement or other collaboration with GoSwitch.
 
-**免责声明。**除这些条款中明确规定的范围外，在法律允许的最大范围内 (A) 服务和输出按“原样”和“可用”提供，不提供任何形式的保证；并且 (B) GoSwitch 不对第三方产品或服务（包括第三方接口）作出任何保证，无论是明示的还是暗示的。GoSwitch 明确否认所有暗示保证，包括适销性、不侵权和特定用途适用性的保证，以及源于法规、交易过程或履行或贸易使用的任何暗示保证。GoSwitch 不保证也不声明服务或输出是准确的、完整的或无错误的，或者它们的使用将不会中断。输出中对第三方的引用可能并不意味着他们认可或以其他方式与 GoSwitch 合作。
+**Limitations of Liability.**
 
-**责任限制。**
+Except as provided in Section L.3.b, each party and its affiliates and licensors' liability for any damages arising from or related to these Terms (i) excludes indirect, incidental, special, consequential, or punitive damages, including profit loss, business, contract, revenue, goodwill, production, expected savings, or data, and the cost of procuring substitute goods or services; and (ii) is limited to the fees Customer paid for the Services in the preceding 12 months.
+The liability limitations in this Section L.3 (Limitations of Liability) do not apply to either party's obligations under Section K (Indemnification).
+The liability limitations in this Section L.3 (Limitations of Liability) apply: (I) to the maximum extent permitted by applicable law; (II) to tort liability, including negligence; (III) regardless of the form of action, whether contract, tort, strict product liability, or other; (IV) even if the breaching party was previously advised of the possibility of such damages and even if such damages are foreseeable; and (E) even if the injured party's remedy fails its essential purpose.
+The parties agree that they are entering into these Terms in reliance on the terms of this Section L.3 (Limitations of Liability), which form the fundamental basis of the bargain between the parties.
 
-除第 L.3.b 节规定外，各方及其关联公司和许可方因这些条款产生或与之相关的任何损害的责任 (i) 不包括间接、偶然、特殊、间接或惩戒性损害，包括利润损失、业务、合同、收入、商誉、生产、预期储蓄或数据，以及采购替代商品或服务的成本，并且 (ii) 限于客户在前 12 个月内为服务支付的费用。
-本第 L.3 节（责任限制）中的责任限制不适用于任何一方在第 K 节（赔偿）下的义务。
-本第 L.3 节（责任限制）中的责任限制适用：(I) 在适用法律允许的最大范围内；(II) 对包括过失在内的侵权责任；(III) 无论诉讼形式如何，无论是合同、侵权、严格产品责任还是其他；(IV) 即使违约方事先被告知相关损害的可能性，即使此类损害是可预见的；并且 (E) 即使受伤方的救济未能达到其基本目的。
+## M. Miscellaneous
 
-各方同意，他们是依赖本第 L.3 节（责任限制）的条款订立这些条款的，这些条款构成各方之间议价的基本基础。
+**Notice.** All notices, demands, waivers, and other communications under these Terms (each a "Notice") must be in writing. Except for notices related to requesting arbitration or seeking equitable relief, any notice provided under these Terms may be sent electronically to the address provided to GoSwitch by Customer, or to GoSwitch at [\[email protected\]](https://docs.goswitch.online/cdn-cgi/l/email-protection#99edebeeeef1eceadeeefffdf5e7f3fbb0fdf1f3). Notices are effective only when: (a) the receiving party receives them, and (b) if the party sending the notice has complied with all requirements of this Section M.1 (Notice).
 
-## M. 杂项
+**Electronic Communication.** Customer agrees to receive electronic communications from GoSwitch related to Customer's use of the Services and and these Terms. Unless prohibited by applicable law, electronic communications may be sent via email, the Services, Customer's administrative dashboard, or posted on GoSwitch's website. GoSwitch may also provide electronic communications regarding Customer's use of the Services via SMS or text message, or other methods Customer requests from GoSwitch. If Customer wishes to stop receiving such messages, Customer may request from GoSwitch or use "STOP" to reply to any such SMS.
 
-**通知。**这些条款下的所有通知、要求、弃权和其他通信（每个称为“通知”）必须以书面形式。除与要求仲裁或寻求衡平法救济有关的通知外，根据这些条款提供的任何通知如果是客户，可以通过电子方式发送到提供给 GoSwitch 的地址；如果是 GoSwitch，则发送到 [\[email protected\]](https://docs.goswitch.online/cdn-cgi/l/email-protection#9eedebeeeef1eceadeeefffdf5e7f3fbb0fdf1f3)。通知仅在以下情况下有效：(a) 接收方收到后，并且 (b) 如果发出通知的一方已遵守本第 M.1 节（通知）的所有要求。
+**Amendment and Modification.** GoSwitch may update these Terms at any time, effective 30 days after GoSwitch publishes the update or Customer otherwise receives notification, whichever is earlier, but updates in response to legal or regulatory changes take effect immediately upon publication or notification. Changes will not apply retroactively. Any other amendment or modification of these Terms will be ineffective unless in writing and signed by both parties. Failure to exercise or delay in exercising any right or remedy arising from these Terms will not be and will not be construed as a waiver; any single or partial exercise of any right or remedy will not exclude future exercise of such rights or remedies.
 
-**电子通信。**客户同意根据客户对服务的使用以及与这些条款相关的从 GoSwitch 接收电子通信。除非适用法律禁止，否则电子通信可以通过电子邮件、服务或客户的管理仪表板或在 GoSwitch 的网站上发布。GoSwitch 还可以通过短信或短信提供有关客户使用服务的电子通信，或根据客户从 GoSwitch 请求的其他方式提供。如果客户希望停止接收此类消息，客户可以从 GoSwitch 请求或使用“STOP”回复任何此类短信。
+**Assignment and Delegation.** Neither party may assign its rights or delegate its obligations under these Terms without the other party's prior written consent, but GoSwitch may assign its rights and delegate its obligations to affiliates or as part of a sale of all or substantially all of its business. Except as permitted above, any purported assignment or delegation is void. Any permitted assignment or delegation will not relieve the contracting party or assignor of its obligations under these Terms. These Terms will bind each party and its respective permitted successors and assigns and and benefit them.
 
-**修订和修改。**GoSwitch 可以随时更新这些条款，在 GoSwitch 发布更新后 30 天或客户以其他方式收到通知后生效，但响应法律或法规变化而进行的更新在发布或通知后立即生效。更改不会追溯适用。除非是书面形式并由双方签署，否则对这些条款的任何其他修订或修改均无效。未能行使或延迟行使这些条款产生的任何权利或救济不会也不会被解释为弃权；并且任何权利或救济的单一或部分行使不会排除将来行使此类权利或救济。
+**Severability.** If any provision of these Terms is invalid, illegal, or un enforceable in any jurisdiction, such invalidity, illegality, or un enforceability will not affect any other provision of these Terms  nor will it render such provision or provisions invalid or un enforceable in any other jurisdiction. After determining that any provision or other provision is invalid, illegal, or un enforceable, the parties will negotiate in good faith to amend these Terms to reflect the parties' original intent as closely as possible.
 
-**转让和委托。**未经另一方事先书面同意，任何一方均不得转让其权利或委托其在这些条款下的义务，但 GoSwitch 可以将其权利转让并将其义务委托给关联公司或作为出售其全部或几乎全部业务的一部分。除上述许可外，任何声称的转让或委托均为无效。任何被许可的转让或委托都不会减轻签约方或受让人在这些条款下的义务。这些条款将约束各方及其各自被许可的继承人和受让人并对其有利。
+**Interpretation.** These Terms will be interpreted mutually, neither party being considered the drafter. Document and section headings are provided for convenience and will not be construed. Phrases such as "for example" or "including" or "or" are not limiting.
 
-**可分割性。**如果这些条款的任何条款在任何管辖区无效、非法或不可执行，则此类无效、非法或不可执行性既不会影响这些条款的任何其他条款，也不会使此类条款或条款在任何其他管辖区无效或不可执行。在确定任何条款或其他条款无效、非法或不可执行后，各方将善意谈判以修改这些条款，以尽可能接近反映各方的原始意图。
+**Governing Law; Venue.** These Terms are governed by and interpreted in accordance with the governing law, without regard to any choice of law clause. "Governing law" means the laws of the State of Delaware, United States.
 
-**解释。**这些条款将相互解释，任何一方均不被视为起草者。文件和章节标题是为了方便而提供的，不会被解释。短语“例如”或“包括”或“或”不是限制性的。
+Any litigation, lawsuit, or proceeding related to these Terms that does not need to be resolved through arbitration under Section J (Disputes) will be brought exclusively in the venue, and each party ir irrevocably submits to its exclusive jurisdiction. "Venue" means the courts of the State of Delaware, United States.
 
-**管辖法律；地点。**这些条款受管辖法律管辖并根据管辖法律解释，不考虑任何法律选择条款。“管辖法律”是指美国特拉华州法律。
+**Export and Sanctions.** Customer may not export or provide access to the Services to persons or entities or enter countries or for prohibited uses prohibited by the United States or other applicable international law. Without limiting the preceding sentence, this restriction applies to (a) countries where export or re-export from the United States would be prohibited or illegal without first obtaining an appropriate license; and (b) persons, entities, or countries covered by United States sanctions.
 
-与这些条款相关的任何不需要根据第 J 节（争议）通过仲裁解决的诉讼、诉讼或程序将专门在地点提起，并且各方不可撤销地服从其专属管辖权。“地点”是指美国特拉华州法院。
+**Integration.** These Terms (including the Usage Policy, Supported Region Policy, Service-Specific Terms, DPA, model pricing page,  other documents or terms incorporated by reference in these Terms) constitute the parties' entire understanding regarding the provision and use of the Services. These Terms supers all other understandings or agreements between the parties regarding the Services.
 
-**出口和制裁。**客户不得出口或提供对服务的访问权限给被美国或其他适用国际法禁止的人员或实体或进入国家或用于被禁止的用途。在不限制前述句子的情况下，此限制适用于 (a) 从美国出口或进入该国将被禁止或非法而不首先获得适当许可证的国家，以及 (b) 受美国制裁覆盖的人员、实体或国家。
+**Force Majeure.** Neither party is liable for failure or delay in performance due to circumstances beyond its reasonable control.
 
-**整合。**这些条款（包括使用政策、支持区域政策、服务特定条款、DPA、模型定价页面和这些条款通过引用纳入的其他文件或条款）构成各方对服务提供和使用的完整理解。这些条款取代各方之间关于服务的所有其他理解或协议。
+## Related Links
 
-**不可抗力。**任何一方均不对因其合理控制之外的情况导致的履行失败或延迟承担责任。
-
-## 相关链接
-
--   使用政策（AUP）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
--   支持的国家和地区：[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
--   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
+ -   Usage Policy (AUP): [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+ -   Supported Countries and Regions: [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) -   Service-Specific Terms: [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)

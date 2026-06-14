@@ -1,453 +1,447 @@
-# 分组介绍
+# Group Introduction
 
-Source: https://docs.goswitch.online/docs/token/
+<!-- Source: https://docs.goswitch.online/docs/token/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 如何查看最新分组
+## How to View Latest Groups
 
-1.  在控制台面板，点击右上角“模型广场”，进入分组与模型的查看
+1.  In the console panel, click "Model Plaza" in the upper right corner to view groups and models
 
-2.  进入模型广场，左侧红框处就是[创建API令牌](../register/4-token.md)
-    步骤提到的令牌分组，右侧就是该分组下所存在的模型
+2.  In Model Plaza, the left side (highlighted in red) shows the token groups mentioned in the [Create API Token](../register/4-token.md) step, and the right side shows the models available under that group
 
-3.  左侧分组名后显示的类似x0.5就是该模型的倍率：
 
-    -   选择不同令牌分组可以享受不同的计费倍率
-    -   倍率 < 1 享折扣：0.8倍 = 8折，0.5倍 = 5折
-    -   倍率 > 1 需加价：1.5倍 = 额外支付50%费用
-    -   不选择则使用您的默认计费倍率（1x）
+::: warning Why should you learn this?
 
-::: warning 为什么要教你这一步？
+Teaching someone to fish is better than giving them a fish. Many people only look at group names without understanding what models are actually in each group. After configuring hastily, they encounter "model not found" errors.
 
-授人以鱼不如授人以渔，很多人只知道去看分组名，其实压根不知道这个分组下有哪些模型，稀里糊涂配置以后，使用就会提示“模型不存在”。
+**To prevent this, we'll teach you how to check detailed information for each group directly.**
 
-**为了杜绝这种情况发生，我们直接教你怎么去查看每个分组的详细信息。**
+![](../../assets/image-en/Model/001.png)
 
-![](../../assets/image/Model/001.png)
-
-![](../../assets/image/Model/002.png)
 :::
-## 令牌分组介绍
+## Token Group Introduction
 
-### Default分组
+### Default Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
-    -   一个默认的分组，没有对模型进行特定区分，一些测试模型，或无需分类的模型，以及其他一些乱七八糟的模型放在这个分组中，一般用不上，了解即可
+-   **Group Description:**
+    -   A default group with no specific model categorization. Contains test models, uncategorized models, and miscellaneous models. Generally not useful — just be aware of it
 :::
-::: warning 重要
+::: warning Important
 
-**你要用CC或者Codex或者Gemini cli的话，这个分组与你无关，生成令牌的时候不要选这个分组！！！**
+**If you want to use CC, Codex, or Gemini CLI, this group is irrelevant. Do NOT select this group when creating a token!!!**
 
--   **支持的CLI：**
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   ×不支持
--   **模型列表（实时查询）：**
+    -   ✕ Not supported
+-   **Model List (Real-time query):**
 :::
-### Aws分组
+### Aws Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   亚马逊AWS平台逆向的claude模型，相比AWS官渠，稍微便宜一些，但是稳定性稍微低一些。可用于Claude Code以及其他第三方平台
--   **支持的CLI：**
+    -   Reverse-engineered Claude models from Amazon AWS platform. Slightly cheaper than official AWS channels, but with somewhat lower stability. Can be used for Claude Code and other third-party platforms
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Aws-officially分组
+### Aws-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   从亚马逊AWS平台购买的正规Claude API。此模型与Claude官方模型分开部署，价格贵但稳定，适合兜底使用，仅了解即可
--   **支持的CLI：**
+    -   Official Claude API purchased from Amazon AWS platform. Deployed separately from Claude's official models. More expensive but stable, suitable as a fallback option — just be aware of it
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Aws-Q分组
+### Aws-Q Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
-    -   逆向Kiro的AWSQ的Claude模型，转换为API使用形式。此模型渠道特殊，使用了一系列手法，价格极其低廉。此分组模型相较于Claude官方的模型，上下文为200K，可进行思考，适合拿来日常使用，或做任务规划，翻译等。
+-   **Group Description:**
+    -   Reverse-engineered Claude models from Kiro's AWSQ, converted to API format. Uses a special channel with a series of techniques, resulting in extremely low pricing. Compared to Claude's official models, this group has a 200K context window and supports thinking, suitable for daily use, task planning, translation, etc.
 :::
-::: warning 重要
+::: warning Important
 
-**注意，此分组在ClaudeCode使用的时候容易出现422错误等问题，稳定性不如cc和Aws分组**
+**Note: This group may experience 422 errors and other issues when used with Claude Code. Stability is inferior to CC and Aws groups**
 
--   **支持的CLI：**
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Azure-officially分组
+### Azure-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Azure官方渠道，提供GPT相关模型，可以使用在OpenCode等第三方工具中，也可以拿来聊天
--   **支持的CLI：**
+    -   Official Azure channel providing GPT-related models. Can be used in OpenCode and other third-party tools, or for general chat
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Bailian分组
+### Bailian Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   阿里百炼官方版本渠道，此分组模型使用会按阶梯计价
--   **支持的CLI：**
+    -   Alibaba Cloud Bailian official version channel. Models in this group use tiered pricing
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### CC分组
+### CC Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   使用Claude Code需要选择此分组！主要分组之一，专门用于Claude Code使用，不能接入任何第三方，如果触发GoSwitch的环境审查，会封停你的GoSwitch账号，并进入退款流程。这样做是因为有些人向Claude询问一些NSFW问题，会触发道德审查，导致账号被封且无法退款，为了号池稳定，请勿接入任何第三方
--   **支持的CLI：**
+    -   You must select this group when using Claude Code! One of the main groups, specifically designed for Claude Code. Cannot be connected to any third-party platform. If GoSwitch's environment audit is triggered, your account will be suspended and enter the refund process. This is because some people ask Claude NSFW questions, triggering ethical audits that result in account bans with no refunds. To maintain pool stability, please do not connect to any third-party
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   ×不支持
--   **模型列表（实时查询）：**
+    -   ✕ Not supported
+-   **Model List (Real-time query):**
 :::
-### CC-azu-sale分组
+### CC-azu-sale Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   可用于第三方、Claude Code 的宝贝物品
--   **支持的CLI：**
+    -   Available for third-party and Claude Code use — a great value option
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### CC-expensive分组
+### CC-expensive Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   昂贵的 Claude Code 分组，可用于第三方
--   **支持的CLI：**
+    -   Premium Claude Code group, available for third-party use
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### CC-sale分组
+### CC-sale Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
-    -   便宜的Claude Code分组，提供较为廉价的Claude模型，跟官渠效果差不多，可以接入OpenClaw等第三方使用（养龙虾）
+-   **Group Description:**
+    -   Budget-friendly Claude Code group providing cheaper Claude models with similar performance to official channels. Can be used with OpenClaw and other third-party tools (raising lobsters)
 :::
-::: warning 重要
+::: warning Important
 
-**此分组缓存可能会有异常**
+**This group may have cache anomalies**
 
--   **支持的CLI：**
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### claude-officially分组
+### claude-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Claude 官方key渠道，价格基本对标官方价，适合应急使用
--   **支持的CLI：**
+    -   Official Claude API key channel. Prices basically match official rates, suitable for emergency use
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### claude-sale分组
+### claude-sale Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   逆向出来的Claude模型，贵一些，类似官渠，适合应急时候使用
--   **支持的CLI：**
+    -   Reverse-engineered Claude models. Slightly more expensive, similar to official channels, suitable for emergency use
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Codex分组
+### Codex Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   使用Codex需要选择此分组！主要分组之一，专门用于Codex使用，可以接入第三方使用。尽量还是在Codex中使用，因为这个分组的模型都是对编程特化的，用在其他方面可能效果并不理想
--   **支持的CLI：**
+    -   You must select this group when using Codex! One of the main groups, specifically designed for Codex use. Can also be connected to third-party platforms. However, it's best to use in Codex because the models in this group are specialized for programming — using them for other purposes may not yield ideal results
+-   **Supported CLI:**
 
     -   Codex
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Codex-sale分组
+### Codex-sale Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Codex分组的优惠版本，价格更加廉价
--   **支持的CLI：**
+    -   Discount version of the Codex group with more affordable pricing
+-   **Supported CLI:**
 
     -   Codex
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Cxtocc分组
+### Cxtocc Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
-    -   早期为将 codex 分组模型接入 Claude Code 做过兼容适配的分组。由于该方案稳定性和缓存表现不再符合推荐使用标准，仅保留给已有配置用户参考。
+-   **Group Description:**
+    -   An early compatibility group that adapted Codex group models for Claude Code. Since its stability and cache performance no longer meet recommended standards, it's only kept for reference by existing users.
 :::
-::: warning 重要
+::: warning Important
 
-**此分组已不再建议使用。新用户请优先按照对应工具选择推荐分组：GPT 模型建议在 Codex 中使用，Claude 模型建议在 Claude Code 中使用。**
+**This group is no longer recommended for use. New users should prioritize selecting the recommended groups for their corresponding tools: GPT models are recommended for use in Codex, Claude models are recommended for use in Claude Code.**
 
--   **支持的CLI：**
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   ×不支持
--   **模型列表（实时查询）：**
+    -   ✕ Not supported
+-   **Model List (Real-time query):**
 :::
-### DeepSeek-officially分组
+### DeepSeek-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   DeepSeek官方渠道，提供DeepSeek相关模型
--   **支持的CLI：**
+    -   Official DeepSeek channel providing DeepSeek-related models
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Doubao分组
+### Doubao Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   火山方舟官方渠道，比官方稍微廉价一些，提供豆包相关模型
--   **支持的CLI：**
+    -   Volcano Ark official channel, slightly cheaper than official rates, providing Doubao-related models
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Gemini分组
+### Gemini Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Gemini普通号池，适合一般场景使用，稳定性略差，较为经济的选择
--   **支持的CLI：**
+    -   Gemini standard pool, suitable for general scenarios. Slightly less stable but more economical
+-   **Supported CLI:**
 
     -   Gemini
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Gemini-officially分组
+### Gemini-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   完全接的官方渠道的Gemini API，价格对标官方，适合企业用户
--   **支持的CLI：**
+    -   Fully connected official Gemini API channel. Prices match official rates, suitable for enterprise users
+-   **Supported CLI:**
 
-    -   Gemini Cli
--   **是否支持接入第三方：**
+    -   Gemini CLI
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Gemini-slb分组
+### Gemini-slb Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Gemini企业号池，更加稳定一些，不过价格稍贵，使用Gemini-3 一般接入这个分组的号池，体验很不错
--   **支持的CLI：**
+    -   Gemini enterprise pool, more stable but slightly more expensive. Using Gemini-3 with this group's pool provides a great experience
+-   **Supported CLI:**
 
     -   Gemini
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### GPT-officially分组
+### GPT-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   谨慎选择此分组！GPT官方ApiKey分发模型，适合特殊需要人群使用，普通用户不要选择这个分组，会快速扣额度
--   **支持的CLI：**
+    -   Choose this group cautiously! Official GPT API key distribution models, suitable for users with specific needs. General users should not select this group as it will quickly consume quota
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Image分组
+### Image Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   官方稳定的Image绘图模型聚合分组，具体使用方法可参考「绘图模型教程」章节
--   **支持的CLI：**
+    -   Official stable Image generation model aggregation group. For specific usage, refer to the "Image Model Tutorial" section
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Mimo-officially分组
+### Mimo-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   小米MiMo官方版本渠道
--   **支持的CLI：**
+    -   Xiaomi MiMo official version channel
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Minimax-officially分组
+### Minimax-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   minimax官方渠道，提供较为廉价的minimax模型
--   **支持的CLI：**
+    -   Official Minimax channel providing relatively affordable Minimax models
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Pplx分组
+### Pplx Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   perplexity相关模型逆向，不做深入解释，了解即可
--   **支持的CLI：**
+    -   Reverse-engineered Perplexity-related models. No detailed explanation needed — just be aware of it
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### Sora分组
+### Sora Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   Sora视频生成模型专用分组
--   **支持的CLI：**
+    -   Dedicated group for Sora video generation models
+-   **Supported CLI:**
 
-    -   无
--   **是否支持接入第三方：**
+    -   None
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 :::
-### zai-officially分组
+### zai-officially Group
 
-::: info 详情卡片
+::: info Details
 
--   **分组介绍：**
+-   **Group Description:**
 
-    -   智谱清言GLM官方渠道，适合接入Claude Code使用，或作为日常对话使用
--   **支持的CLI：**
+    -   Official Zhipu GLM (ChatGLM) channel, suitable for Claude Code integration or daily conversation
+-   **Supported CLI:**
 
     -   Claude Code
--   **是否支持接入第三方：**
+-   **Third-party Integration:**
 
-    -   √支持
--   **模型列表（实时查询）：**
+    -   ✓ Supported
+-   **Model List (Real-time query):**
 
 :::

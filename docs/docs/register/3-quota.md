@@ -1,25 +1,19 @@
-# 购买额度
+# Purchase Quota
 
-Source: https://docs.goswitch.online/docs/register/3-quota.html
+<!-- Source: https://docs.goswitch.online/docs/register/3-quota.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-登录控制台后，进入左侧“钱包管理”页面购买额度。
+After logging into the console, go to the "Wallet Management" page on the left side to purchase quota.
 
-## 充值步骤
+## Recharge Steps
 
-1.  在“选择充值额度”中选择固定额度，或在“自定义额度”中输入要充值的金额。
-2.  确认页面下方的“实付金额”后，点击“立即支付”。
+1.  Select a fixed quota amount in "Select recharge quota", or enter a custom amount in "Custom quota".
+2.  Confirm the "Actual payment amount" at the bottom of the page, then click "Pay Now".
 
-::: info 支付说明
+::: info Payment Notes
 
-目前充值比例为 `1:1`，即 **1 元人民币等同于 1 美元额度**。如果使用支付宝或微信支付时没有弹出支付页面，请先关闭代理后重试。
+The current exchange rate is `1:1`, meaning **1 USDT equals 1 USD quota**. If the payment page doesn't appear when using Alipay or WeChat Pay, please disable your proxy and try again.
 :::
-::: warning 临时公告：开票服务调整
 
-为配合近期结算与服务流程调整，GoSwitch 的开票服务将按支付主体与订单时间做阶段性调整：
-
--   个人支付订单当前仅支持开具海外 Invoice。
--   5 月已完成支付的订单，所有用户仍可在 6 月申请补开大陆发票；其中海外 Invoice 订单需完成补税后申请，申请截止至 6 月 15 日。
--   自 6 月起，新购个人支付订单不再支持开具大陆发票；后续大陆发票仅支持企业对公支付订单。
-
-:::

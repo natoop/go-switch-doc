@@ -1,32 +1,35 @@
-# Gemini配置
+# Gemini Configuration
 
-Source: https://docs.goswitch.online/docs/ccswitch/4-gemini.html
+<!-- Source: https://docs.goswitch.online/docs/ccswitch/4-gemini.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
+1.  Open the CC-Switch software you downloaded, and you will see the initial interface as shown below
 
-![](../../assets/image/CC-Switch/003.webp)
+![](../../assets/image-en/CC-Switch/003.webp)
 
-2.  在分组条中，将分组选择至“Gemini”
+2.  In the group bar, select the "Gemini" group
 
-![](../../assets/image/CC-Switch/012.webp)
+![](../../assets/image-en/CC-Switch/012.png)
 
-3.  在供应商分组中，选择如图的“PakcyCode”
+3.  Switch to the console's API key section, click "More", and select "CC Switch"
 
-![](../../assets/image/CC-Switch/013.webp)
+![](../../assets/image-en/CC-Switch/005.png)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
+4.  Set your configuration name and the corresponding model, then click "Open CCSwitch"
 
-![](../../assets/image/Cli/026.webp)
+![](../../assets/image-en/CC-Switch/013.png)
+![](../../assets/image-en/CC-Switch/024.png)
 
-5.  下拉模态框，找到“API Key”配置项，填入你刚才复制的ApiKey，再点击右下角“添加”按钮
+5.  CC-Switch will automatically pop up a confirmation window. After verifying the information, click "Import". The window will automatically close once the import is complete
 
-![](../../assets/image/CC-Switch/014.webp)
+![](../../assets/image-en/CC-Switch/014.png)
 
-6.  添加成功后，在主界面会看到我们配置的分组，在右侧点击“启用”按钮，显示“使用中”，则配置完成
+6.  After successfully adding the configuration, you will see the configured group on the main interface. Click the "Enable" button on the right — when it shows "In Use", the configuration is complete
 
-![](../../assets/image/CC-Switch/015.webp)
+![](../../assets/image-en/CC-Switch/011.png)
 
-7.  在终端运行 `gemini`，看到对话界面并能正常回复即表示配置完成
+7.  Run `gemini` in the terminal. If you see the conversation interface and can get normal responses, the configuration is complete
 
-![](../../assets/image/Cli/022.webp)
+![](../../assets/image-en/Cli/022.webp)

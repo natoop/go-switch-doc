@@ -1,30 +1,22 @@
-# 令牌分组查看
+# Token Group Viewing
 
-Source: https://docs.goswitch.online/docs/token/1-intro.html
+<!-- Source: https://docs.goswitch.online/docs/token/1-intro.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 如何查看最新分组
+## How to View Latest Groups
 
-1.  在控制台面板，点击右上角“模型广场”，进入分组与模型的查看
+1.  In the console panel, click "Model Plaza" in the upper right corner to view groups and models
 
-2.  进入模型广场，左侧红框处就是[创建API令牌](../register/4-token.md)
-    步骤提到的令牌分组，右侧就是该分组下所存在的模型
+2.  In Model Plaza, the left side (highlighted in red) shows the token groups mentioned in the [Create API Token](../register/4-token.md) step, and the right side shows the models available under that group
 
-3.  左侧分组名后显示的类似x0.5就是该模型的倍率：
+::: warning Why should you learn this?
 
-    -   选择不同令牌分组可以享受不同的计费倍率
-    -   倍率 < 1 享折扣：0.8倍 = 8折，0.5倍 = 5折
-    -   倍率 > 1 需加价：1.5倍 = 额外支付50%费用
-    -   不选择则使用您的默认计费倍率（1x）
+Teaching someone to fish is better than giving them a fish. Many people only look at group names without understanding what models are actually in each group. After configuring hastily, they encounter "model not found" errors.
 
-::: warning 为什么要教你这一步？
+**To prevent this, we'll teach you how to check detailed information for each group directly.**
 
-授人以鱼不如授人以渔，很多人只知道去看分组名，其实压根不知道这个分组下有哪些模型，稀里糊涂配置以后，使用就会提示“模型不存在”。
-
-**为了杜绝这种情况发生，我们直接教你怎么去查看每个分组的详细信息。**
-
-![](../../assets/image/Model/001.png)
-
-![](../../assets/image/Model/002.png)
+![](../../assets/image-en/Model/001.png)
 
 :::

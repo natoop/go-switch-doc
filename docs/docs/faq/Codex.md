@@ -1,38 +1,41 @@
-# Codex相关问题
+# Codex Related Questions
 
-Source: https://docs.goswitch.online/docs/faq/Codex.html
+<!-- Source: https://docs.goswitch.online/docs/faq/Codex.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-### 一点点技巧，如何更高效地使用Codex
+### A Few Tips for More Efficient Use of Codex
 
-> 很多人可能会在使用过一段时间Codex后认为模型不如以前好用，也就是出现所谓的“降智”现象
-> 而就目前我的使用体验来看，Codex中提供的模型经过很多次升级，其实都没有出现“降智”，关键是在于**你如何合理地去使用模型**
+> Many people may think that the model becomes less effective after using Codex for a period, experiencing so-called "degradation" phenomenon. However, based on my experience, the models provided in Codex have been upgraded many times without any "degradation" — the key is **how you use the model appropriately**
 
-1.  **任务划分：** 任何时候，都不要去提交一个非常笼统的任务，例如 `请帮我写一个管理系统后台` 等，这样使用必然降智！Codex模型的特点是**严谨有序，指哪打哪**，这就意味着你需要对你的任务进行拆分
+1.  **Task Breakdown:** Never submit a very vague task, such as "Please write a management system backend" — this will inevitably lead to degradation! Codex models are characterized by **rigorous and orderly, following instructions exactly** — you need to break down your tasks
 
-2.  **掌控之内：** 在你开始一个任务之前，你需要对这个任务进行评估，思考这个任务是否已经拆分的足够细致，是否符合“模块化”开发的准则。在任务提交之前，你应该有能力预估Codex这次改动会修改哪些文件，产生哪些变动。一定不要让AI脱离你的认知与掌控之内，不然最终结局就是项目越改越乱，直到从原点重新开始
 
-::: info 一些碎碎念
 
-有一说一，AI时代让很多东西都变得十分简单，但是基础知识决定着你使用AI的上限，目前阶段的AI只算作是一个十分优秀的Copilot角色。这也导致同样的AI在不同的人手里会有不一样的发挥~
+2.  **Stay in Control:** Before starting a task, evaluate whether it is broken down enough and follows the "modular development" principle. Before submitting the task, you should be able to predict which files Codex will modify and what changes it will occur. Do not let AI go beyond your understanding and control — otherwise the project will become increasingly chaotic until having to start from scratch
 
-3.  **避免压缩：** 在多数场景下，你的任务其实最多使用Codex大概60%的上下文就能解决。如果你的任务超过了60%的上下文仍未解决，甚至还需要压缩，那么你这次任务执行之前的拆分工作算是失败了，你需要更加精细地拆分你的任务。一个优秀的Codex Vibe Coding选手几乎不用进行内容压缩！
+::: info Some Thoughts
+
+Honestly, AI has made many things very simple, but basic knowledge determines your upper limit for using AI. At the current stage, AI is just a very excellent Copilot role. This also means that the same AI can have used differently by different people!
+
+3.  **Avoid Compression:** In most scenarios, your task should be completed using at most about 60% of Codex's context. If your task exceeds 60% of context and still unresolved and even requires compression, then the task breakdown before execution has failed — you need to break down the task more carefully. An excellent Codex vibe coding user almost never needs to compress content!
 :::
-### 在Windows系统下，丝滑使用Codex！
+### Smooth Codex Usage on Windows!
 
-::: warning 重要
+::: warning Important
 
-此方法同时解决**读写文件、乱码、Token耗费高、项目无记忆**等多个痛点
+This method simultaneously solves **file reading/writing, encoding issues, high token consumption, project no memory** and other pain points
 
-1.  确保你的`Codex CLI` 与`Vscode Codex`插件正常运行，即你已经能顺利在Vscode的Codex插件上与模型进行对话
+1.  Ensure your `Codex CLI` and `VSCode Codex` plugin are working properly, that i.e you can successfully converse with the model in the VSCode Codex plugin
 
-2.  键盘按下“Win+R”键，输入以下内容后回车，打开你的用户目录
+2.  Press "Win+R" enter the following content and press Enter to open your user directory
 
 ```bash
 %userprofile%\.codex
 ```
 
-3.  找到目录中的`config.toml`文件，打开并编辑，你的配置文件应该如下
+3.  Find the `config.toml` file in the directory, open and edit it. Your configuration file should look like this:
 
 ```toml
 model_provider = "goswitch"
@@ -50,234 +53,180 @@ wire_api = "responses"
 requires_openai_auth = true
 ```
 
-4.  打开目录下`AGENTS.md`文件（如果没有请手动创建），在里面写入以下内容后保存
+4.  Open the `AGENTS.md` file in the directory (create it manually if it doesn't exist), write the following content and save
 
 ```markdown
-:::
-# Codex全局工作指南
+# Codex Global Work Guidelines
 
-## 回答风格:
- - 回答必须使用中文
- - 对总结、Plan、Task、以及长内容的输出，优先进行逻辑整理后使用美观的Table格式整齐输出;普通内容正常输出
+## Answer Style:
+ - Answers must use English
+ - For summaries, Plans, Tasks, and long content output, prioritize logical organization and use a beautiful Table format; output normal content normally
 ```
 
-5.  运行你的Vscode，打开Codex插件用起来，看看有什么不一样吧~
+5.  Run VSCode, open the Codex plugin and and let's see what's different!
 
-### Codex 中常用命令
+### Common Codex Commands
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| /model | 选择当前使用的模型 |
-| /approvals | 设置本会话的审批规则 |
-| /review | 让 Codex 审查当前工作区变更 |
-| /resume | 从历史会话列表中选择并继续一个之前的交互会话 |
-| /new | 在当前 CLI 会话中开启新对话 |
-| /init | 在当前目录生成 [AGENTS.md](http://AGENTS.md) 模板 |
-| /compact | 总结对话内容以释放上下文 |
-| /undo | 撤销 Codex 的上一次操作 |
-| /diff | 查看当前 git diff（含未跟踪文件） |
-| /mention | 将指定文件或目录加入对话上下文 |
-| /status | 查看会话配置和 token 使用情况 |
-| /mcp | 列出当前可用的 MCP 工具 |
-| /exit | 退出 Codex CLI |
+| /model | Select the current model |
+| /approvals | Set approval rules for this session |
+| /review | Let Codex review current workspace changes |
+| /resume | Select and continue a previous session from the session history list |
+| /new | Start a new conversation in the current CLI session |
+| /init | Generate [AGENTS.md](http://AGENTS.md) template in the current directory |
+| /compact | Sumize conversation content to release context |
+| /undo | Undo Codex's last operation |
+| /diff | View current git diff (including untracked files) |
+| /mention | Add specified file or directory to the conversation context |
+| /status | View session configuration and token usage |
+| /mcp | List currently available MCP tools |
+| /exit | Exit Codex CLI |
 
-### Codex在windows系统下乱码问题
+### Codex Encoding Issues on Windows
 
-1.  按下快捷键`Win + R`，打开左下脚运行窗口，输入以下命令后回车
+1.  Press `Win + R` to open the run window, enter the following command and press Enter
 
 ```bash
 intl.cpl
 ```
 
-![](../../assets/image/FAQ/command.webp)
+![](../../assets/image-en/FAQ/command.webp)
 
-2.  点击上侧选项卡“管理”，再点击红色箭头所示的“更改系统区域设置”按钮
+2.  Click the "Administrative" tab above, then click the "Change System Locale Settings" button shown by the red arrow
 
-![](../../assets/image/FAQ/Codex/001.webp)
+![](../../assets/image-en/FAQ/Codex/001.webp)
 
-3.  勾选红色箭头所指选项，点击确定。然后在刚才的窗口也点击确定，之后重启一下你的电脑再使用codex，即可避免乱码
+3.  Check the option shown by the red arrow, click OK. Then click OK in the previous window, restart your computer, and use Codex to avoid encoding issues
 
-![](../../assets/image/FAQ/Codex/002.webp)
+![](../../assets/image-en/FAQ/Codex/002.webp)
 
-### Vscode Codex插件中设置最新模型
+### Set Latest Model in VSCode Codex Plugin
 
 Windows
 
-1.  按下快捷键`Win + R`，打开左下脚运行窗口，输入以下命令后回车
+1.  Press `Win + R` to open the run window, enter the following command in press Enter
 
 ```bash
 %userprofile%\.vscode\extensions
 ```
 
-![](../../assets/image/FAQ/command.webp)
+![](../../assets/image-en/FAQ/command.webp)
 
 MacOS
 
-1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开VsCode插件目录
+1.  In Finder, press "Command+Shift+G", enter the following path in press Enter to open the VSCode extension directory
 
 ```bash
 ~/.vscode/extensions
 ```
 
-![](../../assets/image/FAQ/Codex/009.webp)
+![](../../assets/image-en/FAQ/Codex/009.webp)
 
-2.  找到以`openai.chatgpt`开头的文件夹，后面的数字是版本号，如果存在多个这种开头的目录，选择版本号最新的目录进入
+2.  Find the folder starting with `openai.chatgpt`, - the numbers after it are the version number, if there are multiple such directories, enter the directory with the latest version number
 
-![](../../assets/image/FAQ/Codex/003.webp)
+![](../../assets/image-en/FAQ/Codex/003.webp)
 
-3.  依次进入`webview\assets`文件夹，你会看到一大堆js文件
+3.  Navigate to `webview\assets` folder, you will see many js files
 
-![](../../assets/image/FAQ/Codex/004.webp)
+![](../../assets/image-en/FAQ/Codex/004.webp)
 
-4.  下载**替换脚本**后解压，将这个js文件复制到刚才有一大堆js文件的目录
+4.  Download the **replace script**, and unzip it, copy this js file to the directory with many js files
 
-替换脚本下载
 
-自动读取最新版本号与文件名，直接点击即可下载
 
-待获取
+    Download the replace script
 
-文件名 立即下载
 
-5.  重启你的vscode，你就能看见现在能选择最新模型啦！
 
-### Codex如何配置全局提示词
+    Automatically read the latest version number and file name, click to download directly
 
-1.  请你查看 [Codex CLI 配置](../cli/3-codex.md) 中的前两步
+    Waiting to get
 
-2.  教程中提到的`AGENTS.md`文件就是Codex的全局提示词文件，如果没有这个文件，你同样需要手动创建这个文件，然后写入提示词
+    File name Download now
 
-3.  写入提示词保存，重启你的Codex或者vscode，提示词即生效
+5.  Restart VSCode, and you can see that you can now select the latest model!
+### How to Configure Global Prompt in Codex
+1.  Please check the first two steps in [Codex CLI Configuration](../cli/3-codex.md)
 
-### Codex开启内置网络搜索
+ 2.  The `AGENTS.md` file mentioned in the tutorial is the global prompt file in Codex. If this file does not be present, you need to create it manually, then write the prompt
+ 3.  Save the prompt, restart Codex or VSCode, the prompt will take effect
+### Enable Built-in Web Search in Codex
+1.  Please check the first two steps in [Codex CLI Configuration](../cli/3-codex.md)
 
-1.  请你查看 [Codex CLI 配置](../cli/3-codex.md) 中的前两步
-
-2.  打开教程中提到的`config.toml`文件，在里面加入以下内容
+2.  Open the `config.toml` file mentioned in the tutorial, add the following content
 
 ```toml
 [features]
 web_search_request = true
 ```
 
-3.  运行Codex，进行尝试
+3.  Run Codex and try
+![](../../assets/image-en/FAQ/Codex/010.webp)
 
-![](../../assets/image/FAQ/Codex/010.webp)
+### Codex Network Connection Issues in Container or CLI Sandbox
 
-### Codex 在容器或CLI沙盒中的网络连接问题
+> When Codex encounters network connection issues in the CLI sandbox or container (such as tun mode) (such as unable to pull installation packages), and other tools (such as terminal, Claude Code) work normally, this is usually caused by improper MTU settings.
+**Solution:**
+-   Change the MTU value to 1500, this setting can usually be changed in your Clash client.
+-   For users who cannot find Clash MTU settings on Linux, refer to this link: [https://linux.do/t/topic/1220328](https://linux.do/t/topic/1220328)
+### Connection failed Issue
 
-> 当Codex在CLI沙盒或容器（如tun模式）中运行时遇到网络连接问题（如无法拉取安装包），且其他工具（如终端、Claude Code）正常，这通常是由于MTU设置不当引起的。
+Error message similar to:```text
+Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)```This situation is caused by local network problems, troubleshoot according to the following steps:
+1.  Check whether the local network is working properly, and whether you can access other pages
+2.  Check whether your computer uses using a `network proxy (VPN)` tool, if so please turn it off
+3.  Use the terminal, run the `codex` command, try to send a conversation message in the CLI to determine whether it is a VSCode Codex plugin issue. If so, please restart VSCode and try again
+4.  If it still not work, bring your error screenshot and consult customer service or friends in the group
 
-**解决方案：**
+### 401 Error
 
--   将MTU值改为1500，此设置通常可在您的Clash客户端中进行更改。
-
--   对于在Linux上找不到Clash MTU设置的用户，可以参考此链接：[https://linux.do/t/topic/1220328](https://linux.do/t/topic/1220328)
-
-### Connection failed 问题
-
-报错信息类似为：
-
-```txt
-Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)
-```
-
-出现这种情况是你本机网络出现了问题，按以下步骤排查
-
-1.  检查本机网络是否通畅，能否访问其他页面
-
-2.  检查你的电脑是否使用了`网络代理（梯子）`工具，如果存在请你关闭
-
-3.  使用终端，运行`codex`命令，尝试在CLI中发送对话信息，判断是否是Vscode Codex插件问题，如是，请你重启vscode进行尝试
-
-4.  如果还不行，带上你的报错截图，在群内咨询客服或群友
-
-### 401报错问题
-
-报错信息类似为：
-
-```txt
-exceeded retry limit, last status: 401 Unauthorized, request id: xxxxxx
-```
-
-1.  在Windows或MacOS的终端运行以下命令，判断是否存在环境变量
+Error message similar to:```text
+exceeded retry limit, last status: 401 Unauthorized, request id: xxxxxx```
+1.  Run the following command in Windows or MacOS terminal to determine whether environment variables exist
 
 Windows
-
 ```bash
-cmd /c "echo ================= OPENAI ENV CHECK ================= & ^
-if defined OPENAI_API_KEY (echo OPENAI_API_KEY  = OK) else (echo OPENAI_API_KEY  = MISSING) & ^
-if defined OPENAI_BASE_URL (echo OPENAI_BASE_URL = OK) else (echo OPENAI_BASE_URL = MISSING) & ^
-echo ========================================================="
+cmd /c "echo ================= OPENAI ENV CHECK ================= & ^if defined OPENAI_API_KEY (echo OPENAI_API_KEY = OK) else (echo OPENAI_API_KEY = MISSING) & ^if defined OPENAI_BASE_URL (echo OPENAI_BASE_URL = OK) else (echo OPENAI_BASE_URL = MISSING) & ^echo ========================================================="
 ```
 
-如果输出以下内容，则直接进入第2步
-
-```txt
-OPENAI_API_KEY  = MISSING
-OPENAI_BASE_URL = MISSING
+If the following output appears, proceed directly to step 2
+```text
+OPENAI_API_KEY = MISSINGOPENAI_BASE_URL = MISSING
 ```
 
-如果输出内容不同，请在终端运行以下命令后进入第二步
-
+If the output is different, please run the following command in the terminal and then proceed to step 2
 ```bash
 cmd /c "setx OPENAI_API_KEY \"\" & setx OPENAI_BASE_URL \"\""
 ```
 
-macOS
-
-```bash
-echo "================= OPENAI ENV CHECK ================="
-if [ -z "$OPENAI_API_KEY" ]; then
-  echo "OPENAI_API_KEY  = MISSING"
-else
-  echo "OPENAI_API_KEY  = OK"
-fi
-
-if [ -z "$OPENAI_BASE_URL" ]; then
-  echo "OPENAI_BASE_URL = MISSING"
-else
-  echo "OPENAI_BASE_URL = OK"
-fi
-echo "========================================================"
+macOS```bash
+echo "================= OPENAI ENV CHECK ================="if [ -z "$OPENAI_API_KEY" ]; then  echo "OPENAI_API_KEY = MISSING"else  echo "OPENAI_API_KEY = OK"fiif [ -z "$OPENAI_BASE_URL" ]; then  echo "OPENAI_BASE_URL = MISSING"else  echo "OPENAI_BASE_URL = OK"fiecho "========================================================"
 ```
 
-如果输出以下内容，则直接进入第2步
-
-```txt
-OPENAI_API_KEY  = MISSING
-OPENAI_BASE_URL = MISSING
+If the following output appears, proceed directly to step 2
+```text
+OPENAI_API_KEY = MISSINGOPENAI_BASE_URL = MISSING
 ```
 
-如果输出内容不同，请在终端运行以下命令后进入第二步
-
+If the output is different, run the following command in the terminal and then proceed to step 2
 ```bash
 unset OPENAI_API_KEY OPENAI_BASE_URL
 ```
 
-2.  查看 [Codex在CLI中的配置](../cli/3-codex.md) 一章
+2.  See the [Codex Configuration in CLI](../cli/3-codex.md) chapter
 
-::: warning 重要
-
-**你需要：**
-
-1.  检查~/.codex/auth.json中的 **ApiKey** 配置是否正确
-
-2.  检查~/.codex/config.toml中的 **请求地址** 是否正确
+::: warning Important
+**You need:**
+1.  Check whether the **ApiKey** configuration in ~/.codex/auth.json is correct
+2.  Check whether the **request address** in ~/.codex/config.toml is correct
 :::
-### 403报错问题
-
-报错信息类似为：
-
-```txt
-unexpected status 403 Forbidden: {"error":{"message":"Usage not included in your
-plan","type":"usage_not_included","param":null,"code":null,"plan_type":"basic"}}
+### 403 Error
+Error message similar to:```text
+unexpected status 403 Forbidden: {"error":{"message":"Usage not included in yourplan","type":"usage_not_included","param":null,"code":null,"plan_type":"basic"}}
 ```
 
-出现这种情况是号池中的这个账号出现问题，你需要：
+This situation is caused by an account issue in the pool, you need to:1.  Use `Ctrl+C` to interrupt the conversation, if in VSCode, click the stop button
 
-1.  使用`Ctrl+C`来打断你的对话，如在vscode中，请点击停止按钮
-
-2.  重新发起对话进行尝试，观察是否再次出现此问题
-
-3.  如果重试3次以上无效，带上你的报错截图，在群内咨询客服或群友
+2.  Re-initiate the conversation and try again, observe whether this problem appears again
+3.  If retrying more than 3 times is invalid, bring your error screenshot and consult customer service or friends in the group

@@ -1,82 +1,84 @@
-# Gemini相关问题
+# Gemini Related Questions
 
-Source: https://docs.goswitch.online/docs/faq/Gemini.html
+<!-- Source: https://docs.goswitch.online/docs/faq/Gemini.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
--   [Gemini CLI 使用难题与建议](./Gemini.md#gemini-cli-%E4%BD%BF%E7%94%A8%E9%9A%BE%E9%A2%98%E4%B8%8E%E5%BB%BA%E8%AE%AE)
--   [如何在 Cline 使用 Gemini-3](./Gemini.md#%E5%A6%82%E4%BD%95%E5%9C%A8-cline-%E4%BD%BF%E7%94%A8-gemini-3)
+-   [Gemini CLI Usage Issues and Recommendations](./Gemini.md#gemini-cli-usage-issues-and-recommendations)
+-   [How to Use Gemini-3 in Cline](./Gemini.md#how-to-use-gemini-3-in-cline)
 
-### Gemini CLI 使用难题与建议
+### Gemini CLI Usage Issues and Recommendation
 
-::: warning 现状说明
+::: warning Current Status
 
-Gemini CLI 目前存在多种使用问题，例如可能无法正常调用模型、无法粘贴图片。
-因此通常不建议将 Gemini-3 接入 Gemini CLI。
+Gemini CLI currently has multiple usage issues, such as possibly not being able to call models properly or not being able to paste images.
+Therefore, it is generally not recommended to connect Gemini-3 to Gemini CLI.
 :::
-::: tip 更推荐的方式
+::: tip More Recommended Approach
 
--   优先使用 Roo Code 等第三方 VSCode 插件
--   如必须使用 Gemini CLI，建议使用 Gemini-slb 分组渠道（企业号池，更加稳定）
+-   Prioritize using third-party VSCode plugins like Roo Code
+-   If you must use Gemini CLI, we recommended using the Gemini-slb group channel (enterprise account pool, more stable)
 
-![](../../assets/image/FAQ/Gemini/001.webp)
+![](../../assets/image-en/FAQ/Gemini/001.webp)
 :::
-::: warning 重要
+::: warning Important
 
-如果你不会使用 Roo Code，我们推荐你使用 Gemini-slb 分组渠道的模型在 Gemini CLI 使用，使用 Gemini-3 一般接入这个分组的号池，体验很不错。每个分组支持的模型可查看 [Gemini-slb 分组说明](../token/2-group.md#gemini-slb%E5%88%86%E7%BB%84) 内容，避免配置时出现“无可用渠道”或“模型不存在”问题。
+If you don't know how to use Roo Code, we recommend using Gemini-slb group channel models in Gemini CLI. Gemini-3 generally connects to this group's account pool with a good experience. The models supported by each group can be found in the [Gemini-slb group description](../token/2-group.md#gemini-slb%E5%88%96%E7%BB%84) content to avoid configuration issues with "no available channels" or "model not found" errors.
 :::
-::: info 特别提醒
+::: info Special Reminder
 
--   在 Roo Code 等第三方使用时，选取 `OpenAI Response` 请求格式
+-   When using third-party tools like Roo Code, select the `OpenAI Response` request format
 :::
-### 如何在 Cline 使用 Gemini-3
+### How to Use Gemini-3 in Cline
 
-#### 软件要求
+#### Software Requirements
 
-| 软件 | 版本要求 | 下载链接 |
+| Software | Version Requirement | Download Link |
 | --- | --- | --- |
-| **VSCode** | 1.80.0+ | [下载 VSCode](https://code.visualstudio.com/) |
+| **VSCode** | 1.80.0+ | [Download VSCode](https://code.visualstudio.com/) |
 
-#### 1\. 创建 Gemini 分组令牌
+#### 1. Create Gemini Group Token
 
-按照 [创建 API 令牌](../register/4-token.md) 一章提到的方法，创建如下图中 `gemini` 分组的令牌：
+Follow the method in [Create API Token](../register/4-token.md) to create a token in the `gemini` group as shown below:
 
-![创建 API 选择分组示意图](../../assets/image/FAQ/Gemini/002.webp)
+![Create API select group diagram](../../assets/image-en/FAQ/Gemini/002.webp)
 
-创建 API 选择分组示意图
+Create API select group diagram
 
-#### 2\. 安装 Cline 插件
+#### 2. Install Cline Plugin
 
--   打开 VSCode
--   单击左侧边栏的 **扩展** 图标（或按 `Ctrl+Shift+X` / `Cmd+Shift+X`）
--   在搜索框输入 **Cline**
--   找到 Cline 插件，单击 **安装**
+-   Open VSCode
+-   Click the **Extensions** icon in the left sidebar (or press `Ctrl+Shift+X` / `Cmd+Shift+X`)
+-   Search for **Cline** in the search box
+-   Find the Cline plugin and click **Install**
 
-::: info 安装提示
+::: info Installation Tips
 
--   安装完成后，左侧边栏会出现 Cline 图标
--   首次使用需要配置 API Key
--   建议安装最新版本以获得最佳体验
+-   After installation, the Cline icon will appear in the left sidebar
+-   First-time use requires API Key configuration
+-   Recommended to install the latest version for the best experience
 :::
-#### 3\. 打开 Cline 界面
+#### 3. Open Cline Interface
 
-安装完成后，有两种方式打开 Cline：
+After installation, there are two ways to open Cline:
 
-**方式一：侧边栏图标**
+**Method 1: Sidebar Icon**
 
--   单击 VSCode 左侧边栏的 Cline 图标
+-   Click the Cline icon in the VSCode left sidebar
 
-**方式二：命令面板**
+**Method 2: Command Palette**
 
--   按 `Ctrl+Shift+P` (Windows/Linux) 或 `Cmd+Shift+P` (macOS)
--   输入 `Cline: Open`
--   按 Enter
+-   Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
+-   Enter `Cline: Open`
+-   Press Enter
 
-#### 4\. 首次配置
+#### 4. Initial Configuration
 
-打开 Cline 界面后，按以下步骤配置：
+After opening the Cline interface, follow these steps to configure:
 
-1.  单击 **API Configuration** 按钮
-2.  按下方填写配置信息
+1.  Click the **API Configuration** button
+2.  Fill in the configuration information as follows
 
 ```yaml
 API Provider: OpenAI-compatible
@@ -85,28 +87,27 @@ API Key: sk-*****
 Model ID: gemini-3-pro-preview
 ```
 
-![Cline 配置界面示意图](../../assets/image/FAQ/Gemini/003.webp)
+![Cline configuration interface diagram](../../assets/image-en/FAQ/Gemini/003.webp)
 
-Cline 配置界面示意图
+Cline configuration interface diagram
 
-:::: warning 安全提醒
+:::: warning Security Reminder
 
-请妥善保管你的 `API Key`，不要在群聊或公开截图中泄露。
+Please keep your `API Key` safe and do not disclose it group chats or public screenshots.
+::: details Existing User Note
 
-::: details 已有用户提示
-
-如果您之前使用过 Cline，请单击右上角的 **⚙️ 设置**按钮进入配置界面。
+If you previously used Cline, click the **⚙️ Settings** button in the top right corner to enter the configuration interface.
 :::
 
-**配置参数说明**
+**Configuration Parameter Description**
 ::::
-| 配置项 | 推荐值 | 说明 |
+| Configuration Item | Recommended Value | Description |
 | --- | --- | --- |
-| **API Provider** | `OpenAI-compatible` | 推荐选择此项，支持更多模型 |
-| **Base URL** | `https://goswitch.online/v1` | GoSwitch 的兼容端点 |
-| **API Key** | `sk-******` | 您的 GoSwitch API Key |
-| **Model ID** | `gemini-3-pro-preview` | 推荐使用代码专精模型 |
+| **API Provider** | `OpenAI-compatible` | Recommended to select this option, which supports more models |
+| **Base URL** | `https://goswitch.online/v1` | GoSwitch compatible endpoint |
+| **API Key** | `sk-******` | Your GoSwitch API Key |
+| **Model ID** | `gemini-3-pro-preview` | Recommended to use the code-specialized model |
 
-#### 5\. 完成配置
+#### 5. Complete Configuration
 
-单击右上角 **Done**。
+Click **Done** in the top right corner.

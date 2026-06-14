@@ -1,93 +1,95 @@
-# 支持的国家和地区
+# Supported Countries and Regions
 
-Source: https://docs.goswitch.online/docs/tos/use.html
+<!-- Source: https://docs.goswitch.online/docs/tos/use.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: warning 重要提示
+::: warning Important Notice
 
-本文档根据 GoSwitch「支持的国家和地区」页面内容整理（生效日期：2025 年 10 月 30 日）。
-如本文档与官网存在差异或版本更新，请以官网页面为准：
+This document is compiled from the GoSwitch Supported Countries and Regions page (effective date: October 30, 2025).
+If there are differences or version updates between this document and the official website, please refer to the official website as the authoritative source:
 [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
 :::
-| 项目 | 内容 |
+| Item | Content |
 | --- | --- |
-| 文档名称 | 支持的国家和地区（支持区域政策） |
-| 生效日期 | 2025-01-01 |
-| 来源链接 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| Document Name | Supported Countries and Regions (Supported Region Policy) |
+| Effective Date | 2025-01-01 |
+| Source Link | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
--   [概述](./use.md#%E6%A6%82%E8%BF%B0)
+-   [Overview](./use.md#overview)
 -   [API](./use.md#api)
--   [其他说明](./use.md#%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E)
--   [相关链接](./use.md#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5)
+-   [Other Notes](./use.md#other-notes)
+-   [Related Links](./use.md#related-links)
 
-## 概述
+## Overview
 
-商业 API 访问和 GoSwitch 服务。
+Commercial API access and GoSwitch services.
 
-在法律允许的范围内，GoSwitch 保留不向除我们支持区域政策中列出的国家以外的其大部分直接或间接所有权归属于国家的实体提供其产品或服务的权利。
+To the extent permitted by law, GoSwitch reserves the right not to provide its products or services to entities whose majority of direct or indirect ownership belongs to countries other than those listed in our Supported Region Policy.
 
 ## API
 
-我们目前提供商业 API 访问的国家、地区和领土如下（共 175 项）：
+The countries, regions, and territories where we currently provide commercial API access are listed below (175 total):
 
-::: details 查看支持区域列表（共 175 项）
+::: details View Supported Region List (175 total)
 
-| 支持区域 | 支持区域 | 支持区域 | 支持区域 |
+| Supported Region | Supported Region | Supported Region | Supported Region |
 | --- | --- | --- | --- |
-| 阿尔巴尼亚 | 阿尔及利亚 | 安道尔 | 安哥拉 |
-| 安提瓜和巴布达 | 阿根廷 | 亚美尼亚 | 澳大利亚 |
-| 奥地利 | 阿塞拜疆 | 巴哈马 | 巴林 |
-| 孟加拉国 | 巴巴多斯 | 比利时 | 伯利兹 |
-| 贝宁 | 不丹 | 玻利维亚 | 波斯尼亚和黑塞哥维那 |
-| 博茨瓦纳 | 巴西 | 文莱 | 保加利亚 |
-| 布基纳法索 | 布隆迪 | 佛得角 | 柬埔寨 |
-| 喀麦隆 | 加拿大 | 乍得 | 智利 |
-| 哥伦比亚 | 科摩罗 | 刚果（布拉柴维尔） | 哥斯达黎加 |
-| 科特迪瓦 | 克罗地亚 | 塞浦路斯 | 捷克 |
-| 丹麦 | 吉布提 | 多米尼克 | 多米尼加共和国 |
-| 厄瓜多尔 | 埃及 | 萨尔瓦多 | 赤道几内亚 |
-| 爱沙尼亚 | 斯威士兰 | 斐济 | 芬兰 |
-| 法国 | 加蓬 | 冈比亚 | 格鲁吉亚 |
-| 德国 | 加纳 | 希腊 | 格林纳达 |
-| 危地马拉 | 几内亚 | 几内亚比绍 | 圭亚那 |
-| 海地 | 洪都拉斯 | 匈牙利 | 冰岛 |
-| 印度 | 印度尼西亚 | 伊拉克 | 爱尔兰 |
-| 以色列 | 意大利 | 牙买加 | 日本 |
-| 约旦 | 哈萨克斯坦 | 肯尼亚 | 基里巴斯 |
-| 科威特 | 吉尔吉斯斯坦 | 老挝 | 拉脱维亚 |
-| 黎巴嫩 | 莱索托 | 利比里亚 | 列支敦士登 |
-| 立陶宛 | 卢森堡 | 马达加斯加 | 马拉维 |
-| 马来西亚 | 马尔代夫 | 马耳他 | 马绍尔群岛 |
-| 毛里塔尼亚 | 毛里求斯 | 墨西哥 | 密克罗尼西亚 |
-| 摩尔多瓦 | 摩纳哥 | 蒙古 | 黑山 |
-| 摩洛哥 | 莫桑比克 | 纳米比亚 | 瑙鲁 |
-| 尼泊尔 | 荷兰 | 新西兰 | 尼日尔 |
-| 尼日利亚 | 北马其顿 | 挪威 | 阿曼 |
-| 巴基斯坦 | 帕劳 | 巴勒斯坦 | 巴拿马 |
-| 巴布亚新几内亚 | 巴拉圭 | 秘鲁 | 菲律宾 |
-| 波兰 | 葡萄牙 | 卡塔尔 | 罗马尼亚 |
-| 卢旺达 | 圣基茨和尼维斯 | 圣卢西亚 | 圣文森特和格林纳丁斯 |
-| 萨摩亚 | 圣马力诺 | 圣多美和普林西比 | 沙特阿拉伯 |
-| 塞内加尔 | 塞尔维亚 | 塞舌尔 | 塞拉利昂 |
-| 新加坡 | 斯洛伐克 | 斯洛文尼亚 | 所罗门群岛 |
-| 南非 | 韩国 | 西班牙 | 斯里兰卡 |
-| 苏里南 | 瑞典 | 瑞士 | 中国台湾 |
-| 塔吉克斯坦 | 坦桑尼亚 | 泰国 | 东帝汶 |
-| 多哥 | 汤加 | 特立尼达和多巴哥 | 突尼斯 |
-| 土耳其 | 土库曼斯坦 | 图瓦卢 | 乌干达 |
-| 乌克兰（除克里米亚、顿涅茨克、赫尔松、卢甘斯克和扎波罗热地区外） | 阿拉伯联合酋长国 | 英国 | 美利坚合众国 |
-| 乌拉圭 | 乌兹别克斯坦 | 瓦努阿图 | 梵蒂冈城 |
-| 越南 | 赞比亚 | 津巴布韦 |  |
+| Albania | Algeria | Andorra | Angola |
+| Antigua and Barbuda | Argentina | Armenia | Australia |
+| Austria | Azerbaijan | Bahamas | Bahrain |
+| Bangladesh | Barbados | Belgium | Belize |
+| Benin | Bhutan | Bolivia | Bosnia and Herzegovina |
+| Botswana | Brazil | Brunei | Bulgaria |
+| Burkina Faso | Burundi | Cape Verde | Cambodia |
+| Cameroon | Canada | Chad | Chile |
+| Colombia | Comoros | Congo (Brazzaville) | Costa Rica |
+| Côte d'Ivoire | Croatia | Cyprus | Czech Republic |
+| Denmark | Djibouti | Dominica | Dominican Republic |
+| Ecuador | Egypt | El Salvador | Equatorial Guinea |
+| Estonia | Eswatini | Fiji | Finland |
+| France | Gabon | Gambia | Georgia |
+| Germany | Ghana | Greece | Grenada |
+| Guatemala | Guinea | Guinea-Bissau | Guyana |
+| Haiti | Honduras | Hungary | Iceland |
+| India | Indonesia | Iraq | Ireland |
+| Israel | Italy | Jamaica | Japan |
+| Jordan | Kazakhstan | Kenya | Kiribati |
+| Kuwait | Kyrgyzstan | Laos | Latvia |
+| Lebanon | Lesotho | Liberia | Liechtenstein |
+| Lithuania | Luxembourg | Madagascar | Malawi |
+| Malaysia | Maldives | Malta | Marshall Islands |
+| Mauritania | Mauritius | Mexico | Micronesia |
+| Moldova | Monaco | Mongolia | Montenegro |
+| Morocco | Mozambique | Namibia | Nauru |
+| Nepal | Netherlands | New Zealand | Niger |
+| Nigeria | North Macedonia | Norway | Oman |
+| Pakistan | Palau | Palestine | Panama |
+| Papua New Guinea | Paraguay | Peru | Philippines |
+| Poland | Portugal | Qatar | Romania |
+| Rwanda | Saint Kitts and Nevis | Saint Lucia | Saint Vincent and the Grenadines |
+| Samoa | San Marino | São Tomé and Príncipe | Saudi Arabia |
+| Senegal | Serbia | Seychelles | Sierra Leone |
+| Singapore | Slovakia | Slovenia | Solomon Islands |
+| South Africa | South Korea | Spain | Sri Lanka |
+| Suriname | Sweden | Switzerland | Taiwan |
+| Tajikistan | Tanzania | Thailand | Timor-Leste |
+| Togo | Tonga | Trinidad and Tobago | Tunisia |
+| Turkey | Turkmenistan | Tuvalu | Uganda |
+| Ukraine (excluding Crimea, Donetsk, Kherson, Luhansk, and Zaporizhzhia regions) | United Arab Emirates | United Kingdom | United States |
+| Uruguay | Uzbekistan | Vanuatu | Vatican City |
+| Vietnam | Zambia | Zimbabwe |  |
 :::
 
-## 其他说明
+## Other Notes
 
--   此列表可能会定期更新
--   对于未列出的地区，请联系我们的支持团队了解可用性
--   某些服务可能在特定地区有额外限制
+-   This list may be updated periodically
+-   For regions not listed, please contact our support team for availability information
+-   Some services may have additional restrictions in specific regions
 
-## 相关链接
+## Related Links
 
--   服务条款：[https://goswitch.online/terms](https://goswitch.online/terms)
--   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
--   使用政策（AUP）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+-   Terms of Service: [https://goswitch.online/terms](https://goswitch.online/terms)
+-   Service-Specific Terms: [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
+-   Usage Policy (AUP): [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)

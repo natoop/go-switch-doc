@@ -400,6 +400,65 @@
   text-align: left;
 }
 
+/* Image modal (lightbox) styles */
+#doc-image-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.72);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .18s ease, visibility .18s ease;
+  z-index: 9999;
+}
+
+#doc-image-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#doc-image-modal .doc-image-modal-inner {
+  position: relative;
+  max-width: 94%;
+  max-height: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#doc-image-modal img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+#doc-image-modal #doc-image-modal-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+#doc-image-modal #doc-image-modal-close:hover {
+  background: #222;
+}
+
+.doc-media img { cursor: zoom-in; }
+
 .vp-doc .doc-project-hero > .doc-feature-list > li {
   min-height: 56px;
   margin: 0;
@@ -805,6 +864,17 @@
 .vp-doc hr {
   margin: 44px 0;
   border-color: var(--doc-line);
+}
+
+/* Move search box to the far right of nav bar */
+.VPNavBar .content-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.VPNavBar .content-end .VPNavBarSearch {
+  order: 99;
 }
 
 .VPNav a.has-local-icon,

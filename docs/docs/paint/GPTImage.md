@@ -1,51 +1,53 @@
-# GPT-Image-2 绘图教程
+# GPT-Image-2 Drawing Tutorial
 
-Source: https://docs.goswitch.online/docs/paint/GPTImage.html
+<!-- Source: https://docs.goswitch.online/docs/paint/GPTImage.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 前置准备
+## Prerequisites
 
-`gpt-image-2` 模型属于 **Sora 分组**，使用前需要创建令牌分组为 `sora` 的令牌。
+The `gpt-image-2` model belongs to the **Sora group**. Before using it, you need to create a token with the token group set to `sora`.
 
-参照 [创建令牌分组](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) 教程创建令牌，**分组选择 `sora`**。
+Follow the [Create Token Group](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) tutorial to create a token, **selecting `sora` as the group**.
 
-## 调用方式
+## API Methods
 
-OpenAI 官方文档把图片相关能力分成 Responses API、Images API、Chat Completions API 三类。对 GoSwitch 的 `gpt-image-2` 来说，出图请优先使用 Images API。
+OpenAI's official documentation divides image-related capabilities into three categories: Responses API, Images API, and Chat Completions API. For GoSwitch's `gpt-image-2`, please prioritize using the Images API for image generation.
 
-| API | OpenAI 官方用途 | GoSwitch `gpt-image-2` 使用建议 | 建议 |
+| API | OpenAI Official Purpose | GoSwitch `gpt-image-2` Usage Recommendation | Recommendation |
 | --- | --- | --- | --- |
-| Responses API | 分析图片，并把图片作为输入；也可以通过工具生成图片输出 | 不支持作为 `gpt-image-2` 的出图入口。需要出图请使用 Images API。 | 不支持 |
-| Images API | 生成图片，也可以上传图片作为输入进行编辑 | 支持文生图和图片编辑，是 `gpt-image-2` 的推荐调用方式。 | 推荐 |
-| Chat Completions API | 分析图片输入，并生成文本或音频 | 不支持作为 `gpt-image-2` 的出图入口；`size`、`quality`、`output_format` 等 Images 参数不会按图片接口生效。 | 不支持 |
+| Responses API | Analyze images and use images as input; can also generate image output via tools | Not supported as an image generation endpoint for `gpt-image-2`. Use Images API for image generation. | Not supported |
+| Images API | Generate images, or upload images as input for editing | Supports text-to-image and image editing. This is the recommended method for `gpt-image-2`. | Recommended |
+| Chat Completions API | Analyze image input and generate text or audio | Not supported as an image generation endpoint for `gpt-image-2`; Images parameters like `size`, `quality`, `output_format` will not take effect via this API. | Not supported |
 
-### 方式一：Images API（推荐）
+### Method 1: Images API (Recommended)
 
-Images API 是 `gpt-image-2` 的推荐出图方式，分为文生图和图片编辑两个接口：
+The Images API is the recommended method for `gpt-image-2` image generation, with two endpoints:
 
--   文生图：`POST https://goswitch.online/v1/images/generations`
--   图片编辑 / 图生图：`POST https://goswitch.online/v1/images/edits`
+-   Text-to-image: `POST https://goswitch.online/v1/images/generations`
+-   Image editing / image-to-image: `POST https://goswitch.online/v1/images/edits`
 
-每个接口下面都按“接口实例 → 参数介绍”的格式说明。对新手来说，只要先照着示例传 `model`、`prompt`，并把 `n` 设为 `1`；需要上传图片时再使用 `image` 字段即可。
+Each endpoint is explained in the format "API example → Parameter description" below. For beginners, just pass `model`, `prompt`, and set `n` to `1`; use the `image` field only when uploading images.
 
-::: tip 推荐用法
+::: tip Recommended Usage
 
-文生图使用 `/v1/images/generations`，上传参考图进行图片编辑使用 `/v1/images/edits`。
+Use `/v1/images/generations` for text-to-image, and `/v1/images/edits` for uploading reference images for editing.
 :::
-#### 文生图：`/v1/images/generations`
+#### Text-to-Image: `/v1/images/generations`
 
-##### 接口实例
+##### API Example
 
 ```bash
 curl --location 'https://goswitch.online/v1/images/generations' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer 你的Sora分组令牌' \
+--header 'Authorization: Bearer YourSoraGroupToken' \
 --header 'Accept: */*' \
 --header 'Host: www.goswitch.online' \
 --header 'Connection: keep-alive' \
 --data '{
     "model": "gpt-image-2",
-    "prompt": "一只橘猫戴着橙色围巾抱着水獭，温暖插画风格",
+    "prompt": "An orange cat wearing an orange scarf holding an otter, warm illustration style",
     "size": "3840x2160",
     "quality": "high",
     "output_format": "png",
@@ -54,37 +56,37 @@ curl --location 'https://goswitch.online/v1/images/generations' \
 }'
 ```
 
-##### 文生图参数
+##### Text-to-Image Parameters
 
-| 参数 | 类型 | 支持情况 | 说明 |
+| Parameter | Type | Support Status | Description |
 | --- | --- | --- | --- |
-| `model` | string | 支持 | 固定填写 `gpt-image-2`。 |
-| `prompt` | string | 支持 | 图片描述提示词，建议写清楚主体、场景、风格、比例和文字内容。 |
-| `n` | integer | 仅支持 `1` | 只支持一次返回 1 张图。~`n: 2`、`n: 4`~ 这类多图数量不支持。 |
-| `size` | string | 支持 | 支持 `auto` 和符合限制的尺寸，如 `1024x1024`、`1536x1024`、`1024x1536`、`1536x864`、`3840x2160`。 |
-| `quality` | string | 支持 | 可选 `low`、`medium`、`high`、`auto`。草稿图可以用 `low`，正式出图可以用 `high`。 |
-| `response_format` | string | 支持 | 可选 `url`、`b64_json`。默认建议用 `url`；`b64_json` 适合程序自行保存图片。 |
-| `output_format` | string | 部分支持 | 推荐 `png` 或 `jpeg`。~`webp`~ 不建议使用。 |
-| `output_compression` | integer | 支持 | 只建议在 `output_format` 为 `jpeg` 时使用，取值 `0` 到 `100`。 |
-| `background` | string | 部分支持 | 建议使用默认值或 `opaque`。~`transparent`~ 不支持。 |
-| `moderation` | string | 支持 | 可选 `auto`、`low`。这是安全审核参数，不会直接改变画面风格；不确定时保持默认即可。 |
-| `user` | string | 支持 | 可选，用于标记你自己的终端用户或业务来源，普通调用可以不传。 |
-| ~`stream`~ | boolean | 不支持 | 请不要开启。 |
-| ~`partial_images`~ | integer | 不支持 | 依赖 `stream` 的中间图返回能力，不支持。 |
-| ~`style`~ | string | 不建议使用 | 这是旧模型常见参数，`gpt-image-2` 不需要传。 |
+| `model` | string | Supported | Must be `gpt-image-2`. |
+| `prompt` | string | Supported | Image description prompt. It's recommended to clearly specify the subject, scene, style, proportions, and any text content. |
+| `n` | integer | Only `1` supported | Only 1 image per request. ~`n: 2`, `n: 4`~ multi-image output is not supported. |
+| `size` | string | Supported | Supports `auto` and valid sizes such as `1024x1024`, `1536x1024`, `1024x1536`, `1536x864`, `3840x2160`. |
+| `quality` | string | Supported | Options: `low`, `medium`, `high`, `auto`. Use `low` for drafts, `high` for final images. |
+| `response_format` | string | Supported | Options: `url`, `b64_json`. Default recommendation: `url`; `b64_json` is suitable for programmatic image saving. |
+| `output_format` | string | Partially supported | Recommended: `png` or `jpeg`. ~`webp`~ is not recommended. |
+| `output_compression` | integer | Supported | Recommended only when `output_format` is `jpeg`, values from `0` to `100`. |
+| `background` | string | Partially supported | Recommended: default value or `opaque`. ~`transparent`~ is not supported. |
+| `moderation` | string | Supported | Options: `auto`, `low`. This is a safety review parameter; it won't directly change the visual style. Keep default if unsure. |
+| `user` | string | Supported | Optional. Used to identify your end users or business source. Can be omitted for regular calls. |
+| ~`stream`~ | boolean | Not supported | Do not enable this. |
+| ~`partial_images`~ | integer | Not supported | Depends on `stream` for intermediate image output. Not supported. |
+| ~`style`~ | string | Not recommended | This is a common parameter for older models. `gpt-image-2` does not need this. |
 
-#### 图片编辑 / 图生图：`/v1/images/edits`
+#### Image Editing / Image-to-Image: `/v1/images/edits`
 
-`/v1/images/edits` 使用 `multipart/form-data` 上传图片。`image` 是二进制图片文件，`prompt` 写清楚希望怎么修改图片。
+`/v1/images/edits` uses `multipart/form-data` for image upload. `image` is a binary image file, and `prompt` specifies how you want the image modified.
 
-##### 接口实例
+##### API Example
 
 ```bash
 curl --location 'https://goswitch.online/v1/images/edits' \
---header 'Authorization: Bearer 你的Sora分组令牌' \
+--header 'Authorization: Bearer YourSoraGroupToken' \
 --header 'Accept: */*' \
 --form 'model="gpt-image-2"' \
---form 'prompt="把图片里的主体保留，在右上角加一枚红色小印章，印章上写 DEMO"' \
+--form 'prompt="Keep the main subject in the image, add a small red stamp in the upper right corner with the text DEMO"' \
 --form 'image=@"/path/to/your-image.jpg"' \
 --form 'size="1024x1024"' \
 --form 'quality="high"' \
@@ -92,68 +94,68 @@ curl --location 'https://goswitch.online/v1/images/edits' \
 --form 'response_format="url"'
 ```
 
-##### 图片编辑参数
+##### Image Editing Parameters
 
-| 参数 | 类型 | 支持情况 | 说明 |
+| Parameter | Type | Support Status | Description |
 | --- | --- | --- | --- |
-| `model` | string | 支持 | 固定填写 `gpt-image-2`。 |
-| `prompt` | string | 支持 | 写清楚要保留什么、修改什么、最终希望得到什么。 |
-| `image` | file | 支持 | 必填，上传要编辑的图片二进制文件。建议一次只上传 1 张图片。 |
-| `mask` | file | 支持 | 可选，局部修改时可传 PNG mask；不传则按整图编辑理解。 |
-| `n` | integer | 仅支持 `1` | 只支持一次返回 1 张图。~多张结果~ 不支持。 |
-| `size` | string | 支持 | 同文生图，支持 `auto` 和符合限制的尺寸。 |
-| `quality` | string | 支持 | 可选 `low`、`medium`、`high`、`auto`。 |
-| `response_format` | string | 支持 | 可选 `url`、`b64_json`。默认建议用 `url`。 |
-| `output_format` | string | 部分支持 | 推荐 `png` 或 `jpeg`。~`webp`~ 不建议使用。 |
-| `output_compression` | integer | 支持 | 只建议在 `output_format` 为 `jpeg` 时使用，取值 `0` 到 `100`。 |
-| `background` | string | 部分支持 | 建议使用默认值或 `opaque`。~`transparent`~ 不支持。 |
-| `moderation` | string | 支持 | 可选 `auto`、`low`。这是安全审核参数，不会直接改变画面风格。 |
-| `input_fidelity` | string | 支持 | 图片编辑时可传 `high`，用于尽量保留原图主体和细节。 |
-| `user` | string | 支持 | 可选，普通调用可以不传。 |
-| ~`stream`~ | boolean | 不支持 | 请不要开启。 |
-| ~`partial_images`~ | integer | 不支持 | 依赖 `stream` 的中间图返回能力，不支持。 |
+| `model` | string | Supported | Must be `gpt-image-2`. |
+| `prompt` | string | Supported | Clearly describe what to keep, what to change, and what you want the result to look like. |
+| `image` | file | Supported | Required. Upload the binary image file to edit. Recommended: upload only 1 image at a time. |
+| `mask` | file | Supported | Optional. Pass a PNG mask for local editing; without a mask, the entire image is edited based on the prompt. |
+| `n` | integer | Only `1` supported | Only 1 image per request. ~Multiple results~ are not supported. |
+| `size` | string | Supported | Same as text-to-image. Supports `auto` and valid sizes. |
+| `quality` | string | Supported | Options: `low`, `medium`, `high`, `auto`. |
+| `response_format` | string | Supported | Options: `url`, `b64_json`. Default recommendation: `url`. |
+| `output_format` | string | Partially supported | Recommended: `png` or `jpeg`. ~`webp`~ is not recommended. |
+| `output_compression` | integer | Supported | Recommended only when `output_format` is `jpeg`, values from `0` to `100`. |
+| `background` | string | Partially supported | Recommended: default value or `opaque`. ~`transparent`~ is not supported. |
+| `moderation` | string | Supported | Options: `auto`, `low`. This is a safety review parameter; it won't directly change the visual style. |
+| `input_fidelity` | string | Supported | Pass `high` during image editing to preserve the original image's subject and details as much as possible. |
+| `user` | string | Supported | Optional. Can be omitted for regular calls. |
+| ~`stream`~ | boolean | Not supported | Do not enable this. |
+| ~`partial_images`~ | integer | Not supported | Depends on `stream` for intermediate image output. Not supported. |
 
-如果需要局部修改，可以额外传 `mask`。`mask` 建议使用 PNG 图片，透明区域表示允许模型重点修改的位置；不传 `mask` 时，模型会根据提示词对整张图进行编辑。
+If you need local editing, you can additionally pass a `mask`. The `mask` should be a PNG image where transparent areas indicate where the model should focus on modifying; without a `mask`, the model will edit the entire image based on the prompt.
 
-#### 通用说明
+#### General Notes
 
-##### 尺寸与质量
+##### Size and Quality
 
--   常用尺寸（Popular sizes）
+-   Popular sizes
 
-    -   **1024 × 1024**：正方形
-    -   **1536 × 1024**：横向
-    -   **1024 × 1536**：纵向
-    -   **2048 × 2048**：2K 正方形
-    -   **2048 × 1152**：2K 横向
-    -   **3840 × 2160**：4K 横向
-    -   **2160 × 3840**：4K 纵向
-    -   **auto**：自动（默认）
--   尺寸限制（Size constraints）
+    -   **1024 × 1024**: Square
+    -   **1536 × 1024**: Landscape
+    -   **1024 × 1536**: Portrait
+    -   **2048 × 2048**: 2K Square
+    -   **2048 × 1152**: 2K Landscape
+    -   **3840 × 2160**: 4K Landscape
+    -   **2160 × 3840**: 4K Portrait
+    -   **auto**: Automatic (default)
+-   Size constraints
 
-    -   最大边长必须 **小于或等于 3840 像素**
-    -   宽和高都必须是 **16 的倍数**
-    -   长边与短边的比例 **不能超过 3:1**
-    -   总像素数必须 **不少于 655,360**，且 **不超过 8,294,400**
--   质量选项（Quality options）
+    -   Maximum side length must be **less than or equal to 3840 pixels**
+    -   Both width and height must be **multiples of 16**
+    -   The ratio between the long side and short side **must not exceed 3:1**
+    -   Total pixel count must be **at least 655,360** and **no more than 8,294,400**
+-   Quality options
 
-    -   **low**：低质量
-    -   **medium**：中等质量
-    -   **high**：高质量
-    -   **auto**：自动（默认）
+    -   **low**: Low quality
+    -   **medium**: Medium quality
+    -   **high**: High quality
+    -   **auto**: Automatic (default)
 
-::: tip 参数怎么选
+::: tip How to Choose Parameters
 
--   最简单文生图：只传 `model`、`prompt`，并把 `n` 设为 `1`。
--   想要更高清晰度：可以加 `quality: "high"`。
--   想控制尺寸：加 `size`，比如 `1024x1024` 或 `1536x1024`。
--   想拿图片链接：使用默认 `response_format: "url"`。
--   想让程序自己保存图片：使用 `response_format: "b64_json"`。
--   不要把 `n` 设置成大于 `1`，多张图片需要自己循环请求。
+-   Simplest text-to-image: Just pass `model`, `prompt`, and set `n` to `1`.
+-   For higher resolution: Add `quality: "high"`.
+-   To control size: Add `size`, e.g. `1024x1024` or `1536x1024`.
+-   To get an image URL: Use the default `response_format: "url"`.
+-   For programmatic image saving: Use `response_format: "b64_json"`.
+-   Do not set `n` greater than `1`; for multiple images, make separate requests.
 :::
-##### 返回结果
+##### Response Format
 
-默认返回图片下载地址：
+The default response returns an image download URL:
 
 ```json
 {
@@ -167,9 +169,9 @@ curl --location 'https://goswitch.online/v1/images/edits' \
 }
 ```
 
-返回的 `url` 即为生成的图片地址，直接访问即可下载。`revised_prompt` 是模型实际使用前改写过的提示词，看到它是正常现象，不是报错。
+The returned `url` is the generated image address; you can download it directly by visiting the URL. `revised_prompt` is the prompt that the model rewrote before actually using it — seeing this is normal and not an error.
 
-如果请求里传了 `"response_format": "b64_json"`，返回内容会变成 Base64 图片数据：
+If you passed `"response_format": "b64_json"` in the request, the response will contain Base64 image data:
 
 ```json
 {
@@ -183,93 +185,93 @@ curl --location 'https://goswitch.online/v1/images/edits' \
 }
 ```
 
-这时响应里通常没有 `url`，需要客户端自己把 `b64_json` 解码成图片文件。`url` 和 `b64_json` 两种返回方式都会包含 `revised_prompt`。普通用户更推荐使用默认的 `url`，最容易保存和分享。
+In this case, there is usually no `url` in the response; the client must decode the `b64_json` into an image file itself. Both `url` and `b64_json` response formats include `revised_prompt`. For regular users, the default `url` format is recommended — it's the easiest way to save and share images.
 
-### 方式二：Responses API（不支持）
+### Method 2: Responses API (Not Supported)
 
-::: warning 不支持
+::: warning Not Supported
 
-GoSwitch 的 `gpt-image-2` 不支持通过 `/v1/responses` 出图。请不要使用 `image_generation` 工具、`input` 或 `input_image` 来调用 `gpt-image-2` 生成图片。
+GoSwitch's `gpt-image-2` does not support image generation via `/v1/responses`. Do not use `image_generation` tool, `input`, or `input_image` to call `gpt-image-2` for image generation.
 
-需要文生图请使用 `/v1/images/generations`；需要上传图片编辑请使用 `/v1/images/edits`。
+For text-to-image, use `/v1/images/generations`; for uploading images for editing, use `/v1/images/edits`.
 :::
-### 方式三：Chat Completions API（不支持）
+### Method 3: Chat Completions API (Not Supported)
 
-::: warning 不支持
+::: warning Not Supported
 
-GoSwitch 的 `gpt-image-2` 不支持通过 `/v1/chat/completions` 出图。请不要把 `messages`、`image_url`、`size`、`quality`、`output_format` 等参数放到 Chat Completions 里调用图片生成。
+GoSwitch's `gpt-image-2` does not support image generation via `/v1/chat/completions`. Do not put `messages`, `image_url`, `size`, `quality`, `output_format` or other parameters into Chat Completions to call image generation.
 
-如果使用 Cherry Studio，请切换到“绘画”应用，并确保端点类型是 `图像生成（OpenAI）`。
+If using Cherry Studio, please switch to the "Painting" application and ensure the endpoint type is set to `Image Generation (OpenAI)`.
 :::
-::: tip 给开发者
+::: tip For Developers
 
-如果你的客户端只支持 Chat Completions，并且必须接入图片能力，建议优先改为支持 OpenAI Images API。不要把 `/v1/chat/completions` 当成 `/v1/images/generations` 的替代品。
+If your client only supports Chat Completions and must integrate image capabilities, we recommend prioritizing support for the OpenAI Images API. Do not use `/v1/chat/completions` as a substitute for `/v1/images/generations`.
 :::
-## 在 Cherry Studio 中使用
+## Using in Cherry Studio
 
-1.  参照 [创建令牌分组](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) 一章的教程，创建**令牌分组**为 `sora` 的令牌。创建好令牌后，点击复制按钮，将 API Key 复制到剪切板。
+1.  Follow the [Create Token Group](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%A4%E7%89%8C%E7%AE%A1%E7%90%86) tutorial to create a token with the **token group** set to `sora`. After creating the token, click the copy button to copy the API Key to your clipboard.
 
-2.  访问 [Cherry Studio](https://www.cherry-ai.com/) 官网下载并安装软件。
+2.  Visit the [Cherry Studio](https://www.cherry-ai.com/) official website to download and install the software.
 
-3.  打开 Cherry Studio，点击左下角设置按钮，进入 `模型服务` 页面，点击底部的 `添加` 按钮新增提供商。
+3.  Open Cherry Studio, click the settings button in the bottom left corner, go to the `Model Services` page, and click the `Add` button at the bottom to add a new provider.
 
-4.  在添加提供商窗口中填写提供商名称，例如 `goswitch-gpt-image-2`，`提供商类型` 选择 `New API`，然后点击 `确定`。
+4.  In the Add Provider window, fill in the provider name, e.g. `goswitch-gpt-image-2`, select `New API` as the `Provider Type`, then click `Confirm`.
 
-![](../../assets/image/Paint/gpt-image-2/01.webp)
+![](../../assets/image-en/Paint/gpt-image-2/01.webp)
 
-5.  在左侧列表中找到刚添加的提供商，将第 1 步复制的 `sora` 分组 API Key 填入 `API 密钥`，`API 地址` 填写 `https://goswitch.online`。
+5.  Find the newly added provider in the left sidebar, fill in the `sora` group API Key copied in step 1 into `API Key`, and set `API Address` to `https://goswitch.online`.
 
-![](../../assets/image/Paint/gpt-image-2/02.webp)
+![](../../assets/image-en/Paint/gpt-image-2/02.webp)
 
-6.  点击模型区域右侧的 `获取模型列表`，刷新后添加 `gpt-image-2` 模型。添加完成后，可以在提供商配置页中看到模型列表里已经出现 `gpt-image-2`。
+6.  Click `Get Model List` on the right side of the model area, refresh, and add the `gpt-image-2` model. After adding, you should see `gpt-image-2` in the model list on the provider configuration page.
 
-7.  点击 `gpt-image-2` 右侧的编辑按钮，进入编辑模型窗口，将 `端点类型` 设置为 `图像生成（OpenAI）`，然后点击 `保存`。
+7.  Click the edit button on the right side of `gpt-image-2`, enter the edit model window, set the `Endpoint Type` to `Image Generation (OpenAI)`, then click `Save`.
 
-![](../../assets/image/Paint/gpt-image-2/03.webp)
+![](../../assets/image-en/Paint/gpt-image-2/03.webp)
 
-8.  回到首页，点击顶部的 `+` 按钮，在应用列表中选择 `绘画`。
+8.  Return to the home page, click the `+` button at the top, and select `Painting` from the application list.
 
-![](../../assets/image/Paint/gpt-image-2/04.webp)
+![](../../assets/image-en/Paint/gpt-image-2/04.webp)
 
-9.  进入绘画页面后，左侧 `提供商` 选择刚才添加的供应商，`模型` 选择 `gpt-image-2`。首次使用建议先将 `图片尺寸`、`质量`、`敏感度` 等选项保持为 `自动`，`生成数量` 保持为 `1`。
+9.  On the painting page, select the provider you just added on the left side under `Provider`, and select `gpt-image-2` under `Model`. For first-time use, we recommend keeping `Image Size`, `Quality`, `Sensitivity`, and other options as `Auto`, and `Generation Count` as `1`.
 
-![](../../assets/image/Paint/gpt-image-2/05.webp)
+![](../../assets/image-en/Paint/gpt-image-2/05.webp)
 
-10.  如果只需要根据提示词生成图片，顶部选择 `绘图` 模式，输入提示词后点击发送按钮即可开始生成。
+10.  If you only want to generate images from text prompts, select `Draw` mode at the top, enter your prompt, and click the send button to start generating.
 
-11.  如果需要上传参考图进行图生图或局部修改，顶部切换到 `编辑` 模式，在左侧 `输入图片` 中上传参考图，再输入修改要求后点击发送按钮。
+11.  If you need to upload a reference image for image-to-image or local editing, switch to `Edit` mode at the top, upload your reference image in `Input Image` on the left, enter your modification instructions, and click the send button.
 
-![](../../assets/image/Paint/gpt-image-2/06.webp)
+![](../../assets/image-en/Paint/gpt-image-2/06.webp)
 
-::: tip 使用建议
+::: tip Usage Tips
 
--   `API 地址` 直接填写 `https://goswitch.online` 即可，Cherry Studio 会自动拼接兼容端点，无需手动补 `/v1`。
--   如果模型列表中没有 `gpt-image-2`，请先在 `管理` 中刷新模型；如果仍无法正常绘图，请检查 `端点类型` 是否为 `图像生成（OpenAI）`。
--   使用 `绘图` 模式可以进行文生图；使用 `编辑` 模式可以上传参考图进行图生图或局部修改。
--   如果你在普通对话页中直接调用 `gpt-image-2`，建议关闭 `流式输出`，避免返回内容解析异常。使用 `绘画` 应用时通常不需要额外处理。
+-   `API Address` should simply be `https://goswitch.online`; Cherry Studio will automatically append the compatible endpoint, no need to manually add `/v1`.
+-   If `gpt-image-2` is not in the model list, first refresh models in `Manage`; if image generation still doesn't work, check whether the `Endpoint Type` is set to `Image Generation (OpenAI)`.
+-   Use `Draw` mode for text-to-image; use `Edit` mode to upload reference images for image-to-image or local editing.
+-   If you call `gpt-image-2` directly in a regular chat page, we recommend disabling `Stream Output` to avoid content parsing issues. No additional handling is needed when using the `Painting` application.
 :::
-### 可能出现的问题
+### Possible Issues
 
-如果 Cherry Studio 弹出 `Failed to fetch`，通常是请求连接被中断，可能与本机代理或网络环境有关。可以先检查代理设置，确认 Cherry Studio 能正常访问 `https://goswitch.online` 后再重试。
+If Cherry Studio shows `Failed to fetch`, it usually means the request connection was interrupted, which may be related to your local proxy or network environment. Check your proxy settings first, confirm that Cherry Studio can properly access `https://goswitch.online`, and then retry.
 
-![](../../assets/image/Paint/gpt-image-2/07.webp)
+![](../../assets/image-en/Paint/gpt-image-2/07.webp)
 
-如果 Cherry Studio 弹出 `Unexpected token '<', "<html><h"... is not valid JSON`，通常是请求过程中收到了 Cloudflare 等页面内容，客户端按 JSON 解析时显示异常。遇到这种情况可以直接重试，或稍后再重新生成。
+If Cherry Studio shows `Unexpected token '<', "<html><h"... is not valid JSON`, it usually means you received a Cloudflare or similar page during the request, and the client is displaying an error when trying to parse it as JSON. You can directly retry, or try again later.
 
-![](../../assets/image/Paint/gpt-image-2/08.webp)
+![](../../assets/image-en/Paint/gpt-image-2/08.webp)
 
-## 特别注意：长连接与代理设置
+## Important Note: Long Connections and Proxy Settings
 
-无论是直接通过 API 调用，还是在 Cherry Studio 等客户端程序中使用 `gpt-image-2`，图片生成请求通常都比普通聊天请求耗时更久，尤其是使用编辑模式、高清质量或高分辨率尺寸时。如果本机代理、网络工具或中间网关对长连接有限制，可能会在 60 秒左右主动断开连接，表现为 API 请求超时、没有返回内容，或客户端提示 `Failed to fetch`。
+Whether calling the API directly or using `gpt-image-2` in client programs like Cherry Studio, image generation requests typically take longer than regular chat requests, especially when using editing mode, high quality, or high resolution. If your local proxy, network tools, or intermediate gateways have long connection limits, they may actively disconnect around 60 seconds,表现为 API request timeout, no response content, or the client showing `Failed to fetch`.
 
-下面以 Cherry Studio 的编辑模式为例，长连接中断时程序侧通常会直接弹出 `Failed to fetch`；在开发者工具中，也可以看到 `edits` 请求停在 1 分钟左右。直接调用 API 时虽然界面提示不同，但问题本质相同，都是连接在图片生成完成前被中途断开。
+Below is an example using Cherry Studio's editing mode — when a long connection is interrupted, the client usually pops up `Failed to fetch`; in developer tools, you can also see the `edits` request stopping around 1 minute. When calling the API directly, the interface prompt may differ, but the root cause is the same: the connection was interrupted before image generation completed.
 
-![](../../assets/image/Paint/gpt-image-2/09.webp)
+![](../../assets/image-en/Paint/gpt-image-2/09.webp)
 
-如果确认是代理导致连接被中断，建议将本站域名 `goswitch.online` 加入代理工具的直连或白名单规则，让访问 GoSwitch API 时不再经过代理。不同代理软件的设置入口可能不同，核心是添加类似 `domain:goswitch.online` 的域名规则。
+If you confirm that the proxy is causing the disconnection, we recommend adding the domain `goswitch.online` to your proxy tool's direct connection or whitelist rules, so that access to the GoSwitch API no longer goes through the proxy. Different proxy software may have different settings, but the core is adding a domain rule like `domain:goswitch.online`.
 
-![](../../assets/image/Paint/gpt-image-2/10.webp)
+![](../../assets/image-en/Paint/gpt-image-2/10.webp)
 
-放行后，同类请求可以等待更久并正常返回。下图中请求在约 1.6 分钟后返回图片；如果使用更高分辨率或更高质量选项，生成时间还可能继续增加。为了减少不可控的网络中断，建议绘图请求尽量直连 `goswitch.online`，不要经过会限制长连接的代理或中转网络。
+After bypassing the proxy, similar requests can wait longer and return normally. In the image below, the request returned an image after about 1.6 minutes; if using higher resolution or quality settings, generation time may increase further. To reduce uncontrollable network interruptions, we recommend connecting directly to `goswitch.online` for image generation requests, rather than going through proxies or transit networks that limit long connections.
 
-![](../../assets/image/Paint/gpt-image-2/11.webp)
+![](../../assets/image-en/Paint/gpt-image-2/11.webp)

@@ -1,8 +1,10 @@
-# GoSwitch文档站
+# GoSwitch Documentation
 
-Source: https://docs.goswitch.online/
+<!-- Source: https://docs.goswitch.online/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-仔细看教程，一步步按照教程的指导走，配置跟使用基本不会出现问题。
+Follow the tutorials carefully and configure step by step — you should rarely run into issues.
 
-如果你跟着文档步骤出现问题，请你截图你目前在文档中所到的步骤跟报错信息到QQ群，客服看见就会解答。
+If you encounter any problems while following the documentation steps, please screenshot your current progress and the error message, then share them in our QQ group. Our support team will respond as soon as they see it.

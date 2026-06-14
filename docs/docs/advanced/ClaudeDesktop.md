@@ -1,31 +1,33 @@
 # Claude Desktop
 
-Source: https://docs.goswitch.online/docs/advanced/ClaudeDesktop.html
+<!-- Source: https://docs.goswitch.online/docs/advanced/ClaudeDesktop.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 软件下载
+## Software Download
 
-1.  点击 [Claude Desktop下载链接](https://claude.com/download) ，进入下载页面
+1.  Click the [Claude Desktop download link](https://claude.com/download) to go to the download page
 
-![](../../assets/image/Advanced/ClaudeDesktop/01.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/01.webp)
 
-2.  在如上图 `Desktop` 一块，根据自己的系统，下载对应的安装包
+2.  In the `Desktop` section shown above, download the installer for your system
 
-## 软件安装
+## Software Installation
 
 Windows
 
-1.  Windows系统下软件安装需要请求Anthropic官方，需要你用梯子挂 **全局服务（TUN模式）** ，或是用命令行来运行安装程序，使其强制走代理，否则会出现以下报错
+1.  On Windows, the software installation requires contacting Anthropic's official servers. You need to use a VPN with **global service (TUN mode)**, or run the installer from the command line to force it through the proxy. Otherwise, you will see the following error:
 
-![](../../assets/image/Advanced/ClaudeDesktop/02.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/02.webp)
 
-2.  如果出现以上报错无法安装，请在 Claude Desktop安装程序所在目录运行 `cmd` 命令行
+2.  If you encounter the above error and cannot install, open `cmd` in the directory where the Claude Desktop installer is located
 
-3.  确认你当前使用梯子的端口号，比如我使用的是 `Clash Verge` ，则端口号为 `7897`
+3.  Check your VPN's port number. For example, if you're using `Clash Verge`, the port is `7897`
 
-![](../../assets/image/Advanced/ClaudeDesktop/03.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/03.webp)
 
-4.  在命令行中分别输入以下命令，运行安装程序，此时能够正常安装
+4.  Enter the following commands in the command line to run the installer with proxy settings:
 
 ```bash
 set HTTP_PROXY=http://127.0.0.1:7897
@@ -33,66 +35,66 @@ set HTTPS_PROXY=http://127.0.0.1:7897
 "Claude Setup.exe"
 ```
 
-![](../../assets/image/Advanced/ClaudeDesktop/04.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/04.webp)
 
-5.  正常安装
+5.  The installation should proceed normally
 
-![](../../assets/image/Advanced/ClaudeDesktop/05.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/05.webp)
 
 MacOS
 
-1.  MacOS系统下直接正常安装即可
+1.  On MacOS, you can install directly without additional steps
 
-![](../../assets/image/Advanced/ClaudeDesktop/06.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/06.webp)
 
-## 绕过登录并配置第三方接口
+## Bypass Login and Configure Third-Party API
 
-1.  打开软件进入登录界面
+1.  Open the software and enter the login screen
 
-![](../../assets/image/Advanced/ClaudeDesktop/07.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/07.webp)
 
-2.  开启开发者模式
+2.  Enable Developer Mode
 
 Windows
 
-1.  鼠标点击邮件输入框获取焦点，键盘tab跳到左上角菜单，按下回车依次进入 –> help → troubleshooting → enable developer mode
+1.  Click on the message input field to gain focus, then use Tab to navigate to the top-left menu, press Enter, and navigate through → help → troubleshooting → enable developer mode
 
-![](../../assets/image/Advanced/ClaudeDesktop/08.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/08.webp)
 
-2.  开启 `enable developer mode`
+2.  Enable `enable developer mode`
 
-![](../../assets/image/Advanced/ClaudeDesktop/09.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/09.webp)
 
 MacOS
 
-1.  直接在左上角菜单中依次进入 –> help → troubleshooting → enable developer mode
+1.  From the top-left menu, navigate through → help → troubleshooting → enable developer mode
 
-![](../../assets/image/Advanced/ClaudeDesktop/10.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/10.webp)
 
-2.  开启 `enable developer mode`
+2.  Enable `enable developer mode`
 
-![](../../assets/image/Advanced/ClaudeDesktop/09.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/09.webp)
 
-3.  等待软件重启
+3.  Wait for the software to restart
 
-## 配置第三方API
+## Configure Third-Party API
 
-1.  同样的方法打开菜单，依次进入 Developer → Configure third-party inferenc
+1.  Open the menu again the same way, navigate through Developer → Configure third-party inference
 
-![](../../assets/image/Advanced/ClaudeDesktop/11.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/11.webp)
 
-2.  在Gateway base URL填入 `https://goswitch.online`
+2.  In Gateway base URL, enter `https://goswitch.online`
 
-3.  将Gateway auth scheme更改为 `x-api-key`
+3.  Change Gateway auth scheme to `x-api-key`
 
-4.  Gateway API key请填入生成的 CC分组 的APIKEY
+4.  For Gateway API key, enter your CC group API Key
 
-5.  打开最下方 `Skip login-mode chooser` 选项
+5.  Enable the `Skip login-mode chooser` option at the bottom
 
-![](../../assets/image/Advanced/ClaudeDesktop/12.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/12.webp)
 
-6.  点击右下角 `Apply locally` 按钮使配置生效
+6.  Click the `Apply locally` button in the bottom right corner to apply the configuration
 
-7.  进行愉快的对话吧~
+7.  Enjoy your conversation!
 
-![](../../assets/image/Advanced/ClaudeDesktop/13.webp)
+![](../../assets/image-en/Advanced/ClaudeDesktop/13.webp)

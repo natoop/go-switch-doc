@@ -1,23 +1,25 @@
-# 条款与政策
+# Terms & Policies
 
-Source: https://docs.goswitch.online/docs/tos/
+<!-- Source: https://docs.goswitch.online/docs/tos/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-::: warning 重要提示
+::: warning Important Notice
 
-本目录下文档根据 GoSwitch 官网条款/政策页面内容整理。
-如本文档与官网存在差异或版本更新，请以官网页面为准。
+The documents in this directory are compiled from GoSwitch's official terms/policy pages.
+If there are discrepancies or version updates between this documentation and the official website, please refer to the official website pages.
 :::
-| 文档 | 本地页面 | 生效日期 | 官网来源 |
+| Document | Local Page | Effective Date | Official Source |
 | --- | --- | --- | --- |
-| 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
-| 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://goswitch.online/terms](https://goswitch.online/terms) |
-| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-01-01 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
-| 支持的国家和地区 | [USE](./use.md) | 2025-01-01 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| Acceptable Use Policy (AUP) | [AUP](./aup.md) | 2026-05-13 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
+| Terms of Service | [TOS](./TOS.md) | 2026-05-13 | [https://goswitch.online/terms](https://goswitch.online/terms) |
+| Service-Specific Terms | [Service-specific-terms](./service-specific-terms.md) | 2025-01-01 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
+| Supported Countries and Regions | [USE](./use.md) | 2025-01-01 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
-::: tip 阅读建议
+::: tip Reading Recommendations
 
--   开发与对外发布产品前，建议先通读《使用政策（AUP）》与《服务条款》。
--   若你将服务部署到特定国家/地区，请务必先核对《支持的国家和地区》。
+-   Before developing and releasing products, it's recommended to read the Acceptable Use Policy (AUP) and Terms of Service thoroughly.
+-   If you plan to deploy services to specific countries/regions, please verify the Supported Countries and Regions first.
 
 :::

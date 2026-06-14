@@ -1,35 +1,37 @@
-# Codex配置
+# Codex Configuration
 
-Source: https://docs.goswitch.online/docs/cli/3-codex.html
+<!-- Source: https://docs.goswitch.online/docs/cli/3-codex.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
 Windows
 
-1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
+1.  Press "Win+R" on your keyboard, enter the following and press Enter to open your Codex configuration directory
 
 ```bash
 %userprofile%\.codex
 ```
 
-![](../../assets/image/Cli/006.webp)
+![](../../assets/image-en/Cli/006.webp)
 
-2.  你的目录中可能会存在以下文件，不过我们用到的文件只有三个，需要配置的只有两个
+2.  Your directory may contain the following files, but we only use three of them, and only two need configuration
 
-![](../../assets/image/Cli/007.webp)
+![](../../assets/image-en/Cli/007.webp)
 
--   **config.toml**：Codex的**核心配置**文件，中转服务与MCP等都在此文件配置
+-   **config.toml**: Codex's **core configuration** file, where relay service and MCP settings are configured
 
--   **auth.json**：用来配置你在中转站获取的ApiKey秘钥
+-   **auth.json**: Used to configure the ApiKey obtained from the relay service
 
--   **[AGENTS.md](http://AGENTS.md)**：用来设置codex全局工作的提示词
+-   **[AGENTS.md](http://AGENTS.md)**: Used to set Codex's global work prompts
 
-::: warning 重要
+::: warning Important
 
-**很多人刚安装可能没有这三个文件，你需要手动去创建这三个文件，然后写入内容**
+**Many people may not have these three files after a fresh installation. You need to manually create these three files and write content to them**
 
-3.  配置 Config.toml
+3.  Configure Config.toml
 
-将以下配置文本复制到你的 config.toml文件中保存
+Copy the following configuration text to your config.toml file and save
 
 ```toml
 disable_response_storage = true
@@ -48,9 +50,9 @@ requires_openai_auth = true
 wire_api = "responses"
 ```
 
-4.  配置ApiKey
+4.  Configure ApiKey
 
-将以下配置文本复制到你的 auth.json文件中
+Copy the following configuration text to your auth.json file
 
 ```json
 {
@@ -58,49 +60,49 @@ wire_api = "responses"
 }
 ```
 
-![](../../assets/image/Cli/008.webp)
+![](../../assets/image-en/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+Review [Create API Token](../register/4-token.md), we need to create a **Codex** group token in GoSwitch, then click the copy button on the right and fill the key into the "xxx" part and save
 
-![](../../assets/image/Cli/009.webp)
+![](../../assets/image-en/Cli/009.webp)
 
-5.  测试对话
+5.  Test Dialogue
 
-在windows终端输入以下命令，出现图示内容，进行对话测试，如果有回复，则配置成功，开始你的Codex使用之旅~
+Enter the following command in the Windows terminal. When the content shown appears, test the conversation. If you receive a reply, configuration is successful. Start your Codex journey~
 
 ```bash
 codex
 ```
 
-![](../../assets/image/Cli/010.webp)
+![](../../assets/image-en/Cli/010.webp)
 
 MacOS
 
-1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
+1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the Codex configuration directory
 
 ```bash
 ~/.codex
 ```
 
-![](../../assets/image/Cli/011.webp)
+![](../../assets/image-en/Cli/011.webp)
 
-2.  你的目录中可能会存在以下文件，不过我们用到的文件只有三个，需要配置的只有两个，其它文件可忽略
+2.  Your directory may contain the following files, but we only use three of them, and only two need configuration. Other files can be ignored
 
-![](../../assets/image/Cli/012.webp)
+![](../../assets/image-en/Cli/012.webp)
 
--   **config.toml**：Codex 的核心配置文件，中转服务与 MCP 等都在此文件配置
+-   **config.toml**: Codex's core configuration file, where relay service and MCP settings are configured
 
--   **auth.json**：存放中转站获取的 ApiKey 秘钥
+-   **auth.json**: Stores the ApiKey obtained from the relay service
 
--   **[AGENTS.md](http://AGENTS.md)**：Codex 全局工作的提示词
+-   **[AGENTS.md](http://AGENTS.md)**: Codex's global work prompts
 :::
-::: warning 重要
+::: warning Important
 
-初次安装若未自动生成，需要手动创建上述三个文件并写入内容
+If not auto-generated after initial installation, you need to manually create the above three files and write content
 
-3.  配置 Config.toml
+3.  Configure Config.toml
 
-将以下内容保存到 `config.toml`
+Save the following content to `config.toml`
 
 ```toml
 model_provider = "goswitch"
@@ -118,9 +120,9 @@ wire_api = "responses"
 requires_openai_auth = true
 ```
 
-4.  配置 ApiKey
+4.  Configure ApiKey
 
-将以下配置文本复制到你的 auth.json文件中
+Copy the following configuration text to your auth.json file
 
 ```json
 {
@@ -128,20 +130,19 @@ requires_openai_auth = true
 }
 ```
 
-![](../../assets/image/Cli/008.webp)
+![](../../assets/image-en/Cli/008.webp)
 
-回顾 [创建API令牌](../register/4-token.md) 这一步教程，我们需要在GoSwitch中创建 **Codex** 分组的令牌，然后点击右侧的复制按钮，将key填入“xxx”部分后保存
+Review [Create API Token](../register/4-token.md), we need to create a **Codex** group token in GoSwitch, then click the copy button on the right and fill the key into the "xxx" part and save
 
-![](../../assets/image/Cli/009.webp)
+![](../../assets/image-en/Cli/009.webp)
 
-5.  测试对话
+5.  Test Dialogue
 
-在 MacOS 终端执行以下命令，出现对话界面并能收到回复即表示配置成功
+Run the following command in the MacOS terminal. When the dialogue interface appears and you receive a reply, configuration is successful
 
 ```bash
 codex
 ```
 
-![](../../assets/image/Cli/010.webp)
-
+![](../../assets/image-en/Cli/010.webp)
 :::

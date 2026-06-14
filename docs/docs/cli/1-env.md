@@ -1,25 +1,27 @@
-# 环境检查(通用步骤)
+# Environment Check (Common Steps)
 
-Source: https://docs.goswitch.online/docs/cli/1-env.html
+<!-- Source: https://docs.goswitch.online/docs/cli/1-env.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-### （1）确认Nodejs环境已安装
+### (1) Confirm Node.js is Installed
 
-1.  在windows或MacOS终端输入以下命令
+1.  Enter the following command in a Windows or macOS terminal
 
 ```bash
 npm list -g --depth-0
 ```
 
-正常情况应该是如下图所示（没有任何内容也没关系），如果提示“命令未找到”，则说明你没有安装Nodejs，你需要按 [此教程](https://www.runoob.com/nodejs/nodejs-install-setup.html) 来安装运行Claude Code、Codex、Gemini所需的环境
+Normally it should look like the image below (no content is also fine). If you see "command not found", it means you haven't installed Node.js. You need to follow [this tutorial](https://www.runoob.com/nodejs/nodejs-install-setup.html) to install the environment required for Claude Code, Codex, and Gemini
 
-![](../../assets/image/Cli/001.webp)
+![](../../assets/image-en/Cli/001.webp)
 
-2.  如果你发现自己没有安装Nodejs，并且跟着教程目前已经安装完毕，请你重新执行上述提到的命令，如果不再提示“命令未找到”，则说明安装成功
+2.  If you discover Node.js isn't installed and have now completed the installation following the tutorial, please re-run the command above. If it no longer says "command not found", the installation was successful
 
-### （2）安装CLI
+### (2) Install CLI
 
-1.  在windows或MacOS终端输入以下命令，一次性安装好我们目前所需的所有终端
+1.  Enter the following commands in a Windows or macOS terminal to install all the CLI tools we need at once
 
 ```bash
 npm i -g @anthropic-ai/claude-code@latest
@@ -27,48 +29,48 @@ npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
 ```
 
-![](../../assets/image/Cli/002.webp)
+![](../../assets/image-en/Cli/002.webp)
 
-### （3）测试安装成功
+### (3) Test Installation
 
-::: warning 重要
+::: warning Important
 
-**这一步很重要，请你务必运行命令进行测试，因为这一步运行命令后，你的用户目录下才会生成各CLI的配置目录，方便后续操作！**
+**This step is very important. You must run the commands to test, because running these commands will generate the configuration directories for each CLI in your user directory, which is necessary for subsequent operations!**
 
 Claude Code
 
-1.  在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Claude Code is installed successfully
 
 ```bash
 claude
 ```
 
-![](../../assets/image/Cli/003.webp)
+![](../../assets/image-en/Cli/003.webp)
 :::
-::: warning 重要
+::: warning Important
 
-**第二步十分重要，请你务必跳转链接后运行命令进行配置**
+**The second step is very important. You must follow the link and run the command to configure**
 
-2.  点击 [claude code 无法连接到 Anthropic 服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1) 跳转，务必根据教程运行命令，然后再继续阅读之后单独CLI的配置教程
+2.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
 
 Codex
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Codex is installed successfully
 
 ```bash
 codex
 ```
 
-![](../../assets/image/Cli/004.webp)
+![](../../assets/image-en/Cli/004.webp)
 
 Gemini
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Gemini is installed successfully
 
 ```bash
 gemini
 ```
 
-![](../../assets/image/Cli/005.webp)
+![](../../assets/image-en/Cli/005.webp)
 
 :::

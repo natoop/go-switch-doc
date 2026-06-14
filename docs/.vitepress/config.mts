@@ -12,9 +12,19 @@ type SidebarItem = {
 
 const configDir = dirname(fileURLToPath(import.meta.url))
 const siteRoot = resolve(configDir, '..')
-const contentRoot = join(siteRoot, 'docs')
 
-const sectionMeta: Record<string, { text: string, order: number }> = {
+const sectionMetaEn: Record<string, { text: string, order: number }> = {
+  register: { text: 'Getting Started', order: 10 },
+  token: { text: 'Models & Token Groups', order: 20 },
+  ccswitch: { text: 'CC-Switch Quick Setup', order: 30 },
+  cli: { text: 'CLI Manual Setup', order: 40 },
+  paint: { text: 'Image Models', order: 50 },
+  advanced: { text: 'Third-party Integration', order: 60 },
+  faq: { text: 'FAQ', order: 70 },
+  tos: { text: 'Terms & Policies', order: 80 }
+}
+
+const sectionMetaZh: Record<string, { text: string, order: number }> = {
   register: { text: '入门与账号配置', order: 10 },
   token: { text: '模型与令牌分组', order: 20 },
   ccswitch: { text: 'CC-Switch 一键配置', order: 30 },
@@ -37,6 +47,14 @@ function markdownTitle(file: string) {
 function titleFromName(name: string) {
   return name
     .replace(/\.md$/i, '')
+    .replace(/^(README|index)$/i, 'Overview')
+    .replace(/^\d+[-_]/, '')
+    .replace(/[-_]/g, ' ')
+}
+
+function titleFromNameZh(name: string) {
+  return name
+    .replace(/\.md$/i, '')
     .replace(/^(README|index)$/i, '概览')
     .replace(/^\d+[-_]/, '')
     .replace(/[-_]/g, ' ')
@@ -53,24 +71,24 @@ function compareEntries(a: string, b: string) {
   if (!Number.isNaN(aNum) && !Number.isNaN(bNum) && aNum !== bNum)
     return aNum - bNum
 
-  return a.localeCompare(b, 'zh-CN', { numeric: true })
+  return a.localeCompare(b, 'en', { numeric: true })
 }
 
-function routeFor(file: string) {
+function routeFor(file: string, siteRoot: string) {
   const normalized = relative(siteRoot, file).split(sep).join('/')
-  return `/${normalized}`
-    .replace(/\/(README|index)\.md$/i, '/')
+  return '/' + normalized
+    .replace(/\/?(README|index)\.md$/i, '/')
     .replace(/\.md$/i, '')
 }
 
-function fileItem(file: string): SidebarItem {
+function fileItem(file: string, siteRoot: string, titleFn: (name: string) => string): SidebarItem {
   return {
-    text: markdownTitle(file) ?? titleFromName(file.split(sep).at(-1) ?? file),
-    link: routeFor(file)
+    text: markdownTitle(file) ?? titleFn(file.split(sep).at(-1) ?? file),
+    link: routeFor(file, siteRoot)
   }
 }
 
-function sectionItem(dir: string): SidebarItem {
+function sectionItem(dir: string, siteRoot: string, sectionMeta: Record<string, { text: string, order: number }>, titleFn: (name: string) => string): SidebarItem {
   const entries = readdirSync(dir)
     .filter((entry) => entry.endsWith('.md'))
     .sort(compareEntries)
@@ -80,22 +98,32 @@ function sectionItem(dir: string): SidebarItem {
     ? join(dir, 'index.md')
     : join(dir, 'README.md')
   const sectionTitle = sectionMeta[dirName]?.text ?? (existsSync(readme)
-    ? (markdownTitle(readme) ?? titleFromName(dir.split(sep).at(-1) ?? dir))
-    : titleFromName(dir.split(sep).at(-1) ?? dir))
+    ? (markdownTitle(readme) ?? titleFn(dir.split(sep).at(-1) ?? dir))
+    : titleFn(dir.split(sep).at(-1) ?? dir))
 
   return {
     text: sectionTitle,
     collapsed: false,
-    items: entries.map((entry) => fileItem(join(dir, entry)))
+    items: entries.map((entry) => fileItem(join(dir, entry), siteRoot, titleFn))
   }
 }
 
-function buildSidebar(): SidebarItem[] {
+function buildSidebar(locale: 'en' | 'zh'): SidebarItem[] {
+  const sectionMeta = locale === 'zh' ? sectionMetaZh : sectionMetaEn
+  const titleFn = locale === 'zh' ? titleFromNameZh : titleFromName
+  const contentRoot = locale === 'zh'
+    ? join(siteRoot, 'zh', 'docs')
+    : join(siteRoot, 'docs')
+
+  const overviewTitle = locale === 'zh' ? '概览' : 'Overview'
+  const homeTitle = locale === 'zh' ? '首页' : 'Home'
+  const homeLink = locale === 'zh' ? '/zh/' : '/'
+
   const sidebar: SidebarItem[] = [
     {
-      text: '总览',
+      text: overviewTitle,
       items: [
-        { text: '首页', link: '/' }
+        { text: homeTitle, link: homeLink }
       ]
     }
   ]
@@ -109,7 +137,7 @@ function buildSidebar(): SidebarItem[] {
     .map((entry) => join(contentRoot, entry))
 
   if (topLevelFiles.length > 0) {
-    sidebar[0].items?.push(...topLevelFiles.map(fileItem))
+    sidebar[0].items?.push(...topLevelFiles.map((f) => fileItem(f, siteRoot, titleFn)))
   }
 
   const sections = readdirSync(contentRoot)
@@ -126,18 +154,17 @@ function buildSidebar(): SidebarItem[] {
       if (bMeta)
         return 1
 
-      return a.localeCompare(b, 'zh-CN', { numeric: true })
+      return a.localeCompare(b, locale === 'zh' ? 'zh-CN' : 'en', { numeric: true })
     })
-    .map(sectionItem)
+    .map((s) => sectionItem(s, siteRoot, sectionMeta, titleFn))
 
   sidebar.push(...sections)
   return sidebar
 }
 
 export default defineConfig({
-  title: 'GoSwtich',
-  description: 'GoSwtich documentation',
-  lang: 'zh-CN',
+  title: 'GoSwitch',
+  description: 'GoSwitch documentation',
   cleanUrls: true,
   ignoreDeadLinks: true,
   lastUpdated: true,
@@ -146,38 +173,69 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#2563eb' }]
   ],
   themeConfig: {
-    logo: { src: '/logo.svg', alt: 'GoSwtich logo' },
-    siteTitle: 'GoSwtich',
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '快速开始', link: '/docs/register/' },
-      { text: 'CLI', link: '/docs/cli/' },
-      { text: 'FAQ', link: '/docs/faq/' },
-      { text: '条款', link: '/docs/tos/' }
-    ],
-    sidebar: buildSidebar(),
+    logo: { src: '/logo.svg', alt: 'GoSwitch logo' },
+    siteTitle: 'GoSwitch',
     search: {
       provider: 'local'
+    }
+  },
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en',
+      themeConfig: {
+        nav: [],
+        sidebar: buildSidebar('en'),
+        outline: {
+          level: [2, 4],
+          label: 'On this page'
+        },
+        docFooter: {
+          prev: 'Previous',
+          next: 'Next'
+        },
+        lastUpdated: {
+          text: 'Last updated'
+        },
+        darkModeSwitchLabel: 'Appearance',
+        lightModeSwitchTitle: 'Switch to light mode',
+        darkModeSwitchTitle: 'Switch to dark mode',
+        sidebarMenuLabel: 'Menu',
+        returnToTopLabel: 'Return to top',
+        footer: {
+          message: 'GoSwitch documentation site.',
+          copyright: 'Copyright © 2026 GoSwitch'
+        }
+      }
     },
-    outline: {
-      level: [2, 4],
-      label: '本页目录'
-    },
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
-    lastUpdated: {
-      text: '最后更新'
-    },
-    darkModeSwitchLabel: '外观',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-    sidebarMenuLabel: '菜单',
-    returnToTopLabel: '回到顶部',
-    footer: {
-      message: 'GoSwtich documentation site.',
-      copyright: 'Copyright © 2026 GoSwtich'
+    zh: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      link: '/zh/',
+      themeConfig: {
+        nav: [],
+        sidebar: buildSidebar('zh'),
+        outline: {
+          level: [2, 4],
+          label: '本页目录'
+        },
+        docFooter: {
+          prev: '上一页',
+          next: '下一页'
+        },
+        lastUpdated: {
+          text: '最后更新'
+        },
+        darkModeSwitchLabel: '外观',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        sidebarMenuLabel: '菜单',
+        returnToTopLabel: '回到顶部',
+        footer: {
+          message: 'GoSwitch documentation site.',
+          copyright: 'Copyright © 2026 GoSwitch'
+        }
+      }
     }
   }
 })

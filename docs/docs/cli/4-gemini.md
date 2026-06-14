@@ -1,23 +1,25 @@
-# Gemini配置
+# Gemini Configuration
 
-Source: https://docs.goswitch.online/docs/cli/4-gemini.html
+<!-- Source: https://docs.goswitch.online/docs/cli/4-gemini.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
 Windows
 
-1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
+1.  Press "Win+R" on your keyboard, enter the following and press Enter to open the Gemini CLI configuration directory
 
 ```bash
 %userprofile%\.gemini
 ```
 
-![](../../assets/image/Cli/019.webp)
+![](../../assets/image-en/Cli/019.webp)
 
-2.  如果目录下没有 `.env` 文件，请新建一个 `.env`，写入以下内容
+2.  If there's no `.env` file in the directory, create a new `.env` file and write the following content
 
--   **.env**：Gemini CLI的配置文件，主要设置自定义端点、ApiKey跟所用模型
+-   **.env**: Gemini CLI configuration file, mainly setting custom endpoint, ApiKey, and model used
 
-![](../../assets/image/Cli/020.webp)
+![](../../assets/image-en/Cli/020.webp)
 
 ```bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
@@ -25,31 +27,31 @@ GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-![](../../assets/image/Cli/021.webp)
+![](../../assets/image-en/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitch, copy the ApiKey and fill it in for `xxx`
 
-![](../../assets/image/Cli/026.webp)
+![](../../assets/image-en/Cli/026.webp)
 
-4.  打开终端执行 `gemini`，看到交互界面并能正常回复即表示配置成功
+4.  Open a terminal and run `gemini`. When the interactive interface appears and responds normally, configuration is successful
 
-![](../../assets/image/Cli/022.webp)
+![](../../assets/image-en/Cli/022.webp)
 
 MacOS
 
-1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
+1.  Press "Command+Shift+G", enter the following path and press Enter to open the configuration directory
 
 ```bash
 ~/.gemini
 ```
 
-![](../../assets/image/Cli/023.webp)
+![](../../assets/image-en/Cli/023.webp)
 
-2.  若目录中没有 `.env` 文件，创建并写入以下内容
+2.  If there's no `.env` file in the directory, create one and write the following content
 
--   **.env**：Gemini CLI的配置文件，主要设置自定义端点、ApiKey跟所用模型
+-   **.env**: Gemini CLI configuration file, mainly setting custom endpoint, ApiKey, and model used
 
-![](../../assets/image/Cli/024.webp)
+![](../../assets/image-en/Cli/024.webp)
 
 ```bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
@@ -57,10 +59,10 @@ GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitch, and fill in `xxx`
 
-![](../../assets/image/Cli/026.webp)
+![](../../assets/image-en/Cli/026.webp)
 
-4.  在终端运行 `gemini`，可正常进入对话并收到回复即表示配置完成
+4.  Run `gemini` in the terminal. If you can enter the dialogue normally and receive replies, configuration is complete
 
-![](../../assets/image/Cli/022.webp)
+![](../../assets/image-en/Cli/022.webp)

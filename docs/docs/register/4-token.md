@@ -1,48 +1,45 @@
-# 创建 API 令牌
+# Create API Token
 
-Source: https://docs.goswitch.online/docs/register/4-token.html
+<!-- Source: https://docs.goswitch.online/docs/register/4-token.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-登录后进入控制台面板，左侧选择“令牌管理”。
+After logging in, go to the console panel and select "Token Management" from the left side.
 
-![](../../assets/image/QuickStart/004.png)
+![](../../assets/image-en/QuickStart/004.png)
 
-### 进入令牌管理
+### Enter Token Management
 
-1.  在左侧菜单点击“令牌管理”。
-2.  点击页面上方的“添加令牌”。
+1.  Click "Token Management" in the left menu.
+2.  Click "Add Token" at the top of the page.
 
-### 创建新令牌
+### Create a New Token
 
-在弹窗中填写令牌信息：
+Fill in the token information in the popup:
 
-![](../../assets/image/QuickStart/005.webp)
+![](../../assets/image-en/QuickStart/005.png)
 
--   令牌名称：用于区分不同用途，例如 `Claude Code`、`Codex`、`Gemini`。
--   令牌分组：必须选择，分组决定这个令牌可以使用哪些模型。
--   过期时间：默认“永不过期”，也可以按需要设置有效期。
--   新建数量：一般保持 `1` 即可。
--   额度设置：开启“无限额度”时，令牌实际可用额度仍受账户余额限制。
--   访问限制：不熟悉时建议先保持默认，不要开启模型限制或 IP 白名单。
+-   Token Name: Used to distinguish different purposes, e.g., `Claude Code`, `Codex`, `Gemini`.
+-   Token Group: Must be selected. The group determines which models this token can use.
+-   Expiration Time: Default is "Never expire", or you can set a validity period as needed.
+-   Quantity: Generally keep `1`.
+-   Quota Setting: When "Unlimited quota" is enabled, the token's actual available quota is still limited by your account balance.
+-   Access Restriction: If you're not familiar with this, it's recommended to keep the default settings. Don't enable model restrictions or IP whitelist.
 
-::: warning 令牌分组一定要选对
+::: warning Choose the correct token group
 
-令牌分组会直接影响可用模型。比如 Claude Code、Codex、Gemini CLI 需要选择对应分组；如果分组选错，后续配置 CLI 时很容易出现“模型不存在”或无法调用的问题。
+The token group directly affects available models. For example, Claude Code, Codex, and Gemini CLI need to select their corresponding groups. If you select the wrong group, you may encounter "model not found" errors or unable to call models during CLI configuration.
 
-如果你不确定每个分组适合什么场景，请先阅读 [GoSwitch 各分组介绍](../token/)。
+If you're unsure which group fits your scenario, please read the [GoSwitch Group Introduction](../token/) first.
 
-填写完成后，点击右下角“提交”完成创建。
+After filling in, click "Submit" at the bottom right to complete the creation.
 :::
-### 查看分组可用模型
+### View Group Available Models
 
-你可以在“模型广场”查看每个令牌分组下支持哪些模型。
+You can view the models supported by each token group in "Model Plaza".
 
-![](../../assets/image/QuickStart/008.png)
+![](../../assets/image-en/QuickStart/006.png)
 
-1.  点击页面右上角“模型广场”。
-2.  在左侧“可用令牌分组”中选择分组。
-3.  右侧模型卡片会显示该分组可用的模型、价格和折扣倍率。
-
-![](../../assets/image/QuickStart/007.png)
-
-如果你想了解折扣含义，可以点击模型广场右上方的“折扣说明”。
+1.  Click "Model Plaza" in the upper right corner of the page.
+2.  Select a group from "Available token groups" on the left.

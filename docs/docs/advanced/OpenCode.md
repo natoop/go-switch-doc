@@ -1,82 +1,84 @@
 # OpenCode
 
-Source: https://docs.goswitch.online/docs/advanced/OpenCode.html
+<!-- Source: https://docs.goswitch.online/docs/advanced/OpenCode.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 项目介绍
+## Project Introduction
 
-![](../../assets/image/Advanced/OpenCode/01.webp)
+![](../../assets/image-en/Advanced/OpenCode/01.webp)
 
--   **项目定位**: 一个开源的 AI 编程助手，可在终端、IDE 或桌面环境中辅助编写、调试和改进代码。
--   **核心特色**:
-    -   原生终端或 TUI 支持，适合命令行开发者。
-    -   自动加载正确的语言服务器（LSP）以提升上下文理解。
-    -   支持多会话并行与会话链接共享。
-    -   支持 75+ 模型提供商，包括本地模型。
-    -   可与 GitHub Copilot、ChatGPT Plus/Pro 等集成。
--   **平台支持**: 终端 CLI、桌面应用（Beta）、IDE 扩展等。
+-   **Project Overview**: An open-source AI programming assistant that helps write, debug, and improve code in terminal, IDE, or desktop environments.
+-   **Key Features**:
+    -   Native terminal or TUI support, suitable for command-line developers.
+    -   Automatically loads the correct language server (LSP) to improve context understanding.
+    -   Supports multiple parallel sessions and session link sharing.
+    -   Supports 75+ model providers, including local models.
+    -   Integrates with GitHub Copilot, ChatGPT Plus/Pro, etc.
+-   **Platform Support**: Terminal CLI, desktop application (Beta), IDE extensions, etc.
 
-## 环境配置
+## Environment Configuration
 
-1.  打开你的终端，运行以下命令全局安装OpenCode
+1.  Open your terminal and run the following command to globally install OpenCode
 
 ```bash
 npm install -g opencode-ai
 ```
 
-2.  安装完成后，在终端输入 `opencode` 命令若出现界面，则安装成功
+2.  After installation, type `opencode` in the terminal — if the interface appears, installation is successful
 
-![](../../assets/image/Advanced/OpenCode/02.webp)
+![](../../assets/image-en/Advanced/OpenCode/02.webp)
 
-3.  查看 [CC Switch下载](../ccswitch/1-common.md) 一节的内容，下载并安装 CC-Switch 到本地，安装并打开软件
+3.  Refer to the [CC Switch Download](../ccswitch/1-common.md) section, download and install CC-Switch locally, then open the software
 
-4.  上方配置项选择到 `OpenCode` ，然后点击 `添加供应商` 按钮
+4.  Select `OpenCode` in the top configuration section, then click the `Add Provider` button
 
-![](../../assets/image/Advanced/OpenCode/03.webp)
+![](../../assets/image-en/Advanced/OpenCode/03.webp)
 
-5.  进行多项配置：
+5.  Configure the following items:
 
-    -   在 `预设供应商` 中选择 `GoSwitch`
-    -   在 `供应商标识` 中填写分组名称，比如 GoSwitch-Codex
-    -   在 `接口格式` 中选择合适的分组
-        -   Claude系列模型：`Anthropic`
-        -   Codex系列模型：`OpenAI`
-        -   Gemini系列模型：`Google (Gemini)`
-    -   在 `API Key` 中填入 [创建API令牌](../register/4-token.md) 一节中你创建的Key
+    -   In `Preset Provider`, select `GoSwitch`
+    -   In `Provider Identifier`, enter a group name, e.g. GoSwitch-Codex
+    -   In `Interface Format`, select the appropriate group
+        -   Claude series models: `Anthropic`
+        -   Codex series models: `OpenAI`
+        -   Gemini series models: `Google (Gemini)`
+    -   In `API Key`, enter the Key you created in the [Create API Token](../register/4-token.md) section
 
-    ::: warning 重要
+    ::: warning Important
 
-    **目前支持OpenCode的分组：**
+    **Currently supported groups for OpenCode:**
 
-    -   **GPT：[codex分组](../token/2-group.md#codex%E5%88%86%E7%BB%84)、[gpt-officially分组](../token/2-group.md#gpt-officially%E5%88%86%E7%BB%84)**
+    -   **GPT**: [codex group](../token/2-group.md#codex%E5%88%86%E7%BB%84), [gpt-officially group](../token/2-group.md#gpt-officially%E5%88%86%E7%BB%84)
 
-    -   **Claude：[aws-q分组](../token/2-group.md#aws-q%E5%88%86%E7%BB%84)、[aws分组](../token/2-group.md#aws%E5%88%86%E7%BB%84)、[claude-officially分组](../token/2-group.md#claude-officially%E5%88%86%E7%BB%84)**
+    -   **Claude**: [aws-q group](../token/2-group.md#aws-q%E5%88%96%E7%BB%84), [aws group](../token/2-group.md#aws%E5%88%96%E7%BB%84), [claude-officially group](../token/2-group.md#claude-officially%E5%88%96%E7%BB%84)
 
-    -   **Gemini**：[gemini-slb分组](../token/2-group.md#gemini-slb%E5%88%86%E7%BB%84)
+    -   **Gemini**: [gemini-slb group](../token/2-group.md#gemini-slb%E5%88%96%E7%BB%84)
 
-    **请您创建正确分组的APIKEY后填入**
+    **Please create an API Key for the correct group before entering**
 
-    -   在 `额外选项` 中配置键值对 `{"setCacheKey":true}`
-    -   在 `模型配置` 中配置ApiKey对应分组下正确的模型名，每个分组下的模型可在 [令牌分组介绍](../token/2-group.md) 一节中查询。
-        **比如现在我的ApiKey对应的是Codex分组，那么我可以直接配置：**
-        -   模型ID：gpt-5.2 显示名称：gpt-5.2
-        -   模型ID：gpt-5.2-codex 显示名称：gpt-5.2-codex
-    -   全部配置好后，点击右下角 `添加` 按钮
+    -   In `Extra Options`, configure the key-value pair `{"setCacheKey":true}`
+    -   In `Model Configuration`, configure the correct model names for your API Key's group. The models for each group can be found in the [Token Group Introduction](../token/2-group.md) section.
+        **For example, if your API Key corresponds to the Codex group, you can configure:**
+        -   Model ID: gpt-5.2 Display Name: gpt-5.2
+        -   Model ID: gpt-5.2-codex Display Name: gpt-5.2-codex
+    -   After completing all configuration, click the `Add` button in the bottom right corner
 
-![](../../assets/image/Advanced/OpenCode/04.webp)
+![](../../assets/image-en/Advanced/OpenCode/04.webp)
 
-6.  在界面中选择刚配置好的 GoSwitch 渠道，点击添加按钮
+6.  Select the newly configured GoSwitch channel in the interface, and click the add button
 
-![](../../assets/image/Advanced/OpenCode/05.webp)
+![](../../assets/image-en/Advanced/OpenCode/05.webp)
 :::
-## 验证配置
+## Verify Configuration
 
-1.  重新打开终端，输入 `opencode` 运行
+1.  Open a new terminal, type `opencode` to run
 
-2.  输入 `/models` 命令，观察刚才配置的 GoSwitch的渠道是否存在，如果存在则配置成功
+2.  Type the `/models` command and check whether the GoSwitch channel you just configured appears. If it exists, the configuration is successful
 
-![](../../assets/image/Advanced/OpenCode/06.webp)
+![](../../assets/image-en/Advanced/OpenCode/06.webp)
 
-3.  开始愉快的对话吧~
+3.  Enjoy your conversation!
 
-![](../../assets/image/Advanced/OpenCode/07.webp)
+![](../../assets/image-en/Advanced/OpenCode/07.webp)

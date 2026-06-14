@@ -1,25 +1,27 @@
-# Claude Code配置
+# Claude Code Configuration
 
-Source: https://docs.goswitch.online/docs/cli/2-claude.html
+<!-- Source: https://docs.goswitch.online/docs/cli/2-claude.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
 Windows
 
-1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
+1.  Press "Win+R" on your keyboard, enter the following and press Enter to open the Claude Code configuration directory
 
 ```bash
 %userprofile%\.claude
 ```
 
-![](../../assets/image/Cli/013.webp)
+![](../../assets/image-en/Cli/013.webp)
 
-2.  目录内容如图所示，如果目录中没有 `settings.json`，你需要手动创建后打开
+2.  The directory contents are shown in the image. If `settings.json` doesn't exist in the directory, you need to create it manually
 
--   **settings.json**：Claude主要的配置文件，主要用来配置中转站地址以及ApiKey，以及一些hooks，plugins等
+-   **settings.json**: Claude's main configuration file, used to configure the relay address, ApiKey, hooks, plugins, etc.
 
-![](../../assets/image/Cli/014.webp)
+![](../../assets/image-en/Cli/014.webp)
 
-3.  将以下内容写入 `settings.json`
+3.  Write the following content to `settings.json`
 
 ```json
 {
@@ -33,33 +35,33 @@ Windows
 }
 ```
 
-![](../../assets/image/Cli/015.webp)
+![](../../assets/image-en/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitch, and replace the `xxx` part above
 
-![](../../assets/image/Cli/025.webp)
+![](../../assets/image-en/Cli/025.webp)
 
-5.  在windows终端运行 `claude`，出现对话界面后进行对话测试，能收到回复即表示配置成功
+5.  Run `claude` in the Windows terminal. When the dialogue interface appears, test the conversation. If you receive a reply, configuration is successful
 
-![](../../assets/image/Cli/016.webp)
+![](../../assets/image-en/Cli/016.webp)
 
 MacOS
 
-1.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
+1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the configuration directory
 
 ```bash
 ~/.claude
 ```
 
-![](../../assets/image/Cli/017.webp)
+![](../../assets/image-en/Cli/017.webp)
 
-2.  若目录不存在 `settings.json`，需要你手动进行创建
+2.  If `settings.json` doesn't exist in the directory, you need to create it manually
 
--   **settings.json**：Claude主要的配置文件，主要用来配置中转站地址以及ApiKey，以及一些hooks，plugins等
+-   **settings.json**: Claude's main configuration file, used to configure the relay address, ApiKey, hooks, plugins, etc.
 
-![](../../assets/image/Cli/018.webp)
+![](../../assets/image-en/Cli/018.webp)
 
-3.  将以下内容写入 `settings.json`
+3.  Write the following content to `settings.json`
 
 ```json
 {
@@ -73,19 +75,19 @@ MacOS
 }
 ```
 
-![](../../assets/image/Cli/015.webp)
+![](../../assets/image-en/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitch, and replace `xxx` above
 
-![](../../assets/image/Cli/025.webp)
+![](../../assets/image-en/Cli/025.webp)
 
-5.  在终端运行 `claude`，看到对话界面并能正常回复即表示配置完成
+5.  Run `claude` in the terminal. When the dialogue interface appears and responds normally, configuration is complete
 
-![](../../assets/image/Cli/016.webp)
+![](../../assets/image-en/Cli/016.webp)
 
-::: warning 重要
+::: warning Important
 
-**注意，如果配置完仍然有报错问题，提示你需要登录，请看如下链接解决**
-[claude-code-无法连接到-anthropic-服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1)
+**Note: If you still encounter errors after configuration, such as a prompt requiring login, please refer to the following link for resolution**
+[claude-code-cannot-connect-to-anthropic-service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service)
 
 :::

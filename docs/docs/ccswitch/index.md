@@ -1,13 +1,15 @@
-# CC-Switch使用教程
+# CC-Switch Tutorial
 
-Source: https://docs.goswitch.online/docs/ccswitch/
+<!-- Source: https://docs.goswitch.online/docs/ccswitch/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-## 通用步骤
+## Common Steps
 
-### CC-Switch介绍
+### CC-Switch Introduction
 
-### Claude Code / Codex / Gemini CLI 全方位辅助工具
+### Claude Code / Codex / Gemini CLI All-in-One Management Tool
 
 [![Version](../../assets/external/img.shields.io/version-3.7.1-blue-5107c28e2a.svg)](https://github.com/farion1231/cc-switch/releases)
 [![Trending](../../assets/external/img.shields.io/%F0%9F%94%A5_TypeScript_Trending-Daily%20_%20Weekly%20_%20Monthly-ff6b6b-144159f1ab.svg)](https://github.com/trending/typescript)
@@ -17,178 +19,56 @@ Updated: 2026-06-13T10:02:01.000Z
 
 [![farion1231%2Fcc-switch | Trendshift](../../assets/external/trendshift.io/15372-fb550795da.svg)](https://trendshift.io/repositories/15372)
 
-[更新日志](https://github.com/farion1231/cc-switch/blob/main/CHANGELOG.md) | [下载地址](https://github.com/farion1231/cc-switch/releases/latest)
+[Changelog](https://github.com/farion1231/cc-switch/blob/main/CHANGELOG.md) | [Download](https://github.com/farion1231/cc-switch/releases/latest)
 
-**从供应商切换器到 AI CLI 一体化管理平台**
+**From Provider Switcher to AI CLI All-in-One Management Platform**
 
-**统一管理 Claude Code、Codex 与 Gemini CLI 的供应商配置、MCP 服务器、Skills 扩展和系统提示词。**
+**Unified management of Claude Code, Codex, and Gemini CLI provider configurations, MCP servers, Skills extensions, and system prompts.**
 
-使用 CC-Switch，您可以：
+With CC-Switch, you can:
 
--   ✅ 一键切换 API 配置 - 在多个 API 提供商之间快速切换
--   ✅ 可视化配置管理 - 通过图形界面轻松管理所有配置
--   ✅ 内置 GoSwitch 模板 - 预设了 GoSwitch 的配置模板
--   ✅ MCP 服务器管理 - 管理 Model Context Protocol 服务器
--   ✅ 系统托盘快捷操作 - 通过托盘菜单快速切换
+-   ✅ One-click API switching - Quickly switch between multiple API providers
+-   ✅ Visual configuration management - Easily manage all configurations through a graphical interface
+-   ✅ Built-in GoSwitch templates - Pre-configured GoSwitch template presets
+-   ✅ MCP server management - Manage Model Context Protocol servers
+-   ✅ System tray quick actions - Quick switching through tray menu
 
-::: tip 温馨提示
+::: tip Tip
 
-CC-Switch 已经内置了 GoSwitch 的快捷配置模板，无需手动编辑配置文件！
+CC-Switch has built-in GoSwitch quick configuration templates — no need to manually edit configuration files!
 :::
-### 软件下载
+### Software Download
 
 Windows
 
-1.  点击下载链接→[传送门](https://github.com/farion1231/cc-switch/releases/latest)←，进入CC-Switch的Github Release页面
+1.  Click the download link → [Link](https://github.com/farion1231/cc-switch/releases/latest) ← to go to CC-Switch's GitHub Release page
 
-2.  鼠标滚动到最下方选择适合自己版本的安装包，windows系统推荐下载普通msi后缀的安装包进行安装
+2.  Scroll to the bottom and select the appropriate installer package. For Windows, we recommend downloading the regular .msi installer
 
-![](../../assets/image/CC-Switch/001.webp)
+![](../../assets/image-en/CC-Switch/001.webp)
 
-3.  安装后运行CC-Switch主程序，界面如下。
+3.  After installation, run the CC-Switch main program. The interface looks like this.
 
-![](../../assets/image/CC-Switch/002.webp)
+![](../../assets/image-en/CC-Switch/002.webp)
 
 MacOS
 
--   MacOS安装推荐使用HomeBrew
+-   For MacOS, we recommend using HomeBrew
 
--   开启终端后，分别运行以下命令：
+-   Open a terminal and run the following commands:
 
 ```bash
-# 添加 tap 源
+# Add tap source
 brew tap farion1231/ccswitch
 
-# 安装 CC-Switch
+# Install CC-Switch
 brew install --cask cc-switch
 ```
 
--   安装完成后，在“启动台”或“应用程序”文件夹中找到 CC-Switch 并启动。
+-   After installation, find CC-Switch in "Launchpad" or the "Applications" folder and launch it.
 
-![](../../assets/image/CC-Switch/002.webp)
+![](../../assets/image-en/CC-Switch/002.png)
 
-Linux
+### Environment Check
 
-::: warning 重要
-
-以下命令中的文件名包含占位符版本号 x.x.x，请访问[GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest) 页面查看最新版本，并替换为实际的版本号和完整文件名。
-
-Debian/Ubuntu 系统：
-
-```bash
-:::
-# 下载 .deb 包
-wget https://github.com/farion1231/cc-switch/releases/latest/download/cc-switch_x.x.x_amd64.deb
-
-# 安装
-sudo dpkg -i cc-switch_x.x.x_amd64.deb
-```
-
-### 环境检查
-
-::: warning 注意
-
-**请你最好进行此步的环境检查步骤！！！
-如果你有经验，能确认你的Nodejs环境以及cc、codex、gemini的cli安装没问题，配置目录也都存在，可以忽略这一步，直接进入以下的CC Switch配置**
-
-点击右侧传送门查看 [如何进行环境检查？](../cli/1-env.md)
-:::
-## Claude Code配置
-
-1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
-
-![](../../assets/image/CC-Switch/003.webp)
-
-2.  在分组条中，将分组选择至“Claude”
-
-![](../../assets/image/CC-Switch/004.webp)
-
-3.  在供应商分组中，选择如图的“PakcyCode”
-
-![](../../assets/image/CC-Switch/005.webp)
-
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
-
-![](../../assets/image/Cli/025.webp)
-
-5.  下拉模态框，找到“API Key”配置项，填入你刚才复制的ApiKey，再点击右下角“添加”按钮
-
-![](../../assets/image/CC-Switch/006.webp)
-
-6.  添加成功后，在主界面会看到我们配置的分组，在右侧点击“启用”按钮，显示“使用中”，则配置完成
-
-![](../../assets/image/CC-Switch/007.webp)
-
-7.  点击左上角“设置”按钮，在通用页面下拉找到 `跳过 Claude Code初次安装确认` ，务必勾选
-
-![](../../assets/image/CC-Switch/017.webp)
-
-8.  在终端运行 `claude`，看到对话界面并能正常回复即表示配置完成
-
-![](../../assets/image/Cli/016.webp)
-
-## Codex配置
-
-1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
-
-![](../../assets/image/CC-Switch/003.webp)
-
-2.  在分组条中，将分组选择至“Codex”
-
-![](../../assets/image/CC-Switch/008.webp)
-
-3.  在供应商分组中，选择如图的“PakcyCode”
-
-![](../../assets/image/CC-Switch/009.webp)
-
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Codex** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
-
-![](../../assets/image/Cli/008.webp)
-
-5.  下拉模态框，找到“API Key”配置项，填入你刚才复制的ApiKey，再点击右下角“添加”按钮
-
-![](../../assets/image/CC-Switch/010.webp)
-
-6.  添加成功后，在主界面会看到我们配置的分组，在右侧点击“启用”按钮，显示“使用中”，则配置完成
-
-![](../../assets/image/CC-Switch/011.webp)
-
-7.  在终端运行 `codex`，看到对话界面并能正常回复即表示配置完成
-
-![](../../assets/image/Cli/010.webp)
-
-## Gemini配置
-
-1.  打开你下载的CC Switch软件，你会看到如下图的初始界面
-
-![](../../assets/image/CC-Switch/003.webp)
-
-2.  在分组条中，将分组选择至“Gemini”
-
-![](../../assets/image/CC-Switch/012.webp)
-
-3.  在供应商分组中，选择如图的“PakcyCode”
-
-![](../../assets/image/CC-Switch/013.webp)
-
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组的令牌，点击复制按钮，复制ApiKey到剪切板
-
-![](../../assets/image/Cli/026.webp)
-
-5.  下拉模态框，找到“API Key”配置项，填入你刚才复制的ApiKey，再点击右下角“添加”按钮
-
-![](../../assets/image/CC-Switch/014.webp)
-
-6.  添加成功后，在主界面会看到我们配置的分组，在右侧点击“启用”按钮，显示“使用中”，则配置完成
-
-![](../../assets/image/CC-Switch/015.webp)
-
-7.  在终端运行 `gemini`，看到对话界面并能正常回复即表示配置完成
-
-![](../../assets/image/Cli/022.webp)
-
-## CC Switch CLI 使用
-
-CC-Switch CLI 同时提供完整 CLI 命令和完整 TUI 界面，适合服务器、SSH、macOS 终端和自动化场景使用。你也可以让 Claude Code / Codex 直接调用 `cc-switch` 命令来检查、切换和修复配置。
-
-查看详细教程：[CC Switch CLI 使用](./5-ccs_cli.md)
+<div class="warning custom-block"><div style="overflow-x:auto;display:flex;pad"><svg width="23" height="23" viewBox="0 0 1024 1024"    class="icon" xmlns="http://www.w3.org/2000/svg" ><path d="M576.286 752.57v-95.425q0-7.031-4.771-11.802t-11.3-4.772h-96.43q-6.528 0-11.3 4.772t-4.77 11.802v95.424q0 7.031 4.77 11.803t11.3 4.77h96.43q6.528 0 11.3-4.77t4.77-11.803zm-1.005-187.836 9.04-230.524q0-6.027-5.022-9.543-6.529-5.524-12.053-5.524H456.754q-5.524 0-12.053 5.524-5.022 3.516-5.022 10.547l8.538 229.52q0 5.023 5.022 8.287t12.053 3.265h92.913q7.032 0 11.803-3.265t5.273-8.287zM568.25 95.65l385.714 707.142q17.578 31.641-1.004 63.282-8.538 14.564-23.354 23.102t-31.892 8.538H126.286q-17.076 0-31.892-8.538T71.04 866.074q-18.582-31.641-1.004-63.282L455.75 95.65q8.538-15.57 23.605-24.61T512 62t32.645 9.04 23.605 24.61z" fill="#c28100"></path></svg><span style="color: #c28100;padding-left: 7px;">Important</span></div> It is highly recommended that you complete the environment check step! If you have experience and can confirm that your Node.js environment and the cc, codex, and gemini CLI installations are working properly, and that the configuration directories all exist, you can skip this step and proceed directly to the subsequent CC-Switch configuration. <p>Click the link on the right to view <a href="./../cli/1-env">How to perform an environment check?</a></p></div>

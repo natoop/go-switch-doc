@@ -1,6 +1,8 @@
-# 快速开始
+# Getting Started
 
-Source: https://docs.goswitch.online/docs/register/
+<!-- Source: https://docs.goswitch.online/docs/register/ -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
 <div class="important-notice">
@@ -10,7 +12,7 @@ Updated: 2026-06-13T10:02:01.000Z
     <div class="notice-badge"><span class="badge-icon">⚠️</span></div>
     <div class="header-text">
       <span class="notice-label">IMPORTANT</span>
-      <span class="notice-title">给阅读者的忠告！</span>
+      <span class="notice-title">Advice for readers!</span>
     </div>
     <div class="header-decoration">
       <span class="deco-dot"></span>
@@ -23,233 +25,181 @@ Updated: 2026-06-13T10:02:01.000Z
       <div class="item-number">01</div>
       <div class="item-body">
         <div class="item-icon-wrap"><span class="item-icon">📖</span></div>
-        <span>请你在部署使用前一定去看看 <strong class="highlight-red">模型分组介绍</strong> 与 <strong class="highlight-red">常见问题</strong> 板块，如果有时间最好阅读全文</span>
+        <span>Before deploying and using, please read the <strong class="highlight-red">Model Groups Introduction</strong> and <strong class="highlight-red">FAQ</strong> sections. If you have time, it's best to read the entire documentation</span>
       </div>
     </div>
     <div class="notice-item" style="--delay: .1s">
       <div class="item-number">02</div>
       <div class="item-body">
         <div class="item-icon-wrap"><span class="item-icon">💡</span></div>
-        <span>我们一直提倡 <strong class="highlight-blue">"授人以鱼，不如授人以渔"</strong></span>
+        <span>We always believe in <strong class="highlight-blue">"teaching someone to fish is better than giving them a fish"</strong></span>
       </div>
     </div>
     <div class="notice-item" style="--delay: .2s">
       <div class="item-number">03</div>
       <div class="item-body">
         <div class="item-icon-wrap"><span class="item-icon">✅</span></div>
-        <span>这两个板块不仅能提升你的使用体验，也能解答你今后会在群里提问的 <strong class="highlight-gold">90%</strong> 的问题</span>
+        <span>These two sections not only improve your experience, but also answer <strong class="highlight-gold">90%</strong> of the questions you might ask in the group later</span>
       </div>
     </div>
   </div>
   <div class="notice-footer">
-    <span class="footer-text">请务必认真阅读以上内容</span>
+    <span class="footer-text">Please read the above content carefully</span>
     <div class="footer-line"></div>
   </div>
 </div>
 
-::: info 让我们从这里开始吧！
+::: info Let's start here!
 
-从 0 开始的 GoSwitch 使用之旅~
+Your GoSwitch journey from zero~
 
-一步步来，准没问题！
+Follow the steps and you'll be fine!
 :::
-## 第一步：注册账号
+## Step 1: Register an Account
 
--   注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
+-   Registration link: [https://goswitch.online/sign-up](https://goswitch.online/sign-up)
 
-![](../../assets/image/QuickStart/001.png)
+![](../../assets/image-en/QuickStart/001.png)
 
--   打开注册入口后，点击页面右上角的“注册”。
--   如果你在登录页，也可以点击底部“没有账户？注册”进入注册流程。
+-   Open the registration link, then click "Register" in the upper right corner of the page.
+-   If you are on the login page, you can also click "No account? Register" at the bottom to enter the registration process.
 
-**方式一（推荐）：使用 Google 账号注册**
+**Method 1 (Recommended): Register with GitHub Account**
 
-1.  点击“使用 Google 继续”。
-2.  在弹窗中选择要绑定的 Google 账号并完成授权。
-3.  授权成功后，系统会自动创建账号并登录。
+1.  Click "Continue with GitHub".
+2.  Select the GitHub account you want to bind in the popup and complete authorization.
+3.  After successful authorization, the system will automatically create your account and log you in.
 
-使用 Google 注册无需额外设置密码，后续登录时继续选择同一个 Google 账号即可。
+Registering with GitHub doesn't require a separate password. For future logins, just select the same GitHub account.
 
-**方式二：使用邮箱注册**
+**Method 2: Register with Email**
 
-1.  点击“使用用户名注册”。
-2.  填写邮箱、用户名和密码。
-3.  按页面提示提交，完成注册。
+1.  Click "Register with Username".
+2.  Fill in your email, username, and password.
+3.  Follow the page prompts to submit and complete registration.
 
-::: warning 注意
+::: warning Note
 
-邮箱会用于接收验证与通知；密码建议使用字母、数字和特殊字符组合。请妥善保管登录凭证，避免账号被盗用。
+Your email will be used for verification and notifications. We recommend using a combination of letters, numbers, and special characters for your password. Keep your login credentials safe to prevent account theft.
 :::
-## 第二步：登录账号
+## Step 2: Login
 
--   登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+-   Login link: [https://goswitch.online/sign-in](https://goswitch.online/sign-in)
 
-![](../../assets/image/QuickStart/001.png)
+![](../../assets/image-en/QuickStart/002.png)
 
-**使用 Google 账号登录**
+**Login with GitHub Account**
 
-1.  点击“使用 Google 继续”。
-2.  选择注册时绑定的 Google 账号。
-3.  授权成功后即可自动登录。
+1.  Click "Continue with GitHub".
+2.  Select the GitHub account you used during registration.
+3.  After successful authorization, you'll be automatically logged in.
 
-**使用邮箱/用户名登录**
+**Login with Email/Username**
 
-1.  输入邮箱地址或用户名。
-2.  输入账号密码。
-3.  点击“继续”完成登录。
+1.  Enter your email address or username.
+2.  Enter your account password.
+3.  Click "Continue" to complete login.
 
-::: info 设备登录说明
 
-浏览器会保持登录状态；在新设备需重复登录流程。
+## Step 3: Purchase Quota
 
-如果点击“使用 Google 继续”后出现“错误：OIDC 获取 Token 失败，请检查设置！”，通常是浏览器缓存或 Cookie 状态异常导致。
+After logging into the console, go to the "Wallet Management" page on the left side to purchase quota.
 
-![](../../assets/image/QuickStart/002.png)
+1.  Select a fixed quota amount in "Select recharge quota", or enter a custom amount in "Custom quota".
+2.  Confirm the "Actual payment amount" at the bottom of the page, then click "Pay Now".
 
-可以先清空浏览器缓存后重试：
+::: info Payment Notes
 
--   Windows / Linux Chrome：按 `Ctrl + Shift + Delete` 打开清除浏览数据页面。
--   macOS Chrome：按 `Command + Shift + Delete` 打开清除浏览数据页面。
-
-如果清理缓存后仍然无效，请手动删除 `goswitch.online` 相关 Cookie：
-
-1.  在登录页按 `F12` 打开开发者工具。
-2.  进入“应用”面板。
-3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
-4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
-
-![](../../assets/image/QuickStart/006.png)
+The current exchange rate is `1:1`, meaning **1 USDT equals 1 USD quota**. If the payment page doesn't appear when using Alipay or WeChat Pay, please disable your proxy and try again.
 :::
-## 第三步：购买额度
 
-登录控制台后，进入左侧“钱包管理”页面购买额度。
+## Step 4: Create an API Token
 
-1.  在“选择充值额度”中选择固定额度，或在“自定义额度”中输入要充值的金额。
-2.  确认页面下方的“实付金额”后，点击“立即支付”。
+After logging in, go to the console panel and select "Token Management" from the left side.
 
-::: info 支付说明
+![](../../assets/image-en/QuickStart/004.png)
 
-目前充值比例为 `1:1`，即 **1 元人民币等同于 1 美元额度**。如果使用支付宝或微信支付时没有弹出支付页面，请先关闭代理后重试。
+### Enter Token Management
+
+1.  Click "Token Management" in the left menu.
+2.  Click "Add Token" at the top of the page.
+
+### Create a New Token
+
+Fill in the token information in the popup:
+
+![](../../assets/image-en/QuickStart/005.png)
+
+-   Token Name: Used to distinguish different purposes, e.g., `Claude Code`, `Codex`, `Gemini`.
+-   Token Group: Must be selected. The group determines which models this token can use.
+-   Expiration Time: Default is "Never expire", or you can set a validity period as needed.
+-   Quantity: Generally keep `1`.
+-   Quota Setting: When "Unlimited quota" is enabled, the token's actual available quota is still limited by your account balance.
+-   Access Restriction: If you're not familiar with this, it's recommended to keep the default settings. Don't enable model restrictions or IP whitelist.
+
+::: warning Choose the correct token group
+
+The token group directly affects available models. For example, Claude Code, Codex, and Gemini CLI need to select their corresponding groups. If you select the wrong group, you may encounter "model not found" errors or unable to call models during CLI configuration.
+
+If you're unsure which group fits your scenario, please read the [GoSwitch Group Introduction](../token/) first.
+
+After filling in, click "Submit" at the bottom right to complete the creation.
 :::
-::: warning 临时公告：开票服务调整
+### View Group Available Models
 
-为配合近期结算与服务流程调整，GoSwitch 的开票服务将按支付主体与订单时间做阶段性调整：
+You can view the models supported by each token group in "Model Plaza".
 
--   个人支付订单当前仅支持开具海外 Invoice。
--   5 月已完成支付的订单，所有用户仍可在 6 月申请补开大陆发票；其中海外 Invoice 订单需完成补税后申请，申请截止至 6 月 15 日。
--   自 6 月起，新购个人支付订单不再支持开具大陆发票；后续大陆发票仅支持企业对公支付订单。
-:::
-## 第四步：创建 API 令牌
+![](../../assets/image-en/QuickStart/006.png)
 
-登录后进入控制台面板，左侧选择“令牌管理”。
+1.  Click "Model Plaza" in the upper right corner of the page.
+2.  Select a group from "Available token groups" on the left.
 
-![](../../assets/image/QuickStart/004.png)
+## Step 5: Environment Check
 
-### 进入令牌管理
+Before configuring Claude Code, Codex, or Gemini CLI, please confirm that Node.js is properly installed on your machine.
 
-1.  在左侧菜单点击“令牌管理”。
-2.  点击页面上方的“添加令牌”。
-
-### 创建新令牌
-
-在弹窗中填写令牌信息：
-
-![](../../assets/image/QuickStart/005.webp)
-
--   令牌名称：用于区分不同用途，例如 `Claude Code`、`Codex`、`Gemini`。
--   令牌分组：必须选择，分组决定这个令牌可以使用哪些模型。
--   过期时间：默认“永不过期”，也可以按需要设置有效期。
--   新建数量：一般保持 `1` 即可。
--   额度设置：开启“无限额度”时，令牌实际可用额度仍受账户余额限制。
--   访问限制：不熟悉时建议先保持默认，不要开启模型限制或 IP 白名单。
-
-::: warning 令牌分组一定要选对
-
-令牌分组会直接影响可用模型。比如 Claude Code、Codex、Gemini CLI 需要选择对应分组；如果分组选错，后续配置 CLI 时很容易出现“模型不存在”或无法调用的问题。
-
-如果你不确定每个分组适合什么场景，请先阅读 [GoSwitch 各分组介绍](../token/)。
-
-填写完成后，点击右下角“提交”完成创建。
-:::
-### 查看分组可用模型
-
-你可以在“模型广场”查看每个令牌分组下支持哪些模型。
-
-![](../../assets/image/QuickStart/008.png)
-
-1.  点击页面右上角“模型广场”。
-2.  在左侧“可用令牌分组”中选择分组。
-3.  右侧模型卡片会显示该分组可用的模型、价格和折扣倍率。
-
-![](../../assets/image/QuickStart/007.png)
-
-如果你想了解折扣含义，可以点击模型广场右上方的“折扣说明”。
-
-## 第五步：环境检查
-
-在配置 Claude Code、Codex 或 Gemini CLI 之前，请先确认本机已经正确安装 Node.js。
-
-在 Windows、macOS 或 Linux 终端中执行：
+Execute the following in a Windows, macOS, or Linux terminal:
 
 ```bash
 npm list -g --depth-0
 ```
 
-如果命令可以正常执行，说明 Node.js 与 npm 已经可用。即使输出中没有安装任何全局包，也不影响后续配置。
+If the command runs successfully, Node.js and npm are available. Even if no global packages are shown in the output, it doesn't affect subsequent configuration.
 
-如果提示“命令未找到”或类似错误，说明当前环境还没有安装 Node.js，或安装后没有正确加入系统环境变量。请先完成 Node.js 安装，再重新执行上面的命令确认。
+If you see "command not found" or similar errors, it means Node.js isn't installed or hasn't been properly added to the system PATH. Please install Node.js first, then re-run the command to confirm.
 
-::: warning 必须先完成环境检查
+::: warning Environment check must be completed first
 
-CLI 工具依赖 Node.js 和 npm。环境没有准备好时，后续安装 Claude Code、Codex、Gemini CLI 都可能失败。
+CLI tools depend on Node.js and npm. If the environment isn't ready, subsequent installations of Claude Code, Codex, or Gemini CLI may fail.
 :::
-## 第六步：配置 CLI 工具
+## Step 6: Configure CLI Tools
 
-GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
+GoSwitch supports using Claude Code, Codex, and Gemini CLI in the command line
 
-### 基础条件
+### Prerequisites
 
-开始配置 CLI 前，请先完成以下步骤：
+Before configuring CLI, please complete the following steps:
 
-1.  完成 [环境检查](./5-env.md)，确保 Node.js 和 npm 可以正常使用。
-2.  完成 [安装 CLI](../cli/1-env.md#_2-%E5%AE%89%E8%A3%85cli)，安装 Claude Code、Codex、Gemini CLI。
+1.  Complete [Environment Check](./5-env.md), ensuring Node.js and npm are working properly.
+2.  Complete [Install CLI](../cli/1-env.md#_2-install-cli), installing Claude Code, Codex, and Gemini CLI.
 
-### API 端点说明
 
-登录控制台后，可以在“数据看板”右侧查看当前可用的 API Endpoint。
+::: warning Recommended Configuration
 
-![](../../assets/image/QuickStart/009.png)
+To make the configuration process simpler and easier, we **strongly recommend** using the open-source GitHub project [CC-Switch](https://github.com/farion1231/cc-switch) to configure your environment.
 
--   主站 Endpoint：`https://goswitch.online`，稳定可靠，适合生产环境。
--   优化线路 Endpoint：`https://api-slb.goswitch.online`，优化线路，适合对延迟敏感的场景。
+[CC-Switch Configuration Tutorial for CC, Codex, Gemini](../ccswitch/)
 
-::: warning OpenAI 兼容端点需要添加 /v1
-
-如果你使用的是 OpenAI 兼容格式的客户端或工具，例如 Codex、OpenAI SDK、Cherry Studio 的 OpenAI 兼容配置，请在 API 地址后添加 `/v1`：
-
-```bash
-https://goswitch.online/v1
-https://api-slb.goswitch.online/v1
-```
-
-如果使用的是 Claude Code、Gemini CLI 等专用配置，请以对应教程中的示例为准。
+If you're experienced or prefer not to use this tool, you can refer to the CLI manual configuration tutorials below. **But we still strongly recommend using this tool to save time!**
 :::
-::: warning 推荐配置
+::: info CLI Manual Configuration Tutorial Links
 
-为了让配置过程进行轻便简单，我们**极力推荐**使用Github开源项目 [CC-Switch](https://github.com/farion1231/cc-switch)来对我们的使用环境进行配置。
+Note: Regardless of which CLI you use, please complete the prerequisites above first, ensuring Node.js, npm, and the corresponding CLI are all working properly.
 
-[CC-Switch配置CC、Codex、Gemini教程](../ccswitch/)
+[Claude Code Configuration Tutorial](../cli/2-claude.md)
 
-如果你是老鸟，或者不愿意使用此工具，可以参考以下CLI配置教程文档，**但我们还是极力推荐使用此工具，能省很多时间！**
-:::
-::: info CLI 手动配置教程传送门
+[Codex Configuration Tutorial](../cli/3-codex.md)
 
-注意：不管你是使用哪个 CLI，请一定先完成上方基础条件，确保 Node.js、npm 和对应 CLI 都可以正常使用。
-
-[Claude Code配置教程](../cli/2-claude.md)
-
-[Codex配置教程](../cli/3-codex.md)
-
-[Gemini配置教程](../cli/4-gemini.md)
+[Gemini Configuration Tutorial](../cli/4-gemini.md)
 
 :::

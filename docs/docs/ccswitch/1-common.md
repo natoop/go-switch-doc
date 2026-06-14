@@ -1,11 +1,13 @@
-# 通用步骤
+# Common Steps
 
-Source: https://docs.goswitch.online/docs/ccswitch/1-common.html
+<!-- Source: https://docs.goswitch.online/docs/ccswitch/1-common.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-### CC-Switch介绍
+### CC-Switch Introduction
 
-### Claude Code / Codex / Gemini CLI 全方位辅助工具
+### Claude Code / Codex / Gemini CLI All-in-One Management Tool
 
 [![Version](../../assets/external/img.shields.io/version-3.7.1-blue-5107c28e2a.svg)](https://github.com/farion1231/cc-switch/releases)
 [![Trending](../../assets/external/img.shields.io/%F0%9F%94%A5_TypeScript_Trending-Daily%20_%20Weekly%20_%20Monthly-ff6b6b-144159f1ab.svg)](https://github.com/trending/typescript)
@@ -15,80 +17,81 @@ Updated: 2026-06-13T10:02:01.000Z
 
 [![farion1231%2Fcc-switch | Trendshift](../../assets/external/trendshift.io/15372-fb550795da.svg)](https://trendshift.io/repositories/15372)
 
-[更新日志](https://docs.goswitch.online/docs/ccswitch/CHANGELOG.html) | [下载地址](https://github.com/farion1231/cc-switch/releases/latest)
+[Changelog](https://docs.goswitch.online/docs/ccswitch/CHANGELOG.html) | [Download](https://github.com/farion1231/cc-switch/releases/latest)
 
-**从供应商切换器到 AI CLI 一体化管理平台**
+**From Provider Switcher to AI CLI All-in-One Management Platform**
 
-**统一管理 Claude Code、Codex 与 Gemini CLI 的供应商配置、MCP 服务器、Skills 扩展和系统提示词。**
+**Unified management of Claude Code, Codex, and Gemini CLI provider configurations, MCP servers, Skills extensions, and system prompts.**
 
-使用 CC-Switch，您可以：
+With CC-Switch, you can:
 
--   ✅ 一键切换 API 配置 - 在多个 API 提供商之间快速切换
--   ✅ 可视化配置管理 - 通过图形界面轻松管理所有配置
--   ✅ 内置 GoSwitch 模板 - 预设了 GoSwitch 的配置模板
--   ✅ MCP 服务器管理 - 管理 Model Context Protocol 服务器
--   ✅ 系统托盘快捷操作 - 通过托盘菜单快速切换
+-   ✅ One-click API switching - Quickly switch between multiple API providers
+-   ✅ Visual configuration management - Easily manage all configurations through a graphical interface
+-   ✅ Built-in GoSwitch templates - Pre-configured GoSwitch template presets
+-   ✅ MCP server management - Manage Model Context Protocol servers
+-   ✅ System tray quick actions - Quick switching through tray menu
 
-::: tip 温馨提示
+::: tip Tip
 
-CC-Switch 已经内置了 GoSwitch 的快捷配置模板，无需手动编辑配置文件！
+CC-Switch has built-in GoSwitch quick configuration templates — no need to manually edit configuration files!
 :::
-### 软件下载
+### Software Download
 
 Windows
 
-1.  点击下载链接→[传送门](https://github.com/farion1231/cc-switch/releases/latest)←，进入CC-Switch的Github Release页面
+1.  Click the download link → [Link](https://github.com/farion1231/cc-switch/releases/latest) ← to go to CC-Switch's GitHub Release page
 
-2.  鼠标滚动到最下方选择适合自己版本的安装包，windows系统推荐下载普通msi后缀的安装包进行安装
+2.  Scroll to the bottom and select the appropriate installer package. For Windows, we recommend downloading the regular .msi installer
 
-![](../../assets/image/CC-Switch/001.webp)
+![](../../assets/image-en/CC-Switch/001.webp)
 
-3.  安装后运行CC-Switch主程序，界面如下。
+3.  After installation, run the CC-Switch main program. The interface looks like this.
 
-![](../../assets/image/CC-Switch/002.webp)
+![](../../assets/image-en/CC-Switch/002.webp)
 
 MacOS
 
--   MacOS安装推荐使用HomeBrew
+-   For MacOS, we recommend using HomeBrew
 
--   开启终端后，分别运行以下命令：
+-   Open a terminal and run the following commands:
 
 ```bash
-# 添加 tap 源
+# Add tap source
 brew tap farion1231/ccswitch
 
-# 安装 CC-Switch
+# Install CC-Switch
 brew install --cask cc-switch
 ```
 
--   安装完成后，在“启动台”或“应用程序”文件夹中找到 CC-Switch 并启动。
+-   After installation, find CC-Switch in "Launchpad" or the "Applications" folder and launch it.
 
-![](../../assets/image/CC-Switch/002.webp)
+![](../../assets/image-en/CC-Switch/002.png)
 
 Linux
 
-::: warning 重要
+::: warning Important
 
-以下命令中的文件名包含占位符版本号 x.x.x，请访问[GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest) 页面查看最新版本，并替换为实际的版本号和完整文件名。
+The file names in the following commands contain placeholder version numbers x.x.x. Please visit the [GitHub Releases](https://github.com/farion1231/cc-switch/releases/latest) page to check the latest version and replace with the actual version number and complete file name.
 
-Debian/Ubuntu 系统：
-
-```bash
 :::
-# 下载 .deb 包
+
+Debian/Ubuntu systems:
+
+``` bash
+# Download .deb package
 wget https://github.com/farion1231/cc-switch/releases/latest/download/cc-switch_x.x.x_amd64.deb
 
-# 安装
+# Install
 sudo dpkg -i cc-switch_x.x.x_amd64.deb
 ```
 
-### 环境检查
+### Environment Check
 
-::: warning 注意
+::: warning Note
 
-**请你最好进行此步的环境检查步骤！！！**
-如果你有经验，能确认你的Nodejs环境以及cc、codex、gemini的cli安装没问题，配置目录也都存在，可以忽略这一步，直接进入后续的CC Switch配置
+**We recommend completing the environment check steps!!!**
+If you're experienced and can confirm your Node.js environment and CC, Codex, Gemini CLI installations are fine with configuration directories present, you can skip this step and proceed directly to CC-Switch configuration
 
-点击右侧传送门查看 [如何进行环境检查？](../cli/1-env.md)
+Click the link to view [How to perform environment check?](../cli/1-env.md)
 
 :::

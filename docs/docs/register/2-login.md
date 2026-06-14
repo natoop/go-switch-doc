@@ -1,45 +1,47 @@
-# 登录账号
+# Login
 
-Source: https://docs.goswitch.online/docs/register/2-login.html
+<!-- Source: https://docs.goswitch.online/docs/register/2-login.html -->
+
+Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
 
-登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+Login link: [https://goswitch.online/sign-in](https://goswitch.online/sign-in)
 
-![](../../assets/image/QuickStart/001.png)
+![](../../assets/image-en/QuickStart/001.png)
 
-<!-- ## 使用 Google 账号登录
+<!-- ## Login with Google Account
 
-1.  点击“使用 Google 继续”。
-2.  选择注册时绑定的 Google 账号。
-3.  授权成功后即可自动登录。 -->
+1.  Click "Continue with Google".
+2.  Select the Google account you used during registration.
+3.  After successful authorization, you'll be automatically logged in. -->
 
-## 使用邮箱/用户名登录
+## Login with Email/Username
 
-1.  输入邮箱地址或用户名。
-2.  输入账号密码。
-3.  点击“继续”完成登录。
+1.  Enter your email address or username.
+2.  Enter your account password.
+3.  Click "Continue" to complete login.
 
-::: info 设备登录说明
+::: info Device Login Notes
 
-浏览器会保持登录状态；在新设备需重复登录流程。
+The browser will maintain your login state. On a new device, you'll need to repeat the login process.
 :::
-<!-- ## Google 登录异常处理
+<!-- ## Google Login Troubleshooting
 
-如果点击“使用 Google 继续”后出现“错误：OIDC 获取 Token 失败，请检查设置！”，通常是浏览器缓存或 Cookie 状态异常导致。
+If you see "Error: OIDC Token acquisition failed, please check settings!" after clicking "Continue with Google", this is usually caused by abnormal browser cache or Cookie state.
 
-![](../../assets/image/QuickStart/002.png)
+![](../../assets/image-en/QuickStart/002.png)
 
-可以先清空浏览器缓存后重试：
+You can try clearing the browser cache first:
 
--   Windows / Linux Chrome：按 `Ctrl + Shift + Delete` 打开清除浏览数据页面。
--   macOS Chrome：按 `Command + Shift + Delete` 打开清除浏览数据页面。
+-   Windows / Linux Chrome: Press `Ctrl + Shift + Delete` to open the clear browsing data page.
+-   macOS Chrome: Press `Command + Shift + Delete` to open the clear browsing data page.
 
-如果清理缓存后仍然无效，请手动删除 `goswitch.online` 相关 Cookie：
+If clearing cache doesn't help, manually delete cookies related to `goswitch.online`:
 
-1.  在登录页按 `F12` 打开开发者工具。
-2.  进入“应用”面板。
-3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
-4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
+1.  Press `F12` on the login page to open Developer Tools.
+2.  Go to the "Application" panel.
+3.  Select "Storage" → "Cookies" → `https://goswitch.online` from the left sidebar.
+4.  Delete `session`, `TDC_itoken` and other site cookies, then refresh the page and try logging in again.
 
-![](../../assets/image/QuickStart/006.png) -->
+![](../../assets/image-en/QuickStart/006.png) -->
