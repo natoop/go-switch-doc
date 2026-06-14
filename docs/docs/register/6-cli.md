@@ -16,7 +16,7 @@ GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 登录控制台后，可以在“数据看板”右侧查看当前可用的 API Endpoint。
 
-![](../../assets/image/QuickStart/009.webp)
+![](../../assets/image/QuickStart/009.png)
 
 -   主站 Endpoint：`https://goswitch.online`，稳定可靠，适合生产环境。
 -   优化线路 Endpoint：`https://api-slb.goswitch.online`，优化线路，适合对延迟敏感的场景。

@@ -12,8 +12,8 @@ Updated: 2026-06-13T10:02:01.000Z
 | --- | --- | --- | --- |
 | 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
 | 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://goswitch.online/terms](https://goswitch.online/terms) |
-| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-10-30 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
-| 支持的国家和地区 | [USE](./use.md) | 2025-10-30 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-01-01 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
+| 支持的国家和地区 | [USE](./use.md) | 2025-01-01 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
 ::: tip 阅读建议
 

@@ -12,7 +12,7 @@ Updated: 2026-06-13T10:02:01.000Z
 | 项目 | 内容 |
 | --- | --- |
 | 文档名称 | 服务特定条款 |
-| 生效日期 | 2025-10-30 |
+| 生效日期 | 2025-01-01 |
 | 来源链接 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
 
 -   [概述](./service-specific-terms.md#%E6%A6%82%E8%BF%B0)

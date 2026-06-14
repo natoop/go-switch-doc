@@ -57,7 +57,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 -   注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
 
-![](../../assets/image/QuickStart/001.webp)
+![](../../assets/image/QuickStart/001.png)
 
 -   打开注册入口后，点击页面右上角的“注册”。
 -   如果你在登录页，也可以点击底部“没有账户？注册”进入注册流程。
@@ -84,7 +84,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 -   登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
 
-![](../../assets/image/QuickStart/001.webp)
+![](../../assets/image/QuickStart/001.png)
 
 **使用 Google 账号登录**
 
@@ -104,7 +104,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 如果点击“使用 Google 继续”后出现“错误：OIDC 获取 Token 失败，请检查设置！”，通常是浏览器缓存或 Cookie 状态异常导致。
 
-![](../../assets/image/QuickStart/002.webp)
+![](../../assets/image/QuickStart/002.png)
 
 可以先清空浏览器缓存后重试：
 
@@ -118,7 +118,7 @@ Updated: 2026-06-13T10:02:01.000Z
 3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
 4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
 
-![](../../assets/image/QuickStart/006.webp)
+![](../../assets/image/QuickStart/006.png)
 :::
 ## 第三步：购买额度
 
@@ -143,7 +143,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 登录后进入控制台面板，左侧选择“令牌管理”。
 
-![](../../assets/image/QuickStart/004.webp)
+![](../../assets/image/QuickStart/004.png)
 
 ### 进入令牌管理
 
@@ -175,13 +175,13 @@ Updated: 2026-06-13T10:02:01.000Z
 
 你可以在“模型广场”查看每个令牌分组下支持哪些模型。
 
-![](../../assets/image/QuickStart/008.webp)
+![](../../assets/image/QuickStart/008.png)
 
 1.  点击页面右上角“模型广场”。
 2.  在左侧“可用令牌分组”中选择分组。
 3.  右侧模型卡片会显示该分组可用的模型、价格和折扣倍率。
 
-![](../../assets/image/QuickStart/007.webp)
+![](../../assets/image/QuickStart/007.png)
 
 如果你想了解折扣含义，可以点击模型广场右上方的“折扣说明”。
 
@@ -218,7 +218,7 @@ GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 登录控制台后，可以在“数据看板”右侧查看当前可用的 API Endpoint。
 
-![](../../assets/image/QuickStart/009.webp)
+![](../../assets/image/QuickStart/009.png)
 
 -   主站 Endpoint：`https://goswitch.online`，稳定可靠，适合生产环境。
 -   优化线路 Endpoint：`https://api-slb.goswitch.online`，优化线路，适合对延迟敏感的场景。

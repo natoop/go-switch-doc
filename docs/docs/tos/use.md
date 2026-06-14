@@ -12,7 +12,7 @@ Updated: 2026-06-13T10:02:01.000Z
 | 项目 | 内容 |
 | --- | --- |
 | 文档名称 | 支持的国家和地区（支持区域政策） |
-| 生效日期 | 2025-10-30 |
+| 生效日期 | 2025-01-01 |
 | 来源链接 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
 
 -   [概述](./use.md#%E6%A6%82%E8%BF%B0)

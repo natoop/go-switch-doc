@@ -5,7 +5,7 @@ Source: https://docs.goswitch.online/docs/tos/TOS.html
 Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本文档根据 GoSwitch「服务条款」页面内容整理（生效日期：2026 年 5 月 13 日）。
+本文档根据 GoSwitch「服务条款」页面内容整理（生效日期：2026 年 01 月 01 日）。
 如本文档与官网存在差异或版本更新，请以官网页面为准：
 [https://goswitch.online/terms](https://goswitch.online/terms)
 :::

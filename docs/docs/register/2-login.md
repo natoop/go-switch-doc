@@ -6,7 +6,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
 
-![](../../assets/image/QuickStart/001.webp)
+![](../../assets/image/QuickStart/001.png)
 
 <!-- ## 使用 Google 账号登录
 
@@ -28,7 +28,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 如果点击“使用 Google 继续”后出现“错误：OIDC 获取 Token 失败，请检查设置！”，通常是浏览器缓存或 Cookie 状态异常导致。
 
-![](../../assets/image/QuickStart/002.webp)
+![](../../assets/image/QuickStart/002.png)
 
 可以先清空浏览器缓存后重试：
 
@@ -42,4 +42,4 @@ Updated: 2026-06-13T10:02:01.000Z
 3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
 4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
 
-![](../../assets/image/QuickStart/006.webp) -->
+![](../../assets/image/QuickStart/006.png) -->

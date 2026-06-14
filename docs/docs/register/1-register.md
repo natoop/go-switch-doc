@@ -5,7 +5,7 @@ Source: https://docs.goswitch.online/docs/register/1-register.html
 Updated: 2026-06-13T10:02:01.000Z
 注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
 
-![](../../assets/image/QuickStart/001.webp)
+![](../../assets/image/QuickStart/001.png)
 
 ## 进入注册页
 

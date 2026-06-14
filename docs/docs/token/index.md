@@ -23,9 +23,9 @@ Updated: 2026-06-13T10:02:01.000Z
 
 **为了杜绝这种情况发生，我们直接教你怎么去查看每个分组的详细信息。**
 
-![](../../assets/image/Model/001.webp)
+![](../../assets/image/Model/001.png)
 
-![](../../assets/image/Model/002.webp)
+![](../../assets/image/Model/002.png)
 :::
 ## 令牌分组介绍
 

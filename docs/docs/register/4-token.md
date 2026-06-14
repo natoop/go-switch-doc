@@ -5,7 +5,7 @@ Source: https://docs.goswitch.online/docs/register/4-token.html
 Updated: 2026-06-13T10:02:01.000Z
 登录后进入控制台面板，左侧选择“令牌管理”。
 
-![](../../assets/image/QuickStart/004.webp)
+![](../../assets/image/QuickStart/004.png)
 
 ### 进入令牌管理
 
@@ -37,12 +37,12 @@ Updated: 2026-06-13T10:02:01.000Z
 
 你可以在“模型广场”查看每个令牌分组下支持哪些模型。
 
-![](../../assets/image/QuickStart/008.webp)
+![](../../assets/image/QuickStart/008.png)
 
 1.  点击页面右上角“模型广场”。
 2.  在左侧“可用令牌分组”中选择分组。
 3.  右侧模型卡片会显示该分组可用的模型、价格和折扣倍率。
 
-![](../../assets/image/QuickStart/007.webp)
+![](../../assets/image/QuickStart/007.png)
 
 如果你想了解折扣含义，可以点击模型广场右上方的“折扣说明”。
