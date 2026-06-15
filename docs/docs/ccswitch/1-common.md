@@ -37,7 +37,10 @@ CC-Switch has built-in GoSwitch quick configuration templates — no need to man
 :::
 ### Software Download
 
-Windows
+<DocTabs storage-key="docs-ccswitch-1-common-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Click the download link → [Link](https://github.com/farion1231/cc-switch/releases/latest) ← to go to CC-Switch's GitHub Release page
 
@@ -49,7 +52,12 @@ Windows
 
 ![](../../assets/image-en/CC-Switch/002.png)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 -   For MacOS, we recommend using HomeBrew
 
@@ -84,6 +92,10 @@ wget https://github.com/farion1231/cc-switch/releases/latest/download/cc-switch_
 # Install
 sudo dpkg -i cc-switch_x.x.x_amd64.deb
 ```
+
+
+</template>
+</DocTabs>
 
 ### Environment Check
 

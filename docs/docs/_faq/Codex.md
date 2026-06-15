@@ -103,7 +103,10 @@ intl.cpl
 
 ### Set Latest Model in VSCode Codex Plugin
 
-Windows
+<DocTabs storage-key="docs-faq-codex-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press `Win + R` to open the run window, enter the following command in press Enter
 
@@ -113,7 +116,12 @@ Windows
 
 ![](../../assets/image-en/FAQ/command.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  In Finder, press "Command+Shift+G", enter the following path in press Enter to open the VSCode extension directory
 
@@ -146,6 +154,9 @@ MacOS
     File name Download now
 
 5.  Restart VSCode, and you can see that you can now select the latest model!
+
+</template>
+</DocTabs>
 ### How to Configure Global Prompt in Codex
 1.  Please check the first two steps in [Codex CLI Configuration](../cli/3-codex.md)
 

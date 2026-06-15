@@ -7,7 +7,10 @@ Author: goswitch
 Updated: 2026-06-13T10:02:01.000Z
 ### How to Use GoSwitch in VSCode CC Plugin
 
-Windows
+<DocTabs storage-key="docs-faq-cc-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Ensure you have completed the [Environment Check](../cli/1-env.md) and your Claude Code CLI is working properly. If there are issues, follow the tutorial to configure it
 
@@ -35,7 +38,12 @@ Windows
 
 5.  Restart your VSCode and enjoy!
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Ensure you have completed the [Environment Check](../cli/1-env.md) and your Claude Code CLI is working properly. If there are issues, follow the tutorial to configure it
 
@@ -63,6 +71,9 @@ MacOS
 
 5.  Restart your VSCode and enjoy!
 
+
+</template>
+</DocTabs>
 ### Common Claude Code Commands
 
 | Command | Description |
@@ -107,7 +118,10 @@ Or you may encounter the following issue during initial configuration:
 
 ![](../../assets/image-en/FAQ/CC/003.webp)
 
-Windows
+<DocTabs storage-key="docs-faq-cc-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press `Win + R`, enter `cmd` and press Enter to open the command line
 
@@ -119,7 +133,12 @@ powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFr
 
 3.  Restart your Claude CLI
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Find the Terminal app in your Applications list and launch it
     ![](../../assets/image-en/FAQ/CC/002.webp)
@@ -136,11 +155,17 @@ Note: if `jq` is not found, you can install it with `brew install jq`
 
 3.  Restart your Claude CLI
 :::
+
+</template>
+</DocTabs>
 ### How to Switch Claude Code Back to 200K Context and Disable Non-essential Traffic
 
 If you want to switch Claude Code from 1M context back to 200K context and disable some non-essential requests and terminal title changes, you can add the following configuration to the `env` section of `settings.json`.
 
-Windows
+<DocTabs storage-key="docs-faq-cc-platform-3" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press `Win + R`, enter the following content and press Enter
 
@@ -162,7 +187,12 @@ Windows
 }
 ```
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  In Finder, press `Command + Shift + G`, enter the following path and press Enter
 
@@ -183,3 +213,6 @@ MacOS
   }
 }
 ```
+
+</template>
+</DocTabs>

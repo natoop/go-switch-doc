@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="docs-cli-3-codex-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R" on your keyboard, enter the following and press Enter to open your Codex configuration directory
 
@@ -28,6 +31,8 @@ Windows
 ::: warning Important
 
 **Many people may not have these three files after a fresh installation. You need to manually create these three files and write content to them**
+
+:::
 
 3.  Configure Config.toml
 
@@ -76,7 +81,12 @@ codex
 
 ![](../../assets/image-en/Cli/010.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the Codex configuration directory
 
@@ -95,10 +105,11 @@ MacOS
 -   **auth.json**: Stores the ApiKey obtained from the relay service
 
 -   **[AGENTS.md](http://AGENTS.md)**: Codex's global work prompts
-:::
+
 ::: warning Important
 
 If not auto-generated after initial installation, you need to manually create the above three files and write content
+:::
 
 3.  Configure Config.toml
 
@@ -145,4 +156,6 @@ codex
 ```
 
 ![](../../assets/image-en/Cli/010.webp)
-:::
+
+</template>
+</DocTabs>

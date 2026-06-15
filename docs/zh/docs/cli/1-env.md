@@ -27,6 +27,7 @@ npm list -g --depth-0
 npm i -g @anthropic-ai/claude-code@latest
 npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
+
 ```
 
 ![](../../../assets/image/Cli/002.webp)
@@ -37,6 +38,8 @@ npm i -g @google/gemini-cli@latest
 
 **这一步很重要，请你务必运行命令进行测试，因为这一步运行命令后，你的用户目录下才会生成各CLI的配置目录，方便后续操作！**
 
+<DocTabs :tabs="[{ label: 'Claude Code', value: 'claude' }, { label: 'Codex', value: 'codex' }, { label: 'Gemini', value: 'gemini' }]">
+<template #claude>
 Claude Code
 
 1.  在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
@@ -46,13 +49,14 @@ claude
 ```
 
 ![](../../../assets/image/Cli/003.webp)
-:::
-::: warning 重要
+
+
 
 **第二步十分重要，请你务必跳转链接后运行命令进行配置**
 
 2.  点击 [claude code 无法连接到 Anthropic 服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1) 跳转，务必根据教程运行命令，然后再继续阅读之后单独CLI的配置教程
-
+</template>
+<template #codex>
 Codex
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
@@ -62,7 +66,8 @@ codex
 ```
 
 ![](../../../assets/image/Cli/004.webp)
-
+</template>
+<template #gemini>
 Gemini
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
@@ -72,5 +77,7 @@ gemini
 ```
 
 ![](../../../assets/image/Cli/005.webp)
+</template>
+</DocTabs>
 
 :::

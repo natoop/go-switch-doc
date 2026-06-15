@@ -37,6 +37,9 @@ npm i -g @google/gemini-cli@latest
 
 **This step is very important. You must run the commands to test, because running these commands will generate the configuration directories for each CLI in your user directory, which is necessary for subsequent operations!**
 
+<DocTabs :tabs="[{ label: 'Claude Code', value: 'claude' }, { label: 'Codex', value: 'codex' }, { label: 'Gemini', value: 'gemini' }]">
+<template #claude>
+
 Claude Code
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Claude Code is installed successfully
@@ -46,12 +49,13 @@ claude
 ```
 
 ![](../../assets/image-en/Cli/003.webp)
-:::
-::: warning Important
 
 **The second step is very important. You must follow the link and run the command to configure**
 
-2.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
+1.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
+
+</template>
+<template #codex>
 
 Codex
 
@@ -63,6 +67,9 @@ codex
 
 ![](../../assets/image-en/Cli/004.webp)
 
+</template>
+<template #gemini>
+
 Gemini
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Gemini is installed successfully
@@ -72,5 +79,8 @@ gemini
 ```
 
 ![](../../assets/image-en/Cli/005.webp)
+
+</template>
+</DocTabs>
 
 :::

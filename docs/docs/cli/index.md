@@ -40,25 +40,29 @@ npm i -g @google/gemini-cli@latest
 
 **This step is very important. You must run the commands to test, because running these commands will generate the configuration directories for each CLI in your user directory, which is necessary for subsequent operations!**
 
+<DocTabs :tabs="[{ label: 'Claude Code', value: 'claude' }, { label: 'Codex', value: 'codex' }, { label: 'Gemini', value: 'gemini' }]">
+<template #claude>
+
 Claude Code
 
-Enter the following command in a Windows or macOS terminal. If you see the content shown, or a selection prompt appears, Claude Code is installed successfully
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Claude Code is installed successfully
 
 ``` bash
 claude
 ```
 
 ![](../../assets/image-en/Cli/003.webp)
-:::
-::: warning Important
 
 **The second step is very important. You must follow the link and run the command to configure**
 
-2.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
+1.  Click [Claude Code cannot connect to Anthropic service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service) to navigate, and follow the tutorial to run the command before continuing with the individual CLI configuration tutorials
+
+</template>
+<template #codex>
 
 Codex
 
-Enter the following command. If it works, Codex is installed successfully
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Codex is installed successfully
 
 ``` bash
 codex
@@ -66,19 +70,30 @@ codex
 
 ![](../../assets/image-en/Cli/004.webp)
 
+</template>
+<template #gemini>
+
 Gemini
 
-Enter the following command. If it works, Gemini is installed successfully
+Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Gemini is installed successfully
 
 ``` bash
 gemini
 ```
 
 ![](../../assets/image-en/Cli/005.webp)
+
+</template>
+</DocTabs>
+
 :::
+
 ## Claude Code Configuration
 
-Windows
+<DocTabs storage-key="docs-cli-index-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R", enter `%userprofile%\.claude` and press Enter
 
@@ -112,7 +127,12 @@ Windows
 
 ![](../../assets/image-en/Cli/016.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G" in Finder, enter `~/.claude` and press Enter
 
@@ -150,10 +170,18 @@ MacOS
 
 **If you still encounter errors after configuration, such as a prompt requiring login, please refer to the following link**
 [claude-code-cannot-connect-to-anthropic-service](../faq/CC.md#claude-code-cannot-connect-to-anthropic-service)
+
 :::
+
+</template>
+</DocTabs>
+
 ## Codex Configuration
 
-Windows
+<DocTabs storage-key="docs-cli-index-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R", enter `%userprofile%\.codex` and press Enter
 
@@ -170,7 +198,7 @@ Windows
 ::: warning Important
 
 **Many people may not have these three files after installation. Create them manually**
-
+:::
 3.  Configure Config.toml
 
 ``` toml
@@ -208,7 +236,12 @@ Review [Create API Token](../register/4-token.md), create a **Codex** group toke
 
 ![](../../assets/image-en/Cli/010.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G", enter `~/.codex` and press Enter
 
@@ -221,12 +254,12 @@ MacOS
 -   **config.toml**: Codex's core configuration file
 -   **auth.json**: ApiKey storage
 -   **[AGENTS.md](http://AGENTS.md)**: Global prompts
-:::
 ::: warning Important
 
 Create the above three files manually if they don't exist
+:::
 
-3.  Configure Config.toml
+1.  Configure Config.toml
 
 ``` toml
 model_provider = "goswitch"
@@ -261,10 +294,16 @@ Review [Create API Token](../register/4-token.md), create a **Codex** group toke
 5.  Test - run `codex` in terminal
 
 ![](../../assets/image-en/Cli/010.webp)
-:::
+
+</template>
+</DocTabs>
+
 ## Gemini Configuration
 
-Windows
+<DocTabs storage-key="docs-cli-index-platform-3" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R", enter `%userprofile%\.gemini` and press Enter
 
@@ -292,7 +331,12 @@ GEMINI_MODEL=gemini-2.5-pro
 
 ![](../../assets/image-en/Cli/022.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G", enter `~/.gemini` and press Enter
 
@@ -317,3 +361,6 @@ GEMINI_MODEL=gemini-2.5-pro
 4.  Run `gemini` in terminal. If it works normally, configuration is complete
 
 ![](../../assets/image-en/Cli/022.webp)
+
+</template>
+</DocTabs>

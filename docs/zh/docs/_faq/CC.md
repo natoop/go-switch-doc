@@ -7,7 +7,10 @@ Author: goswitch
 Updated: 2026-06-13T10:02:01.000Z
 ### 如何在Vscode CC插件中使用GoSwitch
 
-Windows
+<DocTabs storage-key="zh-docs-faq-cc-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  确保你已进行 [环境检查](../cli/1-env.md) 并保证你的claude code cli是没问题的，如果有问题，请按照教程进行配置
 
@@ -35,7 +38,12 @@ Windows
 
 5.  重启你的Vscode，开始愉快使用吧！
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  确保你已进行 [环境检查](../cli/1-env.md) 并保证你的claude code cli是没问题的，如果有问题，请按照教程进行配置
 
@@ -63,6 +71,9 @@ MacOS
 
 5.  重启你的Vscode，开始愉快使用吧！
 
+
+</template>
+</DocTabs>
 ### Claude Code 中常用命令
 
 | 命令 | 功能说明 |
@@ -108,7 +119,10 @@ Note: Claude Code might not be available in your country, Check supported countr
 
 ![](../../../assets/image/FAQ/CC/003.webp)
 
-Windows
+<DocTabs storage-key="zh-docs-faq-cc-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  按下键盘 `Win + R` 键，输入 `cmd` 后回车，打开命令行程序
 
@@ -120,7 +134,12 @@ powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFr
 
 3.  重启你的Claude Cli
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在APP列表中找到终端程序，点击运行
     ![](../../../assets/image/FAQ/CC/002.webp)
@@ -137,12 +156,18 @@ jq '. + {"hasCompletedOnboarding": true}' ~/.claude.json > /tmp/tmp.json && mv /
 
 3.  重启你的Claude Cli
 :::
+
+</template>
+</DocTabs>
 ### Claude Code 如何切换回 200K 上下文并禁用非必要流量
 
 如果你希望将 Claude Code 从 1M 上下文切换回 200K 上下文，并关闭一些
 非必要请求与终端标题变更，可以在 `settings.json` 的 `env` 中加入以下配置。
 
-Windows
+<DocTabs storage-key="zh-docs-faq-cc-platform-3" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  按下键盘 `Win + R`，输入以下内容后回车
 
@@ -164,7 +189,12 @@ Windows
 }
 ```
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达中按下 `Command + Shift + G`，输入以下路径后回车
 
@@ -185,3 +215,6 @@ MacOS
   }
 }
 ```
+
+</template>
+</DocTabs>

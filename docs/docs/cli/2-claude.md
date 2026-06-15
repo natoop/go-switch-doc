@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="cli-claude-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R" on your keyboard, enter the following and press Enter to open the Claude Code configuration directory
 
@@ -45,7 +48,11 @@ Windows
 
 ![](../../assets/image-en/Cli/016.webp)
 
-MacOS
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the configuration directory
 
@@ -84,6 +91,9 @@ MacOS
 5.  Run `claude` in the terminal. When the dialogue interface appears and responds normally, configuration is complete
 
 ![](../../assets/image-en/Cli/016.webp)
+
+</template>
+</DocTabs>
 
 ::: warning Important
 

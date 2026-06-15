@@ -41,13 +41,21 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## 软件下载
 
-Windows
+<DocTabs storage-key="zh-docs-advanced-aionui-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  访问 [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) 页面
 2.  下载适合 Windows 的安装包（`.exe` 文件）
 3.  运行安装程序，按照提示完成安装
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 ``` bash
 brew install aionui
@@ -57,6 +65,9 @@ brew install aionui
 2.  下载适合 macOS 的安装包（`.dmg` 或 `.zip` 文件，支持 Intel 和 Apple Silicon）
 3.  运行安装程序，按照提示完成安装
 
+
+</template>
+</DocTabs>
 Linux
 
 ``` bash

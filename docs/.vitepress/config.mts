@@ -13,26 +13,32 @@ type SidebarItem = {
 const configDir = dirname(fileURLToPath(import.meta.url))
 const siteRoot = resolve(configDir, '..')
 
+function shouldMapPath(file: string) {
+  return relative(siteRoot, file)
+    .split(sep)
+    .every((part) => !part.startsWith('_'))
+}
+
 const sectionMetaEn: Record<string, { text: string, order: number }> = {
   register: { text: 'Getting Started', order: 10 },
-  token: { text: 'Models & Token Groups', order: 20 },
+  //token: { text: 'Models & Token Groups', order: 20 },
   ccswitch: { text: 'CC-Switch Quick Setup', order: 30 },
-  cli: { text: 'CLI Manual Setup', order: 40 },
-  paint: { text: 'Image Models', order: 50 },
-  advanced: { text: 'Third-party Integration', order: 60 },
-  faq: { text: 'FAQ', order: 70 },
-  tos: { text: 'Terms & Policies', order: 80 }
+   cli: { text: 'CLI Manual Setup', order: 40 },
+  // paint: { text: 'Image Models', order: 50 },
+  // advanced: { text: 'Third-party Integration', order: 60 },
+  // faq: { text: 'FAQ', order: 70 },
+  // tos: { text: 'Terms & Policies', order: 80 }
 }
 
 const sectionMetaZh: Record<string, { text: string, order: number }> = {
   register: { text: '入门与账号配置', order: 10 },
-  token: { text: '模型与令牌分组', order: 20 },
+  // token: { text: '模型与令牌分组', order: 20 },
   ccswitch: { text: 'CC-Switch 一键配置', order: 30 },
   cli: { text: 'CLI 手动配置', order: 40 },
-  paint: { text: '绘图模型使用', order: 50 },
-  advanced: { text: '第三方工具接入', order: 60 },
-  faq: { text: '常见问题排查', order: 70 },
-  tos: { text: '条款与政策说明', order: 80 }
+  // paint: { text: '绘图模型使用', order: 50 },
+  // advanced: { text: '第三方工具接入', order: 60 },
+  // faq: { text: '常见问题排查', order: 70 },
+  // tos: { text: '条款与政策说明', order: 80 }
 }
 
 function markdownTitle(file: string) {
@@ -90,7 +96,10 @@ function fileItem(file: string, siteRoot: string, titleFn: (name: string) => str
 
 function sectionItem(dir: string, siteRoot: string, sectionMeta: Record<string, { text: string, order: number }>, titleFn: (name: string) => string): SidebarItem {
   const entries = readdirSync(dir)
-    .filter((entry) => entry.endsWith('.md'))
+    .filter((entry) => {
+      const file = join(dir, entry)
+      return shouldMapPath(file) && entry.endsWith('.md')
+    })
     .sort(compareEntries)
 
   const dirName = basename(dir)
@@ -132,9 +141,9 @@ function buildSidebar(locale: 'en' | 'zh'): SidebarItem[] {
     return sidebar
 
   const topLevelFiles = readdirSync(contentRoot)
-    .filter((entry) => entry.endsWith('.md'))
-    .sort(compareEntries)
     .map((entry) => join(contentRoot, entry))
+    .filter((entry) => shouldMapPath(entry) && entry.endsWith('.md'))
+    .sort((a, b) => compareEntries(basename(a), basename(b)))
 
   if (topLevelFiles.length > 0) {
     sidebar[0].items?.push(...topLevelFiles.map((f) => fileItem(f, siteRoot, titleFn)))
@@ -142,7 +151,7 @@ function buildSidebar(locale: 'en' | 'zh'): SidebarItem[] {
 
   const sections = readdirSync(contentRoot)
     .map((entry) => join(contentRoot, entry))
-    .filter((entry) => statSync(entry).isDirectory())
+    .filter((entry) => shouldMapPath(entry) && statSync(entry).isDirectory())
     .sort((a, b) => {
       const aMeta = sectionMeta[basename(a)]
       const bMeta = sectionMeta[basename(b)]
@@ -167,6 +176,10 @@ export default defineConfig({
   description: 'GoSwitch documentation',
   cleanUrls: true,
   ignoreDeadLinks: true,
+  srcExclude: [
+    '**/_*/**',
+    '**/_*.md'
+  ],
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],

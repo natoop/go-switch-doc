@@ -15,7 +15,10 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## Software Installation
 
-Windows
+<DocTabs storage-key="docs-advanced-claudedesktop-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  On Windows, the software installation requires contacting Anthropic's official servers. You need to use a VPN with **global service (TUN mode)**, or run the installer from the command line to force it through the proxy. Otherwise, you will see the following error:
 
@@ -41,12 +44,20 @@ set HTTPS_PROXY=http://127.0.0.1:7897
 
 ![](../../assets/image-en/Advanced/ClaudeDesktop/05.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  On MacOS, you can install directly without additional steps
 
 ![](../../assets/image-en/Advanced/ClaudeDesktop/06.webp)
 
+
+</template>
+</DocTabs>
 ## Bypass Login and Configure Third-Party API
 
 1.  Open the software and enter the login screen
@@ -55,7 +66,10 @@ MacOS
 
 2.  Enable Developer Mode
 
-Windows
+<DocTabs storage-key="docs-advanced-claudedesktop-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Click on the message input field to gain focus, then use Tab to navigate to the top-left menu, press Enter, and navigate through → help → troubleshooting → enable developer mode
 
@@ -65,7 +79,12 @@ Windows
 
 ![](../../assets/image-en/Advanced/ClaudeDesktop/09.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  From the top-left menu, navigate through → help → troubleshooting → enable developer mode
 
@@ -77,6 +96,9 @@ MacOS
 
 3.  Wait for the software to restart
 
+
+</template>
+</DocTabs>
 ## Configure Third-Party API
 
 1.  Open the menu again the same way, navigate through Developer → Configure third-party inference

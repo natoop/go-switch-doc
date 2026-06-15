@@ -15,7 +15,10 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## 软件安装
 
-Windows
+<DocTabs storage-key="zh-docs-advanced-claudedesktop-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Windows系统下软件安装需要请求Anthropic官方，需要你用梯子挂 **全局服务（TUN模式）** ，或是用命令行来运行安装程序，使其强制走代理，否则会出现以下报错
 
@@ -41,12 +44,20 @@ set HTTPS_PROXY=http://127.0.0.1:7897
 
 ![](../../../assets/image/Advanced/ClaudeDesktop/05.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  MacOS系统下直接正常安装即可
 
 ![](../../../assets/image/Advanced/ClaudeDesktop/06.webp)
 
+
+</template>
+</DocTabs>
 ## 绕过登录并配置第三方接口
 
 1.  打开软件进入登录界面
@@ -55,7 +66,10 @@ MacOS
 
 2.  开启开发者模式
 
-Windows
+<DocTabs storage-key="zh-docs-advanced-claudedesktop-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  鼠标点击邮件输入框获取焦点，键盘tab跳到左上角菜单，按下回车依次进入 –> help → troubleshooting → enable developer mode
 
@@ -65,7 +79,12 @@ Windows
 
 ![](../../../assets/image/Advanced/ClaudeDesktop/09.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  直接在左上角菜单中依次进入 –> help → troubleshooting → enable developer mode
 
@@ -77,6 +96,9 @@ MacOS
 
 3.  等待软件重启
 
+
+</template>
+</DocTabs>
 ## 配置第三方API
 
 1.  同样的方法打开菜单，依次进入 Developer → Configure third-party inferenc

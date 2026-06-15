@@ -37,7 +37,11 @@ CC-Switch 已经内置了 GoSwitch 的快捷配置模板，无需手动编辑配
 :::
 ### 软件下载
 
-Windows
+<DocTabs storage-key="zh-docs-ccswitch-1-common-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+
+<template #windows>
+
+### Windows
 
 1.  点击下载链接→[传送门](https://github.com/farion1231/cc-switch/releases/latest)←，进入CC-Switch的Github Release页面
 
@@ -49,13 +53,19 @@ Windows
 
 ![](../../../assets/image/CC-Switch/002.png)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 -   MacOS安装推荐使用HomeBrew
 
 -   开启终端后，分别运行以下命令：
 
 ``` bash
+
 # 添加 tap 源
 brew tap farion1231/ccswitch
 
@@ -67,6 +77,8 @@ brew install --cask cc-switch
 
 ![](../../../assets/image/CC-Switch/002.png)
 
+</template>
+</DocTabs>
 Linux
 
 ::: warning 重要

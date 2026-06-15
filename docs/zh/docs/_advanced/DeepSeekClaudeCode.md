@@ -50,7 +50,10 @@ Updated: 2026-06-13T10:02:01.000Z
 
 如果你希望手动配置 Claude Code，也可以直接编辑 Claude Code 的 `settings.json` 文件。
 
-Windows
+<DocTabs storage-key="zh-docs-advanced-deepseekclaudecode-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 配置文件通常位于：
 
@@ -58,7 +61,12 @@ Windows
 %userprofile%\.claude\settings.json
 ```
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 配置文件通常位于：
 
@@ -86,6 +94,9 @@ MacOS
 
 手动配置时请保持模型名称与令牌分组实际支持的模型一致。默认不设置 `[1m]`；只有需要开启 1m 上下文时，才将上方的 `deepseek-v4-pro` 改为 `deepseek-v4-pro[1m]`，将 `deepseek-v4-flash` 改为 `deepseek-v4-flash[1m]`。
 :::
+
+</template>
+</DocTabs>
 ## 验证配置
 
 1.  重新打开终端，运行 `claude` 启动 Claude Code。

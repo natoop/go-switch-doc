@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="cli-gemini-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
 
@@ -37,7 +40,11 @@ GEMINI_MODEL=gemini-2.5-pro
 
 ![](../../../assets/image/Cli/022.webp)
 
-MacOS
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
@@ -66,3 +73,6 @@ GEMINI_MODEL=gemini-2.5-pro
 4.  在终端运行 `gemini`，可正常进入对话并收到回复即表示配置完成
 
 ![](../../../assets/image/Cli/022.webp)
+
+</template>
+</DocTabs>

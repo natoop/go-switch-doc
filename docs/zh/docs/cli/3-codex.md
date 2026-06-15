@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="zh-docs-cli-3-codex-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
 
@@ -28,6 +31,8 @@ Windows
 ::: warning 重要
 
 **很多人刚安装可能没有这三个文件，你需要手动去创建这三个文件，然后写入内容**
+
+::: 
 
 3.  配置 Config.toml
 
@@ -76,7 +81,12 @@ codex
 
 ![](../../../assets/image/Cli/010.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
 
@@ -95,12 +105,13 @@ MacOS
 -   **auth.json**：存放中转站获取的 ApiKey 秘钥
 
 -   **[AGENTS.md](http://AGENTS.md)**：Codex 全局工作的提示词
-:::
+
 ::: warning 重要
 
 初次安装若未自动生成，需要手动创建上述三个文件并写入内容
 
-3.  配置 Config.toml
+:::
+1.  配置 Config.toml
 
 将以下内容保存到 `config.toml`
 
@@ -146,4 +157,6 @@ codex
 
 ![](../../../assets/image/Cli/010.webp)
 
-:::
+
+</template>
+</DocTabs>

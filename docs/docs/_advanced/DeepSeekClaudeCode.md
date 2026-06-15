@@ -50,7 +50,10 @@ Please use the actual available model names in your token group when creating th
 
 If you prefer to configure Claude Code manually, you can directly edit Claude Code's `settings.json` file.
 
-Windows
+<DocTabs storage-key="docs-advanced-deepseekclaudecode-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 The configuration file is usually located at:
 
@@ -58,7 +61,12 @@ The configuration file is usually located at:
 %userprofile%\.claude\settings.json
 ```
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 The configuration file is usually located at:
 
@@ -86,6 +94,9 @@ Write the following content into `settings.json`, replacing `{{YourNewToken}}` w
 
 When configuring manually, please keep the model names consistent with what your token group actually supports. By default, do not set `[1m]`; only change `deepseek-v4-pro` to `deepseek-v4-pro[1m]` and `deepseek-v4-flash` to `deepseek-v4-flash[1m]` when you need 1M context.
 :::
+
+</template>
+</DocTabs>
 ## Verify Configuration
 
 1.  Open a new terminal, run `claude` to start Claude Code.

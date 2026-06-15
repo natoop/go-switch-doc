@@ -41,13 +41,21 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## Software Download
 
-Windows
+<DocTabs storage-key="docs-advanced-aionui-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page
 2.  Download the Windows installer (`.exe` file)
 3.  Run the installer and follow the prompts to complete installation
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 ``` bash
 brew install aionui
@@ -57,6 +65,9 @@ brew install aionui
 2.  Download the macOS installer (`.dmg` or `.zip` file, supports Intel and Apple Silicon)
 3.  Run the installer and follow the prompts to complete installation
 
+
+</template>
+</DocTabs>
 Linux
 
 ``` bash

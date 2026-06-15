@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="cli-gemini-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  Press "Win+R" on your keyboard, enter the following and press Enter to open the Gemini CLI configuration directory
 
@@ -37,7 +40,11 @@ GEMINI_MODEL=gemini-2.5-pro
 
 ![](../../assets/image-en/Cli/022.webp)
 
-MacOS
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  Press "Command+Shift+G", enter the following path and press Enter to open the configuration directory
 
@@ -66,3 +73,6 @@ GEMINI_MODEL=gemini-2.5-pro
 4.  Run `gemini` in the terminal. If you can enter the dialogue normally and receive replies, configuration is complete
 
 ![](../../assets/image-en/Cli/022.webp)
+
+</template>
+</DocTabs>

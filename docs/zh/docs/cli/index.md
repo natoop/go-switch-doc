@@ -39,22 +39,25 @@ npm i -g @google/gemini-cli@latest
 
 **这一步很重要，请你务必运行命令进行测试，因为这一步运行命令后，你的用户目录下才会生成各CLI的配置目录，方便后续操作！**
 
+<DocTabs :tabs="[{ label: 'Claude Code', value: 'claude' }, { label: 'Codex', value: 'codex' }, { label: 'Gemini', value: 'gemini' }]">
+<template #claude>
 Claude Code
 
-在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
+1.  在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
 
 ``` bash
 claude
 ```
 
 ![](../../../assets/image/Cli/003.webp)
-:::
-::: warning 重要
+
+
 
 **第二步十分重要，请你务必跳转链接后运行命令进行配置**
 
 2.  点击 [claude code 无法连接到 Anthropic 服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1) 跳转，务必根据教程运行命令，然后再继续阅读之后单独CLI的配置教程
-
+</template>
+<template #codex>
 Codex
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
@@ -64,7 +67,8 @@ codex
 ```
 
 ![](../../../assets/image/Cli/004.webp)
-
+</template>
+<template #gemini>
 Gemini
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
@@ -74,10 +78,17 @@ gemini
 ```
 
 ![](../../../assets/image/Cli/005.webp)
+</template>
+</DocTabs>
+
 :::
+
 ## Claude Code配置
 
-Windows
+<DocTabs storage-key="zh-docs-cli-index-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
 
@@ -115,7 +126,12 @@ Windows
 
 ![](../../../assets/image/Cli/016.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
@@ -158,9 +174,16 @@ MacOS
 **注意，如果配置完仍然有报错问题，提示你需要登录，请看如下链接解决**
 [claude-code-无法连接到-anthropic-服务](../faq/CC.md#claude-code-%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0-anthropic-%E6%9C%8D%E5%8A%A1)
 :::
+
+</template>
+</DocTabs>
+
 ## Codex配置
 
-Windows
+<DocTabs storage-key="zh-docs-cli-index-platform-2" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
 
@@ -184,6 +207,7 @@ Windows
 
 **很多人刚安装可能没有这三个文件，你需要手动去创建这三个文件，然后写入内容**
 
+:::
 3.  配置 Config.toml
 
 将以下配置文本复制到你的 config.toml文件中保存
@@ -231,7 +255,12 @@ codex
 
 ![](../../../assets/image/Cli/010.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
 
@@ -250,11 +279,12 @@ MacOS
 -   **auth.json**：存放中转站获取的 ApiKey 秘钥
 
 -   **[AGENTS.md](http://AGENTS.md)**：Codex 全局工作的提示词
-:::
+
 ::: warning 重要
 
 初次安装若未自动生成，需要手动创建上述三个文件并写入内容
 
+:::
 3.  配置 Config.toml
 
 将以下内容保存到 `config.toml`
@@ -300,10 +330,16 @@ codex
 ```
 
 ![](../../../assets/image/Cli/010.webp)
-:::
+
+</template>
+</DocTabs>
+
 ## Gemini配置
 
-Windows
+<DocTabs storage-key="zh-docs-cli-index-platform-3" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
 
@@ -335,7 +371,12 @@ GEMINI_MODEL=gemini-2.5-pro
 
 ![](../../../assets/image/Cli/022.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
@@ -364,3 +405,6 @@ GEMINI_MODEL=gemini-2.5-pro
 4.  在终端运行 `gemini`，可正常进入对话并收到回复即表示配置完成
 
 ![](../../../assets/image/Cli/022.webp)
+
+</template>
+</DocTabs>

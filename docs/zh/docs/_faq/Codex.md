@@ -102,7 +102,10 @@ intl.cpl
 
 ### Vscode Codex插件中设置最新模型
 
-Windows
+<DocTabs storage-key="zh-docs-faq-codex-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  按下快捷键`Win + R`，打开左下脚运行窗口，输入以下命令后回车
 
@@ -112,7 +115,12 @@ Windows
 
 ![](../../../assets/image/FAQ/command.webp)
 
-MacOS
+
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开VsCode插件目录
 
@@ -142,6 +150,9 @@ MacOS
 
 5.  重启你的vscode，你就能看见现在能选择最新模型啦！
 
+
+</template>
+</DocTabs>
 ### Codex如何配置全局提示词
 
 1.  请你查看 [Codex CLI 配置](../cli/3-codex.md) 中的前两步

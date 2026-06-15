@@ -5,7 +5,10 @@
 Author: goswitch
 
 Updated: 2026-06-13T10:02:01.000Z
-Windows
+<DocTabs storage-key="cli-claude-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
+<template #windows>
+
+### Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
 
@@ -45,7 +48,11 @@ Windows
 
 ![](../../../assets/image/Cli/016.webp)
 
-MacOS
+</template>
+
+<template #macos>
+
+### MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
@@ -84,6 +91,9 @@ MacOS
 5.  在终端运行 `claude`，看到对话界面并能正常回复即表示配置完成
 
 ![](../../../assets/image/Cli/016.webp)
+
+</template>
+</DocTabs>
 
 ::: warning 重要
 
