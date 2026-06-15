@@ -29,7 +29,7 @@ Windows
 
 4.  在命令行中分别输入以下命令，运行安装程序，此时能够正常安装
 
-```bash
+``` bash
 set HTTP_PROXY=http://127.0.0.1:7897
 set HTTPS_PROXY=http://127.0.0.1:7897
 "Claude Setup.exe"

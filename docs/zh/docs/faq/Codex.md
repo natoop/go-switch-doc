@@ -30,13 +30,13 @@ Updated: 2026-06-13T10:02:01.000Z
 
 2.  键盘按下“Win+R”键，输入以下内容后回车，打开你的用户目录
 
-```bash
+``` bash
 %userprofile%\.codex
 ```
 
 3.  找到目录中的`config.toml`文件，打开并编辑，你的配置文件应该如下
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.4"
 model_reasoning_effort = "high"
@@ -54,8 +54,7 @@ requires_openai_auth = true
 
 4.  打开目录下`AGENTS.md`文件（如果没有请手动创建），在里面写入以下内容后保存
 
-```markdown
-:::
+``` markdown
 # Codex全局工作指南
 
 ## 回答风格:
@@ -87,7 +86,7 @@ requires_openai_auth = true
 
 1.  按下快捷键`Win + R`，打开左下脚运行窗口，输入以下命令后回车
 
-```bash
+``` bash
 intl.cpl
 ```
 
@@ -107,7 +106,7 @@ Windows
 
 1.  按下快捷键`Win + R`，打开左下脚运行窗口，输入以下命令后回车
 
-```bash
+``` bash
 %userprofile%\.vscode\extensions
 ```
 
@@ -117,7 +116,7 @@ MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开VsCode插件目录
 
-```bash
+``` bash
 ~/.vscode/extensions
 ```
 
@@ -157,7 +156,7 @@ MacOS
 
 2.  打开教程中提到的`config.toml`文件，在里面加入以下内容
 
-```toml
+``` toml
 [features]
 web_search_request = true
 ```
@@ -180,7 +179,7 @@ web_search_request = true
 
 报错信息类似为：
 
-```txt
+``` txt
 Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)
 ```
 
@@ -198,7 +197,7 @@ Connection failed: error sending request for url (https://www.goswitch.com/v1/re
 
 报错信息类似为：
 
-```txt
+``` txt
 exceeded retry limit, last status: 401 Unauthorized, request id: xxxxxx
 ```
 
@@ -206,7 +205,7 @@ exceeded retry limit, last status: 401 Unauthorized, request id: xxxxxx
 
 Windows
 
-```bash
+``` bash
 cmd /c "echo ================= OPENAI ENV CHECK ================= & ^
 if defined OPENAI_API_KEY (echo OPENAI_API_KEY  = OK) else (echo OPENAI_API_KEY  = MISSING) & ^
 if defined OPENAI_BASE_URL (echo OPENAI_BASE_URL = OK) else (echo OPENAI_BASE_URL = MISSING) & ^
@@ -215,20 +214,20 @@ echo ========================================================="
 
 如果输出以下内容，则直接进入第2步
 
-```txt
+``` txt
 OPENAI_API_KEY  = MISSING
 OPENAI_BASE_URL = MISSING
 ```
 
 如果输出内容不同，请在终端运行以下命令后进入第二步
 
-```bash
+``` bash
 cmd /c "setx OPENAI_API_KEY \"\" & setx OPENAI_BASE_URL \"\""
 ```
 
 macOS
 
-```bash
+``` bash
 echo "================= OPENAI ENV CHECK ================="
 if [ -z "$OPENAI_API_KEY" ]; then
   echo "OPENAI_API_KEY  = MISSING"
@@ -246,14 +245,14 @@ echo "========================================================"
 
 如果输出以下内容，则直接进入第2步
 
-```txt
+``` txt
 OPENAI_API_KEY  = MISSING
 OPENAI_BASE_URL = MISSING
 ```
 
 如果输出内容不同，请在终端运行以下命令后进入第二步
 
-```bash
+``` bash
 unset OPENAI_API_KEY OPENAI_BASE_URL
 ```
 
@@ -271,7 +270,7 @@ unset OPENAI_API_KEY OPENAI_BASE_URL
 
 报错信息类似为：
 
-```txt
+``` txt
 unexpected status 403 Forbidden: {"error":{"message":"Usage not included in your
 plan","type":"usage_not_included","param":null,"code":null,"plan_type":"basic"}}
 ```

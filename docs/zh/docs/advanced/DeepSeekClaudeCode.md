@@ -54,7 +54,7 @@ Windows
 
 配置文件通常位于：
 
-```bash
+``` bash
 %userprofile%\.claude\settings.json
 ```
 
@@ -62,13 +62,13 @@ MacOS
 
 配置文件通常位于：
 
-```bash
+``` bash
 ~/.claude/settings.json
 ```
 
 将下面内容写入 `settings.json`，并把 `{{新建的令牌}}` 替换为刚才复制的 `deepseek-officially` 分组 API Key：
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",

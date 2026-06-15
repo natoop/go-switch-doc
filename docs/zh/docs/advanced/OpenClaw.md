@@ -13,7 +13,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  登录服务器SSH，或在MacOS打开你的终端程序，输入以下命令开始安装，耐心等待安装流程结束。等出现以下界面提示后，选择 `yes` 选项回车确认
 
-```bash
+``` bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
@@ -67,7 +67,7 @@ GoSwitch 专门为OpenClaw配置写了一个配置脚本，Github地址为：[op
 
 1.  在你的SSH控制台，或者MacOS终端输入以下命令安装配置器
 
-```bash
+``` bash
 curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/download/index.js -o /tmp/openclaw-config.js && node /tmp/openclaw-config.js
 ```
 
@@ -103,7 +103,7 @@ curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/down
 
 7.  在控制台输入以下命令，重启GateWay
 
-```bash
+``` bash
 openclaw gateway restart
 ```
 
@@ -111,7 +111,7 @@ openclaw gateway restart
 
 8.  重启成功后，控制台输入以下命令，进入TUI界面，测试模型是否能正常输出。测试正常则输入 `/quit` 退出TUI界面
 
-```bash
+``` bash
 openclaw tui
 ```
 
@@ -127,7 +127,7 @@ openclaw tui
 
 另外需要修改 `~/.openclaw` 下的 `openclaw.json`文件，在 `gateway` 字段下添加以下内容
 
-```json
+``` json
 "controlUi":{
     "allowInsecureAuth":true
 }
@@ -137,7 +137,7 @@ openclaw tui
 
 修改完毕后回到控制台输入以下命令重启网关
 
-```bash
+``` bash
 openclaw gateway restart
 ```
 
@@ -155,7 +155,7 @@ openclaw gateway restart
 
 3.  在控制台输入以下命令允许您跟Bot进行互动
 
-```bash
+``` bash
 openclaw pairing approve telegram 你的Pairing code
 ```
 

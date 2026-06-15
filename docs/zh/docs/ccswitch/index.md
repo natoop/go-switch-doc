@@ -49,7 +49,7 @@ Windows
 
 3.  安装后运行CC-Switch主程序，界面如下。
 
-![](../../../assets/image/CC-Switch/002.webp)
+![](../../../assets/image/CC-Switch/002.png)
 
 MacOS
 
@@ -57,7 +57,7 @@ MacOS
 
 -   开启终端后，分别运行以下命令：
 
-```bash
+``` bash
 # 添加 tap 源
 brew tap farion1231/ccswitch
 

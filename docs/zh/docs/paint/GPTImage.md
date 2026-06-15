@@ -38,7 +38,7 @@ Images API 是 `gpt-image-2` 的推荐出图方式，分为文生图和图片编
 
 ##### 接口实例
 
-```bash
+``` bash
 curl --location 'https://goswitch.online/v1/images/generations' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer 你的Sora分组令牌' \
@@ -81,7 +81,7 @@ curl --location 'https://goswitch.online/v1/images/generations' \
 
 ##### 接口实例
 
-```bash
+``` bash
 curl --location 'https://goswitch.online/v1/images/edits' \
 --header 'Authorization: Bearer 你的Sora分组令牌' \
 --header 'Accept: */*' \
@@ -157,7 +157,7 @@ curl --location 'https://goswitch.online/v1/images/edits' \
 
 默认返回图片下载地址：
 
-```json
+``` json
 {
   "created": 1776923999,
   "data": [
@@ -173,7 +173,7 @@ curl --location 'https://goswitch.online/v1/images/edits' \
 
 如果请求里传了 `"response_format": "b64_json"`，返回内容会变成 Base64 图片数据：
 
-```json
+``` json
 {
   "created": 1776923999,
   "data": [

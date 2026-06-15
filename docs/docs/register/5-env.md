@@ -11,7 +11,7 @@ Before configuring Claude Code, Codex, or Gemini CLI, please confirm that Node.j
 
 Execute the following in a Windows, macOS, or Linux terminal:
 
-```bash
+``` bash
 npm list -g --depth-0
 ```
 

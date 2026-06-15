@@ -37,7 +37,7 @@ If you're only configuring GoSwitch for the first time, we recommend using the T
 
 For macOS and Linux, we recommend using the one-click install script:
 
-```bash
+``` bash
 curl -fsSL https://github.com/SaladDay/cc-switch-cli/releases/latest/download/install.sh | bash
 ```
 
@@ -47,7 +47,7 @@ By default, it installs to `~/.local/bin`. If the terminal says `cc-switch` not 
 
 ### macOS
 
-```bash
+``` bash
 curl -LO https://github.com/saladday/cc-switch-cli/releases/latest/download/cc-switch-cli-darwin-universal.tar.gz
 tar -xzf cc-switch-cli-darwin-universal.tar.gz
 chmod +x cc-switch
@@ -59,7 +59,7 @@ xattr -cr /usr/local/bin/cc-switch
 
 ### Linux x64
 
-```bash
+``` bash
 curl -LO https://github.com/saladday/cc-switch-cli/releases/latest/download/cc-switch-cli-linux-x64-musl.tar.gz
 tar -xzf cc-switch-cli-linux-x64-musl.tar.gz
 chmod +x cc-switch
@@ -68,7 +68,7 @@ sudo mv cc-switch /usr/local/bin/
 
 ### Linux ARM64
 
-```bash
+``` bash
 curl -LO https://github.com/saladday/cc-switch-cli/releases/latest/download/cc-switch-cli-linux-arm64-musl.tar.gz
 tar -xzf cc-switch-cli-linux-arm64-musl.tar.gz
 chmod +x cc-switch
@@ -79,7 +79,7 @@ sudo mv cc-switch /usr/local/bin/
 
 Go to [GitHub Releases](https://github.com/saladday/cc-switch-cli/releases/latest) to download `cc-switch-cli-windows-x64.zip`, extract it, and place `cc-switch.exe` in a PATH directory, or run it directly from the current directory:
 
-```powershell
+``` powershell
 .\cc-switch.exe
 ```
 :::
@@ -88,13 +88,13 @@ Go to [GitHub Releases](https://github.com/saladday/cc-switch-cli/releases/lates
 
 ### Enter TUI Interface
 
-```bash
+``` bash
 cc-switch
 ```
 
 To directly configure a specific app, add `--app`:
 
-```bash
+``` bash
 cc-switch --app claude
 cc-switch --app codex
 cc-switch --app gemini
@@ -104,7 +104,7 @@ TUI is suitable for first-time configuration. You can select the GoSwitch templa
 
 ### Using CLI Commands
 
-```bash
+``` bash
 cc-switch provider list
 cc-switch provider current
 cc-switch provider switch <id>
@@ -114,7 +114,7 @@ cc-switch env check
 
 `claude` is the default app. Use `--app` to manage other apps:
 
-```bash
+``` bash
 cc-switch --app codex provider list
 cc-switch --app gemini provider current
 ```
@@ -125,13 +125,13 @@ CLI commands are suitable for servers, scripts, and daily troubleshooting, and c
 
 First confirm that the target CLI is installed:
 
-```bash
+``` bash
 cc-switch env tools
 ```
 
 We recommend running the target CLI or its help command once to let it create its configuration directory:
 
-```bash
+``` bash
 claude --help
 codex --help
 gemini --help
@@ -153,13 +153,13 @@ Below we use Claude Code as an example. Codex and Gemini follow the same configu
 
 1.  Run the following command to enter the interactive interface:
 
-```bash
+``` bash
 cc-switch
 ```
 
 To directly configure Codex or Gemini:
 
-```bash
+``` bash
 cc-switch --app codex
 cc-switch --app gemini
 ```
@@ -188,20 +188,20 @@ This option writes `hasCompletedOnboarding=true` to `~/.claude.json`, preventing
 
 7.  Open the corresponding CLI to test if it can have a normal dialogue:
 
-```bash
+``` bash
 claude
 ```
 
 For Codex and Gemini respectively:
 
-```bash
+``` bash
 codex
 gemini
 ```
 :::
 ## Common Commands
 
-```bash
+``` bash
 cc-switch                         # Enter interactive interface
 cc-switch env tools               # Check if local CLI is installed
 cc-switch env check               # Check for environment variable conflicts
@@ -226,19 +226,19 @@ If you're already working in Claude Code or Codex, you can directly have them ca
 
 For example, you can say:
 
-```text
+``` text
 Help me run cc-switch provider list to see what Claude Providers are currently available.
 ```
 
-```text
+``` text
 Help me run cc-switch --app codex provider current to confirm if Codex is currently using GoSwitch.
 ```
 
-```text
+``` text
 Help me run cc-switch env check --app claude to check if there are environment variables overriding the configuration.
 ```
 
-```text
+``` text
 Help me switch to the GoSwitch provider, then run claude to test if it can respond normally.
 ```
 
@@ -250,7 +250,7 @@ This approach is suitable for people already familiar with terminals. The AI ass
 
 First confirm that the target CLI has initialized its configuration directory. Run once:
 
-```bash
+``` bash
 claude --help
 codex --help
 gemini --help
@@ -264,7 +264,7 @@ If the system has `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `GEMINI_API_KEY` and ot
 
 You can run:
 
-```bash
+``` bash
 cc-switch env check --app claude
 cc-switch env check --app codex
 cc-switch env check --app gemini

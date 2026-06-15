@@ -11,7 +11,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 2.  In the group bar, select the "Codex" group
 
-![](../../assets/image-en/CC-Switch/008.png)
+![](../../assets/image-en/CC-Switch/008.webp)
 
 3.  Switch to the console's API key section, click "More", and select "CC Switch"
 

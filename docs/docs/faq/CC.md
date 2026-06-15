@@ -13,7 +13,7 @@ Windows
 
 2.  Press "Win+R" on your keyboard, enter the following content and press Enter to open the Claude Code configuration directory
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -27,7 +27,7 @@ Windows
 
 4.  Write the following content to `config.json` and save
 
-```json
+``` json
 {
   "primaryApiKey": "GoSwitch"
 }
@@ -41,7 +41,7 @@ MacOS
 
 2.  In Finder, press "Command+Shift+G", enter the following path and press Enter to open the configuration directory
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -55,7 +55,7 @@ MacOS
 
 4.  Write the following content to `config.json` and save
 
-```json
+``` json
 {
   "primaryApiKey": "GoSwitch"
 }
@@ -94,7 +94,7 @@ MacOS
 
 After installing Claude via npm, running `claude` in the command line may show the following error:
 
-```text
+``` text
 Unable to connect to Anthropic services
 Failed to connect to api.anthropic.com: ERR BAD REQUEST
 lease check your internet connection and network settings.
@@ -113,7 +113,7 @@ Windows
 
 2.  Run the following command in the command line and press Enter
 
-```bash
+``` bash
 powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFrom-Json;$j|Add-Member -NotePropertyName 'hasCompletedOnboarding' -NotePropertyValue $true -Force;$j|ConvertTo-Json|Set-Content $f"
 ```
 
@@ -126,7 +126,7 @@ MacOS
 
 2.  Run the following command in the terminal and press Enter
 
-```bash
+``` bash
 jq '. + {"hasCompletedOnboarding": true}' ~/.claude.json > /tmp/tmp.json && mv /tmp/tmp.json ~/.claude.json
 ```
 :::
@@ -144,7 +144,7 @@ Windows
 
 1.  Press `Win + R`, enter the following content and press Enter
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -152,7 +152,7 @@ Windows
 
 3.  Confirm that `env` contains the following
 
-```json
+``` json
 {
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
@@ -166,7 +166,7 @@ MacOS
 
 1.  In Finder, press `Command + Shift + G`, enter the following path and press Enter
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -174,7 +174,7 @@ MacOS
 
 3.  Confirm that `env` contains the following
 
-```json
+``` json
 {
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",

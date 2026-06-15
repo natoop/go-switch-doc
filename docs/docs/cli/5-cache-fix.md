@@ -73,7 +73,7 @@ and having it generate commands specific to your machine.
 
 You can directly use the following prompt:
 
-```text
+``` text
 Based on the latest README from https://github.com/cnighswonger/claude-code-cache-fix,
 help me configure the Claude Code cache optimization proxy on my current system.
 Requirements:
@@ -89,14 +89,14 @@ Requirements:
 
 The following commands are suitable for verifying the proxy works in Linux / macOS / WSL:
 
-```bash
+``` bash
 npm install -g claude-code-cache-fix
 CACHE_FIX_PROXY_UPSTREAM=https://goswitch.online cache-fix-proxy server
 ```
 
 If you're using the optimized routing Endpoint, you can change `CACHE_FIX_PROXY_UPSTREAM` to:
 
-```bash
+``` bash
 https://api-slb.goswitch.online
 ```
 
@@ -104,7 +104,7 @@ https://api-slb.goswitch.online
 
 After starting the proxy, change `ANTHROPIC_BASE_URL` in Claude Code's `settings.json` to the local proxy address, and continue filling in your GoSwitch **CC** group token for `ANTHROPIC_AUTH_TOKEN`:
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:9801",
@@ -120,13 +120,13 @@ After starting the proxy, change `ANTHROPIC_BASE_URL` in Claude Code's `settings
 
 Open another terminal and check the proxy health status:
 
-```bash
+``` bash
 curl http://127.0.0.1:9801/health
 ```
 
 If it returns `{"status":"ok"}`, open a new terminal and run:
 
-```bash
+``` bash
 claude
 ```
 

@@ -9,7 +9,7 @@ Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
 
-```bash
+``` bash
 %userprofile%\.codex
 ```
 
@@ -33,7 +33,7 @@ Windows
 
 将以下配置文本复制到你的 config.toml文件中保存
 
-```toml
+``` toml
 disable_response_storage = true
 model = "gpt-5.2"
 model_provider = "goswitch"
@@ -54,7 +54,7 @@ wire_api = "responses"
 
 将以下配置文本复制到你的 auth.json文件中
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -70,7 +70,7 @@ wire_api = "responses"
 
 在windows终端输入以下命令，出现图示内容，进行对话测试，如果有回复，则配置成功，开始你的Codex使用之旅~
 
-```bash
+``` bash
 codex
 ```
 
@@ -80,7 +80,7 @@ MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
 
-```bash
+``` bash
 ~/.codex
 ```
 
@@ -104,7 +104,7 @@ MacOS
 
 将以下内容保存到 `config.toml`
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
@@ -124,7 +124,7 @@ requires_openai_auth = true
 
 将以下配置文本复制到你的 auth.json文件中
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -140,7 +140,7 @@ requires_openai_auth = true
 
 在 MacOS 终端执行以下命令，出现对话界面并能收到回复即表示配置成功
 
-```bash
+``` bash
 codex
 ```
 

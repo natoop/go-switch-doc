@@ -80,7 +80,7 @@ After opening the Cline interface, follow these steps to configure:
 1.  Click the **API Configuration** button
 2.  Fill in the configuration information as follows
 
-```yaml
+``` yaml
 API Provider: OpenAI-compatible
 Base URL: https://goswitch.online/v1
 API Key: sk-*****

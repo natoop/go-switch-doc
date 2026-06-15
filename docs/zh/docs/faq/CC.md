@@ -13,7 +13,7 @@ Windows
 
 2.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -27,7 +27,7 @@ Windows
 
 4.  在`config.json`中写入以下内容后保存
 
-```json
+``` json
 {
   "primaryApiKey": "GoSwitch"
 }
@@ -41,7 +41,7 @@ MacOS
 
 2.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -55,7 +55,7 @@ MacOS
 
 4.  在`config.json`中写入以下内容后保存
 
-```json
+``` json
 {
   "primaryApiKey": "GoSwitch"
 }
@@ -95,7 +95,7 @@ MacOS
 使用npm安装完claude之后。
 在命令行输入claude报了如下错误：
 
-```text
+``` text
 Unable to connect to Anthropic services
 Failed to connect to api.anthropic.com: ERR BAD REQUEST
 lease check your internet connection and network settings.
@@ -114,7 +114,7 @@ Windows
 
 2.  在命令行中运行以下命令后回车
 
-```bash
+``` bash
 powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFrom-Json;$j|Add-Member -NotePropertyName 'hasCompletedOnboarding' -NotePropertyValue $true -Force;$j|ConvertTo-Json|Set-Content $f"
 ```
 
@@ -127,7 +127,7 @@ MacOS
 
 2.  在终端中运行以下命令后回车
 
-```bash
+``` bash
 jq '. + {"hasCompletedOnboarding": true}' ~/.claude.json > /tmp/tmp.json && mv /tmp/tmp.json ~/.claude.json
 ```
 :::
@@ -146,7 +146,7 @@ Windows
 
 1.  按下键盘 `Win + R`，输入以下内容后回车
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -154,7 +154,7 @@ Windows
 
 3.  确认 `env` 中包含以下内容
 
-```json
+``` json
 {
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",
@@ -168,7 +168,7 @@ MacOS
 
 1.  在访达中按下 `Command + Shift + G`，输入以下路径后回车
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -176,7 +176,7 @@ MacOS
 
 3.  确认 `env` 中包含以下内容
 
-```json
+``` json
 {
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1",

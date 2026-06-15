@@ -31,13 +31,13 @@ This method simultaneously solves **file reading/writing, encoding issues, high 
 
 2.  Press "Win+R" enter the following content and press Enter to open your user directory
 
-```bash
+``` bash
 %userprofile%\.codex
 ```
 
 3.  Find the `config.toml` file in the directory, open and edit it. Your configuration file should look like this:
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.4"
 model_reasoning_effort = "high"
@@ -55,7 +55,7 @@ requires_openai_auth = true
 
 4.  Open the `AGENTS.md` file in the directory (create it manually if it doesn't exist), write the following content and save
 
-```markdown
+``` markdown
 # Codex Global Work Guidelines
 
 ## Answer Style:
@@ -87,7 +87,7 @@ requires_openai_auth = true
 
 1.  Press `Win + R` to open the run window, enter the following command and press Enter
 
-```bash
+``` bash
 intl.cpl
 ```
 
@@ -107,7 +107,7 @@ Windows
 
 1.  Press `Win + R` to open the run window, enter the following command in press Enter
 
-```bash
+``` bash
 %userprofile%\.vscode\extensions
 ```
 
@@ -117,7 +117,7 @@ MacOS
 
 1.  In Finder, press "Command+Shift+G", enter the following path in press Enter to open the VSCode extension directory
 
-```bash
+``` bash
 ~/.vscode/extensions
 ```
 
@@ -156,7 +156,7 @@ MacOS
 
 2.  Open the `config.toml` file mentioned in the tutorial, add the following content
 
-```toml
+``` toml
 [features]
 web_search_request = true
 ```
@@ -172,7 +172,7 @@ web_search_request = true
 -   For users who cannot find Clash MTU settings on Linux, refer to this link: [https://linux.do/t/topic/1220328](https://linux.do/t/topic/1220328)
 ### Connection failed Issue
 
-Error message similar to:```text
+Error message similar to:``` text
 Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)```This situation is caused by local network problems, troubleshoot according to the following steps:
 1.  Check whether the local network is working properly, and whether you can access other pages
 2.  Check whether your computer uses using a `network proxy (VPN)` tool, if so please turn it off
@@ -181,36 +181,36 @@ Connection failed: error sending request for url (https://www.goswitch.com/v1/re
 
 ### 401 Error
 
-Error message similar to:```text
+Error message similar to:``` text
 exceeded retry limit, last status: 401 Unauthorized, request id: xxxxxx```
 1.  Run the following command in Windows or MacOS terminal to determine whether environment variables exist
 
 Windows
-```bash
+``` bash
 cmd /c "echo ================= OPENAI ENV CHECK ================= & ^if defined OPENAI_API_KEY (echo OPENAI_API_KEY = OK) else (echo OPENAI_API_KEY = MISSING) & ^if defined OPENAI_BASE_URL (echo OPENAI_BASE_URL = OK) else (echo OPENAI_BASE_URL = MISSING) & ^echo ========================================================="
 ```
 
 If the following output appears, proceed directly to step 2
-```text
+``` text
 OPENAI_API_KEY = MISSINGOPENAI_BASE_URL = MISSING
 ```
 
 If the output is different, please run the following command in the terminal and then proceed to step 2
-```bash
+``` bash
 cmd /c "setx OPENAI_API_KEY \"\" & setx OPENAI_BASE_URL \"\""
 ```
 
-macOS```bash
+macOS``` bash
 echo "================= OPENAI ENV CHECK ================="if [ -z "$OPENAI_API_KEY" ]; then  echo "OPENAI_API_KEY = MISSING"else  echo "OPENAI_API_KEY = OK"fiif [ -z "$OPENAI_BASE_URL" ]; then  echo "OPENAI_BASE_URL = MISSING"else  echo "OPENAI_BASE_URL = OK"fiecho "========================================================"
 ```
 
 If the following output appears, proceed directly to step 2
-```text
+``` text
 OPENAI_API_KEY = MISSINGOPENAI_BASE_URL = MISSING
 ```
 
 If the output is different, run the following command in the terminal and then proceed to step 2
-```bash
+``` bash
 unset OPENAI_API_KEY OPENAI_BASE_URL
 ```
 
@@ -222,7 +222,7 @@ unset OPENAI_API_KEY OPENAI_BASE_URL
 2.  Check whether the **request address** in ~/.codex/config.toml is correct
 :::
 ### 403 Error
-Error message similar to:```text
+Error message similar to:``` text
 unexpected status 403 Forbidden: {"error":{"message":"Usage not included in yourplan","type":"usage_not_included","param":null,"code":null,"plan_type":"basic"}}
 ```
 

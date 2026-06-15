@@ -9,7 +9,7 @@ Windows
 
 1.  Press "Win+R" on your keyboard, enter the following and press Enter to open the Claude Code configuration directory
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -23,7 +23,7 @@ Windows
 
 3.  Write the following content to `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",
@@ -49,7 +49,7 @@ MacOS
 
 1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the configuration directory
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -63,7 +63,7 @@ MacOS
 
 3.  Write the following content to `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",

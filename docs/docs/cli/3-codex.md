@@ -9,7 +9,7 @@ Windows
 
 1.  Press "Win+R" on your keyboard, enter the following and press Enter to open your Codex configuration directory
 
-```bash
+``` bash
 %userprofile%\.codex
 ```
 
@@ -33,7 +33,7 @@ Windows
 
 Copy the following configuration text to your config.toml file and save
 
-```toml
+``` toml
 disable_response_storage = true
 model = "gpt-5.2"
 model_provider = "goswitch"
@@ -54,7 +54,7 @@ wire_api = "responses"
 
 Copy the following configuration text to your auth.json file
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -70,7 +70,7 @@ Review [Create API Token](../register/4-token.md), we need to create a **Codex**
 
 Enter the following command in the Windows terminal. When the content shown appears, test the conversation. If you receive a reply, configuration is successful. Start your Codex journey~
 
-```bash
+``` bash
 codex
 ```
 
@@ -80,7 +80,7 @@ MacOS
 
 1.  Press "Command+Shift+G" in Finder, enter the following path and press Enter to open the Codex configuration directory
 
-```bash
+``` bash
 ~/.codex
 ```
 
@@ -104,7 +104,7 @@ If not auto-generated after initial installation, you need to manually create th
 
 Save the following content to `config.toml`
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
@@ -124,7 +124,7 @@ requires_openai_auth = true
 
 Copy the following configuration text to your auth.json file
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -140,7 +140,7 @@ Review [Create API Token](../register/4-token.md), we need to create a **Codex**
 
 Run the following command in the MacOS terminal. When the dialogue interface appears and you receive a reply, configuration is successful
 
-```bash
+``` bash
 codex
 ```
 

@@ -22,19 +22,19 @@ Updated: 2026-06-13T10:02:01.000Z
 
 Linux / MacOS / WSL2
 
-```bash
+``` bash
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
 Windows（PowerShell，实验性）
 
-```powershell
+``` powershell
 iex (irm https://hermes-agent.nousresearch.com/install.ps1)
 ```
 
 2.  安装完成后重载一下 shell 配置，再输入 `hermes` 能看到交互界面即安装成功
 
-```bash
+``` bash
 source ~/.bashrc   # zsh 用户执行 source ~/.zshrc
 hermes
 ```

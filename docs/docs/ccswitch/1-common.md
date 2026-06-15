@@ -47,7 +47,7 @@ Windows
 
 3.  After installation, run the CC-Switch main program. The interface looks like this.
 
-![](../../assets/image-en/CC-Switch/002.webp)
+![](../../assets/image-en/CC-Switch/002.png)
 
 MacOS
 
@@ -55,7 +55,7 @@ MacOS
 
 -   Open a terminal and run the following commands:
 
-```bash
+``` bash
 # Add tap source
 brew tap farion1231/ccswitch
 

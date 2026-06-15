@@ -22,7 +22,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  打开你的终端，运行以下命令全局安装OpenCode
 
-```bash
+``` bash
 npm install -g opencode-ai
 ```
 

@@ -9,7 +9,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  Enter the following command in a Windows or macOS terminal
 
-```bash
+``` bash
 npm list -g --depth-0
 ```
 
@@ -23,7 +23,7 @@ Normally it should look like the image below (no content is also fine). If you s
 
 1.  Enter the following commands in a Windows or macOS terminal to install all the CLI tools we need at once
 
-```bash
+``` bash
 npm i -g @anthropic-ai/claude-code@latest
 npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
@@ -41,7 +41,7 @@ Claude Code
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Claude Code is installed successfully
 
-```bash
+``` bash
 claude
 ```
 
@@ -57,7 +57,7 @@ Codex
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Codex is installed successfully
 
-```bash
+``` bash
 codex
 ```
 
@@ -67,7 +67,7 @@ Gemini
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown in the image, or a selection prompt appears, Gemini is installed successfully
 
-```bash
+``` bash
 gemini
 ```
 

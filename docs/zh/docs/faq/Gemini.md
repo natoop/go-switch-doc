@@ -80,7 +80,7 @@ Gemini CLI 目前存在多种使用问题，例如可能无法正常调用模型
 1.  单击 **API Configuration** 按钮
 2.  按下方填写配置信息
 
-```yaml
+``` yaml
 API Provider: OpenAI-compatible
 Base URL: https://goswitch.online/v1
 API Key: sk-*****

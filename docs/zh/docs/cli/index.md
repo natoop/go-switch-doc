@@ -11,7 +11,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  在windows或MacOS终端输入以下命令
 
-```bash
+``` bash
 npm list -g --depth-0
 ```
 
@@ -25,7 +25,7 @@ npm list -g --depth-0
 
 1.  在windows或MacOS终端输入以下命令，一次性安装好我们目前所需的所有终端
 
-```bash
+``` bash
 npm i -g @anthropic-ai/claude-code@latest
 npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
@@ -43,7 +43,7 @@ Claude Code
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
 
-```bash
+``` bash
 claude
 ```
 
@@ -59,7 +59,7 @@ Codex
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
 
-```bash
+``` bash
 codex
 ```
 
@@ -69,7 +69,7 @@ Gemini
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
 
-```bash
+``` bash
 gemini
 ```
 
@@ -81,7 +81,7 @@ Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开Claude Code配置目录
 
-```bash
+``` bash
 %userprofile%\.claude
 ```
 
@@ -95,7 +95,7 @@ Windows
 
 3.  将以下内容写入 `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",
@@ -119,7 +119,7 @@ MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
-```bash
+``` bash
 ~/.claude
 ```
 
@@ -133,7 +133,7 @@ MacOS
 
 3.  将以下内容写入 `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",
@@ -164,7 +164,7 @@ Windows
 
 1.  键盘按下“Win+R”键，输入以下内容后回车，打开你的codex配置目录
 
-```bash
+``` bash
 %userprofile%\.codex
 ```
 
@@ -188,7 +188,7 @@ Windows
 
 将以下配置文本复制到你的 config.toml文件中保存
 
-```toml
+``` toml
 disable_response_storage = true
 model = "gpt-5.2"
 model_provider = "goswitch"
@@ -209,7 +209,7 @@ wire_api = "responses"
 
 将以下配置文本复制到你的 auth.json文件中
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -225,7 +225,7 @@ wire_api = "responses"
 
 在windows终端输入以下命令，出现图示内容，进行对话测试，如果有回复，则配置成功，开始你的Codex使用之旅~
 
-```bash
+``` bash
 codex
 ```
 
@@ -235,7 +235,7 @@ MacOS
 
 1.  在访达界面按下 “Command+Shift+G”，输入以下路径并回车，打开 Codex 配置目录
 
-```bash
+``` bash
 ~/.codex
 ```
 
@@ -259,7 +259,7 @@ MacOS
 
 将以下内容保存到 `config.toml`
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
@@ -279,7 +279,7 @@ requires_openai_auth = true
 
 将以下配置文本复制到你的 auth.json文件中
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -295,7 +295,7 @@ requires_openai_auth = true
 
 在 MacOS 终端执行以下命令，出现对话界面并能收到回复即表示配置成功
 
-```bash
+``` bash
 codex
 ```
 
@@ -307,7 +307,7 @@ Windows
 
 1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
 
-```bash
+``` bash
 %userprofile%\.gemini
 ```
 
@@ -319,7 +319,7 @@ Windows
 
 ![](../../../assets/image/Cli/020.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
@@ -339,7 +339,7 @@ MacOS
 
 1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
-```bash
+``` bash
 ~/.gemini
 ```
 
@@ -351,7 +351,7 @@ MacOS
 
 ![](../../../assets/image/Cli/024.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro

@@ -54,7 +54,7 @@ Windows
 
 The configuration file is usually located at:
 
-```bash
+``` bash
 %userprofile%\.claude\settings.json
 ```
 
@@ -62,7 +62,7 @@ MacOS
 
 The configuration file is usually located at:
 
-```bash
+``` bash
 ~/.claude/settings.json
 ```
 

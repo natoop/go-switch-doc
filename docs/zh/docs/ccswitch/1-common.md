@@ -55,7 +55,7 @@ MacOS
 
 -   开启终端后，分别运行以下命令：
 
-```bash
+``` bash
 # 添加 tap 源
 brew tap farion1231/ccswitch
 
@@ -65,7 +65,7 @@ brew install --cask cc-switch
 
 -   安装完成后，在“启动台”或“应用程序”文件夹中找到 CC-Switch 并启动。
 
-![](../../../assets/image/CC-Switch/002.webp)
+![](../../../assets/image/CC-Switch/002.png)
 
 Linux
 

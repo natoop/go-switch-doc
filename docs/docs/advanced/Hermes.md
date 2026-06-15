@@ -22,7 +22,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 Linux / MacOS / WSL2
 
-```bash
+``` bash
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
@@ -34,7 +34,7 @@ iex (irm https://hermes-agent.nousresearch.com/install.ps1)
 
 2.  After installation, reload your shell configuration, then type `hermes` — if you see the interactive interface, the installation is successful
 
-```bash
+``` bash
 source ~/.bashrc   # zsh users: source ~/.zshrc
 hermes
 ```

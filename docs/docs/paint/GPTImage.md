@@ -38,7 +38,7 @@ Use `/v1/images/generations` for text-to-image, and `/v1/images/edits` for uploa
 
 ##### API Example
 
-```bash
+``` bash
 curl --location 'https://goswitch.online/v1/images/generations' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer YourSoraGroupToken' \
@@ -81,7 +81,7 @@ curl --location 'https://goswitch.online/v1/images/generations' \
 
 ##### API Example
 
-```bash
+``` bash
 curl --location 'https://goswitch.online/v1/images/edits' \
 --header 'Authorization: Bearer YourSoraGroupToken' \
 --header 'Accept: */*' \
@@ -157,7 +157,7 @@ If you need local editing, you can additionally pass a `mask`. The `mask` should
 
 The default response returns an image download URL:
 
-```json
+``` json
 {
   "created": 1776923999,
   "data": [
@@ -173,7 +173,7 @@ The returned `url` is the generated image address; you can download it directly 
 
 If you passed `"response_format": "b64_json"` in the request, the response will contain Base64 image data:
 
-```json
+``` json
 {
   "created": 1776923999,
   "data": [

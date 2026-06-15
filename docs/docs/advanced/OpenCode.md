@@ -22,7 +22,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  Open your terminal and run the following command to globally install OpenCode
 
-```bash
+``` bash
 npm install -g opencode-ai
 ```
 

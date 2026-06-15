@@ -76,7 +76,7 @@ Claude Code 与 WSL 代理混在一起使用，否则很容易出现路径、环
 
 可以直接使用下面这段提示词：
 
-```text
+``` text
 请根据 https://github.com/cnighswonger/claude-code-cache-fix 的最新 README，
 帮我在当前系统中配置 Claude Code 缓存优化代理。
 要求：
@@ -92,14 +92,14 @@ Claude Code 与 WSL 代理混在一起使用，否则很容易出现路径、环
 
 下面的命令适合在 Linux / macOS / WSL 中先验证代理是否能跑通：
 
-```bash
+``` bash
 npm install -g claude-code-cache-fix
 CACHE_FIX_PROXY_UPSTREAM=https://goswitch.online cache-fix-proxy server
 ```
 
 如果你使用的是优化线路 Endpoint，可以把 `CACHE_FIX_PROXY_UPSTREAM` 改成：
 
-```bash
+``` bash
 https://api-slb.goswitch.online
 ```
 
@@ -109,7 +109,7 @@ https://api-slb.goswitch.online
 改为本地代理地址，`ANTHROPIC_AUTH_TOKEN` 继续填写你的 GoSwitch
 **CC** 分组令牌：
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:9801",
@@ -125,13 +125,13 @@ https://api-slb.goswitch.online
 
 另开一个终端，检查代理健康状态：
 
-```bash
+``` bash
 curl http://127.0.0.1:9801/health
 ```
 
 如果返回 `{"status":"ok"}`，再重新打开终端运行：
 
-```bash
+``` bash
 claude
 ```
 

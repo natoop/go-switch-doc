@@ -49,7 +49,7 @@ Windows
 
 MacOS
 
-```bash
+``` bash
 brew install aionui
 ```
 
@@ -59,7 +59,7 @@ brew install aionui
 
 Linux
 
-```bash
+``` bash
 # Download the .deb package (visit GitHub Releases for the latest version number)
 wget https://github.com/iOfficeAI/AionUi/releases/latest/download/AionUi-x.x.x-linux-amd64.deb
 

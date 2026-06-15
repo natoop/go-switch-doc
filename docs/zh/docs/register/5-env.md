@@ -11,7 +11,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 在 Windows、macOS 或 Linux 终端中执行：
 
-```bash
+``` bash
 npm list -g --depth-0
 ```
 

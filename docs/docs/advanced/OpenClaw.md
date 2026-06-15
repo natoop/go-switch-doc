@@ -13,7 +13,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  Log into your server via SSH, or open your terminal program on MacOS, and enter the following command to start the installation. Wait patiently for the installation process to complete. When the following interface appears, select `yes` and press Enter to confirm
 
-```bash
+``` bash
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
@@ -67,7 +67,7 @@ The script currently does not support Gemini channel configuration — still und
 
 1.  In your SSH console or MacOS terminal, enter the following command to install the configurator
 
-```bash
+``` bash
 curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/download/index.js -o /tmp/openclaw-config.js && node /tmp/openclaw-config.js
 ```
 
@@ -103,7 +103,7 @@ curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/down
 
 7.  In the console, enter the following command to restart the Gateway
 
-```bash
+``` bash
 openclaw gateway restart
 ```
 
@@ -111,7 +111,7 @@ openclaw gateway restart
 
 8.  After successful restart, enter the following command in the console to enter the TUI interface and test whether the model can output normally. If testing is normal, type `/quit` to exit the TUI interface
 
-```bash
+``` bash
 openclaw tui
 ```
 
@@ -137,7 +137,7 @@ You also need to modify the `openclaw.json` file under `~/.openclaw`, adding the
 
 After modifying, return to the console and enter the following command to restart the gateway
 
-```bash
+``` bash
 openclaw gateway restart
 ```
 
@@ -155,7 +155,7 @@ openclaw gateway restart
 
 3.  Enter the following command in the console to allow interaction with the Bot
 
-```bash
+``` bash
 openclaw pairing approve telegram YourPairingCode
 ```
 

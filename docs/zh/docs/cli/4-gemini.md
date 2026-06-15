@@ -9,7 +9,7 @@ Windows
 
 1.  键盘按下“Win+R”，输入以下内容后回车，打开 Gemini CLI 配置目录
 
-```bash
+``` bash
 %userprofile%\.gemini
 ```
 
@@ -21,7 +21,7 @@ Windows
 
 ![](../../../assets/image/Cli/020.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
@@ -41,7 +41,7 @@ MacOS
 
 1.  按下 “Command+Shift+G”，输入以下路径后回车，打开配置目录
 
-```bash
+``` bash
 ~/.gemini
 ```
 
@@ -53,7 +53,7 @@ MacOS
 
 ![](../../../assets/image/Cli/024.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro

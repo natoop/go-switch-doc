@@ -9,7 +9,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  在windows或MacOS终端输入以下命令
 
-```bash
+``` bash
 npm list -g --depth-0
 ```
 
@@ -23,7 +23,7 @@ npm list -g --depth-0
 
 1.  在windows或MacOS终端输入以下命令，一次性安装好我们目前所需的所有终端
 
-```bash
+``` bash
 npm i -g @anthropic-ai/claude-code@latest
 npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
@@ -41,7 +41,7 @@ Claude Code
 
 1.  在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Claude code安装成功
 
-```bash
+``` bash
 claude
 ```
 
@@ -57,7 +57,7 @@ Codex
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Codex安装成功
 
-```bash
+``` bash
 codex
 ```
 
@@ -67,7 +67,7 @@ Gemini
 
 在windows或MacOS终端输入以下命令，若出现图示内容，或出现选项让你选择，则Gemini安装成功
 
-```bash
+``` bash
 gemini
 ```
 

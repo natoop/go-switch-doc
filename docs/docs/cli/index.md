@@ -11,8 +11,9 @@ Updated: 2026-06-13T10:02:01.000Z
 
 1.  Enter the following command in a Windows or macOS terminal
 
-```bash
+``` bash
 npm list -g --depth-0
+
 ```
 
 Normally it should look like the image below (no content is also fine). If you see "command not found", it means you haven't installed Node.js. You need to follow [this tutorial](https://www.runoob.com/nodejs/nodejs-install-setup.html) to install the environment required for Claude Code, Codex, and Gemini
@@ -25,7 +26,7 @@ Normally it should look like the image below (no content is also fine). If you s
 
 1.  Enter the following commands in a Windows or macOS terminal to install all the CLI tools we need at once
 
-```bash
+``` bash
 npm i -g @anthropic-ai/claude-code@latest
 npm i -g @openai/codex@latest
 npm i -g @google/gemini-cli@latest
@@ -43,7 +44,7 @@ Claude Code
 
 Enter the following command in a Windows or macOS terminal. If you see the content shown, or a selection prompt appears, Claude Code is installed successfully
 
-```bash
+``` bash
 claude
 ```
 
@@ -59,7 +60,7 @@ Codex
 
 Enter the following command. If it works, Codex is installed successfully
 
-```bash
+``` bash
 codex
 ```
 
@@ -69,7 +70,7 @@ Gemini
 
 Enter the following command. If it works, Gemini is installed successfully
 
-```bash
+``` bash
 gemini
 ```
 
@@ -91,7 +92,7 @@ Windows
 
 3.  Write the following content to `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",
@@ -125,7 +126,7 @@ MacOS
 
 3.  Write the following content to `settings.json`
 
-```json
+``` json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://goswitch.online",
@@ -172,7 +173,7 @@ Windows
 
 3.  Configure Config.toml
 
-```toml
+``` toml
 disable_response_storage = true
 model = "gpt-5.2"
 model_provider = "goswitch"
@@ -191,7 +192,7 @@ wire_api = "responses"
 
 4.  Configure ApiKey
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -227,7 +228,7 @@ Create the above three files manually if they don't exist
 
 3.  Configure Config.toml
 
-```toml
+``` toml
 model_provider = "goswitch"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
@@ -245,7 +246,7 @@ requires_openai_auth = true
 
 4.  Configure ApiKey
 
-```json
+``` json
 {
   "OPENAI_API_KEY": "xxx"
 }
@@ -275,7 +276,7 @@ Windows
 
 ![](../../assets/image-en/Cli/020.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
@@ -303,7 +304,7 @@ MacOS
 
 ![](../../assets/image-en/Cli/024.webp)
 
-```bash
+``` bash
 GOOGLE_GEMINI_BASE_URL=https://goswitch.online
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro

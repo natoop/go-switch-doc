@@ -29,7 +29,7 @@ Windows
 
 4.  Enter the following commands in the command line to run the installer with proxy settings:
 
-```bash
+``` bash
 set HTTP_PROXY=http://127.0.0.1:7897
 set HTTPS_PROXY=http://127.0.0.1:7897
 "Claude Setup.exe"
