@@ -18,15 +18,15 @@ Updated: 2026-06-13T10:02:01.000Z
 ::: info Some Thoughts
 
 Honestly, AI has made many things very simple, but basic knowledge determines your upper limit for using AI. At the current stage, AI is just a very excellent Copilot role. This also means that the same AI can have used differently by different people!
-
-3.  **Avoid Compression:** In most scenarios, your task should be completed using at most about 60% of Codex's context. If your task exceeds 60% of context and still unresolved and even requires compression, then the task breakdown before execution has failed — you need to break down the task more carefully. An excellent Codex vibe coding user almost never needs to compress content!
 :::
+3.  **Avoid Compression:** In most scenarios, your task should be completed using at most about 60% of Codex's context. If your task exceeds 60% of context and still unresolved and even requires compression, then the task breakdown before execution has failed — you need to break down the task more carefully. An excellent Codex vibe coding user almost never needs to compress content!
+
 ### Smooth Codex Usage on Windows!
 
 ::: warning Important
 
 This method simultaneously solves **file reading/writing, encoding issues, high token consumption, project no memory** and other pain points
-
+:::
 1.  Ensure your `Codex CLI` and `VSCode Codex` plugin are working properly, that i.e you can successfully converse with the model in the VSCode Codex plugin
 
 2.  Press "Win+R" enter the following content and press Enter to open your user directory
@@ -131,6 +131,10 @@ intl.cpl
 
 ![](../../assets/image-en/FAQ/Codex/009.webp)
 
+
+</template>
+</DocTabs>
+
 2.  Find the folder starting with `openai.chatgpt`, - the numbers after it are the version number, if there are multiple such directories, enter the directory with the latest version number
 
 ![](../../assets/image-en/FAQ/Codex/003.webp)
@@ -155,8 +159,7 @@ intl.cpl
 
 5.  Restart VSCode, and you can see that you can now select the latest model!
 
-</template>
-</DocTabs>
+
 ### How to Configure Global Prompt in Codex
 1.  Please check the first two steps in [Codex CLI Configuration](../cli/3-codex.md)
 
@@ -232,6 +235,7 @@ unset OPENAI_API_KEY OPENAI_BASE_URL
 1.  Check whether the **ApiKey** configuration in ~/.codex/auth.json is correct
 2.  Check whether the **request address** in ~/.codex/config.toml is correct
 :::
+
 ### 403 Error
 Error message similar to:``` text
 unexpected status 403 Forbidden: {"error":{"message":"Usage not included in yourplan","type":"usage_not_included","param":null,"code":null,"plan_type":"basic"}}

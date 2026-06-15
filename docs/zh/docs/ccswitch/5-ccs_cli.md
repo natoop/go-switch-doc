@@ -45,17 +45,21 @@ curl -fsSL https://github.com/SaladDay/cc-switch-cli/releases/latest/download/in
 
 ::: details 手动安装
 
-### macOS
+<DocTabs storage-key="zh-docs-ccswitch-1-common-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }, { label: 'Linux x64', value: 'Linuxx64' }, { label: 'Linux ARM64', value: 'LinuxARM64' }]">
+<template #macos>
+
+### MacOS
 
 ``` bash
 curl -LO https://github.com/saladday/cc-switch-cli/releases/latest/download/cc-switch-cli-darwin-universal.tar.gz
 tar -xzf cc-switch-cli-darwin-universal.tar.gz
 chmod +x cc-switch
 sudo mv cc-switch /usr/local/bin/
-
 # 如遇 “无法验证开发者” 提示
 xattr -cr /usr/local/bin/cc-switch
 ```
+</template>
+<template #Linuxx64>
 
 ### Linux x64
 
@@ -65,6 +69,8 @@ tar -xzf cc-switch-cli-linux-x64-musl.tar.gz
 chmod +x cc-switch
 sudo mv cc-switch /usr/local/bin/
 ```
+</template>
+<template #LinuxARM64>
 
 ### Linux ARM64
 
@@ -74,6 +80,8 @@ tar -xzf cc-switch-cli-linux-arm64-musl.tar.gz
 chmod +x cc-switch
 sudo mv cc-switch /usr/local/bin/
 ```
+</template>
+<template #windows>
 
 ### Windows
 
@@ -82,6 +90,9 @@ sudo mv cc-switch /usr/local/bin/
 ``` powershell
 .\cc-switch.exe
 ```
+</template>
+</DocTabs>
+
 :::
 
 ## 两种使用方式
@@ -199,6 +210,7 @@ codex
 gemini
 ```
 :::
+
 ## 常用命令
 
 ``` bash

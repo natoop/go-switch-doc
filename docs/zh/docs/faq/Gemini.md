@@ -87,7 +87,6 @@ API Key: sk-*****
 Model ID: gemini-3-pro-preview
 ```
 
-![Cline 配置界面示意图](../../../assets/image/FAQ/Gemini/003.webp)
 
 Cline 配置界面示意图
 

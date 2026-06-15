@@ -26,7 +26,7 @@ const sectionMetaEn: Record<string, { text: string, order: number }> = {
    cli: { text: 'CLI Manual Setup', order: 40 },
   // paint: { text: 'Image Models', order: 50 },
   // advanced: { text: 'Third-party Integration', order: 60 },
-  // faq: { text: 'FAQ', order: 70 },
+   faq: { text: 'FAQ', order: 70 },
   // tos: { text: 'Terms & Policies', order: 80 }
 }
 
@@ -37,7 +37,7 @@ const sectionMetaZh: Record<string, { text: string, order: number }> = {
   cli: { text: 'CLI 手动配置', order: 40 },
   // paint: { text: '绘图模型使用', order: 50 },
   // advanced: { text: '第三方工具接入', order: 60 },
-  // faq: { text: '常见问题排查', order: 70 },
+   faq: { text: '常见问题排查', order: 70 },
   // tos: { text: '条款与政策说明', order: 80 }
 }
 

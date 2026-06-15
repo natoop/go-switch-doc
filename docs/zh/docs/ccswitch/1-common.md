@@ -79,6 +79,7 @@ brew install --cask cc-switch
 
 </template>
 </DocTabs>
+
 Linux
 
 ::: warning 重要

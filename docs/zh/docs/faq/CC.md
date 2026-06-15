@@ -74,6 +74,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 </template>
 </DocTabs>
+
 ### Claude Code 中常用命令
 
 | 命令 | 功能说明 |
@@ -102,6 +103,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ::: info 注意事项
 
 **如果你是首次配置根据链接跳转到这一步，直接按照下面的教程运行命令即可**
+:::
 
 使用npm安装完claude之后。
 在命令行输入claude报了如下错误：
@@ -149,16 +151,16 @@ powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFr
 ``` bash
 jq '. + {"hasCompletedOnboarding": true}' ~/.claude.json > /tmp/tmp.json && mv /tmp/tmp.json ~/.claude.json
 ```
-:::
 ::: tip 提示
 
 注意，如果提示未找到jq，可以输入 `brew install jq` 进行安装
-
-3.  重启你的Claude Cli
 :::
+3.  重启你的Claude Cli
+
 
 </template>
 </DocTabs>
+
 ### Claude Code 如何切换回 200K 上下文并禁用非必要流量
 
 如果你希望将 Claude Code 从 1M 上下文切换回 200K 上下文，并关闭一些

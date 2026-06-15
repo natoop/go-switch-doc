@@ -74,6 +74,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 </template>
 </DocTabs>
+
 ### Common Claude Code Commands
 
 | Command | Description |
@@ -102,6 +103,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ::: info Note
 
 **If you're configuring for the first time and have been redirected here, simply follow the instructions below to run the command**
+:::
 
 After installing Claude via npm, running `claude` in the command line may show the following error:
 
@@ -148,16 +150,16 @@ powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFr
 ``` bash
 jq '. + {"hasCompletedOnboarding": true}' ~/.claude.json > /tmp/tmp.json && mv /tmp/tmp.json ~/.claude.json
 ```
-:::
 ::: tip Tip
 
 Note: if `jq` is not found, you can install it with `brew install jq`
+:::
 
 3.  Restart your Claude CLI
-:::
 
 </template>
 </DocTabs>
+
 ### How to Switch Claude Code Back to 200K Context and Disable Non-essential Traffic
 
 If you want to switch Claude Code from 1M context back to 200K context and disable some non-essential requests and terminal title changes, you can add the following configuration to the `env` section of `settings.json`.
