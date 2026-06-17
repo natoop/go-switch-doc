@@ -1,12 +1,12 @@
 # Login
 
-<!-- Source: https://docs.goswitch.online/docs/register/2-login.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/2-login.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 
-Login link: [https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+Login link: [https://goswitcher.com/sign-in](https://goswitcher.com/sign-in)
 
 ![](../../assets/image-en/QuickStart/001.png)
 
@@ -37,11 +37,11 @@ You can try clearing the browser cache first:
 -   Windows / Linux Chrome: Press `Ctrl + Shift + Delete` to open the clear browsing data page.
 -   macOS Chrome: Press `Command + Shift + Delete` to open the clear browsing data page.
 
-If clearing cache doesn't help, manually delete cookies related to `goswitch.online`:
+If clearing cache doesn't help, manually delete cookies related to `goswitcher.com`:
 
 1.  Press `F12` on the login page to open Developer Tools.
 2.  Go to the "Application" panel.
-3.  Select "Storage" → "Cookies" → `https://goswitch.online` from the left sidebar.
+3.  Select "Storage" → "Cookies" → `https://goswitcher.com` from the left sidebar.
 4.  Delete `session`, `TDC_itoken` and other site cookies, then refresh the page and try logging in again.
 
 ![](../../assets/image-en/QuickStart/006.png) -->

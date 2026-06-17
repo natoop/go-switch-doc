@@ -1,8 +1,8 @@
 # Claude Code Cache Optimization Proxy
 
-<!-- Source: https://docs.goswitch.online/docs/cli/5-cache-fix.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/5-cache-fix.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## One-line Summary
@@ -56,19 +56,19 @@ server quota degradation, incorrect model selection, frequent large file reads, 
 `claude-code-cache-fix` **is not recommended for use in native Windows CMD / PowerShell**.
 
 Windows users should prioritize completing the full setup of Node.js, Claude Code,
-GoSwitch, and `claude-code-cache-fix` in a **WSL Linux environment**. Don't mix native Windows
+GoSwitcher, and `claude-code-cache-fix` in a **WSL Linux environment**. Don't mix native Windows
 Claude Code with WSL proxy, as this can easily cause path, environment variable,
 background service, and local port inconsistencies.
 :::
 ::: warning Third-party tool notice
 
-`claude-code-cache-fix` is not an officially maintained GoSwitch tool. It processes local API requests.
+`claude-code-cache-fix` is not an officially maintained GoSwitcher tool. It processes local API requests.
 Please review the source code, dependencies, and configuration methods before installation.
 :::
 ## Recommended: Use AI-Assisted Configuration
 
 This tool involves local proxy, environment variables, and background service configuration. Manual configuration is prone to missing steps.
-We recommend sending your system environment, GoSwitch Endpoint, and the GitHub project link together to an AI,
+We recommend sending your system environment, GoSwitcher Endpoint, and the GitHub project link together to an AI,
 and having it generate commands specific to your machine.
 
 You can directly use the following prompt:
@@ -77,9 +77,9 @@ You can directly use the following prompt:
 Based on the latest README from https://github.com/cnighswonger/claude-code-cache-fix,
 help me configure the Claude Code cache optimization proxy on my current system.
 Requirements:
-1. I use GoSwitch, upstream must be https://goswitch.online
+1. I use GoSwitcher, upstream must be https://goswitcher.com
 2. Claude Code's ANTHROPIC_BASE_URL should point to the local proxy http://127.0.0.1:9801
-3. Keep ANTHROPIC_AUTH_TOKEN, replace with my GoSwitch CC group token
+3. Keep ANTHROPIC_AUTH_TOKEN, replace with my GoSwitcher CC group token
 4. Windows users should configure in WSL Linux environment, do not use native Windows CMD / PowerShell
 5. Provide commands to verify proxy health status and whether Claude Code responds normally
 6. For long-term use, provide background service configuration suitable for the current system
@@ -91,18 +91,18 @@ The following commands are suitable for verifying the proxy works in Linux / mac
 
 ``` bash
 npm install -g claude-code-cache-fix
-CACHE_FIX_PROXY_UPSTREAM=https://goswitch.online cache-fix-proxy server
+CACHE_FIX_PROXY_UPSTREAM=https://goswitcher.com cache-fix-proxy server
 ```
 
 If you're using the optimized routing Endpoint, you can change `CACHE_FIX_PROXY_UPSTREAM` to:
 
 ``` bash
-https://api-slb.goswitch.online
+https://api-slb.goswitcher.com
 ```
 
 ## Configure Claude Code
 
-After starting the proxy, change `ANTHROPIC_BASE_URL` in Claude Code's `settings.json` to the local proxy address, and continue filling in your GoSwitch **CC** group token for `ANTHROPIC_AUTH_TOKEN`:
+After starting the proxy, change `ANTHROPIC_BASE_URL` in Claude Code's `settings.json` to the local proxy address, and continue filling in your GoSwitcher **CC** group token for `ANTHROPIC_AUTH_TOKEN`:
 
 ``` json
 {
@@ -130,7 +130,7 @@ If it returns `{"status":"ok"}`, open a new terminal and run:
 claude
 ```
 
-If you can enter Claude Code normally and receive replies, the proxy and GoSwitch configuration are connected.
+If you can enter Claude Code normally and receive replies, the proxy and GoSwitcher configuration are connected.
 
 ## Long-term Usage Recommendations
 

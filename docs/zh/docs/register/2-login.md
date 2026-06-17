@@ -1,12 +1,12 @@
 # 登录账号
 
-<!-- Source: https://docs.goswitch.online/docs/register/2-login.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/2-login.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 
-登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+登录入口：[https://goswitcher.com/sign-in](https://goswitcher.com/sign-in)
 
 ![](../../../assets/image/QuickStart/001.png)
 
@@ -37,11 +37,11 @@ Updated: 2026-06-13T10:02:01.000Z
 -   Windows / Linux Chrome：按 `Ctrl + Shift + Delete` 打开清除浏览数据页面。
 -   macOS Chrome：按 `Command + Shift + Delete` 打开清除浏览数据页面。
 
-如果清理缓存后仍然无效，请手动删除 `goswitch.online` 相关 Cookie：
+如果清理缓存后仍然无效，请手动删除 `goswitcher.com` 相关 Cookie：
 
 1.  在登录页按 `F12` 打开开发者工具。
 2.  进入“应用”面板。
-3.  在左侧依次选择“存储” → “Cookie” → `https://goswitch.online`。
+3.  在左侧依次选择“存储” → “Cookie” → `https://goswitcher.com`。
 4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
 
 ![](../../../assets/image/QuickStart/006.png) -->

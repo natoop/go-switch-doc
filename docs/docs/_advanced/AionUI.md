@@ -1,8 +1,8 @@
 # AionUI
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/AionUI.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/AionUI.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## AionUI Introduction
@@ -88,7 +88,7 @@ Visit the [GitHub Releases](https://github.com/iOfficeAI/AionUi/releases) page t
 
 ### Get API Key
 
-Review [Create API Token](https://goswitch.online/), create a token for the corresponding group in GoSwitch, click the copy button, and copy the API Key to your clipboard:
+Review [Create API Token](https://goswitcher.com/), create a token for the corresponding group in GoSwitcher, click the copy button, and copy the API Key to your clipboard:
 
 -   **Gemini** → Create a token in the **Gemini** group
 -   **Claude** → Create a token in the **CC** group
@@ -120,25 +120,25 @@ Gemini
 
 Use the **Gemini** group API Key and fill in the following configuration:
 
--   **API Key**: Paste the API Key copied from GoSwitch
--   **API Request URL**: `https://goswitch.online`
--   **Model**: Select a Gemini model supported by GoSwitch
+-   **API Key**: Paste the API Key copied from GoSwitcher
+-   **API Request URL**: `https://goswitcher.com`
+-   **Model**: Select a Gemini model supported by GoSwitcher
 
 Claude
 
 Use the **CC** group API Key and fill in the following configuration:
 
--   **API Key**: Paste the API Key copied from GoSwitch
--   **API Request URL**: `https://goswitch.online`
--   **Model**: Select a Claude model supported by GoSwitch
+-   **API Key**: Paste the API Key copied from GoSwitcher
+-   **API Request URL**: `https://goswitcher.com`
+-   **Model**: Select a Claude model supported by GoSwitcher
 
 Codex
 
 Use the **Codex** group API Key and fill in the following configuration:
 
--   **API Key**: Paste the API Key copied from GoSwitch
--   **API Request URL**: `https://goswitch.online/v1`
--   **Model**: Select a Codex model supported by GoSwitch
+-   **API Key**: Paste the API Key copied from GoSwitcher
+-   **API Request URL**: `https://goswitcher.com/v1`
+-   **Model**: Select a Codex model supported by GoSwitcher
 
 * * *
 

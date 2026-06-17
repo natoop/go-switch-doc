@@ -1,8 +1,8 @@
 # Nano Banana2 Pro绘图教程
 
-<!-- Source: https://docs.goswitch.online/docs/paint/Banana.html -->
+<!-- Source: https://docs.goswitcher.com/docs/paint/Banana.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 使用Cherry Studio绘图
@@ -25,11 +25,11 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../../assets/image/Paint/banana/04.webp)
 
-6.  在左侧列表中找到刚添加的 `GoSwitch` 分组，API密钥部分填入第一步创建后复制的 `gemini` 分组的API密钥，API地址填写 `https://goswitch.online`
+6.  在左侧列表中找到刚添加的 `GoSwitcher` 分组，API密钥部分填入第一步创建后复制的 `gemini` 分组的API密钥，API地址填写 `https://goswitcher.com`
 
 ![](../../../assets/image/Paint/banana/05.webp)
 
-7.  点击下方的 `管理` 按钮，在弹出的模型列表中选择我们的绘图模型，GoSwitch 已经对一些常用比例与分辨率模型做了优化适配，我们可以如下图直接选择
+7.  点击下方的 `管理` 按钮，在弹出的模型列表中选择我们的绘图模型，GoSwitcher 已经对一些常用比例与分辨率模型做了优化适配，我们可以如下图直接选择
 
 ![](../../../assets/image/Paint/banana/06.webp)
 

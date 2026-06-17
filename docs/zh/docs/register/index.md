@@ -1,8 +1,8 @@
 # 快速开始
 
-<!-- Source: https://docs.goswitch.online/docs/register/ -->
+<!-- Source: https://docs.goswitcher.com/docs/register/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <div class="important-notice">
@@ -51,13 +51,13 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ::: info 让我们从这里开始吧！
 
-从 0 开始的 GoSwitch 使用之旅~
+从 0 开始的 GoSwitcher 使用之旅~
 
 一步步来，准没问题！
 :::
 ## 第一步：注册账号
 
--   注册入口：[https://goswitch.online/sign-up](https://goswitch.online/sign-up)
+-   注册入口：[https://goswitcher.com/sign-up](https://goswitcher.com/sign-up)
 
 ![](../../../assets/image/QuickStart/001.png)
 
@@ -84,7 +84,7 @@ Updated: 2026-06-13T10:02:01.000Z
 :::
 ## 第二步：登录账号
 
--   登录入口：[https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+-   登录入口：[https://goswitcher.com/sign-in](https://goswitcher.com/sign-in)
 
 ![](../../../assets/image/QuickStart/002.png)
 
@@ -141,7 +141,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 令牌分组会直接影响可用模型。比如 Claude Code、Codex、Gemini CLI 需要选择对应分组；如果分组选错，后续配置 CLI 时很容易出现“模型不存在”或无法调用的问题。
 
-如果你不确定每个分组适合什么场景，请先阅读 [GoSwitch 各分组介绍](../token/)。
+如果你不确定每个分组适合什么场景，请先阅读 [GoSwitcher 各分组介绍](../token/)。
 
 填写完成后，点击右下角“提交”完成创建。
 :::
@@ -175,7 +175,7 @@ CLI 工具依赖 Node.js 和 npm。环境没有准备好时，后续安装 Claud
 :::
 ## 第六步：配置 CLI 工具
 
-GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
+GoSwitcher 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ### 基础条件
 

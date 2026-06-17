@@ -1,11 +1,11 @@
 # 注册账号
 
-<!-- Source: https://docs.goswitch.online/docs/register/1-register.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/1-register.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
-注册入口：[https://www.goswitch.online/sign-up](https://www.goswitch.online/sign-up)
+注册入口：[https://www.goswitcher.com/sign-up](https://www.goswitcher.com/sign-up)
 
 ![](../../../assets/image/QuickStart/001.png)
 

@@ -1,8 +1,8 @@
 # DeepSeek with Claude Code
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/DeepSeekClaudeCode.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/DeepSeekClaudeCode.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Prerequisites
@@ -11,7 +11,7 @@ This tutorial is for connecting the **DeepSeek** group to **Claude Code**. Befor
 
 ## Create DeepSeek Token
 
-1.  Review [Create API Token](../register/4-token.md), and create a new API token in GoSwitch.
+1.  Review [Create API Token](../register/4-token.md), and create a new API token in GoSwitcher.
 
 2.  You can name it `deepseek-officially`, and select `deepseek-officially` as the token group. After creation, copy the generated API Key for later configuration.
 
@@ -27,10 +27,10 @@ If you're not familiar with Claude Code's `settings.json`, we recommend using CC
 
 2.  Fill in the provider information as follows:
 
-    -   **Provider Name**: `GoSwitch`
-    -   **Website URL**: `https://goswitch.online`
+    -   **Provider Name**: `GoSwitcher`
+    -   **Website URL**: `https://goswitcher.com`
     -   **API Key**: Enter the `deepseek-officially` group API Key you just created
-    -   **Request URL**: `https://goswitch.online`
+    -   **Request URL**: `https://goswitcher.com`
     -   **API Format**: `Anthropic Messages (Native)`
     -   **Main Model**: Default `deepseek-v4-pro`; use `deepseek-v4-pro[1m]` only when 1M context is needed
     -   **Thinking Model**: Default `deepseek-v4-pro`; use `deepseek-v4-pro[1m]` only when 1M context is needed
@@ -79,7 +79,7 @@ Write the following content into `settings.json`, replacing `{{YourNewToken}}` w
 ```json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "{{YourNewToken}}",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
     "ANTHROPIC_MODEL": "deepseek-v4-pro",

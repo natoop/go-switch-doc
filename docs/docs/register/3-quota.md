@@ -1,8 +1,8 @@
 # Purchase Quota
 
-<!-- Source: https://docs.goswitch.online/docs/register/3-quota.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/3-quota.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 After logging into the console, go to the "Wallet Management" page on the left side to purchase quota.

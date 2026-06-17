@@ -1,8 +1,8 @@
 # Claude Code相关问题
 
-<!-- Source: https://docs.goswitch.online/docs/faq/CC.html -->
+<!-- Source: https://docs.goswitcher.com/docs/faq/CC.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### 如何在Vscode CC插件中使用GoSwitch
@@ -32,7 +32,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ``` json
 {
-  "primaryApiKey": "GoSwitch"
+  "primaryApiKey": "GoSwitcher"
 }
 ```
 
@@ -65,7 +65,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ``` json
 {
-  "primaryApiKey": "GoSwitch"
+  "primaryApiKey": "GoSwitcher"
 }
 ```
 

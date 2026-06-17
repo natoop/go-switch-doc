@@ -1,8 +1,8 @@
 # Token Group Viewing
 
-<!-- Source: https://docs.goswitch.online/docs/token/1-intro.html -->
+<!-- Source: https://docs.goswitcher.com/docs/token/1-intro.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## How to View Latest Groups

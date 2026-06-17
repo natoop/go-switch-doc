@@ -1,8 +1,8 @@
 # Codex配置
 
-<!-- Source: https://docs.goswitch.online/docs/cli/3-codex.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/3-codex.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <DocTabs storage-key="zh-docs-cli-3-codex-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
@@ -41,16 +41,16 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` toml
 disable_response_storage = true
 model = "gpt-5.2"
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model_reasoning_effort = "xhigh"
 model_verbosity = "high"
 
 [features]
 web_search_request = true
 
-[model_providers.goswitch]
-base_url = "https://goswitch.online/v1"
-name = "goswitch"
+[model_providers.goswitcher]
+base_url = "https://goswitcher.com/v1"
+name = "goswitcher"
 requires_openai_auth = true
 wire_api = "responses"
 ```
@@ -116,7 +116,7 @@ codex
 将以下内容保存到 `config.toml`
 
 ``` toml
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -124,9 +124,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.goswitch]
-name = "goswitch"
-base_url = "https://goswitch.online/v1"
+[model_providers.goswitcher]
+name = "goswitcher"
+base_url = "https://goswitcher.com/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```

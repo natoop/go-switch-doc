@@ -1,8 +1,8 @@
 # Getting Started
 
-<!-- Source: https://docs.goswitch.online/docs/register/ -->
+<!-- Source: https://docs.goswitcher.com/docs/register/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <div class="important-notice">
@@ -51,13 +51,13 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ::: info Let's start here!
 
-Your GoSwitch journey from zero~
+Your GoSwitcher journey from zero~
 
 Follow the steps and you'll be fine!
 :::
 ## Step 1: Register an Account
 
--   Registration link: [https://goswitch.online/sign-up](https://goswitch.online/sign-up)
+-   Registration link: [https://goswitcher.com/sign-up](https://goswitcher.com/sign-up)
 
 ![](../../assets/image-en/QuickStart/001.png)
 
@@ -84,7 +84,7 @@ Your email will be used for verification and notifications. We recommend using a
 :::
 ## Step 2: Login
 
--   Login link: [https://goswitch.online/sign-in](https://goswitch.online/sign-in)
+-   Login link: [https://goswitcher.com/sign-in](https://goswitcher.com/sign-in)
 
 ![](../../assets/image-en/QuickStart/002.png)
 
@@ -141,7 +141,7 @@ Fill in the token information in the popup:
 
 The token group directly affects available models. For example, Claude Code, Codex, and Gemini CLI need to select their corresponding groups. If you select the wrong group, you may encounter "model not found" errors or unable to call models during CLI configuration.
 
-If you're unsure which group fits your scenario, please read the [GoSwitch Group Introduction](../token/) first.
+If you're unsure which group fits your scenario, please read the [GoSwitcher Group Introduction](../token/) first.
 
 After filling in, click "Submit" at the bottom right to complete the creation.
 :::
@@ -174,7 +174,7 @@ CLI tools depend on Node.js and npm. If the environment isn't ready, subsequent 
 :::
 ## Step 6: Configure CLI Tools
 
-GoSwitch supports using Claude Code, Codex, and Gemini CLI in the command line
+GoSwitcher supports using Claude Code, Codex, and Gemini CLI in the command line
 
 ### Prerequisites
 

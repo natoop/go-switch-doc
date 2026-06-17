@@ -1,11 +1,11 @@
 # Configure CLI Tools
 
-<!-- Source: https://docs.goswitch.online/docs/register/6-cli.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/6-cli.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
-GoSwitch supports using Claude Code, Codex, and Gemini CLI in the command line
+GoSwitcher supports using Claude Code, Codex, and Gemini CLI in the command line
 
 ## Prerequisites
 

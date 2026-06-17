@@ -1,8 +1,8 @@
 # OpenCode
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/OpenCode.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/OpenCode.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 项目介绍
@@ -38,8 +38,8 @@ npm install -g opencode-ai
 
 5.  进行多项配置：
 
-    -   在 `预设供应商` 中选择 `GoSwitch`
-    -   在 `供应商标识` 中填写分组名称，比如 GoSwitch-Codex
+    -   在 `预设供应商` 中选择 `GoSwitcher`
+    -   在 `供应商标识` 中填写分组名称，比如 GoSwitcher-Codex
     -   在 `接口格式` 中选择合适的分组
         -   Claude系列模型：`Anthropic`
         -   Codex系列模型：`OpenAI`
@@ -67,7 +67,7 @@ npm install -g opencode-ai
 
 ![](../../../assets/image/Advanced/OpenCode/04.webp)
 
-6.  在界面中选择刚配置好的 GoSwitch 渠道，点击添加按钮
+6.  在界面中选择刚配置好的 GoSwitcher 渠道，点击添加按钮
 
 ![](../../../assets/image/Advanced/OpenCode/05.webp)
 :::

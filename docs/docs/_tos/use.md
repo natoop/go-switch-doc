@@ -1,21 +1,21 @@
 # Supported Countries and Regions
 
-<!-- Source: https://docs.goswitch.online/docs/tos/use.html -->
+<!-- Source: https://docs.goswitcher.com/docs/tos/use.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: warning Important Notice
 
-This document is compiled from the GoSwitch Supported Countries and Regions page (effective date: October 30, 2025).
+This document is compiled from the GoSwitcher Supported Countries and Regions page (effective date: October 30, 2025).
 If there are differences or version updates between this document and the official website, please refer to the official website as the authoritative source:
-[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
+[https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions)
 :::
 | Item | Content |
 | --- | --- |
 | Document Name | Supported Countries and Regions (Supported Region Policy) |
 | Effective Date | 2025-01-01 |
-| Source Link | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| Source Link | [https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions) |
 
 -   [Overview](./use.md#overview)
 -   [API](./use.md#api)
@@ -24,9 +24,9 @@ If there are differences or version updates between this document and the offici
 
 ## Overview
 
-Commercial API access and GoSwitch services.
+Commercial API access and GoSwitcher services.
 
-To the extent permitted by law, GoSwitch reserves the right not to provide its products or services to entities whose majority of direct or indirect ownership belongs to countries other than those listed in our Supported Region Policy.
+To the extent permitted by law, GoSwitcher reserves the right not to provide its products or services to entities whose majority of direct or indirect ownership belongs to countries other than those listed in our Supported Region Policy.
 
 ## API
 
@@ -90,6 +90,6 @@ The countries, regions, and territories where we currently provide commercial AP
 
 ## Related Links
 
--   Terms of Service: [https://goswitch.online/terms](https://goswitch.online/terms)
--   Service-Specific Terms: [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
--   Usage Policy (AUP): [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+-   Terms of Service: [https://goswitcher.com/terms](https://goswitcher.com/terms)
+-   Service-Specific Terms: [https://goswitcher.com/service-specific-terms](https://goswitcher.com/service-specific-terms)
+-   Usage Policy (AUP): [https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy)

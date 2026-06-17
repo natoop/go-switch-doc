@@ -1,8 +1,8 @@
 # Claude Code配置
 
-<!-- Source: https://docs.goswitch.online/docs/cli/2-claude.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/2-claude.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <DocTabs storage-key="cli-claude-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
@@ -29,7 +29,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -40,7 +40,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
 
 ![](../../../assets/image/Cli/025.webp)
 
@@ -73,7 +73,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -84,7 +84,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **CC** 分组的令牌，替换上方 `xxx`
 
 ![](../../../assets/image/Cli/025.webp)
 

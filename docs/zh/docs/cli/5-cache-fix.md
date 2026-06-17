@@ -1,8 +1,8 @@
 # Claude Code 缓存优化代理
 
-<!-- Source: https://docs.goswitch.online/docs/cli/5-cache-fix.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/5-cache-fix.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 一句话介绍
@@ -59,19 +59,19 @@ Claude Code 用得越久，你可能会发现：
 `claude-code-cache-fix` **不建议在 Windows 原生 CMD / PowerShell 中配置使用**。
 
 Windows 用户请优先在 **WSL 的 Linux 环境** 中完成 Node.js、Claude Code、
-GoSwitch 和 `claude-code-cache-fix` 的整套配置。不要把 Windows 原生
+GoSwitcher 和 `claude-code-cache-fix` 的整套配置。不要把 Windows 原生
 Claude Code 与 WSL 代理混在一起使用，否则很容易出现路径、环境变量、
 后台服务和本地端口不一致的问题。
 :::
 ::: warning 第三方工具提醒
 
-`claude-code-cache-fix` 不是 GoSwitch 官方维护工具。它会经过本机 API 请求，
+`claude-code-cache-fix` 不是 GoSwitcher 官方维护工具。它会经过本机 API 请求，
 安装前请自行审查源码、依赖和配置方式。
 :::
 ## 推荐使用 AI 辅助配置
 
 这个工具涉及本地代理、环境变量和后台服务配置，手动配置容易漏项。
-推荐把你的系统环境、GoSwitch Endpoint 和 GitHub 项目链接一起发给 AI，
+推荐把你的系统环境、GoSwitcher Endpoint 和 GitHub 项目链接一起发给 AI，
 让 AI 按你的机器生成命令。
 
 可以直接使用下面这段提示词：
@@ -80,9 +80,9 @@ Claude Code 与 WSL 代理混在一起使用，否则很容易出现路径、环
 请根据 https://github.com/cnighswonger/claude-code-cache-fix 的最新 README，
 帮我在当前系统中配置 Claude Code 缓存优化代理。
 要求：
-1. 我使用 GoSwitch，upstream 必须是 https://goswitch.online
+1. 我使用 GoSwitcher，upstream 必须是 https://goswitcher.com
 2. Claude Code 的 ANTHROPIC_BASE_URL 应指向本地代理 http://127.0.0.1:9801
-3. 保留 ANTHROPIC_AUTH_TOKEN，用我的 GoSwitch CC 分组令牌替换
+3. 保留 ANTHROPIC_AUTH_TOKEN，用我的 GoSwitcher CC 分组令牌替换
 4. Windows 用户请按 WSL Linux 环境来配置，不要使用 Windows 原生 CMD / PowerShell
 5. 给出验证代理健康状态和 Claude Code 回复是否正常的命令
 6. 长期使用时，请给出适合当前系统的后台服务配置方式
@@ -94,19 +94,19 @@ Claude Code 与 WSL 代理混在一起使用，否则很容易出现路径、环
 
 ``` bash
 npm install -g claude-code-cache-fix
-CACHE_FIX_PROXY_UPSTREAM=https://goswitch.online cache-fix-proxy server
+CACHE_FIX_PROXY_UPSTREAM=https://goswitcher.com cache-fix-proxy server
 ```
 
 如果你使用的是优化线路 Endpoint，可以把 `CACHE_FIX_PROXY_UPSTREAM` 改成：
 
 ``` bash
-https://api-slb.goswitch.online
+https://api-slb.goswitcher.com
 ```
 
 ## 配置 Claude Code
 
 代理启动后，将 Claude Code 的 `settings.json` 中 `ANTHROPIC_BASE_URL`
-改为本地代理地址，`ANTHROPIC_AUTH_TOKEN` 继续填写你的 GoSwitch
+改为本地代理地址，`ANTHROPIC_AUTH_TOKEN` 继续填写你的 GoSwitcher
 **CC** 分组令牌：
 
 ``` json
@@ -135,7 +135,7 @@ curl http://127.0.0.1:9801/health
 claude
 ```
 
-能正常进入 Claude Code 并收到回复，说明代理和 GoSwitch 配置已经连通。
+能正常进入 Claude Code 并收到回复，说明代理和 GoSwitcher 配置已经连通。
 
 ## 长期使用建议
 

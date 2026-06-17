@@ -172,8 +172,8 @@ function buildSidebar(locale: 'en' | 'zh'): SidebarItem[] {
 }
 
 export default defineConfig({
-  title: 'GoSwitch',
-  description: 'GoSwitch documentation',
+  title: 'GoSwitcher',
+  description: 'GoSwitcher documentation',
   cleanUrls: true,
   ignoreDeadLinks: true,
   srcExclude: [
@@ -186,8 +186,8 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#2563eb' }]
   ],
   themeConfig: {
-    logo: { src: '/logo.svg', alt: 'GoSwitch logo' },
-    siteTitle: 'GoSwitch',
+    logo: { src: '/logo.svg', alt: 'GoSwitcher logo' },
+    siteTitle: 'GoSwitcher',
     search: {
       provider: 'local'
     }
@@ -216,8 +216,8 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         returnToTopLabel: 'Return to top',
         footer: {
-          message: 'GoSwitch documentation site.',
-          copyright: 'Copyright © 2026 GoSwitch'
+          message: 'GoSwitcher documentation site.',
+          copyright: 'Copyright © 2026 GoSwitcher'
         }
       }
     },
@@ -245,8 +245,8 @@ export default defineConfig({
         sidebarMenuLabel: '菜单',
         returnToTopLabel: '回到顶部',
         footer: {
-          message: 'GoSwitch documentation site.',
-          copyright: 'Copyright © 2026 GoSwitch'
+          message: 'GoSwitcher documentation site.',
+          copyright: 'Copyright © 2026 GoSwitcher'
         }
       }
     }

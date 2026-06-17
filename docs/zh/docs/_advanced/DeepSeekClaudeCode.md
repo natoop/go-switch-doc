@@ -1,8 +1,8 @@
 # DS接入CC
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/DeepSeekClaudeCode.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/DeepSeekClaudeCode.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 前置准备
@@ -11,7 +11,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## 创建 DeepSeek 令牌
 
-1.  回顾 [创建 API 令牌](../register/4-token.md)，在 GoSwitch 中创建新的 API 令牌。
+1.  回顾 [创建 API 令牌](../register/4-token.md)，在 GoSwitcher 中创建新的 API 令牌。
 
 2.  名称可以填写 `deepseek-officially`，令牌分组请选择 `deepseek-officially`。创建完成后，复制生成的 API Key，后续配置会用到。
 
@@ -27,10 +27,10 @@ Updated: 2026-06-13T10:02:01.000Z
 
 2.  按照下方内容填写供应商信息：
 
-    -   **供应商名称**：`GoSwitch`
-    -   **官网链接**：`https://goswitch.online`
+    -   **供应商名称**：`GoSwitcher`
+    -   **官网链接**：`https://goswitcher.com`
     -   **API Key**：填写刚才创建的 `deepseek-officially` 分组 API Key
-    -   **请求地址**：`https://goswitch.online`
+    -   **请求地址**：`https://goswitcher.com`
     -   **API 格式**：`Anthropic Messages（原生）`
     -   **主模型**：默认填写 `deepseek-v4-pro`；需要开启 1m 上下文时才填写 `deepseek-v4-pro[1m]`
     -   **推理模型（Thinking）**：默认填写 `deepseek-v4-pro`；需要开启 1m 上下文时才填写 `deepseek-v4-pro[1m]`
@@ -79,7 +79,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "{{新建的令牌}}",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
     "ANTHROPIC_MODEL": "deepseek-v4-pro",

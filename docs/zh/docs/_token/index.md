@@ -1,8 +1,8 @@
 # 分组介绍
 
-<!-- Source: https://docs.goswitch.online/docs/token/ -->
+<!-- Source: https://docs.goswitcher.com/docs/token/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 如何查看最新分组

@@ -1,8 +1,8 @@
 # OpenClaw
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/OpenClaw.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/OpenClaw.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: tip Note
@@ -61,7 +61,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ::: tip Note
 
-GoSwitch has written a dedicated configuration script for OpenClaw. The GitHub repository is: [openclaw-configurator](https://github.com/packyme/openclaw-configurator). This script can quickly help us configure GoSwitch's API.
+GoSwitcher has written a dedicated configuration script for OpenClaw. The GitHub repository is: [openclaw-configurator](https://github.com/packyme/openclaw-configurator). This script can quickly help us configure GoSwitcher's API.
 
 The script currently does not support Gemini channel configuration — still under construction!
 
@@ -71,7 +71,7 @@ The script currently does not support Gemini channel configuration — still und
 curl -fsSL https://github.com/packyme/openclaw-configurator/releases/latest/download/index.js -o /tmp/openclaw-config.js && node /tmp/openclaw-config.js
 ```
 
-2.  Select `Add Provider`, then select `GoSwitch`
+2.  Select `Add Provider`, then select `GoSwitcher`
 
 ![](../../assets/image-en/Advanced/OpenClaw/11.webp)
 

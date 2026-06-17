@@ -1,8 +1,8 @@
 # Codex Related Questions
 
-<!-- Source: https://docs.goswitch.online/docs/faq/Codex.html -->
+<!-- Source: https://docs.goswitcher.com/docs/faq/Codex.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### A Few Tips for More Efficient Use of Codex
@@ -38,7 +38,7 @@ This method simultaneously solves **file reading/writing, encoding issues, high 
 3.  Find the `config.toml` file in the directory, open and edit it. Your configuration file should look like this:
 
 ``` toml
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model = "gpt-5.4"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -46,9 +46,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.goswitch]
-name = "goswitch"
-base_url = "https://goswitch.online/v1"
+[model_providers.goswitcher]
+name = "goswitcher"
+base_url = "https://goswitcher.com/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```
@@ -187,7 +187,7 @@ web_search_request = true
 ### Connection failed Issue
 
 Error message similar to:``` text
-Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)```This situation is caused by local network problems, troubleshoot according to the following steps:
+Connection failed: error sending request for url (https://www.goswitcher.com/v1/responses)```This situation is caused by local network problems, troubleshoot according to the following steps:
 1.  Check whether the local network is working properly, and whether you can access other pages
 2.  Check whether your computer uses using a `network proxy (VPN)` tool, if so please turn it off
 3.  Use the terminal, run the `codex` command, try to send a conversation message in the CLI to determine whether it is a VSCode Codex plugin issue. If so, please restart VSCode and try again

@@ -1,21 +1,21 @@
 # 条款与政策
 
-<!-- Source: https://docs.goswitch.online/docs/tos/ -->
+<!-- Source: https://docs.goswitcher.com/docs/tos/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本目录下文档根据 GoSwitch 官网条款/政策页面内容整理。
+本目录下文档根据 GoSwitcher 官网条款/政策页面内容整理。
 如本文档与官网存在差异或版本更新，请以官网页面为准。
 :::
 | 文档 | 本地页面 | 生效日期 | 官网来源 |
 | --- | --- | --- | --- |
-| 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
-| 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://goswitch.online/terms](https://goswitch.online/terms) |
-| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-01-01 | [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms) |
-| 支持的国家和地区 | [USE](./use.md) | 2025-01-01 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| 使用政策（AUP） | [AUP](./aup.md) | 2026-05-13 | [https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy) |
+| 服务条款 | [TOS](./TOS.md) | 2026-05-13 | [https://goswitcher.com/terms](https://goswitcher.com/terms) |
+| 服务特定条款 | [Service-specific-terms](./service-specific-terms.md) | 2025-01-01 | [https://goswitcher.com/service-specific-terms](https://goswitcher.com/service-specific-terms) |
+| 支持的国家和地区 | [USE](./use.md) | 2025-01-01 | [https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions) |
 
 ::: tip 阅读建议
 

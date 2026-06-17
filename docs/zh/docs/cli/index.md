@@ -1,8 +1,8 @@
 # CLI配置教程
 
-<!-- Source: https://docs.goswitch.online/docs/cli/ -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 环境检查(通用步骤)
@@ -109,7 +109,7 @@ gemini
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -118,7 +118,7 @@ gemini
 
 ![](../../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **CC** 分组的令牌，替换上方 `xxx`部分
 
 ![](../../../assets/image/Cli/025.webp)
 
@@ -152,7 +152,7 @@ gemini
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -161,7 +161,7 @@ gemini
 
 ![](../../../assets/image/Cli/015.webp)
 
-4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **CC** 分组的令牌，替换上方 `xxx`
+4.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **CC** 分组的令牌，替换上方 `xxx`
 
 ![](../../../assets/image/Cli/025.webp)
 
@@ -215,16 +215,16 @@ gemini
 ``` toml
 disable_response_storage = true
 model = "gpt-5.2"
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model_reasoning_effort = "xhigh"
 model_verbosity = "high"
 
 [features]
 web_search_request = true
 
-[model_providers.goswitch]
-base_url = "https://goswitch.online/v1"
-name = "goswitch"
+[model_providers.goswitcher]
+base_url = "https://goswitcher.com/v1"
+name = "goswitcher"
 requires_openai_auth = true
 wire_api = "responses"
 ```
@@ -290,7 +290,7 @@ codex
 将以下内容保存到 `config.toml`
 
 ``` toml
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -298,9 +298,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.goswitch]
-name = "goswitch"
-base_url = "https://goswitch.online/v1"
+[model_providers.goswitcher]
+name = "goswitcher"
+base_url = "https://goswitcher.com/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```
@@ -356,14 +356,14 @@ codex
 ![](../../../assets/image/Cli/020.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
 ![](../../../assets/image/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
 
 ![](../../../assets/image/Cli/026.webp)
 
@@ -393,12 +393,12 @@ GEMINI_MODEL=gemini-2.5-pro
 ![](../../../assets/image/Cli/024.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **Gemini** 分组令牌，填入 `xxx`
 
 ![](../../../assets/image/Cli/026.webp)
 

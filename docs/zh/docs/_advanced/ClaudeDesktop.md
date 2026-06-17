@@ -1,8 +1,8 @@
 # Claude Desktop
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/ClaudeDesktop.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/ClaudeDesktop.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 软件下载
@@ -105,7 +105,7 @@ set HTTPS_PROXY=http://127.0.0.1:7897
 
 ![](../../../assets/image/Advanced/ClaudeDesktop/11.webp)
 
-2.  在Gateway base URL填入 `https://goswitch.online`
+2.  在Gateway base URL填入 `https://goswitcher.com`
 
 3.  将Gateway auth scheme更改为 `x-api-key`
 

@@ -1,11 +1,11 @@
 # Claude Code Related Questions
 
-<!-- Source: https://docs.goswitch.online/docs/faq/CC.html -->
+<!-- Source: https://docs.goswitcher.com/docs/faq/CC.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
-### How to Use GoSwitch in VSCode CC Plugin
+### How to Use GoSwitcher in VSCode CC Plugin
 
 <DocTabs storage-key="docs-faq-cc-platform-1" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
 <template #windows>
@@ -32,7 +32,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ``` json
 {
-  "primaryApiKey": "GoSwitch"
+  "primaryApiKey": "GoSwitcher"
 }
 ```
 
@@ -65,7 +65,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ``` json
 {
-  "primaryApiKey": "GoSwitch"
+  "primaryApiKey": "GoSwitcher"
 }
 ```
 

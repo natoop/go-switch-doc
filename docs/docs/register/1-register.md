@@ -1,11 +1,11 @@
 # Register Account
 
-<!-- Source: https://docs.goswitch.online/docs/register/1-register.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/1-register.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
-Registration link: [https://www.goswitch.online/sign-up](https://www.goswitch.online/sign-up)
+Registration link: [https://www.goswitcher.com/sign-up](https://www.goswitcher.com/sign-up)
 
 ![](../../assets/image-en/QuickStart/001.png)
 

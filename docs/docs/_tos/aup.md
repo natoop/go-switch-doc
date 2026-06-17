@@ -1,21 +1,21 @@
 # Usage Policy (AUP)
 
-<!-- Source: https://docs.goswitch.online/docs/tos/aup.html -->
+<!-- Source: https://docs.goswitcher.com/docs/tos/aup.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: warning Important Notice
-This document is compiled from the GoSwitch Usage Policy page (effective date: January 1, 2026).
-If there are differences or version update between this document and the official website, please refer to the official website as the authoritative source: [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+This document is compiled from the GoSwitcher Usage Policy page (effective date: January 1, 2026).
+If there are differences or version update between this document and the official website, please refer to the official website as the authoritative source: [https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy)
 :::
 | Item | Content |
 | --- | --- |
 | Document Name | Usage Policy (Acceptable Use Policy / AUP) |
 | Effective Date | January 1, 2026 |
-| Source Link | [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy) |
+| Source Link | [https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy) |
 | Compilation Date | June 10, 2026 |
-| Applicable To | Anyone who can submit input to GoSwitch's products and/or services (including authorized distributors or direct access) |
+| Applicable To | Anyone who can submit input to GoSwitcher's products and/or services (including authorized distributors or direct access) |
 | Purpose | Help users stay safe and promote responsible use of products and services |
 
 -   [Overview](./aup.md#overview)
@@ -40,9 +40,9 @@ If there are differences or version update between this document and the officia
 
 ## Overview
 
-Our Usage Policy (also known as the "Acceptable Use Policy" or "AUP") applies to anyone who can submit input to GoSwitch's products and/or services, including through any authorized distributor or direct access, and we refer to all such persons as "Users". The Usage Policy is designed to help our users stay safe and promote responsible use of our products and services.
+Our Usage Policy (also known as the "Acceptable Use Policy" or "AUP") applies to anyone who can submit input to GoSwitcher's products and/or services, including through any authorized distributor or direct access, and we refer to all such persons as "Users". The Usage Policy is designed to help our users stay safe and promote responsible use of our products and services.
 
-The Usage Policy categorizes who can use our products and for what purposes. As our technology and related risks evolve or as we learn about unforeseen risks, we will update our policies. To enforce this policy, GoSwitch may use detection, review,  monitoring mechanisms; if users violate this policy, GoSwitch may restrict, suspend, terminate access,  block, filter, or modify input or output that violates this policy.
+The Usage Policy categorizes who can use our products and for what purposes. As our technology and related risks evolve or as we learn about unforeseen risks, we will update our policies. To enforce this policy, GoSwitcher may use detection, review,  monitoring mechanisms; if users violate this policy, GoSwitcher may restrict, suspend, terminate access,  block, filter, or modify input or output that violates this policy.
 
 ::: tip Reading Recommendations
 
@@ -101,7 +101,7 @@ Do not use our services to create or disseminate fraudulent, false,  misleading 
 
 ### Do Not Abuse Our Platform
 
-Do not use our services in violation of our platform policies, including but not limited to attempting to undermine our safeguards, evade the model's built-in limitations, extract model weights, system prompts, hidden rules, training data,  response patterns in any unauthorized manner, perform jailbreaking, prompt injection, unauthorized model scraping, copying, training, fine-tuning,  distillation,  violate service usage limits we implement on GoSwitch, including rate limiting.
+Do not use our services in violation of our platform policies, including but not limited to attempting to undermine our safeguards, evade the model's built-in limitations, extract model weights, system prompts, hidden rules, training data,  response patterns in any unauthorized manner, perform jailbreaking, prompt injection, unauthorized model scraping, copying, training, fine-tuning,  distillation,  violate service usage limits we implement on GoSwitcher, including rate limiting.
 
 ### Do Not Generate Sexually Explicit Content
 
@@ -141,7 +141,7 @@ The following use cases (whether they are high-risk or not) must comply with the
 
 ## Related Links
 
--   Usage Policy (source of this page): [https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
--   Terms of Service: [https://goswitch.online/terms](https://goswitch.online/terms)
--   Service-Specific Terms: [https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
--   Supported Countries  Regions: [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
+-   Usage Policy (source of this page): [https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy)
+-   Terms of Service: [https://goswitcher.com/terms](https://goswitcher.com/terms)
+-   Service-Specific Terms: [https://goswitcher.com/service-specific-terms](https://goswitcher.com/service-specific-terms)
+-   Supported Countries  Regions: [https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions)

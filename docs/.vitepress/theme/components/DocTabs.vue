@@ -72,7 +72,7 @@ watch(activeValue, (value) => {
   window.localStorage.setItem(storageName.value, value)
 })
 
-const storageName = computed(() => `goswitch-doc-tab:${props.storageKey}`)
+const storageName = computed(() => `goswitcher-doc-tab:${props.storageKey}`)
 
 onMounted(() => {
   isMounted.value = true

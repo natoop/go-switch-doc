@@ -1,1 +1,1 @@
-# go-switch-doc
+# go-switcher-doc

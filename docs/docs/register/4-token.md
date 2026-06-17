@@ -1,8 +1,8 @@
 # Create API Token
 
-<!-- Source: https://docs.goswitch.online/docs/register/4-token.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/4-token.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 After logging in, go to the console panel and select "Token Management" from the left side.
@@ -31,7 +31,7 @@ Fill in the token information in the popup:
 
 The token group directly affects available models. For example, Claude Code, Codex, and Gemini CLI need to select their corresponding groups. If you select the wrong group, you may encounter "model not found" errors or unable to call models during CLI configuration.
 
-If you're unsure which group fits your scenario, please read the [GoSwitch Group Introduction](../token/) first.
+If you're unsure which group fits your scenario, please read the [GoSwitcher Group Introduction](../token/) first.
 
 After filling in, click "Submit" at the bottom right to complete the creation.
 :::

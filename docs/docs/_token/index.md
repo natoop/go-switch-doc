@@ -1,8 +1,8 @@
 # Group Introduction
 
-<!-- Source: https://docs.goswitch.online/docs/token/ -->
+<!-- Source: https://docs.goswitcher.com/docs/token/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## How to View Latest Groups
@@ -127,7 +127,7 @@ Teaching someone to fish is better than giving them a fish. Many people only loo
 
 -   **Group Description:**
 
-    -   You must select this group when using Claude Code! One of the main groups, specifically designed for Claude Code. Cannot be connected to any third-party platform. If GoSwitch's environment audit is triggered, your account will be suspended and enter the refund process. This is because some people ask Claude NSFW questions, triggering ethical audits that result in account bans with no refunds. To maintain pool stability, please do not connect to any third-party
+    -   You must select this group when using Claude Code! One of the main groups, specifically designed for Claude Code. Cannot be connected to any third-party platform. If GoSwitcher's environment audit is triggered, your account will be suspended and enter the refund process. This is because some people ask Claude NSFW questions, triggering ethical audits that result in account bans with no refunds. To maintain pool stability, please do not connect to any third-party
 -   **Supported CLI:**
 
     -   Claude Code

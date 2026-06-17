@@ -1,6 +1,6 @@
 # Cloudflare Pages 部署配置
 # 使用方式: npx wrangler pages deploy docs/.vitepress/dist
 
-name = "goswitch-doc"
+name = "goswitcher-doc"
 compatibility_date = "2026-06-13"
 pages_build_output_dir = "docs/.vitepress/dist"

@@ -1,8 +1,8 @@
 # Gemini Related Questions
 
-<!-- Source: https://docs.goswitch.online/docs/faq/Gemini.html -->
+<!-- Source: https://docs.goswitcher.com/docs/faq/Gemini.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 -   [Gemini CLI Usage Issues and Recommendations](./Gemini.md#gemini-cli-usage-issues-and-recommendations)
@@ -82,7 +82,7 @@ After opening the Cline interface, follow these steps to configure:
 
 ``` yaml
 API Provider: OpenAI-compatible
-Base URL: https://goswitch.online/v1
+Base URL: https://goswitcher.com/v1
 API Key: sk-*****
 Model ID: gemini-3-pro-preview
 ```
@@ -103,8 +103,8 @@ If you previously used Cline, click the **⚙️ Settings** button in the top ri
 | Configuration Item | Recommended Value | Description |
 | --- | --- | --- |
 | **API Provider** | `OpenAI-compatible` | Recommended to select this option, which supports more models |
-| **Base URL** | `https://goswitch.online/v1` | GoSwitch compatible endpoint |
-| **API Key** | `sk-******` | Your GoSwitch API Key |
+| **Base URL** | `https://goswitcher.com/v1` | GoSwitcher compatible endpoint |
+| **API Key** | `sk-******` | Your GoSwitcher API Key |
 | **Model ID** | `gemini-3-pro-preview` | Recommended to use the code-specialized model |
 
 #### 5. Complete Configuration

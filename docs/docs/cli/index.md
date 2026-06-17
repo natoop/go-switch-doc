@@ -1,8 +1,8 @@
 # CLI Configuration Tutorial
 
-<!-- Source: https://docs.goswitch.online/docs/cli/ -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Environment Check (Common Steps)
@@ -110,7 +110,7 @@ gemini
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -119,7 +119,7 @@ gemini
 
 ![](../../assets/image-en/Cli/015.webp)
 
-4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitch, and replace `xxx`
+4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitcher, and replace `xxx`
 
 ![](../../assets/image-en/Cli/025.webp)
 
@@ -149,7 +149,7 @@ gemini
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   }
@@ -158,7 +158,7 @@ gemini
 
 ![](../../assets/image-en/Cli/015.webp)
 
-4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitch, replace `xxx`
+4.  Review [Create API Token](../register/4-token.md), create a **CC** group token in GoSwitcher, replace `xxx`
 
 ![](../../assets/image-en/Cli/025.webp)
 
@@ -204,16 +204,16 @@ gemini
 ``` toml
 disable_response_storage = true
 model = "gpt-5.2"
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model_reasoning_effort = "xhigh"
 model_verbosity = "high"
 
 [features]
 web_search_request = true
 
-[model_providers.goswitch]
-base_url = "https://goswitch.online/v1"
-name = "goswitch"
+[model_providers.goswitcher]
+base_url = "https://goswitcher.com/v1"
+name = "goswitcher"
 requires_openai_auth = true
 wire_api = "responses"
 ```
@@ -262,7 +262,7 @@ Create the above three files manually if they don't exist
 1.  Configure Config.toml
 
 ``` toml
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model = "gpt-5.1-codex"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -270,9 +270,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.goswitch]
-name = "goswitch"
-base_url = "https://goswitch.online/v1"
+[model_providers.goswitcher]
+name = "goswitcher"
+base_url = "https://goswitcher.com/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```
@@ -316,7 +316,7 @@ Review [Create API Token](../register/4-token.md), create a **Codex** group toke
 ![](../../assets/image-en/Cli/020.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
@@ -349,7 +349,7 @@ GEMINI_MODEL=gemini-2.5-pro
 ![](../../assets/image-en/Cli/024.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```

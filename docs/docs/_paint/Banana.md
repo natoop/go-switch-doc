@@ -1,8 +1,8 @@
 # Nano Banana2 Pro Drawing Tutorial
 
-<!-- Source: https://docs.goswitch.online/docs/paint/Banana.html -->
+<!-- Source: https://docs.goswitcher.com/docs/paint/Banana.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Drawing with Cherry Studio
@@ -25,11 +25,11 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../assets/image-en/Paint/banana/04.webp)
 
-6.  Find the newly added `GoSwitch` group in the left list. Fill in the API key with the `gemini` group API key you copied in step 1, and enter `https://goswitch.online` for the API address
+6.  Find the newly added `GoSwitcher` group in the left list. Fill in the API key with the `gemini` group API key you copied in step 1, and enter `https://goswitcher.com` for the API address
 
 ![](../../assets/image-en/Paint/banana/05.webp)
 
-7.  Click the `Manage` button below, and in the model list popup, select our drawing model. GoSwitch has optimized some commonly used aspect ratio and resolution models, which you can select directly as shown below
+7.  Click the `Manage` button below, and in the model list popup, select our drawing model. GoSwitcher has optimized some commonly used aspect ratio and resolution models, which you can select directly as shown below
 
 ![](../../assets/image-en/Paint/banana/06.webp)
 

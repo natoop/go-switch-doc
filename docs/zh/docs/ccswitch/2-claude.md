@@ -1,8 +1,8 @@
 # Claude Code配置
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/2-claude.html -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/2-claude.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 1.  打开你下载的CC Switch软件，你会看到如下图的初始界面

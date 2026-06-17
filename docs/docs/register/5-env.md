@@ -1,8 +1,8 @@
 # Environment Check
 
-<!-- Source: https://docs.goswitch.online/docs/register/5-env.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/5-env.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 Before configuring Claude Code, Codex, or Gemini CLI, please confirm that Node.js is properly installed on your machine.

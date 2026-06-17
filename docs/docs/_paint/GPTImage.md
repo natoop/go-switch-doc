@@ -1,8 +1,8 @@
 # GPT-Image-2 Drawing Tutorial
 
-<!-- Source: https://docs.goswitch.online/docs/paint/GPTImage.html -->
+<!-- Source: https://docs.goswitcher.com/docs/paint/GPTImage.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Prerequisites
@@ -13,9 +13,9 @@ Follow the [Create Token Group](../register/4-token.md#%E8%BF%9B%E5%85%A5%E4%BB%
 
 ## API Methods
 
-OpenAI's official documentation divides image-related capabilities into three categories: Responses API, Images API, and Chat Completions API. For GoSwitch's `gpt-image-2`, please prioritize using the Images API for image generation.
+OpenAI's official documentation divides image-related capabilities into three categories: Responses API, Images API, and Chat Completions API. For GoSwitcher's `gpt-image-2`, please prioritize using the Images API for image generation.
 
-| API | OpenAI Official Purpose | GoSwitch `gpt-image-2` Usage Recommendation | Recommendation |
+| API | OpenAI Official Purpose | GoSwitcher `gpt-image-2` Usage Recommendation | Recommendation |
 | --- | --- | --- | --- |
 | Responses API | Analyze images and use images as input; can also generate image output via tools | Not supported as an image generation endpoint for `gpt-image-2`. Use Images API for image generation. | Not supported |
 | Images API | Generate images, or upload images as input for editing | Supports text-to-image and image editing. This is the recommended method for `gpt-image-2`. | Recommended |
@@ -25,8 +25,8 @@ OpenAI's official documentation divides image-related capabilities into three ca
 
 The Images API is the recommended method for `gpt-image-2` image generation, with two endpoints:
 
--   Text-to-image: `POST https://goswitch.online/v1/images/generations`
--   Image editing / image-to-image: `POST https://goswitch.online/v1/images/edits`
+-   Text-to-image: `POST https://goswitcher.com/v1/images/generations`
+-   Image editing / image-to-image: `POST https://goswitcher.com/v1/images/edits`
 
 Each endpoint is explained in the format "API example → Parameter description" below. For beginners, just pass `model`, `prompt`, and set `n` to `1`; use the `image` field only when uploading images.
 
@@ -39,11 +39,11 @@ Use `/v1/images/generations` for text-to-image, and `/v1/images/edits` for uploa
 ##### API Example
 
 ``` bash
-curl --location 'https://goswitch.online/v1/images/generations' \
+curl --location 'https://goswitcher.com/v1/images/generations' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer YourSoraGroupToken' \
 --header 'Accept: */*' \
---header 'Host: www.goswitch.online' \
+--header 'Host: www.goswitcher.com' \
 --header 'Connection: keep-alive' \
 --data '{
     "model": "gpt-image-2",
@@ -82,7 +82,7 @@ curl --location 'https://goswitch.online/v1/images/generations' \
 ##### API Example
 
 ``` bash
-curl --location 'https://goswitch.online/v1/images/edits' \
+curl --location 'https://goswitcher.com/v1/images/edits' \
 --header 'Authorization: Bearer YourSoraGroupToken' \
 --header 'Accept: */*' \
 --form 'model="gpt-image-2"' \
@@ -162,7 +162,7 @@ The default response returns an image download URL:
   "created": 1776923999,
   "data": [
     {
-      "url": "https://external-resources.goswitch.online/file_download/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "url": "https://external-resources.goswitcher.com/file_download/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "revised_prompt": "..."
     }
   ]
@@ -191,7 +191,7 @@ In this case, there is usually no `url` in the response; the client must decode 
 
 ::: warning Not Supported
 
-GoSwitch's `gpt-image-2` does not support image generation via `/v1/responses`. Do not use `image_generation` tool, `input`, or `input_image` to call `gpt-image-2` for image generation.
+GoSwitcher's `gpt-image-2` does not support image generation via `/v1/responses`. Do not use `image_generation` tool, `input`, or `input_image` to call `gpt-image-2` for image generation.
 
 For text-to-image, use `/v1/images/generations`; for uploading images for editing, use `/v1/images/edits`.
 :::
@@ -199,7 +199,7 @@ For text-to-image, use `/v1/images/generations`; for uploading images for editin
 
 ::: warning Not Supported
 
-GoSwitch's `gpt-image-2` does not support image generation via `/v1/chat/completions`. Do not put `messages`, `image_url`, `size`, `quality`, `output_format` or other parameters into Chat Completions to call image generation.
+GoSwitcher's `gpt-image-2` does not support image generation via `/v1/chat/completions`. Do not put `messages`, `image_url`, `size`, `quality`, `output_format` or other parameters into Chat Completions to call image generation.
 
 If using Cherry Studio, please switch to the "Painting" application and ensure the endpoint type is set to `Image Generation (OpenAI)`.
 :::
@@ -215,11 +215,11 @@ If your client only supports Chat Completions and must integrate image capabilit
 
 3.  Open Cherry Studio, click the settings button in the bottom left corner, go to the `Model Services` page, and click the `Add` button at the bottom to add a new provider.
 
-4.  In the Add Provider window, fill in the provider name, e.g. `goswitch-gpt-image-2`, select `New API` as the `Provider Type`, then click `Confirm`.
+4.  In the Add Provider window, fill in the provider name, e.g. `goswitcher-gpt-image-2`, select `New API` as the `Provider Type`, then click `Confirm`.
 
 ![](../../assets/image-en/Paint/gpt-image-2/01.webp)
 
-5.  Find the newly added provider in the left sidebar, fill in the `sora` group API Key copied in step 1 into `API Key`, and set `API Address` to `https://goswitch.online`.
+5.  Find the newly added provider in the left sidebar, fill in the `sora` group API Key copied in step 1 into `API Key`, and set `API Address` to `https://goswitcher.com`.
 
 ![](../../assets/image-en/Paint/gpt-image-2/02.webp)
 
@@ -245,14 +245,14 @@ If your client only supports Chat Completions and must integrate image capabilit
 
 ::: tip Usage Tips
 
--   `API Address` should simply be `https://goswitch.online`; Cherry Studio will automatically append the compatible endpoint, no need to manually add `/v1`.
+-   `API Address` should simply be `https://goswitcher.com`; Cherry Studio will automatically append the compatible endpoint, no need to manually add `/v1`.
 -   If `gpt-image-2` is not in the model list, first refresh models in `Manage`; if image generation still doesn't work, check whether the `Endpoint Type` is set to `Image Generation (OpenAI)`.
 -   Use `Draw` mode for text-to-image; use `Edit` mode to upload reference images for image-to-image or local editing.
 -   If you call `gpt-image-2` directly in a regular chat page, we recommend disabling `Stream Output` to avoid content parsing issues. No additional handling is needed when using the `Painting` application.
 :::
 ### Possible Issues
 
-If Cherry Studio shows `Failed to fetch`, it usually means the request connection was interrupted, which may be related to your local proxy or network environment. Check your proxy settings first, confirm that Cherry Studio can properly access `https://goswitch.online`, and then retry.
+If Cherry Studio shows `Failed to fetch`, it usually means the request connection was interrupted, which may be related to your local proxy or network environment. Check your proxy settings first, confirm that Cherry Studio can properly access `https://goswitcher.com`, and then retry.
 
 ![](../../assets/image-en/Paint/gpt-image-2/07.webp)
 
@@ -268,10 +268,10 @@ Below is an example using Cherry Studio's editing mode — when a long connectio
 
 ![](../../assets/image-en/Paint/gpt-image-2/09.webp)
 
-If you confirm that the proxy is causing the disconnection, we recommend adding the domain `goswitch.online` to your proxy tool's direct connection or whitelist rules, so that access to the GoSwitch API no longer goes through the proxy. Different proxy software may have different settings, but the core is adding a domain rule like `domain:goswitch.online`.
+If you confirm that the proxy is causing the disconnection, we recommend adding the domain `goswitcher.com` to your proxy tool's direct connection or whitelist rules, so that access to the GoSwitcher API no longer goes through the proxy. Different proxy software may have different settings, but the core is adding a domain rule like `domain:goswitcher.com`.
 
 ![](../../assets/image-en/Paint/gpt-image-2/10.webp)
 
-After bypassing the proxy, similar requests can wait longer and return normally. In the image below, the request returned an image after about 1.6 minutes; if using higher resolution or quality settings, generation time may increase further. To reduce uncontrollable network interruptions, we recommend connecting directly to `goswitch.online` for image generation requests, rather than going through proxies or transit networks that limit long connections.
+After bypassing the proxy, similar requests can wait longer and return normally. In the image below, the request returned an image after about 1.6 minutes; if using higher resolution or quality settings, generation time may increase further. To reduce uncontrollable network interruptions, we recommend connecting directly to `goswitcher.com` for image generation requests, rather than going through proxies or transit networks that limit long connections.
 
 ![](../../assets/image-en/Paint/gpt-image-2/11.webp)

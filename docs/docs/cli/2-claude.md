@@ -1,8 +1,8 @@
 # Claude Code Configuration
 
-<!-- Source: https://docs.goswitch.online/docs/cli/2-claude.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/2-claude.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <DocTabs storage-key="cli-claude-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
@@ -29,7 +29,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -40,7 +40,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../assets/image-en/Cli/015.webp)
 
-4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitch, and replace the `xxx` part above
+4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitcher, and replace the `xxx` part above
 
 ![](../../assets/image-en/Cli/025.webp)
 
@@ -73,7 +73,7 @@ Updated: 2026-06-13T10:02:01.000Z
 ``` json
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://goswitch.online",
+    "ANTHROPIC_BASE_URL": "https://goswitcher.com",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
@@ -84,7 +84,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ![](../../assets/image-en/Cli/015.webp)
 
-4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitch, and replace `xxx` above
+4.  Review [Create API Token](../register/4-token.md), create a token in the **CC** group in GoSwitcher, and replace `xxx` above
 
 ![](../../assets/image-en/Cli/025.webp)
 

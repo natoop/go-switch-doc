@@ -1,8 +1,8 @@
 # Gemini Configuration
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/4-gemini.html -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/4-gemini.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 1.  Open the CC-Switch software you downloaded, and you will see the initial interface as shown below

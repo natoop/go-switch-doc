@@ -1,8 +1,8 @@
 # Hermes
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/Hermes.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/Hermes.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Project Introduction
@@ -10,7 +10,7 @@ Updated: 2026-06-13T10:02:01.000Z
 -   **Project Overview**: [Hermes Agent](https://github.com/NousResearch/hermes-agent) is a fully-featured open-source AI Agent by Nous Research. It can converse and code in a terminal, or run as a persistent service connected to Telegram, Discord, Slack, WhatsApp, and other social platforms.
 -   **Key Features**:
     -   Full CLI conversation experience with built-in tool calling, Memory, and Skills systems.
-    -   Supports Nous Portal, OpenRouter, OpenAI, and other providers, as well as **any OpenAI / Anthropic compatible endpoint**, so it can connect directly to GoSwitch.
+    -   Supports Nous Portal, OpenRouter, OpenAI, and other providers, as well as **any OpenAI / Anthropic compatible endpoint**, so it can connect directly to GoSwitcher.
     -   A single `hermes gateway` command attaches the Agent to social platforms as a bot.
     -   All data is saved locally in the `~/.hermes/` directory, with no telemetry reporting.
     -   Supports local terminal, Docker, SSH remote, and other execution backends.
@@ -39,9 +39,9 @@ source ~/.bashrc   # zsh users: source ~/.zshrc
 hermes
 ```
 
-3.  On first launch, you'll enter the setup wizard. You can skip the provider selection for now — we'll configure the GoSwitch channel through CC-Switch below.
+3.  On first launch, you'll enter the setup wizard. You can skip the provider selection for now — we'll configure the GoSwitcher channel through CC-Switch below.
 
-## Configure GoSwitch Channel
+## Configure GoSwitcher Channel
 
 1.  Refer to the [CC Switch Download](../ccswitch/1-common.md) section, download and install CC-Switch locally, then open the software
 
@@ -51,9 +51,9 @@ hermes
 
 3.  Configure the following items:
 
-    -   In `Preset Provider`, select `GoSwitch`
-    -   In `Provider Identifier`, enter a name (only lowercase letters, numbers, and hyphens), e.g. goswitch
-    -   Keep `API Mode` as `Anthropic Messages`, and `API Endpoint` as `https://goswitch.online`
+    -   In `Preset Provider`, select `GoSwitcher`
+    -   In `Provider Identifier`, enter a name (only lowercase letters, numbers, and hyphens), e.g. goswitcher
+    -   Keep `API Mode` as `Anthropic Messages`, and `API Endpoint` as `https://goswitcher.com`
     -   In `API Key`, enter the Key you created in the [Create API Token](../register/4-token.md) section
 
     ::: warning Important
@@ -74,7 +74,7 @@ hermes
 
 ![](../../assets/image-en/Advanced/Hermes/03.webp)
 
-4.  Select the newly configured GoSwitch channel in the interface, and click the `Enable` button to activate the channel
+4.  Select the newly configured GoSwitcher channel in the interface, and click the `Enable` button to activate the channel
 
 ![](../../assets/image-en/Advanced/Hermes/04.webp)
 :::
@@ -86,7 +86,7 @@ CC-Switch actually writes to the `.env` (ApiKey and other sensitive info) and `c
 
 1.  Open a new terminal, type `hermes` to enter the conversation interface
 
-2.  Type the `/model` command to see the GoSwitch channel and model list you just configured in the model selector. Select your desired model and press Enter to confirm; you can switch channels later in CC-Switch with one click
+2.  Type the `/model` command to see the GoSwitcher channel and model list you just configured in the model selector. Select your desired model and press Enter to confirm; you can switch channels later in CC-Switch with one click
 
 ![](../../assets/image-en/Advanced/Hermes/05.webp)
 

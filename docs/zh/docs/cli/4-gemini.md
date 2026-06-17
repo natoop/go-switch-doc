@@ -1,8 +1,8 @@
 # Gemini配置
 
-<!-- Source: https://docs.goswitch.online/docs/cli/4-gemini.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/4-gemini.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <DocTabs storage-key="cli-gemini-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
@@ -25,14 +25,14 @@ Updated: 2026-06-13T10:02:01.000Z
 ![](../../../assets/image/Cli/020.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
 ![](../../../assets/image/Cli/021.webp)
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **Gemini** 分组令牌，并复制ApiKey后填入 `xxx`
 
 ![](../../../assets/image/Cli/026.webp)
 
@@ -61,12 +61,12 @@ GEMINI_MODEL=gemini-2.5-pro
 ![](../../../assets/image/Cli/024.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitch 中创建 **Gemini** 分组令牌，填入 `xxx`
+3.  回顾 [创建API令牌](../register/4-token.md)，在 GoSwitcher 中创建 **Gemini** 分组令牌，填入 `xxx`
 
 ![](../../../assets/image/Cli/026.webp)
 

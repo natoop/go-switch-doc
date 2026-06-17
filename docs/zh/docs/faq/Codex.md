@@ -1,8 +1,8 @@
 # Codex相关问题
 
-<!-- Source: https://docs.goswitch.online/docs/faq/Codex.html -->
+<!-- Source: https://docs.goswitcher.com/docs/faq/Codex.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### 一点点技巧，如何更高效地使用Codex
@@ -38,7 +38,7 @@ Updated: 2026-06-13T10:02:01.000Z
 3.  找到目录中的`config.toml`文件，打开并编辑，你的配置文件应该如下
 
 ``` toml
-model_provider = "goswitch"
+model_provider = "goswitcher"
 model = "gpt-5.4"
 model_reasoning_effort = "high"
 network_access = "enabled"
@@ -46,9 +46,9 @@ disable_response_storage = true
 windows_wsl_setup_acknowledged = true
 model_verbosity = "high"
 
-[model_providers.goswitch]
-name = "goswitch"
-base_url = "https://goswitch.online/v1"
+[model_providers.goswitcher]
+name = "goswitcher"
+base_url = "https://goswitcher.com/v1"
 wire_api = "responses"
 requires_openai_auth = true
 ```
@@ -193,7 +193,7 @@ web_search_request = true
 报错信息类似为：
 
 ``` txt
-Connection failed: error sending request for url (https://www.goswitch.com/v1/responses)
+Connection failed: error sending request for url (https://www.goswitcher.com/v1/responses)
 ```
 
 出现这种情况是你本机网络出现了问题，按以下步骤排查

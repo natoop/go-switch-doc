@@ -1,8 +1,8 @@
 # Hermes
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/Hermes.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/Hermes.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 项目介绍
@@ -10,7 +10,7 @@ Updated: 2026-06-13T10:02:01.000Z
 -   **项目定位**: [Hermes Agent](https://github.com/NousResearch/hermes-agent) 是 Nous Research 开源的全功能 AI Agent，可在终端中对话编程，也可以作为常驻服务接入 Telegram、Discord、Slack、WhatsApp 等社交平台。
 -   **核心特色**:
     -   完整的 CLI 对话体验，内置工具调用、记忆（Memory）与技能（Skills）系统。
-    -   支持 Nous Portal、OpenRouter、OpenAI 等多种供应商，也支持**任意 OpenAI / Anthropic 兼容端点**，因此可以直接接入 GoSwitch。
+    -   支持 Nous Portal、OpenRouter、OpenAI 等多种供应商，也支持**任意 OpenAI / Anthropic 兼容端点**，因此可以直接接入 GoSwitcher。
     -   `hermes gateway` 一条命令即可把 Agent 挂到社交软件上作为机器人使用。
     -   数据全部保存在本地 `~/.hermes/` 目录，无遥测上报。
     -   支持本地终端、Docker、SSH 远程等多种执行后端。
@@ -39,9 +39,9 @@ source ~/.bashrc   # zsh 用户执行 source ~/.zshrc
 hermes
 ```
 
-3.  首次启动会进入设置向导，供应商选择部分可以先跳过，下面我们通过 CC-Switch 配置 GoSwitch 渠道。
+3.  首次启动会进入设置向导，供应商选择部分可以先跳过，下面我们通过 CC-Switch 配置 GoSwitcher 渠道。
 
-## 配置 GoSwitch 渠道
+## 配置 GoSwitcher 渠道
 
 1.  查看 [CC Switch下载](../ccswitch/1-common.md) 一节的内容，下载并安装 CC-Switch 到本地，安装并打开软件
 
@@ -51,9 +51,9 @@ hermes
 
 3.  进行多项配置：
 
-    -   在 `预设供应商` 中选择 `GoSwitch`
-    -   在 `供应商标识` 中填写名称（只能使用小写字母、数字和连字符），比如 goswitch
-    -   `API 模式` 保持 `Anthropic Messages`，`API 端点` 保持 `https://goswitch.online`
+    -   在 `预设供应商` 中选择 `GoSwitcher`
+    -   在 `供应商标识` 中填写名称（只能使用小写字母、数字和连字符），比如 goswitcher
+    -   `API 模式` 保持 `Anthropic Messages`，`API 端点` 保持 `https://goswitcher.com`
     -   在 `API Key` 中填入 [创建API令牌](../register/4-token.md) 一节中你创建的Key
 
     ::: warning 重要
@@ -74,7 +74,7 @@ hermes
 
 ![](../../../assets/image/Advanced/Hermes/03.webp)
 
-4.  在界面中选择刚配置好的 GoSwitch 渠道，点击 `启用` 按钮，即可完成渠道启用
+4.  在界面中选择刚配置好的 GoSwitcher 渠道，点击 `启用` 按钮，即可完成渠道启用
 
 ![](../../../assets/image/Advanced/Hermes/04.webp)
 :::
@@ -86,7 +86,7 @@ CC-Switch 实际写入的是 `~/.hermes/` 目录下的 `.env`（ApiKey 等敏感
 
 1.  重新打开终端，输入 `hermes` 进入对话界面
 
-2.  输入 `/model` 命令，在模型选择器中能看到刚配置的 GoSwitch 渠道及模型列表，选中想要的模型回车确认；后续切换渠道时回到 CC-Switch 一键切换即可
+2.  输入 `/model` 命令，在模型选择器中能看到刚配置的 GoSwitcher 渠道及模型列表，选中想要的模型回车确认；后续切换渠道时回到 CC-Switch 一键切换即可
 
 ![](../../../assets/image/Advanced/Hermes/05.webp)
 

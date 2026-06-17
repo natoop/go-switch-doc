@@ -1,8 +1,8 @@
 # Claude Desktop
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/ClaudeDesktop.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/ClaudeDesktop.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Software Download
@@ -105,7 +105,7 @@ set HTTPS_PROXY=http://127.0.0.1:7897
 
 ![](../../assets/image-en/Advanced/ClaudeDesktop/11.webp)
 
-2.  In Gateway base URL, enter `https://goswitch.online`
+2.  In Gateway base URL, enter `https://goswitcher.com`
 
 3.  Change Gateway auth scheme to `x-api-key`
 

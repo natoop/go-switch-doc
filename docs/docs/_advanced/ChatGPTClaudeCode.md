@@ -1,15 +1,15 @@
 # GPT with Claude Code
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/ChatGPTClaudeCode.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/ChatGPTClaudeCode.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: danger Important Warning
 
 We do not recommend connecting GPT models to Claude Code. The more reliable approach is: use GPT models in Codex, and use Claude models in Claude Code.
 
-This tutorial is provided only to address some users' testing needs. This solution relies on the `codex` group and CC Switch local routing, and may encounter cache errors, model mapping errors, MCP or Skills compatibility issues. GoSwitch does not recommend, guarantee availability, or assume responsibility for any usage issues, quota consumption, configuration errors, or other consequences arising from this approach.
+This tutorial is provided only to address some users' testing needs. This solution relies on the `codex` group and CC Switch local routing, and may encounter cache errors, model mapping errors, MCP or Skills compatibility issues. GoSwitcher does not recommend, guarantee availability, or assume responsibility for any usage issues, quota consumption, configuration errors, or other consequences arising from this approach.
 
 Only try this if you understand the risks and have the ability to troubleshoot issues yourself; beginners are advised not to proceed.
 :::
@@ -21,7 +21,7 @@ Also, please confirm that CC Switch is installed and running locally. This solut
 
 ## Create codex Token
 
-1.  Review [Create API Token](../register/4-token.md), and create a new API token in GoSwitch.
+1.  Review [Create API Token](../register/4-token.md), and create a new API token in GoSwitcher.
 
 2.  You can name it `codex`, and select `codex` as the token group. After creation, copy the generated API Key for later configuration.
 
@@ -31,17 +31,17 @@ Also, please confirm that CC Switch is installed and running locally. This solut
 
 ::: warning Before Proceeding
 
-This is not the recommended configuration for Claude Code. After configuration, please verify whether it works by checking Claude Code's actual conversation results, CC Switch request logs, and GoSwitch consumption logs together.
+This is not the recommended configuration for Claude Code. After configuration, please verify whether it works by checking Claude Code's actual conversation results, CC Switch request logs, and GoSwitcher consumption logs together.
 :::
 ### Add Provider
 
 1.  Open CC Switch, and click `Add Provider` in the Claude Code configuration.
 
-2.  Select `GoSwitch` as the preset provider, and fill in the following:
+2.  Select `GoSwitcher` as the preset provider, and fill in the following:
 
-    -   **Website URL**: `https://goswitch.online`
+    -   **Website URL**: `https://goswitcher.com`
     -   **API Key**: Enter the `codex` group API Key you just created
-    -   **Request URL**: `https://goswitch.online`
+    -   **Request URL**: `https://goswitcher.com`
     -   **API Format**: `OpenAI Responses API (requires routing)`
     -   **Main Model**: Enter the GPT model you want to map to Claude Code's main model, e.g. `gpt-5.5`
     -   **Haiku Default Model**: Enter a lighter GPT model, e.g. `gpt-5.4-mini`
@@ -68,7 +68,7 @@ The model names above are only examples. Please use the actual available model n
 
 ![](../../assets/image-en/Advanced/ChatGPTClaudeCode/05.webp)
 
-4.  Return to the CC Switch main interface; the local routing toggle should appear at the top. Confirm the toggle is on, and select the `GoSwitch-codex` provider you just added.
+4.  Return to the CC Switch main interface; the local routing toggle should appear at the top. Confirm the toggle is on, and select the `GoSwitcher-codex` provider you just added.
 
 ![](../../assets/image-en/Advanced/ChatGPTClaudeCode/06.webp)
 
@@ -88,7 +88,7 @@ If you need to stop this solution later, you can turn off the local routing togg
 
 ![](../../assets/image-en/Advanced/ChatGPTClaudeCode/09.webp)
 
-4.  Finally, check GoSwitch's consumption logs to confirm the actual calls. If configured correctly, the consumption logs should show the `codex` group, with the actual billed GPT model, such as `gpt-5.5`.
+4.  Finally, check GoSwitcher's consumption logs to confirm the actual calls. If configured correctly, the consumption logs should show the `codex` group, with the actual billed GPT model, such as `gpt-5.5`.
 
 ![](../../assets/image-en/Advanced/ChatGPTClaudeCode/10.webp)
 
@@ -98,5 +98,5 @@ If you need to stop this solution later, you can turn off the local routing togg
 
 This is a non-recommended approach that may fail due to changes in Claude Code, CC Switch, model interfaces, cache policies, MCP, or Skills behavior.
 
-GoSwitch does not recommend connecting GPT models to Claude Code, and does not assume responsibility for the stability, compatibility, output quality, quota consumption, or any derivative issues of this solution. You can use it for testing, research, and understanding routing logic, but it is not recommended as a daily stable workflow.
+GoSwitcher does not recommend connecting GPT models to Claude Code, and does not assume responsibility for the stability, compatibility, output quality, quota consumption, or any derivative issues of this solution. You can use it for testing, research, and understanding routing logic, but it is not recommended as a daily stable workflow.
 :::

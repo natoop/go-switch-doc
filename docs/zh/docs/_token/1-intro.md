@@ -1,8 +1,8 @@
 # 令牌分组查看
 
-<!-- Source: https://docs.goswitch.online/docs/token/1-intro.html -->
+<!-- Source: https://docs.goswitcher.com/docs/token/1-intro.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## 如何查看最新分组

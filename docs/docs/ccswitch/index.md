@@ -1,8 +1,8 @@
 # CC-Switch Tutorial
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/ -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Common Steps
@@ -29,13 +29,13 @@ With CC-Switch, you can:
 
 -   ✅ One-click API switching - Quickly switch between multiple API providers
 -   ✅ Visual configuration management - Easily manage all configurations through a graphical interface
--   ✅ Built-in GoSwitch templates - Pre-configured GoSwitch template presets
+-   ✅ Built-in GoSwitcher templates - Pre-configured GoSwitcher template presets
 -   ✅ MCP server management - Manage Model Context Protocol servers
 -   ✅ System tray quick actions - Quick switching through tray menu
 
 ::: tip Tip
 
-CC-Switch has built-in GoSwitch quick configuration templates — no need to manually edit configuration files!
+CC-Switch has built-in GoSwitcher quick configuration templates — no need to manually edit configuration files!
 :::
 ### Software Download
 

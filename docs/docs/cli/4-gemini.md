@@ -1,8 +1,8 @@
 # Gemini Configuration
 
-<!-- Source: https://docs.goswitch.online/docs/cli/4-gemini.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/4-gemini.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 <DocTabs storage-key="cli-gemini-platform" :tabs="[{ label: 'Windows', value: 'windows' }, { label: 'MacOS', value: 'macos' }]">
@@ -25,14 +25,14 @@ Updated: 2026-06-13T10:02:01.000Z
 ![](../../assets/image-en/Cli/020.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
 ![](../../assets/image-en/Cli/021.webp)
 
-3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitch, copy the ApiKey and fill it in for `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitcher, copy the ApiKey and fill it in for `xxx`
 
 ![](../../assets/image-en/Cli/026.webp)
 
@@ -61,12 +61,12 @@ GEMINI_MODEL=gemini-2.5-pro
 ![](../../assets/image-en/Cli/024.webp)
 
 ``` bash
-GOOGLE_GEMINI_BASE_URL=https://goswitch.online
+GOOGLE_GEMINI_BASE_URL=https://goswitcher.com
 GEMINI_API_KEY=xxx
 GEMINI_MODEL=gemini-2.5-pro
 ```
 
-3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitch, and fill in `xxx`
+3.  Review [Create API Token](../register/4-token.md), create a **Gemini** group token in GoSwitcher, and fill in `xxx`
 
 ![](../../assets/image-en/Cli/026.webp)
 

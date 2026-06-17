@@ -1,8 +1,8 @@
 # CC-Switch CLI Usage
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/5-ccs_cli.html -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/5-ccs_cli.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: tip Tip
@@ -29,9 +29,9 @@ CC-Switch CLI is the command-line version of CC-Switch, suitable for servers, SS
 It consists of two parts:
 
 -   **Full CLI Commands**: You can use commands to view provider lists, switch, check environments, sync MCP, manage Skills, manage prompts, set local proxies, etc.
--   **Full TUI Interface**: Run `cc-switch` to enter the terminal graphical interface, where you can add Providers, select GoSwitch templates, fill in API Keys, save and switch configurations just like the desktop version.
+-   **Full TUI Interface**: Run `cc-switch` to enter the terminal graphical interface, where you can add Providers, select GoSwitcher templates, fill in API Keys, save and switch configurations just like the desktop version.
 
-If you're only configuring GoSwitch for the first time, we recommend using the TUI first. After configuration is complete, daily switching, checking, and troubleshooting can be done directly with CLI commands.
+If you're only configuring GoSwitcher for the first time, we recommend using the TUI first. After configuration is complete, daily switching, checking, and troubleshooting can be done directly with CLI commands.
 
 ## Installing CC-Switch CLI
 
@@ -112,7 +112,7 @@ cc-switch --app codex
 cc-switch --app gemini
 ```
 
-TUI is suitable for first-time configuration. You can select the GoSwitch template, fill in the API Key, then save and switch to that Provider.
+TUI is suitable for first-time configuration. You can select the GoSwitcher template, fill in the API Key, then save and switch to that Provider.
 
 ### Using CLI Commands
 
@@ -149,15 +149,15 @@ codex --help
 gemini --help
 ```
 
-Then create a token for the corresponding group in GoSwitch:
+Then create a token for the corresponding group in GoSwitcher:
 
 -   Claude Code: Create a **CC Group** token
 -   Codex: Create a **Codex Group** token
 -   Gemini: Create a **Gemini Group** token
 
-## Configuring GoSwitch
+## Configuring GoSwitcher
 
-For first-time configuration, we recommend using TUI because it displays GoSwitch templates and the fields you need to fill in.
+For first-time configuration, we recommend using TUI because it displays GoSwitcher templates and the fields you need to fill in.
 
 ::: tip Tip
 
@@ -180,15 +180,15 @@ cc-switch --app gemini
 
 ![](../../assets/image-en/CC-Switch/019.webp)
 
-3.  Select `* GoSwitch` from the templates.
+3.  Select `* GoSwitcher` from the templates.
 
 ![](../../assets/image-en/CC-Switch/020.webp)
 
-4.  Fill in the `API Key` with the token you copied from GoSwitch, then save.
+4.  Fill in the `API Key` with the token you copied from GoSwitcher, then save.
 
 ![](../../assets/image-en/CC-Switch/021.webp)
 
-5.  Return to the provider list and confirm that the newly added GoSwitch Provider is selected.
+5.  Return to the provider list and confirm that the newly added GoSwitcher Provider is selected.
 
 ![](../../assets/image-en/CC-Switch/022.webp)
 
@@ -244,7 +244,7 @@ Help me run cc-switch provider list to see what Claude Providers are currently a
 ```
 
 ``` text
-Help me run cc-switch --app codex provider current to confirm if Codex is currently using GoSwitch.
+Help me run cc-switch --app codex provider current to confirm if Codex is currently using GoSwitcher.
 ```
 
 ``` text
@@ -252,7 +252,7 @@ Help me run cc-switch env check --app claude to check if there are environment v
 ```
 
 ``` text
-Help me switch to the GoSwitch provider, then run claude to test if it can respond normally.
+Help me switch to the GoSwitcher provider, then run claude to test if it can respond normally.
 ```
 
 This approach is suitable for people already familiar with terminals. The AI assistant handles executing commands and explaining results, while you only need to confirm key operations like switching Providers, overriding configuration files, or deleting configurations.

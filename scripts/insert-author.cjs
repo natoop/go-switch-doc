@@ -23,13 +23,13 @@ function processFile(filePath){
   const updatedRegex = /^Updated:\s*/i;
   for(let i=0;i<lines.length;i++){
     if(updatedRegex.test(lines[i])){
-      // check previous non-empty line for existing 作者 goswitch
+      // check previous non-empty line for existing 作者 goswitcher
       const prev = lines[i-1] || '';
-      if(/^[\s]*作者\s+goswitch\s*$/i.test(prev) || /^[\s]*<!--\s*作者\s+goswitch\s*-->\s*$/i.test(prev)){
+      if(/^[\s]*作者\s+goswitcher\s*$/i.test(prev) || /^[\s]*<!--\s*作者\s+goswitcher\s*-->\s*$/i.test(prev)){
         return; // already has author directly above
       }
       // insert author line above
-      lines.splice(i, 0, '作者 goswitch');
+      lines.splice(i, 0, '作者 goswitcher');
       fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
       modified.push(filePath);
       return;

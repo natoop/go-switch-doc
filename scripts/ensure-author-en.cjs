@@ -43,9 +43,9 @@ function processFile(filePath){
   let j = updatedIndex - 1;
   while(j >= 0 && lines[j].trim() === '') j--;
 
-  const authorLine = 'Author: goswitch';
-  const zhAuthorRegex = /^\s*作者\s+goswitch\s*$/i;
-  const enAuthorRegex = /^\s*Author\s*:\s*goswitch\s*$/i;
+  const authorLine = 'Author: goswitcher';
+  const zhAuthorRegex = /^\s*作者\s+goswitcher\s*$/i;
+  const enAuthorRegex = /^\s*Author\s*:\s*goswitcher\s*$/i;
 
   if(j >= 0 && enAuthorRegex.test(lines[j])){
     // ensure there is exactly one blank line between author and Updated

@@ -1,8 +1,8 @@
 # 购买额度
 
-<!-- Source: https://docs.goswitch.online/docs/register/3-quota.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/3-quota.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 登录控制台后，进入左侧“钱包管理”页面购买额度。

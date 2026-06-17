@@ -1,8 +1,8 @@
 # 通用步骤
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/1-common.html -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/1-common.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### CC-Switch介绍
@@ -17,7 +17,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 [![farion1231%2Fcc-switch | Trendshift](../../../assets/external/trendshift.io/15372-fb550795da.svg)](https://trendshift.io/repositories/15372)
 
-[更新日志](https://docs.goswitch.online/docs/ccswitch/CHANGELOG.html) | [下载地址](https://github.com/farion1231/cc-switch/releases/latest)
+[更新日志](https://docs.goswitcher.com/docs/ccswitch/CHANGELOG.html) | [下载地址](https://github.com/farion1231/cc-switch/releases/latest)
 
 **从供应商切换器到 AI CLI 一体化管理平台**
 
@@ -27,13 +27,13 @@ Updated: 2026-06-13T10:02:01.000Z
 
 -   ✅ 一键切换 API 配置 - 在多个 API 提供商之间快速切换
 -   ✅ 可视化配置管理 - 通过图形界面轻松管理所有配置
--   ✅ 内置 GoSwitch 模板 - 预设了 GoSwitch 的配置模板
+-   ✅ 内置 GoSwitcher 模板 - 预设了 GoSwitcher 的配置模板
 -   ✅ MCP 服务器管理 - 管理 Model Context Protocol 服务器
 -   ✅ 系统托盘快捷操作 - 通过托盘菜单快速切换
 
 ::: tip 温馨提示
 
-CC-Switch 已经内置了 GoSwitch 的快捷配置模板，无需手动编辑配置文件！
+CC-Switch 已经内置了 GoSwitcher 的快捷配置模板，无需手动编辑配置文件！
 :::
 ### 软件下载
 

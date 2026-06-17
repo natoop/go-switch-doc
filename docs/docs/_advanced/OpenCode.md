@@ -1,8 +1,8 @@
 # OpenCode
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/OpenCode.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/OpenCode.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## Project Introduction
@@ -38,8 +38,8 @@ npm install -g opencode-ai
 
 5.  Configure the following items:
 
-    -   In `Preset Provider`, select `GoSwitch`
-    -   In `Provider Identifier`, enter a group name, e.g. GoSwitch-Codex
+    -   In `Preset Provider`, select `GoSwitcher`
+    -   In `Provider Identifier`, enter a group name, e.g. GoSwitcher-Codex
     -   In `Interface Format`, select the appropriate group
         -   Claude series models: `Anthropic`
         -   Codex series models: `OpenAI`
@@ -67,7 +67,7 @@ npm install -g opencode-ai
 
 ![](../../assets/image-en/Advanced/OpenCode/04.webp)
 
-6.  Select the newly configured GoSwitch channel in the interface, and click the add button
+6.  Select the newly configured GoSwitcher channel in the interface, and click the add button
 
 ![](../../assets/image-en/Advanced/OpenCode/05.webp)
 :::
@@ -75,7 +75,7 @@ npm install -g opencode-ai
 
 1.  Open a new terminal, type `opencode` to run
 
-2.  Type the `/models` command and check whether the GoSwitch channel you just configured appears. If it exists, the configuration is successful
+2.  Type the `/models` command and check whether the GoSwitcher channel you just configured appears. If it exists, the configuration is successful
 
 ![](../../assets/image-en/Advanced/OpenCode/06.webp)
 

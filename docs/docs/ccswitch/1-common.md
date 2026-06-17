@@ -1,8 +1,8 @@
 # Common Steps
 
-<!-- Source: https://docs.goswitch.online/docs/ccswitch/1-common.html -->
+<!-- Source: https://docs.goswitcher.com/docs/ccswitch/1-common.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### CC-Switch Introduction
@@ -17,7 +17,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 [![farion1231%2Fcc-switch | Trendshift](../../assets/external/trendshift.io/15372-fb550795da.svg)](https://trendshift.io/repositories/15372)
 
-[Changelog](https://docs.goswitch.online/docs/ccswitch/CHANGELOG.html) | [Download](https://github.com/farion1231/cc-switch/releases/latest)
+[Changelog](https://docs.goswitcher.com/docs/ccswitch/CHANGELOG.html) | [Download](https://github.com/farion1231/cc-switch/releases/latest)
 
 **From Provider Switcher to AI CLI All-in-One Management Platform**
 
@@ -27,13 +27,13 @@ With CC-Switch, you can:
 
 -   ✅ One-click API switching - Quickly switch between multiple API providers
 -   ✅ Visual configuration management - Easily manage all configurations through a graphical interface
--   ✅ Built-in GoSwitch templates - Pre-configured GoSwitch template presets
+-   ✅ Built-in GoSwitcher templates - Pre-configured GoSwitcher template presets
 -   ✅ MCP server management - Manage Model Context Protocol servers
 -   ✅ System tray quick actions - Quick switching through tray menu
 
 ::: tip Tip
 
-CC-Switch has built-in GoSwitch quick configuration templates — no need to manually edit configuration files!
+CC-Switch has built-in GoSwitcher quick configuration templates — no need to manually edit configuration files!
 :::
 ### Software Download
 

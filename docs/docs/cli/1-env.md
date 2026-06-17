@@ -1,8 +1,8 @@
 # Environment Check (Common Steps)
 
-<!-- Source: https://docs.goswitch.online/docs/cli/1-env.html -->
+<!-- Source: https://docs.goswitcher.com/docs/cli/1-env.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ### (1) Confirm Node.js is Installed

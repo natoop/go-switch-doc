@@ -1,21 +1,21 @@
 # 支持的国家和地区
 
-<!-- Source: https://docs.goswitch.online/docs/tos/use.html -->
+<!-- Source: https://docs.goswitcher.com/docs/tos/use.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ::: warning 重要提示
 
-本文档根据 GoSwitch「支持的国家和地区」页面内容整理（生效日期：2025 年 10 月 30 日）。
+本文档根据 GoSwitcher「支持的国家和地区」页面内容整理（生效日期：2025 年 10 月 30 日）。
 如本文档与官网存在差异或版本更新，请以官网页面为准：
-[https://goswitch.online/supported-regions](https://goswitch.online/supported-regions)
+[https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions)
 :::
 | 项目 | 内容 |
 | --- | --- |
 | 文档名称 | 支持的国家和地区（支持区域政策） |
 | 生效日期 | 2025-01-01 |
-| 来源链接 | [https://goswitch.online/supported-regions](https://goswitch.online/supported-regions) |
+| 来源链接 | [https://goswitcher.com/supported-regions](https://goswitcher.com/supported-regions) |
 
 -   [概述](./use.md#%E6%A6%82%E8%BF%B0)
 -   [API](./use.md#api)
@@ -24,9 +24,9 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## 概述
 
-商业 API 访问和 GoSwitch 服务。
+商业 API 访问和 GoSwitcher 服务。
 
-在法律允许的范围内，GoSwitch 保留不向除我们支持区域政策中列出的国家以外的其大部分直接或间接所有权归属于国家的实体提供其产品或服务的权利。
+在法律允许的范围内，GoSwitcher 保留不向除我们支持区域政策中列出的国家以外的其大部分直接或间接所有权归属于国家的实体提供其产品或服务的权利。
 
 ## API
 
@@ -90,6 +90,6 @@ Updated: 2026-06-13T10:02:01.000Z
 
 ## 相关链接
 
--   服务条款：[https://goswitch.online/terms](https://goswitch.online/terms)
--   服务特定条款：[https://goswitch.online/service-specific-terms](https://goswitch.online/service-specific-terms)
--   使用政策（AUP）：[https://goswitch.online/usage-policy](https://goswitch.online/usage-policy)
+-   服务条款：[https://goswitcher.com/terms](https://goswitcher.com/terms)
+-   服务特定条款：[https://goswitcher.com/service-specific-terms](https://goswitcher.com/service-specific-terms)
+-   使用政策（AUP）：[https://goswitcher.com/usage-policy](https://goswitcher.com/usage-policy)

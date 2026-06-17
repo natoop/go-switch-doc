@@ -1,8 +1,8 @@
 # AionUI
 
-<!-- Source: https://docs.goswitch.online/docs/advanced/AionUI.html -->
+<!-- Source: https://docs.goswitcher.com/docs/advanced/AionUI.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 ## AionUi 介绍
@@ -88,7 +88,7 @@ sudo dpkg -i AionUi-x.x.x-linux-amd64.deb
 
 ### 获取 API
 
-回顾 [创建 API 令牌](https://goswitch.online/)，在 GoSwitch 中创建对应分组的令牌，点击复制按钮，复制 API Key 到剪切板：
+回顾 [创建 API 令牌](https://goswitcher.com/)，在 GoSwitcher 中创建对应分组的令牌，点击复制按钮，复制 API Key 到剪切板：
 
 -   **Gemini** → 创建 **Gemini** 分组的令牌
 -   **Claude** → 创建 **CC** 分组的令牌
@@ -120,25 +120,25 @@ Gemini
 
 使用 **Gemini** 分组的 API Key，填入以下配置：
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online`
--   **模型**：选择 GoSwitch 支持的 Gemini 模型
+-   **API Key**：粘贴从 GoSwitcher 复制的 API Key
+-   **API 请求地址**：`https://goswitcher.com`
+-   **模型**：选择 GoSwitcher 支持的 Gemini 模型
 
 Claude
 
 使用 **CC** 分组的 API Key，填入以下配置：
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online`
--   **模型**：选择 GoSwitch 支持的 Claude 模型
+-   **API Key**：粘贴从 GoSwitcher 复制的 API Key
+-   **API 请求地址**：`https://goswitcher.com`
+-   **模型**：选择 GoSwitcher 支持的 Claude 模型
 
 Codex
 
 使用 **Codex** 分组的 API Key，填入以下配置：
 
--   **API Key**：粘贴从 GoSwitch 复制的 API Key
--   **API 请求地址**：`https://goswitch.online/v1`
--   **模型**：选择 GoSwitch 支持的 Codex 模型
+-   **API Key**：粘贴从 GoSwitcher 复制的 API Key
+-   **API 请求地址**：`https://goswitcher.com/v1`
+-   **模型**：选择 GoSwitcher 支持的 Codex 模型
 
 * * *
 

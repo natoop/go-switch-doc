@@ -21,10 +21,10 @@ function walk(dir){
 function processFile(filePath){
   let s = fs.readFileSync(filePath, 'utf8');
   const lines = s.split(/\r?\n/);
-  const regex = /^\s*Source:\s*https:\/\/docs\.goswitch\.online(\/.*)?\s*$/i;
+  const regex = /^\s*Source:\s*https:\/\/docs\.goswitcher\.com(\/.*)?\s*$/i;
   for(let i=0;i<lines.length;i++){
     const line = lines[i];
-    if(/<!--\s*Source:\s*https:\/\/docs\.goswitch\.online/.test(line)){
+    if(/<!--\s*Source:\s*https:\/\/docs\.goswitcher\.com/.test(line)){
       // already commented, consider as present but skip
       return;
     }

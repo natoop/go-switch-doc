@@ -1,11 +1,11 @@
 # 配置 CLI 工具
 
-<!-- Source: https://docs.goswitch.online/docs/register/6-cli.html -->
+<!-- Source: https://docs.goswitcher.com/docs/register/6-cli.html -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
-GoSwitch 支持在命令行中使用 Claude Code、Codex、Gemini CLI
+GoSwitcher 支持在命令行中使用 Claude Code、Codex、Gemini CLI
 
 ## 基础条件
 

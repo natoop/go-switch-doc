@@ -1,8 +1,8 @@
-# GoSwitch Documentation
+# GoSwitcher Documentation
 
-<!-- Source: https://docs.goswitch.online/ -->
+<!-- Source: https://docs.goswitcher.com/ -->
 
-Author: goswitch
+Author: goswitcher
 
 Updated: 2026-06-13T10:02:01.000Z
 Follow the tutorials carefully and configure step by step — you should rarely run into issues.
