@@ -95,7 +95,12 @@ function syncPreferredLocale(router?: Router) {
   if (!inBrowser)
     return
 
-  const target = currentLocationForLocale(preferredLocale())
+  const preferred = preferredLocale()
+
+  if (localeFromPath(window.location.pathname) === preferred)
+    return
+
+  const target = currentLocationForLocale(preferred)
   const current = `${window.location.pathname}${window.location.search}${window.location.hash}`
 
   if (target === current)

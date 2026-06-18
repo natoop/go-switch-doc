@@ -28,7 +28,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 6.  After successfully adding the configuration, you will see the configured group on the main interface. Click the "Enable" button on the right — when it shows "In Use", the configuration is complete
 
-![](../../assets/image-en/CC-Switch/011.png)
+![](../../assets/image-en/CC-Switch/026.png)
 
 7.  Run `gemini` in the terminal. If you see the conversation interface and can get normal responses, the configuration is complete
 

@@ -194,7 +194,7 @@ cc-switch --app gemini
 
 6.  If you're configuring Claude Code, go to `Settings`, find `Skip Claude Code initial installation confirmation`, and confirm it's enabled.
 
-![](../../assets/image-en/CC-Switch/023.png)
+![](../../assets/image-en/CC-Switch/023.webp)
 
 This option writes `hasCompletedOnboarding=true` to `~/.claude.json`, preventing Claude Code from stopping at the installation confirmation process on first launch.
 

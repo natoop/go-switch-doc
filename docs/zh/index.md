@@ -1,4 +1,4 @@
-# GoSwitch文档站
+# GoSwitcher文档站
 
 <!-- Source: https://docs.goswitcher.com/ -->
 
