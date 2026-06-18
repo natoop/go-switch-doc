@@ -44,4 +44,4 @@ Updated: 2026-06-13T10:02:01.000Z
 3.  在左侧依次选择“存储” → “Cookie” → `https://goswitcher.com`。
 4.  删除 `session`、`TDC_itoken` 等站点 Cookie 后刷新页面，再重新登录。
 
-![](../../../assets/image/QuickStart/006.png) -->
+![](../../../assets/image/QuickStart/005.png) -->

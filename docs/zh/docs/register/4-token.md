@@ -7,7 +7,7 @@ Author: goswitcher
 Updated: 2026-06-13T10:02:01.000Z
 登录后进入控制台面板，左侧选择“令牌管理”。
 
-![](../../../assets/image/QuickStart/004.png)
+![](../../../assets/image/QuickStart/003.png)
 
 ### 进入令牌管理
 
@@ -18,7 +18,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 在弹窗中填写令牌信息：
 
-![](../../../assets/image/QuickStart/005.png)
+![](../../../assets/image/QuickStart/004.png)
 
 -   令牌名称：用于区分不同用途，例如 `Claude Code`、`Codex`、`Gemini`。
 -   令牌分组：必须选择，分组决定这个令牌可以使用哪些模型。
@@ -39,7 +39,7 @@ Updated: 2026-06-13T10:02:01.000Z
 
 你可以在“模型广场”查看每个令牌分组下支持哪些模型。
 
-![](../../../assets/image/QuickStart/006.png)
+![](../../../assets/image/QuickStart/005.png)
 
 1.  点击页面右上角“模型广场”。
 2.  在左侧“可用令牌分组”中选择分组。

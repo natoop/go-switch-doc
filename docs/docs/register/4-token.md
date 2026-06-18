@@ -7,7 +7,7 @@ Author: goswitcher
 Updated: 2026-06-13T10:02:01.000Z
 After logging in, go to the console panel and select "Token Management" from the left side.
 
-![](../../assets/image-en/QuickStart/004.png)
+![](../../assets/image-en/QuickStart/003.png)
 
 ### Enter Token Management
 
@@ -18,7 +18,7 @@ After logging in, go to the console panel and select "Token Management" from the
 
 Fill in the token information in the popup:
 
-![](../../assets/image-en/QuickStart/005.png)
+![](../../assets/image-en/QuickStart/004.png)
 
 -   Token Name: Used to distinguish different purposes, e.g., `Claude Code`, `Codex`, `Gemini`.
 -   Token Group: Must be selected. The group determines which models this token can use.
@@ -39,7 +39,7 @@ After filling in, click "Submit" at the bottom right to complete the creation.
 
 You can view the models supported by each token group in "Model Plaza".
 
-![](../../assets/image-en/QuickStart/006.png)
+![](../../assets/image-en/QuickStart/005.png)
 
 1.  Click "Model Plaza" in the upper right corner of the page.
 2.  Select a group from "Available token groups" on the left.

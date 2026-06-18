@@ -44,4 +44,4 @@ If clearing cache doesn't help, manually delete cookies related to `goswitcher.c
 3.  Select "Storage" → "Cookies" → `https://goswitcher.com` from the left sidebar.
 4.  Delete `session`, `TDC_itoken` and other site cookies, then refresh the page and try logging in again.
 
-![](../../assets/image-en/QuickStart/006.png) -->
+![](../../assets/image-en/QuickStart/005.png) -->
